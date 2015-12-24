@@ -1,0 +1,50 @@
+"ID" "Index" "Route ID" "Field3"
+"1" 1 352 "A Route U" NA
+"2" 2 353 "A Route S" NA
+"3" 3 354 "A Route M-R" NA
+"4" 4 355 "A Route F" NA
+"5" 5 356 "Night Owl" NA
+"6" 6 357 "B Route M-R" NA
+"7" 7 358 "B Route F" NA
+"8" 8 359 "B Route U" NA
+"9" 9 360 "B Route S" NA
+"10" 10 361 "E Route M-R" NA
+"11" 11 362 "E Route S" NA
+"12" 12 363 "E Route F" NA
+"13" 13 364 "X Route M-R" NA
+"14" 14 365 "X Route F" NA
+"15" 15 366 "Rush" NA
+"16" 16 367 "Aud" NA
+"17" 17 368 "Training" NA
+"18" 18 369 "E Route U" NA
+"19" 19 370 "Special Service" NA
+"20" 20 372 "B Route Detour" NA
+"21" 21 373 "A Route Detour" "Spring"
+"22" 22 335 "A Route F" "Fall"
+"23" 23 331 "A Route M-R" NA
+"24" 24 347 "A Route McNutt" NA
+"25" 25 336 "A Route S-U" NA
+"26" 26 333 "Aud" NA
+"27" 27 339 "B Route F" NA
+"28" 28 318 "B Route M-R" NA
+"29" 29 340 "B Route S-U" NA
+"30" 30 337 "E Route F" NA
+"31" 31 320 "E Route M-R" NA
+"32" 32 321 "E Route S-U" NA
+"33" 33 348 "E Route Mall" NA
+"34" 34 344 "5K A Route" NA
+"35" 35 345 "5K B Route" NA
+"36" 36 346 "5K E Route" NA
+"37" 37 334 "Night Owl" NA
+"38" 38 342 "Night Owl Lotus" NA
+"39" 39 343 "Special Service" NA
+"40" 40 332 "Training Bus" NA
+"41" 41 338 "X Route F" NA
+"42" 42 325 "X Route M-R" NA
+"43" 43 330 "A Route" "Summer 14"
+"44" 44 316 "A Route" NA
+"45" 45 327 "A Route Jordan Detour" NA
+"46" 46 329 "Orientation Shuttle" NA
+"47" 47 328 "P Route" NA
+"48" 48 323 " Special" NA
+"49" 49 324 "Training Buses" NA
