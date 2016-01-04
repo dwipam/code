@@ -1,0 +1,255 @@
+> data<-read.data("F:/Bus Data/mydata.data")
+Error: could not find function "read.data"
+> data<-read("F:/Bus Data/mydata.data")
+Error: could not find function "read"
+> data<-data.frame("F:/Bus Data/mydata.data")
+> head(data)
+  X.F..Bus.Data.mydata.data.
+1    F:/Bus Data/mydata.data
+> data
+  X.F..Bus.Data.mydata.data.
+1    F:/Bus Data/mydata.data
+> data<-read.table("F:/mydata.data")
+Error in scan(file, what, nmax, sep, dec, quote, skip, nlines, na.strings,  : 
+  line 1 did not have 11 elements
+> data<-read.csv("F:/bus.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'F:/bus.csv': No such file or directory
+> data<-read.csv("F:/Bus Data/bus.csv")
+> head(data)
+     ID1      id from              to     time bus_id route_id           when
+1 885362 6234217   71      Stadium ()    33463    657        A 1/12/2015 7:19
+2 885363 6234218   35      Stadium () 14388081    642        A 1/12/2015 7:21
+3 885364 6234219   68      Stadium ()      264    657        A 1/12/2015 7:24
+4 885365 6234220   89 Evermann Redbud   654656    662        E 1/12/2015 7:25
+5 885366 6234221   66      Stadium ()   567854    655        X 1/12/2015 7:25
+6 885367 6234222   68   Alumni Center      334    657        A 1/12/2015 7:25
+> for(i in 1:7)
++ {
++ print(bus[i,6])
++ }
+Error in print(bus[i, 6]) : object 'bus' not found
+> for(i in 1:7)
++ {
++ print(data[i,6])
++ }
+[1] 657
+[1] 642
+[1] 657
+[1] 662
+[1] 655
+[1] 657
+[1] 657
+> head(data)
+     ID1      id from              to     time bus_id route_id           when
+1 885362 6234217   71      Stadium ()    33463    657        A 1/12/2015 7:19
+2 885363 6234218   35      Stadium () 14388081    642        A 1/12/2015 7:21
+3 885364 6234219   68      Stadium ()      264    657        A 1/12/2015 7:24
+4 885365 6234220   89 Evermann Redbud   654656    662        E 1/12/2015 7:25
+5 885366 6234221   66      Stadium ()   567854    655        X 1/12/2015 7:25
+6 885367 6234222   68   Alumni Center      334    657        A 1/12/2015 7:25
+> mongo <- mongoDbConnect("test")
+Error: could not find function "mongoDbConnect"
+> mongo.insert(mongo,"rmongodb.insert",'{"ID1":"885362","id":"6234217","from":"71","to":"Stadium ()","time":"33463","bus_id":"657","route_id":"A","when":"1/12/2015 7:19"}')
+[1] TRUE
+> for(i in nrow(data))
++ {
++ {
+
+> x<-toString(1/12/2015 7:19)
+Error: unexpected numeric constant in "x<-toString(1/12/2015 7"
+> x<-toString(data[1,1])
+> x
+[1] "885362"
+> x<-toString(data[1,])
+> x
+[1] "885362, 6234217, 71, 45, 33463, 657, 2, 835"
+> x<-as.character(data[1,])
+> x
+[1] "885362"  "6234217" "71"      "45"      "33463"   "657"     "2"       "835"    
+> as.Date(data[1,8])
+[1] "0001-12-20"
+> data[1,8]
+[1] 1/12/2015 7:19
+65675 Levels: 1/12/2015 10:00 1/12/2015 10:01 1/12/2015 10:02 1/12/2015 10:03 1/12/2015 10:04 1/12/2015 10:05 1/12/2015 10:06 1/12/2015 10:07 ... 5/8/2015 0:40
+> data[1,4]
+[1] Stadium ()
+53 Levels: 10th & Jordan 10th & Jordan () 10th & Woodlawn 3rd & Jordan 7th & Union 7th & Woodlawn Alumni Center Assembly Hall () Auditorium (X) Balfour ... ZBT ()
+> data[1,7]
+[1] A
+Levels: 354 A B E X
+> mongo.get.database.collections(mongo, "rmongodb")
+[1] "rmongodb.insert"
+> > mongo.count(mongo, "rmongodb.insert")
+Error: unexpected '>' in ">"
+> mongo.count(mongo, "rmongodb.insert")
+[1] 1
+> cursor <- mongo.find(mongo, "rmongodb.zips"
++ )
+> cursor
+[1] 0
+attr(,"mongo.cursor")
+<pointer: 0x000000000991d9c0>
+attr(,"class")
+[1] "mongo.cursor"
+> bson <- mongo.findOne(mongo, "rmongodb.insert")
+> bson
+        _id : 7          5643690edd5e8eaf4867d017
+        ID1 : 2          885362
+        id : 2   6234217
+        from : 2         71
+        to : 2   Stadium ()
+        time : 2         33463
+        bus_id : 2       657
+        route_id : 2     A
+        when : 2         1/12/2015 7:19
+> for(i in nrow(data))
++ {
++ mongo.insert(mongo,"rmongodb.insert",'{"ID1","id":"6234217","from":"71","to":"Stadium ()","time":"33463","bus_id":"657","route_id":"A","when":"1/12/2015 7:19"}')
+
+> for(i in nrow(data))
++ {
++ mongo.insert(mongo,"rmongodb.insert",'{"ID1":data[i,1],"id":data[i,2],"from":data[i,3],"to":data[i,4],"time":data[i,5],"bus_id":data[i,6],"route_id":data[i,7],"when":data[i,8]}')
++ }
+Error in mongo.bson.from.JSON(b) : 
+  Not a valid JSON content: {"ID1":data[i,1],"id":data[i,2],"from":data[i,3],"to":data[i,4],"time":data[i,5],"bus_id":data[i,6],"route_id":data[i,7],"when":data[i,8]}
+> paste(""",data[1,8],""")
+Error: unexpected string constant in "paste(""",data[1,8],""
+> shQuote(data[1,8])
+[1] "\"1/12/2015 7:19\""
+> "\"1/12/2015 7:19\""
+[1] "\"1/12/2015 7:19\""
+> mongo.insert(mongo,"rmongodb.insert",'{"ID1":shQuote(data[1,1]),"id":shQuote(data[1,2]),"from":shQuote(data[1,3]),"to":shQuote(data[1,4]),"time":shQuote(data[1,5]),"bus_id":shQuote(data[i,6]),"route_id":shQuote(data[i,7]),"when":shQuote(data[i,8])}')
+Error in mongo.bson.from.JSON(b) : 
+  Not a valid JSON content: {"ID1":shQuote(data[1,1]),"id":shQuote(data[1,2]),"from":shQuote(data[1,3]),"to":shQuote(data[1,4]),"time":shQuote(data[1,5]),"bus_id":shQuote(data[i,6]),"route_id":shQuote(data[i,7]),"when":shQuote(data[i,8])}
+> "+data[1,8]+"
+[1] "+data[1,8]+"
+> \"+data[1,8]+\"
+Error: unexpected input in "\"
+> \"data[1,8]\"
+Error: unexpected input in "\"
+> paste("modelCheck(var\"",data[1,8],"_d.bug\")",sep="")
+[1] "modelCheck(var\"1/12/2015 7:19_d.bug\")"
+> paste(\",data[1,8],\",sep="")
+Error: unexpected input in "paste(\"
+> paste(\"data[1,8]\",sep="")
+Error: unexpected input in "paste(\"
+> paste(data[1,8])
+[1] "1/12/2015 7:19"
+> paste(data[1,7])
+[1] "A"
+> mongo.insert(mongo,"rmongodb.insert",'{"ID1":paste(data[1,1]),"id":paste(data[1,2]),"from":paste(data[1,3]),"to":paste(data[1,4]),"time":paste(data[1,5]),"bus_id":paste(data[1,6]),"route_id":paste(data[1,7]),"when":paste(data[1,8])}')
+Error in mongo.bson.from.JSON(b) : 
+  Not a valid JSON content: {"ID1":paste(data[1,1]),"id":paste(data[1,2]),"from":paste(data[1,3]),"to":paste(data[1,4]),"time":paste(data[1,5]),"bus_id":paste(data[1,6]),"route_id":paste(data[1,7]),"when":paste(data[1,8])}
+> df_list <- lapply(split(df, 1:nrow(df)), function(x) mongo.bson.from.JSON(toJSON(x)))
+Error in 1:nrow(df) : argument of length 0
+> df_list <- lapply(split(data, 1:nrow(data)), function(x) mongo.bson.from.JSON(toJSON(x)))
+
+> 
+
+> 
+
+> stop
+function (..., call. = TRUE, domain = NULL) 
+{
+    args <- list(...)
+    if (length(args) == 1L && inherits(args[[1L]], "condition")) {
+        cond <- args[[1L]]
+        if (nargs() > 1L) 
+            warning("additional arguments ignored in stop()")
+        message <- conditionMessage(cond)
+        call <- conditionCall(cond)
+        .Internal(.signalCondition(cond, message, call))
+        .Internal(.dfltStop(message, call))
+    }
+    else .Internal(stop(call., .makeMessage(..., domain = domain)))
+}
+<bytecode: 0x0000000008f49948>
+<environment: namespace:base>
+> df<-data[2,]
+> df
+     ID1      id from         to     time bus_id route_id           when
+2 885363 6234218   35 Stadium () 14388081    642        A 1/12/2015 7:21
+> df_list <- lapply(split(df, 1:nrow(df)), function(x) mongo.bson.from.JSON(toJSON(x)))
+Error in unique(c("AsIs", oldClass(x))) : 
+  could not find function "toJSON"
+> library(rjson)
+Error in library(rjson) : there is no package called ‘rjson’
+> install.packages("rjson")
+trying URL 'http://ftp.ussg.iu.edu/CRAN/bin/windows/contrib/3.1/rjson_0.2.15.zip'
+Content type 'application/zip' length 493440 bytes (481 Kb)
+opened URL
+downloaded 481 Kb
+
+package ‘rjson’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+        C:\Users\RUDRANI\AppData\Local\Temp\RtmpSCQKbd\downloaded_packages
+> library(rjson)
+Warning message:
+package ‘rjson’ was built under R version 3.1.3 
+> df<-data[2,]
+> df_list <- lapply(split(df, 1:nrow(df)), function(x) mongo.bson.from.JSON(toJSON(x)))
+>  icoll <- paste(db, "test", sep=".")
+Error in paste(db, "test", sep = ".") : object 'db' not found
+>  icoll <- paste("test", sep=".")
+> icoll
+[1] "test"
+> mongo.insert.batch(mongo, icoll, df_list)
+[1] FALSE
+Warning message:
+In mongo.insert.batch(mongo, icoll, df_list) : 
+> mongo.insert(mongo, icoll, df_list)
+[1] FALSE
+> mongo.insert.batch(mongo, icoll, df_list)
+[1] FALSE
+Warning message:
+In mongo.insert.batch(mongo, icoll, df_list) : 
+> df_list
+$`1`
+        ID1 : 16         885363
+        id : 16          6234218
+        from : 16        35
+        to : 2   Stadium ()
+        time : 16        14388081
+        bus_id : 16      642
+        route_id : 2     A
+        when : 2         1/12/2015 7:21
+
+> mongo.insert.batch(mongo,"rmongodb.insert", df_list)
+[1] TRUE
+> df_list <- lapply(split(data, 1:nrow(data)), function(x) mongo.bson.from.JSON(toJSON(x)))
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> for(i in 1:nrow(data))
++ {
++ {
++ }
++ 
+
+> for(i in 3:nrow(data))
++ {
++ df<-data[i,]
++ df_list <- lapply(split(df, 1:nrow(df)), function(x) mongo.bson.from.JSON(toJSON(x)))
++ mongo.insert.batch(mongo,"rmongodb.insert", df_list)
++ }
+> for(i in 1:5))
+Error: unexpected ')' in "for(i in 1:5))"
+> for(i in 1:5)
++ {
++ df<-data[i,]
++ df_list <- lapply(split(df, 1:nrow(df)), function(x) mongo.bson.from.JSON(toJSON(x)))
++ mongo.insert.batch(mongo,"rmongodb.insert1", df_list)
++ }
+> 

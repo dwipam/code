@@ -1,0 +1,2655 @@
+Shift ID,observed_date,Schedule Name,Driver,bus_id,Week_Day,route_id,Shift,Bus_no
+2717,2015-01-12,M-A1.1,"Heaton, Brian D.",640,M,A,1,A1
+2718,2015-01-12,M-A1.2,"Bell, Creigh",640,M,A,2,A1
+2720,2015-01-12,M-A2.1,"LaGarde, Nancy",645,M,A,1,A2
+2721,2015-01-12,M-A2.2,"Bryan, Katie",657,M,A,2,A2
+2722,2015-01-12,M-A3.1,"Hargrove, Paul Brady",647,M,A,1,A3
+2723,2015-01-12,M-A3.2,"Gillespie, Nathan",647,M,A,2,A3
+2724,2015-01-12,M-A4.1,"Foley, Shannon",650,M,A,1,A4
+2725,2015-01-12,M-A4.2,"Warren, Jeremy",650,M,A,2,A4
+2726,2015-01-12,M-A5.1,"Gillespie, Nathan",636,M,A,1,A5
+2727,2015-01-12,M-A7.1,"Fischer, Steven",657,M,A,1,A7
+2728,2015-01-12,M-B1.1,"Hunter, Rob",639,M,B,1,B1
+2729,2015-01-12,M-B1.2,"Russell, Briana",639,M,B,2,B1
+2730,2015-01-12,M-B2.1,"Francis, Marshall",637,M,B,1,B2
+2731,2015-01-12,M-B2.2,"Ventura, Erin",637,M,B,2,B2
+2732,2015-01-12,M-B2.3,"Bobyak, Lindsay",637,M,B,3,B2
+2733,2015-01-12,M-B3.1,"Hock, Paul",643,M,B,1,B3
+2734,2015-01-12,M-B4.1,"Bise III, John H.",641,M,B,1,B4
+2735,2015-01-12,M-B5.1,"Grant, Maria LaGee",653,M,B,1,B5
+2736,2015-01-12,M-E1.1,"Ginet, Chris",662,M,E,1,E1
+2737,2015-01-12,M-E2.1,"Matthews, Roy",661,M,E,1,E2
+2739,2015-01-12,M-E2.2,"Carter, David Alexander",661,M,E,2,E2
+2740,2015-01-12,M-E2.3,"Spicer, Mitch",661,M,E,3,E2
+2741,2015-01-12,M-E3.1,"Diakite, Abdoul",660,M,E,1,E3
+2742,2015-01-12,M-X1.1,"Clark, Barbara J.",654,M,X,1,X1
+2743,2015-01-12,M-X1.2,"Hedges, Cody",654,M,X,2,X1
+2744,2015-01-12,M-X2.1,"Shannon, Michiael",655,M,X,1,X2
+2745,2015-01-12,M-X2.2,"Leggins, Anna",655,M,X,2,X2
+2746,2015-01-12,M-X3.1,"Hedges, Cody",648,M,X,1,X3
+2747,2015-01-12,M-X3.2,"Bandy, Kyle",648,M,X,2,X3
+2748,2015-01-13,T-A1.1,"Heaton, Brian D.",642,T,A,1,A1
+2749,2015-01-13,T-A1.2,"Muhammad, Natalie",642,T,A,2,A1
+2751,2015-01-13,T-A2.1,"Carter, David Alexander",647,T,A,1,A2
+2752,2015-01-13,T-A2.2,"Freet, Heather",647,T,A,2,A2
+2753,2015-01-13,T-A3.1,"Hargrove, Paul Brady",654,T,A,1,A3
+2754,2015-01-13,T-A3.2,"Carter, David Alexander",654,T,A,2,A3
+2755,2015-01-13,T-A4.1,"Foley, Shannon",648,T,A,1,A4
+2756,2015-01-13,T-A4.2,"Huffman, Haley",657,T,A,2,A4
+2757,2015-01-13,T-A5.1,"Lipa, Tyler",659,T,A,1,A5
+2758,2015-01-13,T-A6.1,"Gallalee, Jack",645,T,A,1,A6
+2759,2015-01-13,T-A7.1,"Fischer, Steven",637,T,A,1,A7
+2760,2015-01-13,T-B1.1,"Hunter, Rob",643,T,B,1,B1
+2761,2015-01-13,T-B1.2,"Struyf, Nick",643,T,B,2,B1
+2762,2015-01-13,T-B2.1,"Francis, Marshall",651,T,B,1,B2
+2763,2015-01-13,T-B2.2,"Englebert, Briana",651,T,B,2,B2
+2764,2015-01-13,T-B2.3,"Dickerson, Terin Joseph",651,T,B,3,B2
+2765,2015-01-13,T-B3.1,"Hock, Paul",653,T,B,1,B3
+2766,2015-01-13,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+2767,2015-01-13,T-B5.1,"Pinkney, Dewayne J",648,T,B,1,B5
+2768,2015-01-13,T-E1.1,"Decker, Ernie",662,T,E,1,E1
+2769,2015-01-13,T-E2.1,"Matthews, Roy",656,T,E,1,E2
+2770,2015-01-13,T-E2.2,"Bell, Creigh",656,T,E,2,E2
+2771,2015-01-13,T-E2.3,"Bandy, Kyle",655,T,E,3,E2
+2772,2015-01-13,T-E3.1,"Palmer, Fileve",636,T,E,1,E3
+2773,2015-01-13,T-X1.1,"Clark, Barbara J.",655,T,X,1,X1
+2774,2015-01-13,T-X1.2,"Bandy, Kyle",655,T,X,2,X1
+2775,2015-01-13,T-X2.1,"Shannon, Michiael",658,T,X,1,X2
+2776,2015-01-13,T-X2.2,"Miller, Ryan",658,T,X,2,X2
+2777,2015-01-13,T-X3.1,"Lakes, Michael A.",660,T,X,1,X3
+2778,2015-01-13,T-X3.2,"Hendricks, Sandra",660,T,X,2,X3
+2779,2015-01-14,W-A1.1,"Heaton, Brian D.",640,W,A,1,A1
+2780,2015-01-14,W-A1.2,"Leggins, Anna",640,W,A,2,A1
+2782,2015-01-12,M-A1.3,"Phillips, Jenna",640,M,A,3,A1
+2783,2015-01-13,T-A1.3,"Clark, Aaron",642,T,A,3,A1
+2784,2015-01-12,M-A6.1,"Gallalee, Jack",642,M,A,1,A6
+2785,2015-01-14,W-A1.3,"Gillespie, Nathan",640,W,A,3,A1
+2786,2015-01-14,W-A2.1,"Ventura, Erin",647,W,A,1,A2
+2787,2015-01-14,W-A2.2,"Prichard, Curtis",647,W,A,2,A2
+2788,2015-01-14,W-A3.1,"Hargrove, Paul Brady",638,W,A,1,A3
+2789,2015-01-14,W-A3.2,"Palmer, Fileve",638,W,A,2,A3
+2790,2015-01-14,W-A4.1,"Foley, Shannon",642,W,A,1,A4
+2791,2015-01-14,W-A4.2,"Vogt, Austin",642,W,A,2,A4
+2792,2015-01-14,W-A5.1,"Lipa, Tyler",661,W,A,1,A5
+2793,2015-01-14,W-A6.1,"Gallalee, Jack",648,W,A,1,A6
+2794,2015-01-14,W-A7.1,"Fischer, Steven",654,W,A,1,A7
+2795,2015-01-14,W-B1.1,"Hunter, Rob",637,W,B,1,B1
+2796,2015-01-14,W-B1.2,"Russell, Briana",637,W,B,2,B1
+2797,2015-01-14,W-B2.1,"Francis, Marshall",645,W,B,1,B2
+2798,2015-01-14,W-B2.2,"Kenny, Dominic",645,W,B,2,B2
+2799,2015-01-14,W-B2.3,"Gaisser, Karl",641,W,B,3,B2
+2800,2015-01-14,W-B3.1,"Hock, Paul",653,W,B,1,B3
+2801,2015-01-14,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+2802,2015-01-14,W-B5.1,"Hedges, Cody",643,W,B,1,B5
+2803,2015-01-14,W-E1.1,"Decker, Ernie",662,W,E,1,E1
+2804,2015-01-14,W-E2.1,"Matthews, Roy",657,W,E,1,E2
+2805,2015-01-14,W-E2.2,"Cuevas, Rebekah",657,W,E,2,E2
+2806,2015-01-14,W-E2.3,"Ainsworth, Sam",657,W,E,3,E2
+2807,2015-01-14,W-E3.1,"Grant, Maria LaGee",659,W,E,1,E3
+2808,2015-01-14,W-X1.1,"Clark, Barbara J.",658,W,X,1,X1
+2809,2015-01-14,W-X1.2,"Cain, Caleb",658,W,X,2,X1
+2810,2015-01-14,W-X2.1,"Shannon, Michiael",656,W,X,1,X2
+2811,2015-01-14,W-X2.2,"Ginty, Kyle",656,W,X,2,X2
+2812,2015-01-14,W-X3.1,"Carter, David Alexander",655,W,X,1,X3
+2813,2015-01-14,W-X3.2,"Carter, David Alexander",655,W,X,2,X3
+2814,2015-01-14,Auditorium,"Hendricks, Sandra",654,Auditorium,,,
+2815,2015-01-15,R-A1.1,"Heaton, Brian D.",645,R,A,1,A1
+2816,2015-01-15,R-A1.2,"Cunningham, Ian",645,R,A,2,A1
+2817,2015-01-15,R-A1.3,"Miessler, Cy",645,R,A,3,A1
+2818,2015-01-15,R-A2.1,"Phillips, Jenna",648,R,A,1,A2
+2819,2015-01-15,R-A2.2,"Figg, Korbin Patrick",648,R,A,2,A2
+2820,2015-01-15,R-A3.1,"Hargrove, Paul Brady",650,R,A,1,A3
+2821,2015-01-15,R-A3.2,"Russell, Briana",650,R,A,2,A3
+2822,2015-01-15,R-A4.1,"Foley, Shannon",661,R,A,1,A4
+2823,2015-01-15,R-A4.2,"Hedges, Cody",661,R,A,2,A4
+2824,2015-01-15,R-A5.1,"Lakes, Michael A.",651,R,A,1,A5
+2825,2015-01-15,R-A6.1,"Gallalee, Jack",647,R,A,1,A6
+2826,2015-01-15,R-A7.1,"Fischer, Steven",642,R,A,1,A7
+2827,2015-01-15,R-B1.1,"Hunter, Rob",649,R,B,1,B1
+2828,2015-01-15,R-B1.2,"Struyf, Nick",649,R,B,2,B1
+2829,2015-01-15,R-B2.1,"Francis, Marshall",639,R,B,1,B2
+2830,2015-01-15,R-B2.2,"Englebert, Briana",639,R,B,2,B2
+2831,2015-01-15,R-B2.3,"Ventura, Erin",639,R,B,3,B2
+2832,2015-01-15,R-B3.1,"Hock, Paul",636,R,B,1,B3
+2833,2015-01-15,R-B4.1,"Bise III, John H.",641,R,B,1,B4
+2834,2015-01-15,R-B5.1,"Miller, Ryan",655,R,B,1,B5
+2835,2015-01-15,R-E1.1,"Decker, Ernie",657,R,E,1,E1
+2836,2015-01-15,R-E2.1,"Matthews, Roy",654,R,E,1,E2
+2837,2015-01-15,R-E2.2,"Bell, Creigh",654,R,E,2,E2
+2838,2015-01-15,R-E2.3,"Dickerson, Terin Joseph",654,R,E,3,E2
+2839,2015-01-15,R-E3.1,"Diakite, Abdoul",659,R,E,1,E3
+2840,2015-01-15,R-X1.1,"Clark, Barbara J.",658,R,X,1,X1
+2842,2015-01-15,R-X1.2,"Clark, Aaron",650,R,X,2,X1
+2843,2015-01-15,R-X2.1,"Shannon, Michiael",662,R,X,1,X2
+2844,2015-01-15,R-X2.2,"Eakle, Robert W",662,R,X,2,X2
+2845,2015-01-15,R-X3.1,"Kim, Christopher",660,R,X,1,X3
+2846,2015-01-15,R-X3.2,"Hendricks, Sandra",660,R,X,2,X3
+2847,2015-01-16,F-A1.1,"Clark, Aaron",647,F,A,1,A1
+2848,2015-01-16,F-A1.2,"Warren, Jeremy",647,F,A,2,A1
+2849,2015-01-16,F-A1.3,"Clark, Aaron",647,F,A,3,A1
+2850,2015-01-16,F-A1.4,"Phillips, Jenna",647,F,A,4,A1
+2851,2015-01-16,F-A2.1,"Ginet, Chris",641,F,A,1,A2
+2852,2015-01-16,F-A2.2,"Ginty, Kyle",641,F,A,2,A2
+2853,2015-01-16,F-A2.3,"Cain, Caleb",641,F,A,3,A2
+2854,2015-01-16,F-A2.4,"Freet, Heather",641,F,A,4,A2
+2855,2015-01-16,F-A3.1,"Hargrove, Paul Brady",656,F,A,1,A3
+2856,2015-01-16,F-A3.2,"Dickerson, Terin Joseph",656,F,A,2,A3
+2857,2015-01-16,F-A4.1,"Foley, Shannon",642,F,A,1,A4
+2858,2015-01-16,F-A4.2,"Muhammad, Natalie",642,F,A,2,A4
+2859,2015-01-16,F-A5.1,"Ainsworth, Sam",654,F,A,1,A5
+2860,2015-01-16,F-B1.1,"Grant, Maria LaGee",637,F,B,1,B1
+2861,2015-01-16,F-B1.2,"Gillespie, Nathan",637,F,B,2,B1
+2862,2015-01-16,F-B1.3,"Gillespie, Nathan",637,F,B,3,B1
+2863,2015-01-16,F-B2.1,"Hunter, Rob",653,F,B,1,B2
+2864,2015-01-16,F-B2.2,"Lakes, Michael A.",653,F,B,2,B2
+2865,2015-01-16,F-E1.1,"Matthews, Roy",662,F,E,1,E1
+2866,2015-01-16,F-E1.3,"Cunningham, Ian",662,F,E,3,E1
+2867,2015-01-16,F-E2.1,"Figg, Korbin Patrick",660,F,E,1,E2
+2868,2015-01-16,F-E2.2,"Vogt, Austin",660,F,E,2,E2
+2869,2015-01-16,F-X1.1,"Clark, Barbara J.",657,F,X,1,X1
+2870,2015-01-16,F-X1.2,"Miller, Ryan",657,F,X,2,X1
+2871,2015-01-16,F-X2.1,"Shannon, Michiael",659,F,X,1,X2
+2872,2015-01-16,F-X2.2,"Hedges, Cody",659,F,X,2,X2
+2873,2015-01-17,S-A1.1,"Bobyak, Lindsay",655,S,A,1,A1
+2874,2015-01-17,S-A1.2,"Ventura, Erin",655,S,A,2,A1
+2875,2015-01-17,S-A1.3,"Englebert, Briana",655,S,A,3,A1
+2876,2015-01-17,S-B1.1,"Struyf, Nick",641,S,B,1,B1
+2877,2015-01-17,S-B1.2,"Cochrane, Meredith",641,S,B,2,B1
+2878,2015-01-17,S-E1.1,"Diakite, Abdoul",656,S,E,1,E1
+2879,2015-01-17,S-E1.2,"Timm, Aaron",656,S,E,2,E1
+2880,2015-01-17,S-E1.3,"Cunningham, Ian",656,S,E,3,E1
+2881,2015-01-17,Special,"Bryan, Katie",661,Special,,,
+2882,2015-01-17,Special,"Kappes, Thomas",657,Special,,,
+2883,2015-01-17,Special,"Gaisser, Karl",658,Special,,,
+2884,2015-01-17,Special,"Warren, Jeremy",653,Special,,,
+2885,2015-01-17,Special,"Ginty, Kyle",643,Special,,,
+2886,2015-01-17,Special,"Miessler, Cy",662,Special,,,
+2887,2015-01-17,Special,"Hendricks, Sandra",660,Special,,,
+2888,2015-01-17,Special,"Gillespie, Nathan",637,Special,,,
+2889,2015-01-17,Special,"Cain, Caleb",657,Special,,,
+2890,2015-01-17,Special,"Vogt, Austin",643,Special,,,
+2891,2015-01-17,Special,"Bell, Creigh",637,Special,,,
+2892,2015-01-17,Special,"Lipa, Tyler",662,Special,,,
+2893,2015-01-17,Special,"Miller, Ryan",659,Special,,,
+2894,2015-01-17,Special,"Clark, Aaron",661,Special,,,
+2895,2015-01-18,U-A1.1,"Bryan, Katie",656,U,A,1,A1
+2896,2015-01-18,U-A1.2,"Miessler, Cy",656,U,A,2,A1
+2897,2015-01-18,U-B1.1,"Widlowski, Robert",638,U,B,1,B1
+2898,2015-01-18,U-B1.2,"Cochrane, Meredith",638,U,B,2,B1
+2899,2015-01-18,U-E1.1,"Timm, Aaron",659,U,E,1,E1
+2900,2015-01-18,U-E1.2,"Hendricks, Sandra",654,U,E,2,E1
+2901,2015-01-18,Special,"Ventura, Erin",662,Special,,,
+2902,2015-01-18,Special,"Freet, Heather",661,Special,,,
+2903,2015-01-18,Special,"Gillespie, Nathan",653,Special,,,
+2904,2015-01-18,Special,"Miller, Ryan",655,Special,,,
+2905,2015-01-18,Special,"Hedges, Cody",637,Special,,,
+2906,2015-01-18,Special,"Cunningham, Ian",660,Special,,,
+2907,2015-01-19,MLK-M-A1.1,"Spicer, Mitch",652,MLK,M,,M
+2908,2015-01-19,MLK-M-A1.2,"Hendricks, Sandra",652,MLK,M,,M
+2909,2015-01-19,MLK-M-A1.3,"Cuevas, Rebekah",652,MLK,M,,M
+2910,2015-01-19,MLK-M-B1.1,"Phillips, Jenna",640,MLK,M,,M
+2911,2015-01-19,MLK-M-B1.2,"Bobyak, Lindsay",640,MLK,M,,M
+2912,2015-01-19,MLK-M-B1.3,"Chen, Jason",640,MLK,M,,M
+2913,2015-01-19,MLK-M-E1.1,"Freet, Heather",647,MLK,M,,M
+2914,2015-01-19,MLK-M-E1.2,"Hedges, Cody",647,MLK,M,,M
+2915,2015-01-19,MLK-M-E1.3,"Carter, David Alexander",647,MLK,M,,M
+2916,2015-01-20,T-A1.1,"Heaton, Brian D.",654,T,A,1,A1
+2917,2015-01-20,T-A1.2,"Muhammad, Natalie",654,T,A,2,A1
+2918,2015-01-20,T-A1.3,"Warren, Jeremy",654,T,A,3,A1
+2919,2015-01-20,T-A2.1,"Carter, David Alexander",638,T,A,1,A2
+2920,2015-01-20,T-A2.2,"Freet, Heather",638,T,A,2,A2
+2921,2015-01-20,T-A3.1,"Hargrove, Paul Brady",649,T,A,1,A3
+2922,2015-01-20,T-A3.2,"Carter, David Alexander",649,T,A,2,A3
+2923,2015-01-20,T-A4.1,"Foley, Shannon",639,T,A,1,A4
+2924,2015-01-20,T-A4.2,"Huffman, Haley",639,T,A,2,A4
+2925,2015-01-20,T-A5.1,"Lipa, Tyler",652,T,A,1,A5
+2926,2015-01-20,T-A6.1,"Gallalee, Jack",647,T,A,1,A6
+2927,2015-01-20,T-A7.1,"Fischer, Steven",648,T,A,1,A7
+2928,2015-01-20,T-B1.1,"Hunter, Rob",637,T,B,1,B1
+2929,2015-01-20,T-B1.2,"Struyf, Nick",637,T,B,2,B1
+2930,2015-01-20,T-B2.1,"Francis, Marshall",643,T,B,1,B2
+2931,2015-01-20,T-B2.2,"Englebert, Briana",643,T,B,2,B2
+2932,2015-01-20,T-B2.3,"Dickerson, Terin Joseph",643,T,B,3,B2
+2933,2015-01-20,T-B3.1,"Hock, Paul",636,T,B,1,B3
+2934,2015-01-20,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+2935,2015-01-20,T-B5.1,"Pinkney, Dewayne J",651,T,B,1,B5
+2936,2015-01-20,T-E1.1,"Decker, Ernie",659,T,E,1,E1
+2937,2015-01-20,T-E2.1,"Matthews, Roy",653,T,E,1,E2
+2938,2015-01-20,T-E2.2,"Bell, Creigh",653,T,E,2,E2
+2939,2015-01-20,T-E2.3,"Miller, Gregg",653,T,E,3,E2
+2940,2015-01-20,T-E3.1,"Palmer, Fileve",662,T,E,1,E3
+2941,2015-01-20,T-X1.1,"Clark, Barbara J.",655,T,X,1,X1
+2942,2015-01-20,T-X1.2,"Hedges, Cody",655,T,X,2,X1
+2943,2015-01-20,T-X2.1,"Shannon, Michiael",661,T,X,1,X2
+2944,2015-01-20,T-X2.2,"Miller, Ryan",661,T,X,2,X2
+2945,2015-01-20,T-X3.1,"Lakes, Michael A.",640,T,X,1,X3
+2946,2015-01-20,T-X3.2,"Hendricks, Sandra",640,T,X,2,X3
+2947,2015-01-20,Special,"Clark, Aaron",638,Special,,,
+2948,2015-01-20,Special,"Bryan, Katie",657,Special,,,
+2949,2015-01-20,Special,"Cochrane, Meredith",636,Special,,,
+2950,2015-01-20,Special,"Gillespie, Nathan",648,Special,,,
+2951,2015-01-20,Special,"Vogt, Austin",659,Special,,,
+2952,2015-01-21,W-A1.1,"Heaton, Brian D.",652,W,A,1,A1
+2953,2015-01-21,W-A1.2,"Bryan, Katie",652,W,A,2,A1
+2954,2015-01-21,W-A1.3,"Guo, Xiao",642,W,A,3,A1
+2955,2015-01-21,W-A2.1,"Ginty, Kyle",645,W,A,1,A2
+2956,2015-01-21,W-A2.2,"Prichard, Curtis",645,W,A,2,A2
+2957,2015-01-21,W-A3.1,"Hargrove, Paul Brady",656,W,A,1,A3
+2958,2015-01-21,W-A3.2,"Palmer, Fileve",656,W,A,2,A3
+2959,2015-01-21,W-A4.1,"Foley, Shannon",638,W,A,1,A4
+2960,2015-01-21,W-A4.2,"Vogt, Austin",638,W,A,2,A4
+2961,2015-01-21,W-A5.1,"Lipa, Tyler",659,W,A,1,A5
+2962,2015-01-21,W-A6.1,"Gallalee, Jack",647,W,A,1,A6
+2963,2015-01-21,W-A7.1,"Fischer, Steven",648,W,A,1,A7
+2964,2015-01-21,W-B1.1,"Hunter, Rob",643,W,B,1,B1
+2965,2015-01-21,W-B1.2,"Gillespie, Nathan",643,W,B,2,B1
+2966,2015-01-21,W-B2.1,"Francis, Marshall",651,W,B,1,B2
+2967,2015-01-21,W-B2.2,"Huffman, Haley",651,W,B,2,B2
+2968,2015-01-21,W-B2.3,"Gaisser, Karl",651,W,B,3,B2
+2969,2015-01-21,W-B3.1,"Hock, Paul",637,W,B,1,B3
+2970,2015-01-21,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+2971,2015-01-21,W-B5.1,"Hedges, Cody",636,W,B,1,B5
+2972,2015-01-21,W-E1.1,"Decker, Ernie",657,W,E,1,E1
+2973,2015-01-21,W-E2.1,"Matthews, Roy",662,W,E,1,E2
+2974,2015-01-21,W-E2.2,"Cuevas, Rebekah",662,W,E,2,E2
+2975,2015-01-21,W-E2.3,"Ainsworth, Sam",662,W,E,3,E2
+2976,2015-01-21,W-E3.1,"Grant, Maria LaGee",660,W,E,1,E3
+2977,2015-01-21,W-X1.1,"Clark, Barbara J.",654,W,X,1,X1
+2978,2015-01-21,W-X1.2,"Cain, Caleb",654,W,X,2,X1
+2979,2015-01-21,W-X2.1,"Shannon, Michiael",640,W,X,1,X2
+2980,2015-01-21,W-X2.2,"Kenny, Dominic",640,W,X,2,X2
+2981,2015-01-21,W-X3.1,"Liechty, Abbey",649,W,X,1,X3
+2982,2015-01-21,W-X3.2,"Carter, David Alexander",655,W,X,2,X3
+2983,2015-01-21,Auditorium,"Bandy, Kyle",657,Auditorium,,,
+2984,2015-01-22,R-A1.1,"Heaton, Brian D.",640,R,A,1,A1
+2985,2015-01-22,R-A1.2,"Cunningham, Ian",640,R,A,2,A1
+2986,2015-01-22,R-A1.3,"Miessler, Cy",640,R,A,3,A1
+2987,2015-01-22,R-A2.1,"Chen, Jason",650,R,A,1,A2
+2988,2015-01-22,R-A2.2,"Figg, Korbin Patrick",650,R,A,2,A2
+2989,2015-01-22,R-A3.1,"Hargrove, Paul Brady",656,R,A,1,A3
+2990,2015-01-22,R-A3.2,"Gillespie, Nathan",656,R,A,2,A3
+2991,2015-01-22,R-A4.1,"Palmer, Fileve",639,R,A,1,A4
+2992,2015-01-22,R-A4.2,"Cochrane, Meredith",645,R,A,2,A4
+2993,2015-01-22,R-A5.1,"Lipa, Tyler",653,R,A,1,A5
+2994,2015-01-22,R-A6.1,"Gallalee, Jack",647,R,A,1,A6
+2995,2015-01-22,R-A7.1,"Fischer, Steven",639,R,A,1,A7
+2996,2015-01-22,R-B1.1,"Hunter, Rob",649,R,B,1,B1
+2997,2015-01-22,R-B1.2,"Struyf, Nick",657,R,B,2,B1
+2998,2015-01-22,R-B2.1,"Francis, Marshall",637,R,B,1,B2
+2999,2015-01-22,R-B2.2,"Englebert, Briana",637,R,B,2,B2
+3000,2015-01-22,R-B2.3,"Ventura, Erin",637,R,B,3,B2
+3001,2015-01-22,R-B3.1,"Hock, Paul",651,R,B,1,B3
+3002,2015-01-22,R-B4.1,"Carter, David Alexander",641,R,B,1,B4
+3003,2015-01-22,R-B5.1,"Hedges, Cody",643,R,B,1,B5
+3004,2015-01-22,R-E1.1,"Decker, Ernie",659,R,E,1,E1
+3005,2015-01-22,R-E2.1,"Matthews, Roy",662,R,E,1,E2
+3006,2015-01-22,R-E2.2,"Bell, Creigh",662,R,E,2,E2
+3007,2015-01-22,R-E2.3,"Guo, Xiao",662,R,E,3,E2
+3008,2015-01-22,R-E3.1,"Diakite, Abdoul",660,R,E,1,E3
+3009,2015-01-22,R-X1.1,"Clark, Barbara J.",661,R,X,1,X1
+3010,2015-01-22,R-X1.2,"Clark, Aaron",661,R,X,2,X1
+3011,2015-01-22,R-X2.1,"Shannon, Michiael",654,R,X,1,X2
+3012,2015-01-22,R-X2.2,"Eakle, Robert W",654,R,X,2,X2
+3013,2015-01-22,R-X3.1,"Gillespie, Nathan",642,R,X,1,X3
+3014,2015-01-22,R-X3.2,"Hendricks, Sandra",642,R,X,2,X3
+3015,2015-01-23,F-A1.1,"Clark, Aaron",657,F,A,1,A1
+3016,2015-01-23,F-A1.2,"Huffman, Haley",657,F,A,2,A1
+3017,2015-01-23,F-A1.3,"Clark, Aaron",657,F,A,3,A1
+3018,2015-01-23,F-A1.4,"Phillips, Jenna",657,F,A,4,A1
+3019,2015-01-23,F-A2.1,"Ginet, Chris",648,F,A,1,A2
+3020,2015-01-23,F-A2.2,"Bryan, Katie",648,F,A,2,A2
+3021,2015-01-23,F-A2.3,"Cain, Caleb",648,F,A,3,A2
+3022,2015-01-23,F-A2.4,"Freet, Heather",648,F,A,4,A2
+3023,2015-01-23,F-A3.1,"Hargrove, Paul Brady",640,F,A,1,A3
+3024,2015-01-23,F-A4.1,"Foley, Shannon",647,F,A,1,A4
+3025,2015-01-23,F-A4.2,"Muhammad, Natalie",647,F,A,2,A4
+3026,2015-01-23,F-A5.1,"Ainsworth, Sam",637,F,A,1,A5
+3027,2015-01-23,F-B1.1,"Grant, Maria LaGee",639,F,B,1,B1
+3028,2015-01-23,F-B1.2,"Callahan, James",639,F,B,2,B1
+3029,2015-01-23,F-B1.3,"Gillespie, Nathan",639,F,B,3,B1
+3030,2015-01-23,F-B2.1,"Hunter, Rob",638,F,B,1,B2
+3031,2015-01-23,F-B2.2,"Kenny, Dominic",638,F,B,2,B2
+3032,2015-01-23,F-E1.1,"Matthews, Roy",658,F,E,1,E1
+3033,2015-01-23,F-E1.2,"Cuevas, Rebekah",658,F,E,2,E1
+3034,2015-01-23,F-E1.3,"Russell, Briana",658,F,E,3,E1
+3035,2015-01-23,F-E2.1,"Figg, Korbin Patrick",662,F,E,1,E2
+3036,2015-01-23,F-E2.2,"Englebert, Briana",662,F,E,2,E2
+3037,2015-01-23,F-X1.1,"Clark, Barbara J.",654,F,X,1,X1
+3038,2015-01-23,F-X1.2,"Liechty, Abbey",654,F,X,2,X1
+3039,2015-01-23,F-X2.1,"Shannon, Michiael",641,F,X,1,X2
+3040,2015-01-23,F-X2.2,"Hedges, Cody",640,F,X,2,X2
+3041,2015-01-16,F-E1.2,"Cuevas, Rebekah",662,F,E,2,E1
+3042,2015-01-24,S-E1.1,"Diakite, Abdoul",660,S,E,1,E1
+3043,2015-01-24,S-E1.2,"Timm, Aaron",660,S,E,2,E1
+3044,2015-01-24,S-E1.3,"Cunningham, Ian",639,S,E,3,E1
+3045,2015-01-24,S-A1.1,"Bobyak, Lindsay",642,S,A,1,A1
+3046,2015-01-24,S-A1.2,"Ventura, Erin",642,S,A,2,A1
+3047,2015-01-24,S-A1.3,"Englebert, Briana",642,S,A,3,A1
+3048,2015-01-24,S-B1.1,"Bryan, Katie",643,S,B,1,B1
+3049,2015-01-24,S-B1.2,"Cochrane, Meredith",643,S,B,2,B1
+3050,2015-01-25,U-A1.1,"Guo, Xiao",651,U,A,1,A1
+3051,2015-01-25,U-A1.2,"Miessler, Cy",651,U,A,2,A1
+3052,2015-01-25,U-B1.1,"Widlowski, Robert",654,U,B,1,B1
+3053,2015-01-25,U-B1.2,"Cochrane, Meredith",654,U,B,2,B1
+3054,2015-01-25,U-E1.1,"Timm, Aaron",656,U,E,1,E1
+3055,2015-01-25,U-E1.2,"Hendricks, Sandra",656,U,E,2,E1
+3056,2015-01-26,M-A1.1,"Heaton, Brian D.",650,M,A,1,A1
+3057,2015-01-26,M-A1.2,"Cunningham, Ian",650,M,A,2,A1
+3058,2015-01-26,M-A1.3,"Phillips, Jenna",650,M,A,3,A1
+3059,2015-01-26,M-A2.1,"Carter, David Alexander",638,M,A,1,A2
+3060,2015-01-26,M-A2.2,"Bryan, Katie",662,M,A,2,A2
+3061,2015-01-26,M-A3.1,"Hargrove, Paul Brady",662,M,A,1,A3
+3062,2015-01-26,M-A3.2,"Bandy, Kyle",638,M,A,2,A3
+3063,2015-01-26,M-A4.1,"Foley, Shannon",657,M,A,1,A4
+3064,2015-01-26,M-A4.2,"Warren, Jeremy",657,M,A,2,A4
+3065,2015-01-26,M-A5.1,"Lipa, Tyler",643,M,A,1,A5
+3066,2015-01-26,M-A6.1,"Gallalee, Jack",640,M,A,1,A6
+3067,2015-01-26,M-A7.1,"Fischer, Steven",642,M,A,1,A7
+3068,2015-01-26,M-B1.1,"Callahan, James",636,M,B,1,B1
+3069,2015-01-26,M-B1.2,"Russell, Briana",636,M,B,2,B1
+3070,2015-01-26,M-B2.1,"Francis, Marshall",653,M,B,1,B2
+3071,2015-01-26,M-B2.2,"Ginet, Chris",642,M,B,2,B2
+3072,2015-01-26,M-B2.3,"Bobyak, Lindsay",642,M,B,3,B2
+3073,2015-01-26,M-B3.1,"Hock, Paul",651,M,B,1,B3
+3074,2015-01-26,M-B4.1,"Bise III, John H.",641,M,B,1,B4
+3075,2015-01-26,M-B5.1,"Grant, Maria LaGee",637,M,B,1,B5
+3076,2015-01-26,M-E1.1,"Decker, Ernie",659,M,E,1,E1
+3077,2015-01-26,M-E2.1,"Matthews, Roy",661,M,E,1,E2
+3078,2015-01-26,M-E2.2,"Carter, David Alexander",661,M,E,2,E2
+3079,2015-01-26,M-E2.3,"Spicer, Mitch",661,M,E,3,E2
+3080,2015-01-26,M-E3.1,"Diakite, Abdoul",649,M,E,1,E3
+3081,2015-01-26,M-X1.1,"Clark, Barbara J.",654,M,X,1,X1
+3082,2015-01-26,M-X1.2,"Hedges, Cody",654,M,X,2,X1
+3083,2015-01-26,M-X2.1,"Shannon, Michiael",660,M,X,1,X2
+3084,2015-01-26,M-X2.2,"Eakle, Robert W",660,M,X,2,X2
+3085,2015-01-26,M-X3.1,"Hedges, Cody",655,M,X,1,X3
+3086,2015-01-26,M-X3.2,"Ginty, Kyle",655,M,X,2,X3
+3087,2015-01-27,T-A1.1,"Heaton, Brian D.",652,T,A,1,A1
+3088,2015-01-27,T-A1.2,"Muhammad, Natalie",652,T,A,2,A1
+3089,2015-01-27,T-A1.3,"Warren, Jeremy",652,T,A,3,A1
+3090,2015-01-27,T-A2.1,"Kappes, Thomas",655,T,A,1,A2
+3091,2015-01-27,T-A2.2,"Freet, Heather",645,T,A,2,A2
+3092,2015-01-27,T-A3.1,"Hargrove, Paul Brady",647,T,A,1,A3
+3093,2015-01-27,T-A3.2,"Carter, David Alexander",647,T,A,2,A3
+3094,2015-01-27,T-A4.1,"Foley, Shannon",648,T,A,1,A4
+3095,2015-01-27,T-A4.2,"Huffman, Haley",648,T,A,2,A4
+3096,2015-01-27,T-A5.1,"Lipa, Tyler",639,T,A,1,A5
+3097,2015-01-27,T-A6.1,"Gallalee, Jack",642,T,A,1,A6
+3098,2015-01-27,T-A7.1,"Fischer, Steven",645,T,A,1,A7
+3099,2015-01-27,T-B1.1,"Hunter, Rob",653,T,B,1,B1
+3100,2015-01-27,T-B1.2,"Struyf, Nick",653,T,B,2,B1
+3101,2015-01-27,T-B2.1,"Francis, Marshall",651,T,B,1,B2
+3102,2015-01-27,T-B2.2,"Vogt, Austin",651,T,B,2,B2
+3103,2015-01-27,T-B2.3,"Dickerson, Terin Joseph",651,T,B,3,B2
+3104,2015-01-27,T-B3.1,"Hock, Paul",636,T,B,1,B3
+3105,2015-01-27,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+3106,2015-01-27,T-B5.1,"Pinkney, Dewayne J",637,T,B,1,B5
+3107,2015-01-27,T-E1.1,"Decker, Ernie",658,T,E,1,E1
+3108,2015-01-27,T-E2.1,"Matthews, Roy",662,T,E,1,E2
+3109,2015-01-27,T-E2.2,"Bell, Creigh",662,T,E,2,E2
+3110,2015-01-27,T-E2.3,"Ainsworth, Sam",662,T,E,3,E2
+3111,2015-01-27,T-E3.1,"Palmer, Fileve",654,T,E,1,E3
+3112,2015-01-27,T-X1.1,"Clark, Barbara J.",659,T,X,1,X1
+3113,2015-01-27,T-X1.2,"Cunningham, Ian",659,T,X,2,X1
+3114,2015-01-27,T-X2.1,"Shannon, Michiael",660,T,X,1,X2
+3115,2015-01-27,T-X2.2,"Hedges, Cody",660,T,X,2,X2
+3116,2015-01-27,T-X3.1,"Lakes, Michael A.",643,T,X,1,X3
+3117,2015-01-27,T-X3.2,"Hendricks, Sandra",643,T,X,2,X3
+3118,2015-01-27,Auditorium,"Bryan, Katie",655,Auditorium,,,
+3119,2015-01-28,W-A1.1,"Heaton, Brian D.",638,W,A,1,A1
+3120,2015-01-28,W-A1.2,"Bryan, Katie",650,W,A,2,A1
+3121,2015-01-28,W-A1.3,"Guo, Xiao",650,W,A,3,A1
+3122,2015-01-28,W-A2.1,"Clark, Aaron",640,W,A,1,A2
+3123,2015-01-28,W-A2.2,"Prichard, Curtis",640,W,A,2,A2
+3124,2015-01-28,W-A3.1,"Hargrove, Paul Brady",660,W,A,1,A3
+3125,2015-01-28,W-A3.2,"Palmer, Fileve",660,W,A,2,A3
+3126,2015-01-28,W-A4.1,"Foley, Shannon",652,W,A,1,A4
+3127,2015-01-28,W-A4.2,"Vogt, Austin",652,W,A,2,A4
+3128,2015-01-28,W-A5.1,"Lipa, Tyler",642,W,A,1,A5
+3129,2015-01-28,W-A6.1,"Gallalee, Jack",650,W,A,1,A6
+3130,2015-01-28,W-A7.1,"Fischer, Steven",653,W,A,1,A7
+3131,2015-01-28,W-B1.1,"Hunter, Rob",637,W,B,1,B1
+3132,2015-01-28,W-B1.2,"Russell, Briana",637,W,B,2,B1
+3133,2015-01-28,W-B2.1,"Ginet, Chris",651,W,B,1,B2
+3134,2015-01-28,W-B2.2,"Kenny, Dominic",651,W,B,2,B2
+3135,2015-01-28,W-B2.3,"Gaisser, Karl",651,W,B,3,B2
+3136,2015-01-28,W-B3.1,"Hock, Paul",636,W,B,1,B3
+3137,2015-01-28,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+3138,2015-01-28,W-B5.1,"Hedges, Cody",639,W,B,1,B5
+3139,2015-01-28,W-E1.1,"Decker, Ernie",661,W,E,1,E1
+3140,2015-01-28,W-E2.1,"Matthews, Roy",658,W,E,1,E2
+3141,2015-01-28,W-E2.2,"Cuevas, Rebekah",658,W,E,2,E2
+3142,2015-01-28,W-E2.3,"Ainsworth, Sam",658,W,E,3,E2
+3143,2015-01-28,W-E3.1,"Grant, Maria LaGee",662,W,E,1,E3
+3144,2015-01-28,W-X1.1,"Clark, Barbara J.",656,W,X,1,X1
+3145,2015-01-28,W-X1.2,"Cain, Caleb",656,W,X,2,X1
+3146,2015-01-28,W-X2.1,"Shannon, Michiael",654,W,X,1,X2
+3147,2015-01-28,W-X2.2,"Ginty, Kyle",654,W,X,2,X2
+3150,2015-01-28,W-X3.1,"Liechty, Abbey",659,W,X,1,X3
+3151,2015-01-28,W-X3.2,"Carter, David Alexander",659,W,X,2,X3
+3152,2015-01-28,Auditorium,"Cunningham, Ian",661,Auditorium,,,
+3153,2015-01-29,R-A1.1,"Heaton, Brian D.",647,R,A,1,A1
+3154,2015-01-29,R-A1.2,"Cunningham, Ian",647,R,A,2,A1
+3155,2015-01-29,R-A1.3,"Gillespie, Nathan",650,R,A,3,A1
+3156,2015-01-29,R-A2.1,"Hedges, Cody",645,R,A,1,A2
+3157,2015-01-29,R-A2.2,"Figg, Korbin Patrick",660,R,A,2,A2
+3158,2015-01-29,R-A3.1,"Hargrove, Paul Brady",650,R,A,1,A3
+3159,2015-01-29,R-A3.2,"Gillespie, Nathan",650,R,A,2,A3
+3160,2015-01-29,R-A4.1,"Foley, Shannon",638,R,A,1,A4
+3161,2015-01-29,R-A4.2,"Cochrane, Meredith",638,R,A,2,A4
+3162,2015-01-29,R-A5.1,"Lipa, Tyler",662,R,A,1,A5
+3163,2015-01-29,R-A6.1,"Gallalee, Jack",652,R,A,1,A6
+3164,2015-01-29,R-A7.1,"Fischer, Steven",648,R,A,1,A7
+3165,2015-01-29,R-B1.1,"Hunter, Rob",636,R,B,1,B1
+3166,2015-01-29,R-B1.2,"Struyf, Nick",636,R,B,2,B1
+3167,2015-01-29,R-B2.1,"Francis, Marshall",649,R,B,1,B2
+3168,2015-01-29,R-B2.2,"Englebert, Briana",649,R,B,2,B2
+3169,2015-01-29,R-B2.3,"Ventura, Erin",649,R,B,3,B2
+3170,2015-01-29,R-B3.1,"Hock, Paul",653,R,B,1,B3
+3171,2015-01-29,R-B4.1,"Bise III, John H.",637,R,B,1,B4
+3172,2015-01-29,R-B5.1,"Hedges, Cody",645,R,B,1,B5
+3173,2015-01-29,R-E1.1,"Decker, Ernie",657,R,E,1,E1
+3174,2015-01-29,R-E2.1,"Matthews, Roy",655,R,E,1,E2
+3175,2015-01-29,R-E2.2,"Bell, Creigh",655,R,E,2,E2
+3176,2015-01-29,R-E2.3,"Dickerson, Terin Joseph",655,R,E,3,E2
+3177,2015-01-29,R-E3.1,"Diakite, Abdoul",659,R,E,1,E3
+3178,2015-01-29,R-X1.1,"Clark, Barbara J.",658,R,X,1,X1
+3179,2015-01-29,R-X1.2,"Clark, Aaron",658,R,X,2,X1
+3180,2015-01-29,R-X2.1,"Shannon, Michiael",661,R,X,1,X2
+3181,2015-01-29,R-X2.2,"Eakle, Robert W",651,R,X,2,X2
+3182,2015-01-29,R-X3.1,"Callahan, James",656,R,X,1,X3
+3183,2015-01-29,R-X3.2,"Hendricks, Sandra",656,R,X,2,X3
+3184,2015-01-30,F-A1.1,"Clark, Aaron",647,F,A,1,A1
+3185,2015-01-30,F-A1.2,"Warren, Jeremy",647,F,A,2,A1
+3186,2015-01-30,F-A1.3,"Clark, Aaron",647,F,A,3,A1
+3187,2015-01-30,F-A1.4,"Phillips, Jenna",647,F,A,4,A1
+3188,2015-01-30,F-A2.1,"Ginet, Chris",652,F,A,1,A2
+3189,2015-01-30,F-A2.2,"Ginty, Kyle",652,F,A,2,A2
+3190,2015-01-30,F-A2.3,"Cain, Caleb",652,F,A,3,A2
+3191,2015-01-30,F-A2.4,"Freet, Heather",652,F,A,4,A2
+3192,2015-01-30,F-A3.1,"Hargrove, Paul Brady",638,F,A,1,A3
+3193,2015-01-30,F-A3.2,"Dickerson, Terin Joseph",638,F,A,2,A3
+3194,2015-01-30,F-A4.1,"Foley, Shannon",640,F,A,1,A4
+3195,2015-01-30,F-A4.2,"Muhammad, Natalie",640,F,A,2,A4
+3196,2015-01-30,F-A5.1,"Callahan, James",650,F,A,1,A5
+3197,2015-01-30,F-B1.1,"Grant, Maria LaGee",653,F,B,1,B1
+3198,2015-01-30,F-B1.2,"Gillespie, Nathan",653,F,B,2,B1
+3199,2015-01-30,F-B1.3,"Hendricks, Sandra",653,F,B,3,B1
+3200,2015-01-30,F-B2.1,"Hunter, Rob",641,F,B,1,B2
+3201,2015-01-30,F-B2.2,"Kenny, Dominic",641,F,B,2,B2
+3202,2015-01-30,F-E1.1,"Matthews, Roy",654,F,E,1,E1
+3203,2015-01-30,F-E1.2,"Cuevas, Rebekah",654,F,E,2,E1
+3204,2015-01-30,F-E1.3,"Ventura, Erin",654,F,E,3,E1
+3205,2015-01-30,F-E2.1,"Figg, Korbin Patrick",661,F,E,1,E2
+3206,2015-01-30,F-E2.2,"Englebert, Briana",661,F,E,2,E2
+3207,2015-01-30,F-X1.1,"Clark, Barbara J.",656,F,X,1,X1
+3208,2015-01-30,F-X1.2,"Liechty, Abbey",656,F,X,2,X1
+3209,2015-01-30,F-X2.1,"Shannon, Michiael",655,F,X,1,X2
+3210,2015-01-30,F-X2.2,"Hedges, Cody",655,F,X,2,X2
+3211,2015-01-31,S-A1.1,"Ginty, Kyle",638,S,A,1,A1
+3212,2015-01-31,S-A1.2,"Ventura, Erin",641,S,A,2,A1
+3213,2015-01-31,S-A1.3,"Englebert, Briana",641,S,A,3,A1
+3214,2015-01-31,S-B1.1,"Struyf, Nick",661,S,B,1,B1
+3215,2015-01-31,S-B1.2,"Cochrane, Meredith",661,S,B,2,B1
+3216,2015-01-31,S-E1.1,"Diakite, Abdoul",659,S,E,1,E1
+3217,2015-01-31,S-E1.2,"Gaisser, Karl",659,S,E,2,E1
+3218,2015-01-31,S-E1.3,"Cunningham, Ian",659,S,E,3,E1
+3219,2015-02-01,U-A1.1,"Hedges, Cody",656,U,A,1,A1
+3220,2015-02-01,U-A1.2,"Miessler, Cy",656,U,A,2,A1
+3221,2015-02-01,U-B1.1,"Widlowski, Robert",642,U,B,1,B1
+3222,2015-02-01,U-B1.2,"Cochrane, Meredith",642,U,B,2,B1
+3223,2015-02-01,U-E1.1,"Timm, Aaron",662,U,E,1,E1
+3224,2015-02-01,U-E1.2,"Hendricks, Sandra",662,U,E,2,E1
+3225,2015-02-02,M-A1.1,"Heaton, Brian D.",662,M,A,1,A1
+3226,2015-02-02,M-A1.2,"Bell, Creigh",662,M,A,2,A1
+3227,2015-02-02,M-A1.3,"Phillips, Jenna",662,M,A,3,A1
+3228,2015-02-02,M-A2.1,"Clark, Aaron",645,M,A,1,A2
+3229,2015-02-02,M-A2.2,"Cuevas, Rebekah",645,M,A,2,A2
+3230,2015-02-02,M-A3.1,"Hargrove, Paul Brady",652,M,A,1,A3
+3231,2015-02-02,M-A3.2,"Gillespie, Nathan",652,M,A,2,A3
+3232,2015-02-02,M-A4.1,"Foley, Shannon",642,M,A,1,A4
+3233,2015-02-02,M-A4.2,"Warren, Jeremy",639,M,A,2,A4
+3234,2015-02-02,M-A5.1,"Lipa, Tyler",643,M,A,1,A5
+3235,2015-02-02,M-A6.1,"Gallalee, Jack",660,M,A,1,A6
+3236,2015-02-02,M-B1.1,"Hunter, Rob",653,M,B,1,B1
+3237,2015-02-02,M-B1.2,"Foley, Shannon",642,M,B,2,B1
+3238,2015-02-02,M-B2.1,"Francis, Marshall",649,M,B,1,B2
+3239,2015-02-02,M-A7.1,"Liechty, Abbey",659,M,A,1,A7
+3240,2015-02-02,M-B2.2,"Ventura, Erin",649,M,B,2,B2
+3242,2015-02-02,M-B2.3,"Bobyak, Lindsay",649,M,B,3,B2
+3243,2015-02-02,M-B3.1,"Hock, Paul",656,M,B,1,B3
+3244,2015-02-02,M-B4.1,"Bise III, John H.",637,M,B,1,B4
+3245,2015-02-02,M-B5.1,"Grant, Maria LaGee",653,M,B,1,B5
+3246,2015-02-02,M-E1.1,"Decker, Ernie",661,M,E,1,E1
+3247,2015-02-02,M-E2.1,"Matthews, Roy",640,M,E,1,E2
+3248,2015-02-02,M-E2.2,"Carter, David Alexander",640,M,E,2,E2
+3249,2015-02-02,M-E2.3,"Spicer, Mitch",640,M,E,3,E2
+3250,2015-02-02,M-E3.1,"Diakite, Abdoul",650,M,E,1,E3
+3251,2015-02-02,M-X1.1,"Clark, Barbara J.",658,M,X,1,X1
+3252,2015-02-02,M-X1.2,"Hedges, Cody",658,M,X,2,X1
+3253,2015-02-02,M-X2.1,"Shannon, Michiael",648,M,X,1,X2
+3254,2015-02-02,M-X2.2,"Eakle, Robert W",648,M,X,2,X2
+3255,2015-02-02,M-X3.1,"Hedges, Cody",651,M,X,1,X3
+3256,2015-02-02,M-X3.2,"Ginty, Kyle",651,M,X,2,X3
+3257,2015-02-03,T-A1.1,"Heaton, Brian D.",661,T,A,1,A1
+3258,2015-02-03,T-A1.2,"Muhammad, Natalie",661,T,A,2,A1
+3259,2015-02-03,T-A1.3,"Warren, Jeremy",661,T,A,3,A1
+3260,2015-02-03,T-A2.1,"Clark, Aaron",658,T,A,1,A2
+3261,2015-02-03,T-A2.2,"Freet, Heather",658,T,A,2,A2
+3262,2015-02-03,T-A3.1,"Hargrove, Paul Brady",650,T,A,1,A3
+3263,2015-02-03,T-A3.2,"Carter, David Alexander",650,T,A,2,A3
+3264,2015-02-03,T-A4.1,"Foley, Shannon",642,T,A,1,A4
+3265,2015-02-03,T-A4.2,"Huffman, Haley",642,T,A,2,A4
+3266,2015-02-03,T-A5.1,"Lipa, Tyler",652,T,A,1,A5
+3267,2015-02-03,T-A6.1,"Gallalee, Jack",649,T,A,1,A6
+3268,2015-02-03,T-A7.1,"Fischer, Steven",660,T,A,1,A7
+3270,2015-02-03,Auditorium,"Hendricks, Sandra",647,Auditorium,,,
+3271,2015-02-03,T-B1.1,"Hunter, Rob",662,T,B,1,B1
+3272,2015-02-03,T-B1.2,"Struyf, Nick",662,T,B,2,B1
+3273,2015-02-03,T-B2.1,"Francis, Marshall",637,T,B,1,B2
+3274,2015-02-03,T-B2.2,"Vogt, Austin",637,T,B,2,B2
+3275,2015-02-03,T-B2.3,"Dickerson, Terin Joseph",637,T,B,3,B2
+3276,2015-02-03,T-B3.1,"Hock, Paul",657,T,B,1,B3
+3277,2015-02-03,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+3278,2015-02-03,T-B5.1,"Pinkney, Dewayne J",653,T,B,1,B5
+3279,2015-02-03,T-E1.1,"Decker, Ernie",655,T,E,1,E1
+3280,2015-02-03,T-E2.1,"Matthews, Roy",640,T,E,1,E2
+3281,2015-02-03,T-E2.2,"Bell, Creigh",640,T,E,2,E2
+3282,2015-02-03,T-E2.3,"Ainsworth, Sam",640,T,E,3,E2
+3283,2015-02-03,T-E3.1,"Palmer, Fileve",638,T,E,1,E3
+3284,2015-02-03,T-X1.1,"Clark, Barbara J.",656,T,X,1,X1
+3285,2015-02-03,T-X1.2,"Gillespie, Nathan",656,T,X,2,X1
+3286,2015-02-03,T-X2.1,"Shannon, Michiael",648,T,X,1,X2
+3287,2015-02-03,T-X2.2,"Hedges, Cody",648,T,X,2,X2
+3288,2015-02-03,T-X3.1,"Lakes, Michael A.",647,T,X,1,X3
+3289,2015-02-03,T-X3.2,"Hendricks, Sandra",647,T,X,2,X3
+3290,2015-02-04,W-A1.1,"Heaton, Brian D.",648,W,A,1,A1
+3291,2015-02-04,W-A1.2,"Bryan, Katie",648,W,A,2,A1
+3292,2015-02-04,W-A1.3,"Gillespie, Nathan",637,W,A,3,A1
+3293,2015-02-04,W-A2.1,"Clark, Aaron",642,W,A,1,A2
+3294,2015-02-04,W-A2.2,"Prichard, Curtis",642,W,A,2,A2
+3295,2015-02-04,W-A3.1,"Hargrove, Paul Brady",637,W,A,1,A3
+3296,2015-02-04,W-A3.2,"Gillespie, Nathan",637,W,A,2,A3
+3297,2015-02-04,W-A4.1,"Foley, Shannon",640,W,A,1,A4
+3298,2015-02-04,W-A4.2,"Vogt, Austin",640,W,A,2,A4
+3299,2015-02-04,W-A5.1,"Lipa, Tyler",662,W,A,1,A5
+3300,2015-02-04,W-A6.1,"Gallalee, Jack",638,W,A,1,A6
+3301,2015-02-04,W-A7.1,"Fischer, Steven",645,W,A,1,A7
+3302,2015-02-04,W-B1.1,"Hunter, Rob",653,W,B,1,B1
+3303,2015-02-04,W-B1.2,"Russell, Briana",653,W,B,2,B1
+3304,2015-02-04,W-B2.1,"Francis, Marshall",649,W,B,1,B2
+3305,2015-02-04,W-B2.2,"Kenny, Dominic",649,W,B,2,B2
+3306,2015-02-04,W-B2.3,"Gaisser, Karl",649,W,B,3,B2
+3307,2015-02-04,W-B3.1,"Hock, Paul",651,W,B,1,B3
+3308,2015-02-04,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+3309,2015-02-04,W-B5.1,"Hedges, Cody",639,W,B,1,B5
+3310,2015-02-04,W-E1.1,"Decker, Ernie",659,W,E,1,E1
+3311,2015-02-04,W-E2.1,"Matthews, Roy",654,W,E,1,E2
+3312,2015-02-04,W-E2.2,"Cuevas, Rebekah",654,W,E,2,E2
+3313,2015-02-04,W-E2.3,"Ainsworth, Sam",654,W,E,3,E2
+3314,2015-02-04,W-E3.1,"Chen, Jason",661,W,E,1,E3
+3315,2015-02-04,W-X1.1,"Clark, Barbara J.",657,W,X,1,X1
+3316,2015-02-04,W-X1.2,"Cain, Caleb",657,W,X,2,X1
+3317,2015-02-04,W-X2.1,"Shannon, Michiael",647,W,X,1,X2
+3318,2015-02-04,W-X2.2,"Ginty, Kyle",647,W,X,2,X2
+3319,2015-02-04,W-X3.1,"Liechty, Abbey",650,W,X,1,X3
+3320,2015-02-04,W-X3.2,"Carter, David Alexander",650,W,X,2,X3
+3321,2015-02-04,Auditorium,"Timm, Aaron",638,Auditorium,,,
+3322,2015-02-05,R-A1.1,"Leathers, Daniel",652,R,A,1,A1
+3323,2015-02-05,R-A1.2,"Cunningham, Ian",651,R,A,2,A1
+3324,2015-02-05,R-A1.3,"Miessler, Cy",651,R,A,3,A1
+3325,2015-02-05,R-A2.1,"Carter, David Alexander",650,R,A,1,A2
+3326,2015-02-05,R-A2.2,"Figg, Korbin Patrick",650,R,A,2,A2
+3327,2015-02-05,R-A3.1,"Hargrove, Paul Brady",640,R,A,1,A3
+3328,2015-02-05,R-A3.2,"Russell, Briana",640,R,A,2,A3
+3329,2015-02-05,R-A4.1,"Foley, Shannon",648,R,A,1,A4
+3330,2015-02-05,R-A4.2,"Cochrane, Meredith",648,R,A,2,A4
+3331,2015-02-05,R-A5.1,"Lipa, Tyler",654,R,A,1,A5
+3332,2015-02-05,R-A6.1,"Gallalee, Jack",645,R,A,1,A6
+3333,2015-02-05,R-A7.1,"Fischer, Steven",638,R,A,1,A7
+3334,2015-02-05,R-B1.1,"Hunter, Rob",653,R,B,1,B1
+3335,2015-02-05,R-B1.2,"Struyf, Nick",653,R,B,2,B1
+3336,2015-02-05,R-B2.1,"Francis, Marshall",649,R,B,1,B2
+3337,2015-02-05,R-B2.2,"Englebert, Briana",649,R,B,2,B2
+3338,2015-02-05,R-B2.3,"Ventura, Erin",649,R,B,3,B2
+3339,2015-02-05,R-B3.1,"Hock, Paul",643,R,B,1,B3
+3340,2015-02-05,R-B4.1,"Bise III, John H.",641,R,B,1,B4
+3341,2015-02-05,R-B5.1,"Hedges, Cody",639,R,B,1,B5
+3342,2015-02-05,R-E1.1,"Decker, Ernie",662,R,E,1,E1
+3343,2015-02-05,R-E2.1,"Matthews, Roy",659,R,E,1,E2
+3344,2015-02-05,R-E2.2,"Bell, Creigh",659,R,E,2,E2
+3345,2015-02-05,R-E2.3,"Dickerson, Terin Joseph",659,R,E,3,E2
+3346,2015-02-05,R-E3.1,"Diakite, Abdoul",656,R,E,1,E3
+3347,2015-02-05,R-X1.1,"Clark, Barbara J.",658,R,X,1,X1
+3348,2015-02-05,R-X1.2,"Gillespie, Nathan",658,R,X,2,X1
+3349,2015-02-05,R-X2.1,"Shannon, Michiael",657,R,X,1,X2
+3350,2015-02-05,R-X2.2,"Eakle, Robert W",657,R,X,2,X2
+3351,2015-02-05,R-X3.1,"Callahan, James",661,R,X,1,X3
+3352,2015-02-05,R-X3.2,"Hendricks, Sandra",661,R,X,2,X3
+3353,2015-02-05,Auditorium,"Bandy, Kyle",652,Auditorium,,,
+3354,2015-02-06,F-A1.1,"Clark, Aaron",642,F,A,1,A1
+3355,2015-02-06,F-A1.2,"Warren, Jeremy",642,F,A,2,A1
+3356,2015-02-06,F-A1.3,"Clark, Aaron",642,F,A,3,A1
+3357,2015-02-06,F-A1.4,"Phillips, Jenna",661,F,A,4,A1
+3358,2015-02-06,F-A2.1,"Jackman, Dorian",641,F,A,1,A2
+3359,2015-02-06,F-A2.2,"Russell, Briana",641,F,A,2,A2
+3360,2015-02-06,F-A2.3,"Russell, Briana",641,F,A,3,A2
+3361,2015-02-06,F-A2.4,"Freet, Heather",641,F,A,4,A2
+3362,2015-02-06,F-A3.1,"Hargrove, Paul Brady",647,F,A,1,A3
+3363,2015-02-06,F-A3.2,"Gillespie, Nathan",647,F,A,2,A3
+3364,2015-02-06,F-A4.1,"Foley, Shannon",645,F,A,1,A4
+3365,2015-02-06,F-A4.2,"Muhammad, Natalie",645,F,A,2,A4
+3366,2015-02-06,F-A5.1,"Ainsworth, Sam",653,F,A,1,A5
+3367,2015-02-06,F-B1.1,"Grant, Maria LaGee",643,F,B,1,B1
+3368,2015-02-06,F-B1.2,"Cunningham, Ian",643,F,B,2,B1
+3369,2015-02-06,F-B1.3,"Timm, Aaron",643,F,B,3,B1
+3370,2015-02-06,F-B2.1,"Hunter, Rob",636,F,B,1,B2
+3371,2015-02-06,F-B2.2,"Kenny, Dominic",636,F,B,2,B2
+3372,2015-02-06,F-E1.1,"Matthews, Roy",660,F,E,1,E1
+3373,2015-02-06,F-E1.2,"Diakite, Abdoul",660,F,E,2,E1
+3374,2015-02-06,F-E1.3,"Cochrane, Meredith",660,F,E,3,E1
+3375,2015-02-06,F-E2.1,"Figg, Korbin Patrick",661,F,E,1,E2
+3376,2015-02-06,F-E2.2,"Englebert, Briana",661,F,E,2,E2
+3377,2015-02-06,F-X1.1,"Clark, Barbara J.",655,F,X,1,X1
+3378,2015-02-06,F-X1.2,"Liechty, Abbey",655,F,X,2,X1
+3379,2015-02-06,F-X2.1,"Shannon, Michiael",658,F,X,1,X2
+3380,2015-02-06,F-X2.2,"Hedges, Cody",658,F,X,2,X2
+3381,2015-02-07,S-A1.1,"Bobyak, Lindsay",657,S,A,1,A1
+3382,2015-02-07,S-A1.2,"Ventura, Erin",657,S,A,2,A1
+3383,2015-02-07,S-A1.3,"Clark, Aaron",657,S,A,3,A1
+3384,2015-02-07,S-B1.1,"Lakes, Michael A.",650,S,B,1,B1
+3385,2015-02-07,S-B1.2,"Cochrane, Meredith",650,S,B,2,B1
+3386,2015-02-07,S-E1.1,"Diakite, Abdoul",639,S,E,1,E1
+3387,2015-02-07,S-E1.2,"Ainsworth, Sam",639,S,E,2,E1
+3388,2015-02-07,S-E1.3,"Cunningham, Ian",639,S,E,3,E1
+3389,2015-02-08,U-A1.1,"Ainsworth, Sam",647,U,A,1,A1
+3390,2015-02-08,U-A1.2,"Miessler, Cy",661,U,A,2,A1
+3391,2015-02-08,U-B1.1,"Hedges, Cody",655,U,B,1,B1
+3392,2015-02-08,U-B1.2,"Gillespie, Nathan",655,U,B,2,B1
+3393,2015-02-08,U-E1.1,"Timm, Aaron",659,U,E,1,E1
+3394,2015-02-08,U-E1.2,"Hendricks, Sandra",659,U,E,2,E1
+3395,2015-02-09,M-A1.1,"Heaton, Brian D.",652,M,A,1,A1
+3396,2015-02-09,M-A1.2,"Bell, Creigh",652,M,A,2,A1
+3397,2015-02-09,M-A1.3,"Phillips, Jenna",652,M,A,3,A1
+3398,2015-02-09,M-A2.1,"Clark, Aaron",648,M,A,1,A2
+3399,2015-02-09,M-A2.2,"Cunningham, Ian",648,M,A,2,A2
+3400,2015-02-09,M-A3.1,"Hargrove, Paul Brady",654,M,A,1,A3
+3401,2015-02-09,M-A3.2,"Gillespie, Nathan",654,M,A,2,A3
+3402,2015-02-09,M-A4.1,"Foley, Shannon",655,M,A,1,A4
+3403,2015-02-09,M-A4.2,"Warren, Jeremy",655,M,A,2,A4
+3404,2015-02-09,M-A5.1,"Lipa, Tyler",645,M,A,1,A5
+3405,2015-02-09,M-A6.1,"Gallalee, Jack",640,M,A,1,A6
+3406,2015-02-09,M-A7.1,"Fischer, Steven",650,M,A,1,A7
+3407,2015-02-09,M-B1.1,"Hunter, Rob",651,M,B,1,B1
+3408,2015-02-09,M-B1.2,"Bryan, Katie",651,M,B,2,B1
+3409,2015-02-09,M-B2.1,"Francis, Marshall",638,M,B,1,B2
+3410,2015-02-09,M-B2.2,"Ginet, Chris",638,M,B,2,B2
+3411,2015-02-09,M-B2.3,"Bobyak, Lindsay",638,M,B,3,B2
+3412,2015-02-09,M-B3.1,"Hock, Paul",637,M,B,1,B3
+3413,2015-02-09,M-B4.1,"Bise III, John H.",641,M,B,1,B4
+3414,2015-02-09,M-B5.1,"Grant, Maria LaGee",649,M,B,1,B5
+3415,2015-02-09,M-E1.1,"Decker, Ernie",657,M,E,1,E1
+3416,2015-02-09,M-E2.1,"Matthews, Roy",661,M,E,1,E2
+3417,2015-02-09,M-E2.2,"Carter, David Alexander",661,M,E,2,E2
+3418,2015-02-09,M-E2.3,"Spicer, Mitch",661,M,E,3,E2
+3419,2015-02-09,M-E3.1,"Diakite, Abdoul",662,M,E,1,E3
+3420,2015-02-09,M-X1.1,"Clark, Barbara J.",656,M,X,1,X1
+3421,2015-02-09,M-X1.2,"Hedges, Cody",656,M,X,2,X1
+3422,2015-02-09,M-X2.1,"Shannon, Michiael",658,M,X,1,X2
+3423,2015-02-09,M-X2.2,"Eakle, Robert W",660,M,X,2,X2
+3424,2015-02-09,M-X3.1,"Hedges, Cody",659,M,X,1,X3
+3425,2015-02-09,M-X3.2,"Ginty, Kyle",659,M,X,2,X3
+3426,2015-02-10,T-A1.1,"Leathers, Daniel",642,T,A,1,A1
+3427,2015-02-10,T-A1.2,"Muhammad, Natalie",642,T,A,2,A1
+3428,2015-02-10,T-A1.3,"Gillespie, Nathan",649,T,A,3,A1
+3429,2015-02-10,T-A2.1,"LaGarde, Nancy",650,T,A,1,A2
+3430,2015-02-10,T-A2.2,"Freet, Heather",650,T,A,2,A2
+3431,2015-02-10,T-A3.1,"Hargrove, Paul Brady",640,T,A,1,A3
+3432,2015-02-10,T-A3.2,"Carter, David Alexander",640,T,A,2,A3
+3433,2015-02-10,T-A4.1,"Foley, Shannon",652,T,A,1,A4
+3434,2015-02-10,T-A4.2,"Huffman, Haley",652,T,A,2,A4
+3435,2015-02-10,T-A5.1,"Lipa, Tyler",657,T,A,1,A5
+3436,2015-02-10,T-A6.1,"Gallalee, Jack",645,T,A,1,A6
+3437,2015-02-10,T-A7.1,"Fischer, Steven",647,T,A,1,A7
+3438,2015-02-10,T-B1.1,"Hunter, Rob",653,T,B,1,B1
+3439,2015-02-10,T-B1.2,"Struyf, Nick",653,T,B,2,B1
+3440,2015-02-10,T-B2.1,"Francis, Marshall",649,T,B,1,B2
+3441,2015-02-10,T-B2.2,"Gillespie, Nathan",649,T,B,2,B2
+3442,2015-02-10,T-B2.3,"Dickerson, Terin Joseph",660,T,B,3,B2
+3443,2015-02-10,T-B3.1,"Hock, Paul",636,T,B,1,B3
+3444,2015-02-10,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+3445,2015-02-10,T-B5.1,"Pinkney, Dewayne J",637,T,B,1,B5
+3446,2015-02-10,T-E1.1,"Decker, Ernie",658,T,E,1,E1
+3447,2015-02-10,T-E2.1,"Matthews, Roy",661,T,E,1,E2
+3448,2015-02-10,T-E2.2,"Bell, Creigh",661,T,E,2,E2
+3449,2015-02-10,T-E2.3,"Ainsworth, Sam",661,T,E,3,E2
+3450,2015-02-10,T-E3.1,"Callahan, James",659,T,E,1,E3
+3451,2015-02-10,T-X1.1,"Clark, Barbara J.",662,T,X,1,X1
+3452,2015-02-10,T-X1.2,"Cunningham, Ian",662,T,X,2,X1
+3453,2015-02-10,T-X2.1,"Shannon, Michiael",660,T,X,1,X2
+3454,2015-02-10,T-X2.2,"Hedges, Cody",660,T,X,2,X2
+3455,2015-02-10,T-X3.1,"Lakes, Michael A.",654,T,X,1,X3
+3456,2015-02-10,T-X3.2,"Hendricks, Sandra",654,T,X,2,X3
+3457,2015-02-11,W-A1.1,"Heaton, Brian D.",648,W,A,1,A1
+3458,2015-02-11,W-A1.2,"Cunningham, Ian",648,W,A,2,A1
+3459,2015-02-11,W-A1.3,"Guo, Xiao",648,W,A,3,A1
+3460,2015-02-11,W-A2.1,"LaGarde, Nancy",652,W,A,1,A2
+3461,2015-02-11,W-A2.2,"Prichard, Curtis",652,W,A,2,A2
+3462,2015-02-11,W-A3.1,"Hargrove, Paul Brady",640,W,A,1,A3
+3463,2015-02-11,W-A3.2,"Palmer, Fileve",640,W,A,2,A3
+3464,2015-02-11,W-A4.1,"Foley, Shannon",647,W,A,1,A4
+3465,2015-02-11,W-A4.2,"Vogt, Austin",647,W,A,2,A4
+3466,2015-02-11,W-A5.1,"Lipa, Tyler",659,W,A,1,A5
+3467,2015-02-11,W-A6.1,"Gallalee, Jack",645,W,A,1,A6
+3468,2015-02-11,W-A7.1,"Fischer, Steven",650,W,A,1,A7
+3469,2015-02-11,W-B1.1,"Hunter, Rob",651,W,B,1,B1
+3470,2015-02-11,W-B1.2,"Gillespie, Nathan",651,W,B,2,B1
+3471,2015-02-11,W-B2.1,"Freet, Heather",653,W,B,1,B2
+3472,2015-02-11,W-B2.2,"Kenny, Dominic",653,W,B,2,B2
+3473,2015-02-11,W-B2.3,"Gillespie, Nathan",651,W,B,3,B2
+3474,2015-02-11,W-B3.1,"Hock, Paul",637,W,B,1,B3
+3475,2015-02-11,W-B4.1,"Noojin, Brian",641,W,B,1,B4
+3476,2015-02-11,W-B5.1,"Hedges, Cody",636,W,B,1,B5
+3477,2015-02-11,W-E1.1,"Decker, Ernie",658,W,E,1,E1
+3478,2015-02-11,W-E2.1,"Matthews, Roy",657,W,E,1,E2
+3479,2015-02-11,W-E2.2,"Cuevas, Rebekah",657,W,E,2,E2
+3480,2015-02-11,W-E2.3,"Ainsworth, Sam",657,W,E,3,E2
+3481,2015-02-11,W-E3.1,"Grant, Maria LaGee",660,W,E,1,E3
+3482,2015-02-11,W-X1.1,"Clark, Barbara J.",656,W,X,1,X1
+3483,2015-02-11,W-X1.2,"Cain, Caleb",656,W,X,2,X1
+3484,2015-02-11,W-X2.1,"Shannon, Michiael",655,W,X,1,X2
+3485,2015-02-11,W-X2.2,"Ginty, Kyle",655,W,X,2,X2
+3486,2015-02-11,W-X3.1,"Liechty, Abbey",654,W,X,1,X3
+3487,2015-02-11,W-X3.2,"Noojin, Brian",654,W,X,2,X3
+3488,2015-02-12,R-A1.1,"Heaton, Brian D.",642,R,A,1,A1
+3489,2015-02-12,R-A1.2,"Cunningham, Ian",642,R,A,2,A1
+3490,2015-02-12,R-A1.3,"Miessler, Cy",642,R,A,3,A1
+3491,2015-02-12,R-A2.1,"LaGarde, Nancy",645,R,A,1,A2
+3492,2015-02-12,R-A2.2,"Figg, Korbin Patrick",645,R,A,2,A2
+3493,2015-02-12,R-A3.1,"Hargrove, Paul Brady",648,R,A,1,A3
+3494,2015-02-12,R-A3.2,"Russell, Briana",648,R,A,2,A3
+3495,2015-02-12,R-A4.1,"Foley, Shannon",647,R,A,1,A4
+3496,2015-02-12,R-A4.2,"Cochrane, Meredith",647,R,A,2,A4
+3497,2015-02-12,R-A5.1,"Lipa, Tyler",640,R,A,1,A5
+3498,2015-02-12,R-A6.1,"Gallalee, Jack",650,R,A,1,A6
+3499,2015-02-12,R-A7.1,"Fischer, Steven",652,R,A,1,A7
+3500,2015-02-12,R-B1.1,"Hunter, Rob",639,R,B,1,B1
+3501,2015-02-12,R-B1.2,"Struyf, Nick",639,R,B,2,B1
+3502,2015-02-12,R-B2.1,"Francis, Marshall",656,R,B,1,B2
+3503,2015-02-12,R-B2.2,"Englebert, Briana",656,R,B,2,B2
+3504,2015-02-12,R-B2.3,"Ventura, Erin",656,R,B,3,B2
+3505,2015-02-12,R-B3.1,"Hock, Paul",636,R,B,1,B3
+3506,2015-02-12,R-B4.1,"Bise III, John H.",641,R,B,1,B4
+3507,2015-02-12,R-B5.1,"Hedges, Cody",651,R,B,1,B5
+3508,2015-02-12,R-E1.1,"Decker, Ernie",659,R,E,1,E1
+3509,2015-02-12,R-E2.1,"Matthews, Roy",654,R,E,1,E2
+3510,2015-02-12,R-E2.2,"Bell, Creigh",654,R,E,2,E2
+3511,2015-02-12,R-E2.3,"Dickerson, Terin Joseph",654,R,E,3,E2
+3512,2015-02-12,R-E3.1,"Diakite, Abdoul",657,R,E,1,E3
+3513,2015-02-12,R-X1.1,"Clark, Barbara J.",658,R,X,1,X1
+3514,2015-02-12,R-X1.2,"Clark, Aaron",658,R,X,2,X1
+3515,2015-02-12,R-X2.1,"Shannon, Michiael",655,R,X,1,X2
+3516,2015-02-12,R-X2.2,"Eakle, Robert W",655,R,X,2,X2
+3517,2015-02-12,R-X3.1,"Ginty, Kyle",660,R,X,1,X3
+3518,2015-02-12,R-X3.2,"Hendricks, Sandra",660,R,X,2,X3
+3519,2015-02-13,F-A1.1,"Clark, Aaron",661,F,A,1,A1
+3520,2015-02-13,F-A1.2,"Warren, Jeremy",661,F,A,2,A1
+3521,2015-02-13,F-A1.3,"Gaisser, Karl",661,F,A,3,A1
+3522,2015-02-13,F-A1.4,"Phillips, Jenna",661,F,A,4,A1
+3523,2015-02-13,F-A2.1,"Ginet, Chris",642,F,A,1,A2
+3524,2015-02-13,F-A2.2,"Cunningham, Ian",642,F,A,2,A2
+3525,2015-02-13,F-A2.3,"Cain, Caleb",642,F,A,3,A2
+3526,2015-02-13,F-A2.4,"Freet, Heather",642,F,A,4,A2
+3527,2015-02-13,F-A3.1,"Hargrove, Paul Brady",648,F,A,1,A3
+3528,2015-02-13,F-A3.2,"Dickerson, Terin Joseph",648,F,A,2,A3
+3529,2015-02-13,F-A4.1,"Foley, Shannon",641,F,A,1,A4
+3530,2015-02-13,F-A4.2,"Muhammad, Natalie",641,F,A,2,A4
+3531,2015-02-13,F-A5.1,"Ainsworth, Sam",655,F,A,1,A5
+3532,2015-02-13,f-B1.1,"Callahan, James",653,f,B,1,B1
+3533,2015-02-13,F-B1.2,"Jackman, Dorian",653,F,B,2,B1
+3534,2015-02-13,F-B1.3,"Cunningham, Ian",653,F,B,3,B1
+3535,2015-02-13,F-B2.1,"Hunter, Rob",637,F,B,1,B2
+3536,2015-02-13,F-B2.2,"Kenny, Dominic",637,F,B,2,B2
+3537,2015-02-13,F-E1.1,"Matthews, Roy",660,F,E,1,E1
+3538,2015-02-13,F-E1.2,"Cuevas, Rebekah",660,F,E,2,E1
+3539,2015-02-13,F-E1.3,"Widlowski, Robert",660,F,E,3,E1
+3540,2015-02-13,F-E2.2,"Englebert, Briana",642,F,E,2,E2
+3541,2015-02-13,F-X1.1,"Clark, Barbara J.",650,F,X,1,X1
+3542,2015-02-13,F-X1.2,"Liechty, Abbey",650,F,X,2,X1
+3543,2015-02-13,F-X2.1,"Shannon, Michiael",658,F,X,1,X2
+3544,2015-02-13,F-X2.2,"Hedges, Cody",658,F,X,2,X2
+3545,2015-02-13,F-E2.1,"Figg, Korbin Patrick",662,F,E,1,E2
+3546,2015-02-14,S-A1.1,"Bobyak, Lindsay",655,S,A,1,A1
+3547,2015-02-14,S-A1.2,"Ventura, Erin",655,S,A,2,A1
+3548,2015-02-14,S-A1.3,"Englebert, Briana",655,S,A,3,A1
+3549,2015-02-14,S-B1.1,"Struyf, Nick",656,S,B,1,B1
+3550,2015-02-14,S-B1.2,"Cochrane, Meredith",656,S,B,2,B1
+3551,2015-02-14,S-E1.1,"Diakite, Abdoul",654,S,E,1,E1
+3552,2015-02-14,S-E1.2,"Timm, Aaron",654,S,E,2,E1
+3553,2015-02-14,S-E1.3,"Cunningham, Ian",654,S,E,3,E1
+3554,2015-02-15,U-A1.1,"Thomas, Phillip",661,U,A,1,A1
+3555,2015-02-15,U-A1.2,"Freet, Heather",658,U,A,2,A1
+3556,2015-02-15,U-B1.1,"Clark, Aaron",659,U,B,1,B1
+3557,2015-02-15,U-B1.2,"Cochrane, Meredith",659,U,B,2,B1
+3558,2015-02-15,U-E1.1,"Timm, Aaron",660,U,E,1,E1
+3559,2015-02-15,U-E1.2,"Hendricks, Sandra",660,U,E,2,E1
+3560,2015-02-15,Special,"Thomas, Phillip",661,Special,,,
+3561,2015-02-15,Auditorium,"Timm, Aaron",656,Auditorium,,,
+3562,2015-02-16,M-A1.1,"Heaton, Brian D.",642,M,A,1,A1
+3563,2015-02-16,M-A1.2,"Bell, Creigh",642,M,A,2,A1
+3564,2015-02-16,M-A1.3,"Phillips, Jenna",642,M,A,3,A1
+3565,2015-02-16,M-A2.1,"LaGarde, Nancy",647,M,A,1,A2
+3566,2015-02-16,M-A2.2,"Cunningham, Ian",647,M,A,2,A2
+3567,2015-02-16,M-A3.1,"Hargrove, Paul Brady",645,M,A,1,A3
+3568,2015-02-16,M-A3.2,"Ginet, Chris",651,M,A,2,A3
+3569,2015-02-16,M-A4.1,"Foley, Shannon",648,M,A,1,A4
+3570,2015-02-16,M-A4.2,"Warren, Jeremy",648,M,A,2,A4
+3571,2015-02-16,M-A5.1,"Lipa, Tyler",655,M,A,1,A5
+3572,2015-02-16,M-A6.1,"Gallalee, Jack",650,M,A,1,A6
+3573,2015-02-16,M-A7.1,"Fischer, Steven",640,M,A,1,A7
+3574,2015-02-16,M-B1.1,"Hunter, Rob",637,M,B,1,B1
+3575,2015-02-16,M-B1.2,"Russell, Briana",637,M,B,2,B1
+3576,2015-02-16,M-B2.1,"Francis, Marshall",649,M,B,1,B2
+3577,2015-02-16,M-B2.2,"Vogt, Austin",649,M,B,2,B2
+3578,2015-02-16,M-B2.3,"Bobyak, Lindsay",649,M,B,3,B2
+3579,2015-02-16,M-B3.1,"Hock, Paul",636,M,B,1,B3
+3580,2015-02-16,M-B4.1,"Bise III, John H.",641,M,B,1,B4
+3581,2015-02-16,M-B5.1,"Grant, Maria LaGee",645,M,B,1,B5
+3582,2015-02-16,M-E1.1,"Decker, Ernie",658,M,E,1,E1
+3583,2015-02-16,M-E2.1,"Matthews, Roy",650,M,E,1,E2
+3584,2015-02-16,M-E2.2,"Carter, David Alexander",660,M,E,2,E2
+3585,2015-02-16,M-E2.3,"Spicer, Mitch",660,M,E,3,E2
+3586,2015-02-16,M-E3.1,"Diakite, Abdoul",659,M,E,1,E3
+3587,2015-02-16,M-X1.1,"Clark, Aaron",662,M,X,1,X1
+3588,2015-02-16,M-X1.2,"Hedges, Cody",662,M,X,2,X1
+3589,2015-02-16,M-X2.1,"Shannon, Michiael",658,M,X,1,X2
+3590,2015-02-16,M-X2.2,"Eakle, Robert W",661,M,X,2,X2
+3591,2015-02-16,M-X3.1,"Hedges, Cody",656,M,X,1,X3
+3592,2015-02-16,M-X3.2,"Hedges, Cody",656,M,X,2,X3
+3593,2015-02-16,SNOW-A,"Liechty, Abbey",643,SNOW,A,,A
+3594,2015-02-17,T-A1.1,"Heaton, Brian D.",640,T,A,1,A1
+3595,2015-02-17,T-A1.2,"Noojin, Brian",640,T,A,2,A1
+3596,2015-02-17,T-A1.3,"Warren, Jeremy",640,T,A,3,A1
+3597,2015-02-17,T-A2.1,"LaGarde, Nancy",642,T,A,1,A2
+3598,2015-02-17,T-A2.2,"Freet, Heather",642,T,A,2,A2
+3599,2015-02-17,T-A3.1,"Hargrove, Paul Brady",650,T,A,1,A3
+3600,2015-02-17,T-A3.2,"Carter, David Alexander",650,T,A,2,A3
+3601,2015-02-17,T-A4.1,"Foley, Shannon",647,T,A,1,A4
+3602,2015-02-17,T-A4.2,"Huffman, Haley",647,T,A,2,A4
+3603,2015-02-17,T-A5.1,"Lipa, Tyler",636,T,A,1,A5
+3604,2015-02-17,T-A6.1,"Gallalee, Jack",652,T,A,1,A6
+3605,2015-02-17,T-A7.1,"Fischer, Steven",648,T,A,1,A7
+3606,2015-02-17,T-B1.1,"Hunter, Rob",653,T,B,1,B1
+3607,2015-02-17,T-B1.2,"Struyf, Nick",653,T,B,2,B1
+3608,2015-02-17,T-B2.1,"Francis, Marshall",637,T,B,1,B2
+3609,2015-02-17,T-B2.2,"Cochrane, Meredith",655,T,B,2,B2
+3610,2015-02-17,T-B2.3,"Dickerson, Terin Joseph",655,T,B,3,B2
+3611,2015-02-17,T-B3.1,"Hedges, Cody",643,T,B,1,B3
+3612,2015-02-17,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+3613,2015-02-17,T-B5.1,"Palmer, Fileve",649,T,B,1,B5
+3614,2015-02-17,T-E1.1,"Decker, Ernie",658,T,E,1,E1
+3615,2015-02-17,T-E2.1,"Matthews, Roy",657,T,E,1,E2
+3616,2015-02-17,T-E2.2,"Bell, Creigh",657,T,E,2,E2
+3617,2015-02-17,T-E2.3,"Ainsworth, Sam",657,T,E,3,E2
+3618,2015-02-17,T-E3.1,"Chen, Jason",659,T,E,1,E3
+3619,2015-02-17,T-X1.1,"Clark, Barbara J.",654,T,X,1,X1
+3620,2015-02-17,T-X1.2,"Cunningham, Ian",654,T,X,2,X1
+3621,2015-02-17,T-X2.1,"Shannon, Michiael",661,T,X,1,X2
+3622,2015-02-17,T-X2.2,"Hedges, Cody",661,T,X,2,X2
+3623,2015-02-17,T-X3.1,"Lakes, Michael A.",656,T,X,1,X3
+3624,2015-02-17,T-X3.2,"Hendricks, Sandra",656,T,X,2,X3
+3625,2015-02-17,SNOW-B,"Ginet, Chris",660,SNOW,B,,B
+3626,2015-02-17,SNOW-A,"Figg, Korbin Patrick",649,SNOW,A,,A
+3627,2015-02-18,W-A1.1,"Heaton, Brian D.",648,W,A,1,A1
+3628,2015-02-18,W-A1.2,"Bryan, Katie",648,W,A,2,A1
+3629,2015-02-18,W-A1.3,"Guo, Xiao",648,W,A,3,A1
+3630,2015-02-18,W-A2.1,"LaGarde, Nancy",650,W,A,1,A2
+3631,2015-02-18,W-A2.2,"Prichard, Curtis",650,W,A,2,A2
+3632,2015-02-18,W-A3.1,"Hargrove, Paul Brady",640,W,A,1,A3
+3633,2015-02-18,W-A3.2,"Palmer, Fileve",640,W,A,2,A3
+3634,2015-02-18,W-A4.1,"Foley, Shannon",652,W,A,1,A4
+3635,2015-02-18,W-A4.2,"Vogt, Austin",652,W,A,2,A4
+3636,2015-02-18,W-A5.1,"Lipa, Tyler",649,W,A,1,A5
+3637,2015-02-18,W-A6.1,"Gallalee, Jack",638,W,A,1,A6
+3638,2015-02-18,W-A7.1,"Fischer, Steven",645,W,A,1,A7
+3639,2015-02-18,W-B1.1,"Hunter, Rob",639,W,B,1,B1
+3640,2015-02-18,W-B1.2,"Russell, Briana",639,W,B,2,B1
+3641,2015-02-18,W-B2.1,"Francis, Marshall",651,W,B,1,B2
+3642,2015-02-18,W-B2.2,"Cunningham, Ian",651,W,B,2,B2
+3643,2015-02-18,W-B2.3,"Gaisser, Karl",651,W,B,3,B2
+3644,2015-02-18,W-B3.1,"Hock, Paul",653,W,B,1,B3
+3645,2015-02-18,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+3646,2015-02-18,W-B5.1,"Hedges, Cody",654,W,B,1,B5
+3647,2015-02-18,W-E1.1,"Decker, Ernie",661,W,E,1,E1
+3648,2015-02-18,W-E2.1,"Matthews, Roy",658,W,E,1,E2
+3649,2015-02-18,W-E2.2,"Cuevas, Rebekah",658,W,E,2,E2
+3650,2015-02-18,W-E2.3,"Ainsworth, Sam",658,W,E,3,E2
+3651,2015-02-18,W-E3.1,"Cochrane, Meredith",662,W,E,1,E3
+3652,2015-02-18,W-X1.1,"Clark, Barbara J.",655,W,X,1,X1
+3653,2015-02-18,W-X1.2,"Cain, Caleb",655,W,X,2,X1
+3654,2015-02-18,W-X2.1,"Shannon, Michiael",660,W,X,1,X2
+3655,2015-02-18,W-X3.1,"Liechty, Abbey",657,W,X,1,X3
+3656,2015-02-18,W-X3.2,"Carter, David Alexander",657,W,X,2,X3
+3657,2015-02-18,SNOW-A,"Callahan, James",659,SNOW,A,,A
+3658,2015-02-18,SNOW-B,"Freet, Heather",656,SNOW,B,,B
+3659,2015-02-19,R-A1.1,"Callahan, James",638,R,A,1,A1
+3660,2015-02-19,R-A1.2,"Cuevas, Rebekah",638,R,A,2,A1
+3661,2015-02-19,R-A1.3,"Miessler, Cy",638,R,A,3,A1
+3662,2015-02-19,R-A2.1,"Noojin, Brian",650,R,A,1,A2
+3663,2015-02-19,R-A2.2,"Bandy, Kyle",645,R,A,2,A2
+3664,2015-02-19,R-A3.1,"Hargrove, Paul Brady",647,R,A,1,A3
+3665,2015-02-19,R-A3.2,"Ainsworth, Sam",647,R,A,2,A3
+3666,2015-02-19,R-A4.1,"Foley, Shannon",648,R,A,1,A4
+3667,2015-02-19,R-A4.2,"Jackman, Dorian",648,R,A,2,A4
+3668,2015-02-19,R-A5.1,"Lipa, Tyler",642,R,A,1,A5
+3669,2015-02-19,R-A6.1,"Gallalee, Jack",640,R,A,1,A6
+3670,2015-02-19,R-A7.1,"Fischer, Steven",652,R,A,1,A7
+3671,2015-02-19,R-B1.1,"Hunter, Rob",653,R,B,1,B1
+3672,2015-02-19,R-B1.2,"Struyf, Nick",653,R,B,2,B1
+3673,2015-02-19,R-B2.1,"Francis, Marshall",643,R,B,1,B2
+3674,2015-02-19,R-B2.2,"Englebert, Briana",643,R,B,2,B2
+3675,2015-02-19,R-B2.3,"Ventura, Erin",641,R,B,3,B2
+3676,2015-02-19,R-B3.1,"Hock, Paul",637,R,B,1,B3
+3677,2015-02-19,R-B4.1,"Bise III, John H.",641,R,B,1,B4
+3678,2015-02-19,R-B5.1,"Carter, David Alexander",656,R,B,1,B5
+3679,2015-02-19,R-E1.1,"Ventura, Erin",636,R,E,1,E1
+3680,2015-02-19,R-E2.1,"Matthews, Roy",660,R,E,1,E2
+3681,2015-02-19,R-E2.2,"Bell, Creigh",660,R,E,2,E2
+3682,2015-02-19,R-E2.3,"Dickerson, Terin Joseph",660,R,E,3,E2
+3683,2015-02-19,R-E3.1,"Figg, Korbin Patrick",662,R,E,1,E3
+3684,2015-02-19,R-X1.1,"Clark, Barbara J.",661,R,X,1,X1
+3685,2015-02-19,R-X1.2,"Clark, Aaron",661,R,X,2,X1
+3686,2015-02-19,R-X2.1,"Shannon, Michiael",655,R,X,1,X2
+3687,2015-02-19,R-X2.2,"Eakle, Robert W",655,R,X,2,X2
+3688,2015-02-19,R-X3.1,"Hedges, Cody",654,R,X,1,X3
+3689,2015-02-19,R-X3.2,"Hendricks, Sandra",654,R,X,2,X3
+3690,2015-02-19,SNOW-B,"Freet, Heather",645,SNOW,B,,B
+3691,2015-02-19,SNOW-A,"Figg, Korbin Patrick",662,SNOW,A,,A
+3692,2015-02-19,SNOW-E,"Bandy, Kyle",645,SNOW,E,,E
+3693,2015-02-20,F-A1.1,"Clark, Aaron",652,F,A,1,A1
+3694,2015-02-20,F-A1.2,"Warren, Jeremy",652,F,A,2,A1
+3695,2015-02-20,F-A1.3,"Clark, Aaron",652,F,A,3,A1
+3696,2015-02-20,F-A1.4,"Cunningham, Ian",652,F,A,4,A1
+3697,2015-02-20,F-A2.1,"Jackman, Dorian",650,F,A,1,A2
+3698,2015-02-20,F-A2.2,"Ginty, Kyle",650,F,A,2,A2
+3699,2015-02-20,F-A2.3,"Cain, Caleb",650,F,A,3,A2
+3700,2015-02-20,F-A2.4,"Freet, Heather",650,F,A,4,A2
+3701,2015-02-20,F-A3.1,"Hargrove, Paul Brady",645,F,A,1,A3
+3702,2015-02-20,F-A3.2,"Dickerson, Terin Joseph",645,F,A,2,A3
+3703,2015-02-20,F-A4.1,"Foley, Shannon",637,F,A,1,A4
+3704,2015-02-20,F-A4.2,"Muhammad, Natalie",637,F,A,2,A4
+3705,2015-02-20,F-A5.1,"Ainsworth, Sam",647,F,A,1,A5
+3706,2015-02-20,F-B1.1,"Grant, Maria LaGee",641,F,B,1,B1
+3707,2015-02-20,F-B1.2,"Bandy, Kyle",641,F,B,2,B1
+3708,2015-02-20,F-B1.3,"Kappes, Thomas",656,F,B,3,B1
+3709,2015-02-20,F-B2.1,"Hunter, Rob",649,F,B,1,B2
+3710,2015-02-20,F-B2.2,"Kenny, Dominic",649,F,B,2,B2
+3711,2015-02-20,F-E1.1,"Matthews, Roy",659,F,E,1,E1
+3712,2015-02-20,F-E1.2,"Cuevas, Rebekah",659,F,E,2,E1
+3713,2015-02-20,F-E1.3,"Hendricks, Sandra",659,F,E,3,E1
+3714,2015-02-20,F-E2.1,"Figg, Korbin Patrick",661,F,E,1,E2
+3715,2015-02-20,F-E2.2,"Cunningham, Ian",661,F,E,2,E2
+3716,2015-02-20,F-X1.1,"Clark, Barbara J.",656,F,X,1,X1
+3717,2015-02-20,F-X1.2,"Liechty, Abbey",656,F,X,2,X1
+3718,2015-02-20,F-X2.1,"Shannon, Michiael",660,F,X,1,X2
+3719,2015-02-20,F-X2.2,"Hedges, Cody",660,F,X,2,X2
+3720,2015-02-21,S-A1.1,"Bobyak, Lindsay",654,S,A,1,A1
+3721,2015-02-21,S-A1.2,"Ventura, Erin",654,S,A,2,A1
+3722,2015-02-21,S-A1.3,"Englebert, Briana",654,S,A,3,A1
+3723,2015-02-21,S-B1.1,"Struyf, Nick",645,S,B,1,B1
+3724,2015-02-21,S-B1.2,"Cochrane, Meredith",645,S,B,2,B1
+3725,2015-02-21,S-E1.1,"Kenny, Dominic",655,S,E,1,E1
+3726,2015-02-21,S-E1.2,"Timm, Aaron",654,S,E,2,E1
+3727,2015-02-21,S-E1.3,"Cunningham, Ian",655,S,E,3,E1
+3728,2015-02-22,U-A1.1,"Ainsworth, Sam",659,U,A,1,A1
+3729,2015-02-22,U-A1.2,"Miessler, Cy",659,U,A,2,A1
+3730,2015-02-22,U-B1.1,"Widlowski, Robert",653,U,B,1,B1
+3731,2015-02-22,U-B1.2,"Cochrane, Meredith",653,U,B,2,B1
+3732,2015-02-22,U-E1.1,"Timm, Aaron",661,U,E,1,E1
+3733,2015-02-22,U-E1.2,"Hendricks, Sandra",661,U,E,2,E1
+3734,2015-02-23,M-A1.1,"Heaton, Brian D.",648,M,A,1,A1
+3735,2015-02-23,M-A1.2,"Bell, Creigh",648,M,A,2,A1
+3736,2015-02-23,M-A1.3,"Phillips, Jenna",648,M,A,3,A1
+3737,2015-02-23,M-A2.1,"LaGarde, Nancy",652,M,A,1,A2
+3738,2015-02-23,M-A2.2,"Cunningham, Ian",652,M,A,2,A2
+3739,2015-02-23,M-A3.1,"Hargrove, Paul Brady",638,M,A,1,A3
+3740,2015-02-23,M-A3.2,"Gillespie, Nathan",638,M,A,2,A3
+3741,2015-02-23,M-A4.1,"Foley, Shannon",645,M,A,1,A4
+3742,2015-02-23,M-A4.2,"Warren, Jeremy",645,M,A,2,A4
+3743,2015-02-23,M-A5.1,"Lipa, Tyler",647,M,A,1,A5
+3744,2015-02-23,M-A6.1,"Gallalee, Jack",650,M,A,1,A6
+3745,2015-02-23,M-A7.1,"Fischer, Steven",642,M,A,1,A7
+3746,2015-02-23,M-B1.1,"Hunter, Rob",637,M,B,1,B1
+3747,2015-02-23,M-B1.2,"Russell, Briana",637,M,B,2,B1
+3748,2015-02-23,M-B2.1,"Francis, Marshall",649,M,B,1,B2
+3749,2015-02-23,M-B2.2,"Vogt, Austin",649,M,B,2,B2
+3750,2015-02-23,M-B2.3,"Bobyak, Lindsay",649,M,B,3,B2
+3751,2015-02-23,M-B3.1,"Hock, Paul",643,M,B,1,B3
+3752,2015-02-23,M-B4.1,"Bise III, John H.",641,M,B,1,B4
+3753,2015-02-23,M-B5.1,"Grant, Maria LaGee",658,M,B,1,B5
+3754,2015-02-23,M-E1.1,"Decker, Ernie",656,M,E,1,E1
+3755,2015-02-23,M-E2.1,"Matthews, Roy",655,M,E,1,E2
+3756,2015-02-23,M-E2.2,"Carter, David Alexander",655,M,E,2,E2
+3757,2015-02-23,M-E2.3,"Spicer, Mitch",655,M,E,3,E2
+3758,2015-02-23,M-E3.1,"Diakite, Abdoul",659,M,E,1,E3
+3759,2015-02-23,M-X1.1,"Clark, Barbara J.",654,M,X,1,X1
+3760,2015-02-23,M-X1.2,"Hedges, Cody",654,M,X,2,X1
+3761,2015-02-23,M-X2.1,"Shannon, Michiael",660,M,X,1,X2
+3762,2015-02-23,M-X2.2,"Eakle, Robert W",660,M,X,2,X2
+3763,2015-02-23,M-X3.1,"Hedges, Cody",662,M,X,1,X3
+3764,2015-02-23,M-X3.1,"Ginty, Kyle",662,M,X,1,X3
+3765,2015-02-23,SNOW-A,"Noojin, Brian",651,SNOW,A,,A
+3766,2015-02-23,SNOW-B,"Noojin, Brian",640,SNOW,B,,B
+3767,2015-02-24,T-A1.1,"Heaton, Brian D.",650,T,A,1,A1
+3768,2015-02-24,T-A1.2,"Muhammad, Natalie",637,T,A,2,A1
+3769,2015-02-24,T-A1.3,"Warren, Jeremy",637,T,A,3,A1
+3770,2015-02-24,T-A2.1,"LaGarde, Nancy",647,T,A,1,A2
+3771,2015-02-24,T-A2.2,"Freet, Heather",647,T,A,2,A2
+3772,2015-02-24,T-A3.1,"Hargrove, Paul Brady",648,T,A,1,A3
+3773,2015-02-24,T-A3.2,"Carter, David Alexander",648,T,A,2,A3
+3774,2015-02-24,T-A4.1,"Foley, Shannon",652,T,A,1,A4
+3775,2015-02-24,T-A4.2,"Cochrane, Meredith",652,T,A,2,A4
+3776,2015-02-24,T-A5.1,"Lipa, Tyler",642,T,A,1,A5
+3777,2015-02-24,T-A6.1,"Gallalee, Jack",640,T,A,1,A6
+3778,2015-02-24,T-A7.1,"Fischer, Steven",645,T,A,1,A7
+3779,2015-02-24,T-B1.1,"Hunter, Rob",639,T,B,1,B1
+3780,2015-02-24,T-B1.2,"Struyf, Nick",639,T,B,2,B1
+3781,2015-02-24,T-B2.1,"Francis, Marshall",636,T,B,1,B2
+3782,2015-02-24,T-B2.2,"Vogt, Austin",636,T,B,2,B2
+3783,2015-02-24,T-B2.3,"Dickerson, Terin Joseph",636,T,B,3,B2
+3784,2015-02-24,T-B3.1,"Hock, Paul",649,T,B,1,B3
+3785,2015-02-24,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+3786,2015-02-24,T-B5.1,"Pinkney, Dewayne J",638,T,B,1,B5
+3787,2015-02-24,T-E1.1,"Decker, Ernie",658,T,E,1,E1
+3788,2015-02-24,T-E2.1,"Matthews, Roy",661,T,E,1,E2
+3789,2015-02-24,T-E2.2,"Bell, Creigh",661,T,E,2,E2
+3790,2015-02-24,T-E2.3,"Ainsworth, Sam",661,T,E,3,E2
+3791,2015-02-24,T-E3.1,"Chen, Jason",654,T,E,1,E3
+3792,2015-02-24,T-X1.1,"Clark, Barbara J.",662,T,X,1,X1
+3793,2015-02-24,T-X1.2,"Cunningham, Ian",643,T,X,2,X1
+3794,2015-02-24,T-X2.1,"Shannon, Michiael",657,T,X,1,X2
+3795,2015-02-24,T-X2.2,"Miller, Ryan",655,T,X,2,X2
+3796,2015-02-24,T-X3.1,"Lakes, Michael A.",657,T,X,1,X3
+3797,2015-02-24,T-X3.2,"Hendricks, Sandra",657,T,X,2,X3
+3798,2015-02-24,SNOW-B,"Hedges, Cody",651,SNOW,B,,B
+3799,2015-02-24,SNOW-A,"Clark, Aaron",660,SNOW,A,,A
+3800,2015-02-24,Auditorium,"Englebert, Briana",660,Auditorium,,,
+3801,2015-02-25,W-A1.1,"Heaton, Brian D.",652,W,A,1,A1
+3802,2015-02-25,W-A1.2,"Bryan, Katie",652,W,A,2,A1
+3803,2015-02-25,W-A1.3,"Guo, Xiao",652,W,A,3,A1
+3804,2015-02-25,W-A2.1,"LaGarde, Nancy",642,W,A,1,A2
+3805,2015-02-25,W-A2.2,"Prichard, Curtis",642,W,A,2,A2
+3806,2015-02-25,W-A3.1,"Hargrove, Paul Brady",636,W,A,1,A3
+3807,2015-02-25,W-A3.2,"Palmer, Fileve",636,W,A,2,A3
+3808,2015-02-25,W-A4.1,"Ventura, Erin",645,W,A,1,A4
+3809,2015-02-25,W-A4.2,"Vogt, Austin",645,W,A,2,A4
+3810,2015-02-25,W-A5.1,"Lipa, Tyler",651,W,A,1,A5
+3811,2015-02-25,W-A6.1,"Gallalee, Jack",638,W,A,1,A6
+3812,2015-02-25,W-A7.1,"Fischer, Steven",647,W,A,1,A7
+3813,2015-02-25,W-B1.1,"Hunter, Rob",649,W,B,1,B1
+3814,2015-02-25,W-B1.2,"Russell, Briana",649,W,B,2,B1
+3815,2015-02-25,W-B2.1,"Francis, Marshall",639,W,B,1,B2
+3816,2015-02-25,W-B2.2,"Kenny, Dominic",639,W,B,2,B2
+3817,2015-02-25,W-B2.3,"Gaisser, Karl",639,W,B,3,B2
+3818,2015-02-25,W-B3.1,"Hock, Paul",643,W,B,1,B3
+3819,2015-02-25,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+3820,2015-02-25,W-B5.1,"Hedges, Cody",662,W,B,1,B5
+3821,2015-02-25,W-E1.1,"Decker, Ernie",661,W,E,1,E1
+3822,2015-02-25,W-E2.1,"Matthews, Roy",659,W,E,1,E2
+3823,2015-02-25,W-E2.2,"Cuevas, Rebekah",659,W,E,2,E2
+3824,2015-02-25,W-E2.3,"Ainsworth, Sam",659,W,E,3,E2
+3825,2015-02-25,W-E3.1,"Grant, Maria LaGee",648,W,E,1,E3
+3826,2015-02-25,W-X1.1,"Clark, Barbara J.",655,W,X,1,X1
+3827,2015-02-25,W-X1.2,"Cain, Caleb",655,W,X,2,X1
+3828,2015-02-25,W-X2.1,"Shannon, Michiael",660,W,X,1,X2
+3829,2015-02-25,W-X2.2,"Ginty, Kyle",660,W,X,2,X2
+3830,2015-02-25,W-X3.1,"Miller, Ryan",654,W,X,1,X3
+3831,2015-02-25,W-X3.2,"Carter, David Alexander",654,W,X,2,X3
+3832,2015-02-25,SNOW-A,"Ginet, Chris",648,SNOW,A,,A
+3833,2015-02-25,SNOW-B,"Gillespie, Nathan",640,SNOW,B,,B
+3834,2015-02-25,Auditorium,"Timm, Aaron",638,Auditorium,,,
+3835,2015-02-26,R-A1.1,"Heaton, Brian D.",652,R,A,1,A1
+3836,2015-02-26,R-A1.2,"Cunningham, Ian",652,R,A,2,A1
+3837,2015-02-26,R-A1.3,"Miessler, Cy",652,R,A,3,A1
+3838,2015-02-26,R-A2.1,"LaGarde, Nancy",642,R,A,1,A2
+3839,2015-02-26,R-A2.2,"Warren, Jeremy",642,R,A,2,A2
+3840,2015-02-26,R-A3.1,"Hargrove, Paul Brady",640,R,A,1,A3
+3841,2015-02-26,R-A3.2,"Ainsworth, Sam",640,R,A,2,A3
+3842,2015-02-26,R-A4.1,"Guo, Xiao",638,R,A,1,A4
+3843,2015-02-26,R-A4.2,"Spicer, Mitch",638,R,A,2,A4
+3844,2015-02-26,R-A5.1,"Lipa, Tyler",662,R,A,1,A5
+3845,2015-02-26,R-A6.1,"Gallalee, Jack",641,R,A,1,A6
+3846,2015-02-26,R-A7.1,"Fischer, Steven",659,R,A,1,A7
+3847,2015-02-26,R-B1.1,"Hunter, Rob",651,R,B,1,B1
+3848,2015-02-26,R-B1.2,"Struyf, Nick",651,R,B,2,B1
+3849,2015-02-26,R-B2.1,"Francis, Marshall",647,R,B,1,B2
+3850,2015-02-26,R-B2.2,"Englebert, Briana",647,R,B,2,B2
+3851,2015-02-26,R-B2.3,"Ventura, Erin",647,R,B,3,B2
+3852,2015-02-26,R-B3.1,"Hock, Paul",639,R,B,1,B3
+3853,2015-02-26,R-B4.1,"Bise III, John H.",657,R,B,1,B4
+3854,2015-02-26,R-B5.1,"Miller, Ryan",654,R,B,1,B5
+3855,2015-02-26,R-E1.1,"Decker, Ernie",655,R,E,1,E1
+3856,2015-02-26,R-E2.1,"Matthews, Roy",661,R,E,1,E2
+3857,2015-02-26,R-E2.2,"Bell, Creigh",661,R,E,2,E2
+3858,2015-02-26,R-E2.3,"Dickerson, Terin Joseph",661,R,E,3,E2
+3859,2015-02-26,R-E3.1,"Diakite, Abdoul",660,R,E,1,E3
+3860,2015-02-26,R-X1.1,"Figg, Korbin Patrick",637,R,X,1,X1
+3861,2015-02-26,R-X1.2,"Clark, Aaron",636,R,X,2,X1
+3862,2015-02-26,R-X2.1,"Shannon, Michiael",656,R,X,1,X2
+3863,2015-02-26,R-X2.2,"Eakle, Robert W",656,R,X,2,X2
+3864,2015-02-26,R-X3.1,"Callahan, James",648,R,X,1,X3
+3865,2015-02-26,R-X3.2,"Hendricks, Sandra",648,R,X,2,X3
+3866,2015-02-26,SNOW-A,"Gillespie, Nathan",645,SNOW,A,,A
+3867,2015-02-26,SNOW-B,"Cochrane, Meredith",643,SNOW,B,,B
+3868,2015-02-27,F-A1.1,"Clark, Aaron",650,F,A,1,A1
+3869,2015-02-27,F-A1.2,"Warren, Jeremy",658,F,A,2,A1
+3870,2015-02-27,F-A1.3,"Clark, Aaron",658,F,A,3,A1
+3871,2015-02-27,F-A1.4,"Phillips, Jenna",658,F,A,4,A1
+3872,2015-02-27,F-A2.1,"Ginet, Chris",642,F,A,1,A2
+3873,2015-02-27,F-A2.2,"Ginty, Kyle",642,F,A,2,A2
+3874,2015-02-27,F-A2.3,"Miessler, Cy",642,F,A,3,A2
+3875,2015-02-27,F-A2.4,"Freet, Heather",642,F,A,4,A2
+3876,2015-02-27,F-A3.1,"Hargrove, Paul Brady",652,F,A,1,A3
+3877,2015-02-27,F-A3.2,"Bandy, Kyle",652,F,A,2,A3
+3878,2015-02-27,F-A4.1,"Kappes, Thomas",648,F,A,1,A4
+3879,2015-02-27,F-A4.2,"Muhammad, Natalie",648,F,A,2,A4
+3880,2015-02-27,F-A5.1,"Ainsworth, Sam",645,F,A,1,A5
+3881,2015-02-27,F-B1.1,"Gallalee, Jack",653,F,B,1,B1
+3882,2015-02-27,F-B1.2,"Russell, Briana",653,F,B,2,B1
+3883,2015-02-27,F-B1.3,"Gillespie, Nathan",653,F,B,3,B1
+3884,2015-02-27,F-B2.1,"Hunter, Rob",636,F,B,1,B2
+3885,2015-02-27,F-B2.2,"Kenny, Dominic",636,F,B,2,B2
+3886,2015-02-27,F-E1.1,"Matthews, Roy",662,F,E,1,E1
+3887,2015-02-27,F-E1.2,"Cunningham, Ian",662,F,E,2,E1
+3888,2015-02-27,F-E1.3,"Ginet, Chris",662,F,E,3,E1
+3889,2015-02-27,F-E2.1,"Figg, Korbin Patrick",660,F,E,1,E2
+3890,2015-02-27,F-E2.2,"Englebert, Briana",660,F,E,2,E2
+3891,2015-02-27,F-X1.1,"Ginty, Kyle",654,F,X,1,X1
+3892,2015-02-27,F-X1.2,"Callahan, James",654,F,X,2,X1
+3893,2015-02-27,F-X2.1,"Shannon, Michiael",661,F,X,1,X2
+3894,2015-02-27,F-X2.2,"Hedges, Cody",661,F,X,2,X2
+3895,2015-02-27,Special,"Huffman, Haley",657,Special,,,
+3896,2015-02-28,S-A1.1,"Bobyak, Lindsay",654,S,A,1,A1
+3897,2015-02-28,S-A1.2,"Phillips, Jenna",654,S,A,2,A1
+3898,2015-02-28,S-A1.3,"Englebert, Briana",654,S,A,3,A1
+3899,2015-02-28,S-B1.1,"Gaisser, Karl",641,S,B,1,B1
+3900,2015-02-28,S-B1.2,"Ainsworth, Sam",641,S,B,2,B1
+3901,2015-02-28,S-E1.1,"Diakite, Abdoul",647,S,E,1,E1
+3902,2015-02-28,S-E1.2,"Timm, Aaron",647,S,E,2,E1
+3903,2015-02-28,S-E1.3,"Dickerson, Terin Joseph",647,S,E,3,E1
+3904,2015-02-28,Special,"Carter, David Alexander",653,Special,,,
+3905,2015-03-01,U-A1.1,"Gaisser, Karl",662,U,A,1,A1
+3906,2015-03-01,U-A1.2,"Miessler, Cy",661,U,A,2,A1
+3907,2015-03-01,U-B1.1,"Widlowski, Robert",645,U,B,1,B1
+3908,2015-03-01,U-B1.2,"Cochrane, Meredith",645,U,B,2,B1
+3909,2015-03-01,U-E1.1,"Timm, Aaron",662,U,E,1,E1
+3910,2015-03-01,U-E1.2,"Hendricks, Sandra",662,U,E,2,E1
+3911,2015-03-02,M-A1.1,"Heaton, Brian D.",647,M,A,1,A1
+3912,2015-03-02,M-A1.2,"Bell, Creigh",647,M,A,2,A1
+3913,2015-03-02,M-A1.3,"Phillips, Jenna",647,M,A,3,A1
+3914,2015-03-02,M-A2.1,"LaGarde, Nancy",645,M,A,1,A2
+3915,2015-03-02,M-A2.2,"Cunningham, Ian",656,M,A,2,A2
+3916,2015-03-02,M-A3.1,"Hargrove, Paul Brady",640,M,A,1,A3
+3917,2015-03-02,M-A3.2,"Gillespie, Nathan",640,M,A,2,A3
+3918,2015-03-02,M-A4.1,"Foley, Shannon",652,M,A,1,A4
+3919,2015-03-02,M-A4.2,"Warren, Jeremy",652,M,A,2,A4
+3920,2015-03-02,M-A5.1,"Lipa, Tyler",650,M,A,1,A5
+3921,2015-03-02,M-A6.1,"Gallalee, Jack",638,M,A,1,A6
+3922,2015-03-02,M-A7.1,"Fischer, Steven",642,M,A,1,A7
+3923,2015-03-02,M-B1.1,"Callahan, James",637,M,B,1,B1
+3924,2015-03-02,M-B1.2,"Bandy, Kyle",637,M,B,2,B1
+3925,2015-03-02,M-B2.1,"Francis, Marshall",649,M,B,1,B2
+3926,2015-03-02,M-B2.2,"Vogt, Austin",642,M,B,2,B2
+3927,2015-03-02,M-B2.3,"Bobyak, Lindsay",642,M,B,3,B2
+3928,2015-03-02,M-B3.1,"Hock, Paul",636,M,B,1,B3
+3929,2015-03-02,M-B4.1,"Bise III, John H.",641,M,B,1,B4
+3930,2015-03-02,M-B5.1,"Grant, Maria LaGee",653,M,B,1,B5
+3931,2015-03-02,M-E1.1,"Decker, Ernie",655,M,E,1,E1
+3932,2015-03-02,M-E2.1,"Matthews, Roy",662,M,E,1,E2
+3933,2015-03-02,M-E2.2,"Carter, David Alexander",662,M,E,2,E2
+3934,2015-03-02,M-E2.3,"Spicer, Mitch",662,M,E,3,E2
+3935,2015-03-02,M-E3.1,"Diakite, Abdoul",649,M,E,1,E3
+3936,2015-03-02,M-X1.1,"Liechty, Abbey",654,M,X,1,X1
+3937,2015-03-02,M-X1.2,"Hedges, Cody",654,M,X,2,X1
+3938,2015-03-02,M-X2.1,"Shannon, Michiael",660,M,X,1,X2
+3939,2015-03-02,M-X2.2,"Eakle, Robert W",660,M,X,2,X2
+3940,2015-03-02,M-X3.1,"Hedges, Cody",658,M,X,1,X3
+3941,2015-03-02,M-X3.2,"Ginty, Kyle",658,M,X,2,X3
+3942,2015-03-03,T-A1.1,"Heaton, Brian D.",642,T,A,1,A1
+3943,2015-03-03,T-A1.2,"Muhammad, Natalie",662,T,A,2,A1
+3944,2015-03-03,T-A1.3,"Warren, Jeremy",662,T,A,3,A1
+3945,2015-03-03,T-A2.1,"Clark, Aaron",652,T,A,1,A2
+3946,2015-03-03,T-A2.2,"Freet, Heather",652,T,A,2,A2
+3947,2015-03-03,T-A3.1,"Hargrove, Paul Brady",642,T,A,1,A3
+3948,2015-03-03,T-A3.2,"Clark, Aaron",642,T,A,2,A3
+3949,2015-03-03,T-A4.1,"Foley, Shannon",647,T,A,1,A4
+3950,2015-03-03,T-A4.2,"Huffman, Haley",647,T,A,2,A4
+3951,2015-03-03,T-A5.1,"Lipa, Tyler",660,T,A,1,A5
+3952,2015-03-03,T-A6.1,"Gallalee, Jack",638,T,A,1,A6
+3953,2015-03-03,T-A7.1,"Fischer, Steven",640,T,A,1,A7
+3954,2015-03-03,T-B1.1,"Hunter, Rob",658,T,B,1,B1
+3955,2015-03-03,T-B1.2,"Struyf, Nick",658,T,B,2,B1
+3956,2015-03-03,T-B2.1,"Francis, Marshall",643,T,B,1,B2
+3957,2015-03-03,T-B2.2,"Vogt, Austin",643,T,B,2,B2
+3958,2015-03-03,T-B2.3,"Dickerson, Terin Joseph",643,T,B,3,B2
+3959,2015-03-03,T-B3.1,"Hock, Paul",649,T,B,1,B3
+3960,2015-03-03,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+3961,2015-03-03,T-B5.1,"Pinkney, Dewayne J",651,T,B,1,B5
+3962,2015-03-03,T-E1.1,"Decker, Ernie",659,T,E,1,E1
+3963,2015-03-03,T-E2.1,"Matthews, Roy",661,T,E,1,E2
+3964,2015-03-03,T-E2.2,"Bell, Creigh",661,T,E,2,E2
+3965,2015-03-03,T-E2.3,"Kim, Christopher",661,T,E,3,E2
+3966,2015-03-03,T-E3.1,"Chen, Jason",645,T,E,1,E3
+3967,2015-03-03,T-X1.1,"Carter, David Alexander",655,T,X,1,X1
+3968,2015-03-03,T-X1.2,"Gillespie, Nathan",655,T,X,2,X1
+3969,2015-03-03,T-X2.1,"Shannon, Michiael",656,T,X,1,X2
+3970,2015-03-03,T-X2.2,"Miller, Gregg",656,T,X,2,X2
+3971,2015-03-03,T-X3.1,"Hedges, Cody",653,T,X,1,X3
+3972,2015-03-03,T-X3.2,"Hendricks, Sandra",653,T,X,2,X3
+3973,2015-03-03,Auditorium,"Hendricks, Sandra",653,Auditorium,,,
+3974,2015-03-04,W-A1.1,"Ventura, Erin",640,W,A,1,A1
+3975,2015-03-04,W-A1.2,"Bryan, Katie",640,W,A,2,A1
+3976,2015-03-04,W-A1.3,"Bandy, Kyle",640,W,A,3,A1
+3977,2015-03-04,W-A2.1,"LaGarde, Nancy",645,W,A,1,A2
+3978,2015-03-04,W-A2.2,"Cochrane, Meredith",645,W,A,2,A2
+3979,2015-03-04,W-A3.1,"Hargrove, Paul Brady",647,W,A,1,A3
+3980,2015-03-04,W-A3.2,"Hendricks, Sandra",647,W,A,2,A3
+3981,2015-03-04,W-A4.1,"Foley, Shannon",642,W,A,1,A4
+3982,2015-03-04,W-A4.2,"Vogt, Austin",642,W,A,2,A4
+3983,2015-03-04,W-A5.1,"Lipa, Tyler",652,W,A,1,A5
+3984,2015-03-04,W-A6.1,"Gallalee, Jack",638,W,A,1,A6
+3985,2015-03-04,W-A7.1,"Fischer, Steven",648,W,A,1,A7
+3986,2015-03-04,W-B1.1,"Hunter, Rob",649,W,B,1,B1
+3987,2015-03-04,W-B1.2,"Russell, Briana",649,W,B,2,B1
+3988,2015-03-04,W-B2.1,"Francis, Marshall",651,W,B,1,B2
+3989,2015-03-04,W-B2.2,"Kenny, Dominic",651,W,B,2,B2
+3990,2015-03-04,W-B2.3,"Widlowski, Robert",651,W,B,3,B2
+3991,2015-03-04,W-B3.1,"Hock, Paul",653,W,B,1,B3
+3992,2015-03-04,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+3993,2015-03-04,W-B5.1,"Hedges, Cody",661,W,B,1,B5
+3994,2015-03-04,W-E1.1,"Hedges, Cody",661,W,E,1,E1
+3995,2015-03-04,W-E2.1,"Matthews, Roy",662,W,E,1,E2
+3996,2015-03-04,W-E2.3,"Ainsworth, Sam",662,W,E,3,E2
+3997,2015-03-04,W-E3.1,"Grant, Maria LaGee",658,W,E,1,E3
+3998,2015-03-04,W-X1.1,"Clark, Barbara J.",657,W,X,1,X1
+3999,2015-03-04,W-X1.2,"Cain, Caleb",657,W,X,2,X1
+4000,2015-03-04,W-X2.1,"Shannon, Michiael",655,W,X,1,X2
+4001,2015-03-04,W-X2.2,"Ginty, Kyle",655,W,X,2,X2
+4002,2015-03-04,W-X3.1,"Liechty, Abbey",659,W,X,1,X3
+4003,2015-03-04,W-X3.2,"Carter, David Alexander",659,W,X,2,X3
+4004,2015-03-04,Auditorium,"Englebert, Briana",648,Auditorium,,,
+4005,2015-03-05,SNOW-B,"Hedges, Cody",658,SNOW,B,,B
+4006,2015-03-04,W-E2.2,"Cuevas, Rebekah",662,W,E,2,E2
+4007,2015-03-05,R-A1.1,"Heaton, Brian D.",648,R,A,1,A1
+4008,2015-03-05,R-A1.2,"Cunningham, Ian",648,R,A,2,A1
+4009,2015-03-05,R-A1.3,"Miessler, Cy",648,R,A,3,A1
+4010,2015-03-05,R-A2.1,"LaGarde, Nancy",640,R,A,1,A2
+4011,2015-03-05,R-A2.2,"Figg, Korbin Patrick",640,R,A,2,A2
+4012,2015-03-05,R-A3.1,"Hargrove, Paul Brady",650,R,A,1,A3
+4013,2015-03-05,R-A3.2,"Ainsworth, Sam",650,R,A,2,A3
+4014,2015-03-05,R-A4.1,"Foley, Shannon",647,R,A,1,A4
+4015,2015-03-05,R-A4.2,"Cochrane, Meredith",647,R,A,2,A4
+4016,2015-03-05,R-A5.1,"Lipa, Tyler",645,R,A,1,A5
+4017,2015-03-05,R-A6.1,"Gallalee, Jack",642,R,A,1,A6
+4018,2015-03-05,R-A7.1,"Fischer, Steven",638,R,A,1,A7
+4019,2015-03-05,R-B1.1,"Hunter, Rob",651,R,B,1,B1
+4020,2015-03-05,R-B1.2,"Struyf, Nick",651,R,B,2,B1
+4021,2015-03-05,R-B2.1,"Francis, Marshall",637,R,B,1,B2
+4022,2015-03-05,R-B2.2,"Spicer, Mitch",637,R,B,2,B2
+4023,2015-03-05,R-B2.3,"Ventura, Erin",637,R,B,3,B2
+4024,2015-03-05,R-B3.1,"Hock, Paul",653,R,B,1,B3
+4025,2015-03-05,R-B4.1,"Bise III, John H.",641,R,B,1,B4
+4026,2015-03-05,R-B5.1,"Miller, Ryan",639,R,B,1,B5
+4027,2015-03-05,R-E1.1,"Decker, Ernie",662,R,E,1,E1
+4028,2015-03-05,R-E2.1,"Matthews, Roy",655,R,E,1,E2
+4029,2015-03-05,R-E2.2,"Gaisser, Karl",655,R,E,2,E2
+4030,2015-03-05,R-E2.3,"Dickerson, Terin Joseph",655,R,E,3,E2
+4031,2015-03-05,R-E3.1,"Diakite, Abdoul",657,R,E,1,E3
+4032,2015-03-05,R-X1.1,"Clark, Barbara J.",656,R,X,1,X1
+4033,2015-03-05,R-X1.2,"Clark, Aaron",650,R,X,2,X1
+4034,2015-03-05,R-X2.1,"Shannon, Michiael",654,R,X,1,X2
+4035,2015-03-05,R-X2.2,"Eakle, Robert W",654,R,X,2,X2
+4036,2015-03-05,R-X3.1,"Kim, Christopher",659,R,X,1,X3
+4037,2015-03-05,R-X3.2,"Hendricks, Sandra",659,R,X,2,X3
+4038,2015-03-05,Auditorium,"Ginty, Kyle",661,Auditorium,,,
+4039,2015-03-06,F-A1.1,"Callahan, James",643,F,A,1,A1
+4040,2015-03-06,F-A1.2,"Warren, Jeremy",643,F,A,2,A1
+4041,2015-03-06,F-A1.3,"Bandy, Kyle",643,F,A,3,A1
+4042,2015-03-06,F-A1.4,"Gaisser, Karl",643,F,A,4,A1
+4043,2015-03-06,F-A2.1,"Jackman, Dorian",659,F,A,1,A2
+4044,2015-03-06,F-A2.2,"Ginty, Kyle",659,F,A,2,A2
+4045,2015-03-06,F-A2.3,"Cain, Caleb",659,F,A,3,A2
+4046,2015-03-06,F-A2.4,"Cunningham, Ian",659,F,A,4,A2
+4047,2015-03-06,F-A3.1,"Hargrove, Paul Brady",641,F,A,1,A3
+4048,2015-03-06,F-A4.1,"Foley, Shannon",658,F,A,1,A4
+4049,2015-03-06,F-A4.2,"Muhammad, Natalie",658,F,A,2,A4
+4050,2015-03-06,F-A5.1,"Ainsworth, Sam",653,F,A,1,A5
+4051,2015-03-06,F-B1.1,"Grant, Maria LaGee",640,F,B,1,B1
+4052,2015-03-06,F-B1.2,"Cochrane, Meredith",640,F,B,2,B1
+4053,2015-03-06,F-B1.3,"Gillespie, Nathan",640,F,B,3,B1
+4054,2015-03-06,F-B2.1,"Hunter, Rob",636,F,B,1,B2
+4055,2015-03-06,F-B2.2,"Kenny, Dominic",636,F,B,2,B2
+4056,2015-03-06,F-E1.1,"Matthews, Roy",655,F,E,1,E1
+4057,2015-03-06,F-E1.2,"Cuevas, Rebekah",655,F,E,2,E1
+4058,2015-03-06,F-E1.3,"Widlowski, Robert",655,F,E,3,E1
+4059,2015-03-06,F-E2.1,"Figg, Korbin Patrick",660,F,E,1,E2
+4060,2015-03-06,F-E2.2,"Englebert, Briana",660,F,E,2,E2
+4061,2015-03-06,F-X1.1,"Hedges, Cody",638,F,X,1,X1
+4062,2015-03-06,F-X1.2,"Cunningham, Ian",638,F,X,2,X1
+4063,2015-03-06,F-X2.1,"Shannon, Michiael",650,F,X,1,X2
+4064,2015-03-06,F-X2.2,"Carter, David Alexander",650,F,X,2,X2
+4065,2015-03-06,Auditorium,"Bryan, Katie",650,Auditorium,,,
+4066,2015-03-07,S-A1.1,"Ainsworth, Sam",653,S,A,1,A1
+4067,2015-03-07,S-A1.2,"Ventura, Erin",653,S,A,2,A1
+4068,2015-03-07,S-A1.3,"Englebert, Briana",653,S,A,3,A1
+4069,2015-03-07,S-B1.1,"Lakes, Michael A.",654,S,B,1,B1
+4070,2015-03-07,S-B1.2,"Cochrane, Meredith",654,S,B,2,B1
+4071,2015-03-07,S-E1.1,"Diakite, Abdoul",640,S,E,1,E1
+4072,2015-03-07,S-E1.2,"Timm, Aaron",640,S,E,2,E1
+4073,2015-03-07,S-E1.3,"Cunningham, Ian",640,S,E,3,E1
+4074,2015-03-07,Auditorium,"Gaisser, Karl",641,Auditorium,,,
+4075,2015-03-07,Auditorium,"Carter, David Alexander",638,Auditorium,,,
+4076,2015-03-08,U-A1.1,"Guo, Xiao",651,U,A,1,A1
+4077,2015-03-08,U-A1.2,"Cain, Caleb",657,U,A,2,A1
+4078,2015-03-08,U-B1.1,"Widlowski, Robert",645,U,B,1,B1
+4079,2015-03-08,U-B1.2,"Cochrane, Meredith",654,U,B,2,B1
+4080,2015-03-08,U-E1.1,"Timm, Aaron",661,U,E,1,E1
+4081,2015-03-08,U-E1.2,"Ainsworth, Sam",661,U,E,2,E1
+4082,2015-03-08,Auditorium,"Miller, Gregg",647,Auditorium,,,
+4083,2015-03-08,Auditorium,"Clark, Aaron",642,Auditorium,,,
+4084,2015-03-09,M-A1.1,"Heaton, Brian D.",647,M,A,1,A1
+4085,2015-03-09,M-A1.2,"Bell, Creigh",647,M,A,2,A1
+4086,2015-03-09,M-A1.3,"Phillips, Jenna",647,M,A,3,A1
+4087,2015-03-09,M-A2.1,"Liechty, Abbey",642,M,A,1,A2
+4088,2015-03-09,M-A2.2,"Cunningham, Ian",642,M,A,2,A2
+4090,2015-03-09,M-A3.1,"Hargrove, Paul Brady",638,M,A,1,A3
+4091,2015-03-09,M-A3.2,"Miller, Ryan",638,M,A,2,A3
+4092,2015-03-09,M-A4.1,"Foley, Shannon",648,M,A,1,A4
+4093,2015-03-09,M-A4.2,"Warren, Jeremy",648,M,A,2,A4
+4094,2015-03-09,M-A5.1,"Lipa, Tyler",658,M,A,1,A5
+4095,2015-03-09,M-A6.1,"Gallalee, Jack",650,M,A,1,A6
+4096,2015-03-09,M-A7.1,"Fischer, Steven",645,M,A,1,A7
+4097,2015-03-09,M-B1.1,"Hunter, Rob",643,M,B,1,B1
+4098,2015-03-09,M-B1.2,"Russell, Briana",643,M,B,2,B1
+4099,2015-03-09,M-B2.1,"Francis, Marshall",649,M,B,1,B2
+4100,2015-03-09,M-B2.2,"Vogt, Austin",649,M,B,2,B2
+4101,2015-03-09,M-B2.3,"Bobyak, Lindsay",649,M,B,3,B2
+4102,2015-03-09,M-B3.1,"Hock, Paul",637,M,B,1,B3
+4103,2015-03-09,M-B4.1,"Bise III, John H.",641,M,B,1,B4
+4104,2015-03-09,M-B5.1,"Grant, Maria LaGee",651,M,B,1,B5
+4105,2015-03-09,M-E1.1,"Decker, Ernie",657,M,E,1,E1
+4106,2015-03-09,M-E2.1,"Matthews, Roy",654,M,E,1,E2
+4107,2015-03-09,M-E2.2,"Carter, David Alexander",654,M,E,2,E2
+4108,2015-03-09,M-E2.3,"Spicer, Mitch",654,M,E,3,E2
+4109,2015-03-09,M-E3.1,"Diakite, Abdoul",656,M,E,1,E3
+4110,2015-03-09,M-X1.1,"Clark, Barbara J.",659,M,X,1,X1
+4111,2015-03-09,M-X1.2,"Hedges, Cody",659,M,X,2,X1
+4112,2015-03-09,M-X2.1,"Shannon, Michiael",655,M,X,1,X2
+4113,2015-03-09,M-X2.2,"Eakle, Robert W",655,M,X,2,X2
+4114,2015-03-09,M-X3.1,"Hedges, Cody",636,M,X,1,X3
+4115,2015-03-09,M-X3.2,"Ginty, Kyle",636,M,X,2,X3
+4116,2015-03-10,T-A1.1,"Heaton, Brian D.",645,T,A,1,A1
+4117,2015-03-10,T-A1.2,"Muhammad, Natalie",645,T,A,2,A1
+4118,2015-03-10,T-A1.3,"Bandy, Kyle",640,T,A,3,A1
+4119,2015-03-10,T-A2.1,"Leathers, Daniel",650,T,A,1,A2
+4120,2015-03-10,T-A2.2,"Freet, Heather",650,T,A,2,A2
+4121,2015-03-10,T-A3.1,"Hargrove, Paul Brady",655,T,A,1,A3
+4122,2015-03-10,T-A3.2,"Carter, David Alexander",655,T,A,2,A3
+4123,2015-03-10,T-A4.1,"Foley, Shannon",640,T,A,1,A4
+4124,2015-03-10,T-A4.2,"Bandy, Kyle",640,T,A,2,A4
+4125,2015-03-10,T-A5.1,"Lipa, Tyler",648,T,A,1,A5
+4126,2015-03-10,T-A6.1,"Gallalee, Jack",652,T,A,1,A6
+4127,2015-03-10,T-A7.1,"Fischer, Steven",659,T,A,1,A7
+4128,2015-03-10,T-B1.1,"Hunter, Rob",637,T,B,1,B1
+4129,2015-03-10,T-B1.2,"Struyf, Nick",637,T,B,2,B1
+4130,2015-03-10,T-B2.1,"Callahan, James",636,T,B,1,B2
+4131,2015-03-10,T-B2.2,"Vogt, Austin",636,T,B,2,B2
+4132,2015-03-10,T-B2.3,"Dickerson, Terin Joseph",636,T,B,3,B2
+4133,2015-03-10,T-B3.1,"Hock, Paul",639,T,B,1,B3
+4134,2015-03-10,T-B4.1,"Hedges, Cody",644,T,B,1,B4
+4135,2015-03-10,T-B5.1,"Pinkney, Dewayne J",657,T,B,1,B5
+4136,2015-03-10,T-E1.1,"Decker, Ernie",657,T,E,1,E1
+4137,2015-03-10,T-E2.1,"Matthews, Roy",649,T,E,1,E2
+4138,2015-03-10,T-E2.2,"Bell, Creigh",649,T,E,2,E2
+4139,2015-03-10,T-E2.3,"Kim, Christopher",649,T,E,3,E2
+4140,2015-03-10,T-E3.1,"Palmer, Fileve",651,T,E,1,E3
+4141,2015-03-10,T-X1.1,"Clark, Barbara J.",661,T,X,1,X1
+4142,2015-03-10,T-X1.2,"Cunningham, Ian",661,T,X,2,X1
+4143,2015-03-10,T-X2.1,"Shannon, Michiael",660,T,X,1,X2
+4144,2015-03-10,T-X2.2,"Miller, Ryan",660,T,X,2,X2
+4145,2015-03-10,T-X3.1,"Lakes, Michael A.",656,T,X,1,X3
+4146,2015-03-10,T-X3.2,"Hendricks, Sandra",656,T,X,2,X3
+4147,2015-03-06,F-A3.2,"Dickerson, Terin Joseph",652,F,A,2,A3
+4148,2015-03-11,W-A1.1,"Heaton, Brian D.",638,W,A,1,A1
+4149,2015-03-11,W-A1.2,"Bryan, Katie",648,W,A,2,A1
+4150,2015-03-11,W-A1.3,"Bandy, Kyle",643,W,A,3,A1
+4151,2015-03-11,W-A2.1,"LaGarde, Nancy",648,W,A,1,A2
+4152,2015-03-11,W-A2.2,"Prichard, Curtis",638,W,A,2,A2
+4153,2015-03-11,W-A3.1,"Hargrove, Paul Brady",652,W,A,1,A3
+4154,2015-03-11,W-A3.2,"Warren, Jeremy",652,W,A,2,A3
+4155,2015-03-11,W-A4.1,"Spicer, Mitch",645,W,A,1,A4
+4156,2015-03-11,W-A4.2,"Vogt, Austin",645,W,A,2,A4
+4157,2015-03-11,W-A5.1,"Lipa, Tyler",654,W,A,1,A5
+4158,2015-03-11,W-A6.1,"Gallalee, Jack",647,W,A,1,A6
+4159,2015-03-11,W-A7.1,"Fischer, Steven",642,W,A,1,A7
+4160,2015-03-11,W-B1.1,"Hunter, Rob",653,W,B,1,B1
+4161,2015-03-11,W-B1.2,"Russell, Briana",653,W,B,2,B1
+4162,2015-03-11,W-B2.1,"Francis, Marshall",643,W,B,1,B2
+4163,2015-03-11,W-B2.2,"Bandy, Kyle",643,W,B,2,B2
+4164,2015-03-11,W-B2.3,"Cunningham, Ian",642,W,B,3,B2
+4165,2015-03-11,W-B3.1,"Hock, Paul",639,W,B,1,B3
+4166,2015-03-11,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+4167,2015-03-11,W-B5.1,"Hedges, Cody",651,W,B,1,B5
+4168,2015-03-11,W-E1.1,"Hedges, Cody",657,W,E,1,E1
+4169,2015-03-11,W-E2.1,"Matthews, Roy",662,W,E,1,E2
+4170,2015-03-11,W-E2.2,"Cuevas, Rebekah",662,W,E,2,E2
+4171,2015-03-11,W-E2.3,"Ainsworth, Sam",662,W,E,3,E2
+4172,2015-03-11,W-E3.1,"Grant, Maria LaGee",659,W,E,1,E3
+4173,2015-03-11,W-X1.1,"Clark, Barbara J.",661,W,X,1,X1
+4174,2015-03-11,W-X1.2,"Cain, Caleb",661,W,X,2,X1
+4175,2015-03-11,W-X2.1,"Shannon, Michiael",658,W,X,1,X2
+4176,2015-03-11,W-X2.2,"Ginty, Kyle",658,W,X,2,X2
+4177,2015-03-11,W-X3.1,"Liechty, Abbey",655,W,X,1,X3
+4178,2015-03-11,W-X3.2,"Carter, David Alexander",655,W,X,2,X3
+4179,2015-03-12,R-A1.1,"Heaton, Brian D.",647,R,A,1,A1
+4180,2015-03-12,R-A1.2,"Cunningham, Ian",647,R,A,2,A1
+4181,2015-03-12,R-A1.3,"Miessler, Cy",647,R,A,3,A1
+4182,2015-03-12,R-A2.1,"LaGarde, Nancy",640,R,A,1,A2
+4183,2015-03-12,R-A2.2,"Figg, Korbin Patrick",640,R,A,2,A2
+4184,2015-03-12,R-A3.1,"Hargrove, Paul Brady",642,R,A,1,A3
+4185,2015-03-12,R-A3.2,"Ainsworth, Sam",642,R,A,2,A3
+4186,2015-03-12,R-A4.1,"Foley, Shannon",645,R,A,1,A4
+4187,2015-03-12,R-A4.2,"Cochrane, Meredith",645,R,A,2,A4
+4188,2015-03-12,R-A5.1,"Lipa, Tyler",654,R,A,1,A5
+4189,2015-03-12,R-A6.1,"Gallalee, Jack",648,R,A,1,A6
+4190,2015-03-12,R-A7.1,"Fischer, Steven",650,R,A,1,A7
+4191,2015-03-12,R-B1.1,"Hunter, Rob",651,R,B,1,B1
+4192,2015-03-12,R-B1.2,"Carter, David Alexander",651,R,B,2,B1
+4193,2015-03-12,R-B2.1,"Francis, Marshall",639,R,B,1,B2
+4194,2015-03-12,R-B2.2,"Englebert, Briana",639,R,B,2,B2
+4195,2015-03-12,R-B2.3,"Ventura, Erin",639,R,B,3,B2
+4196,2015-03-12,R-B3.1,"Hock, Paul",649,R,B,1,B3
+4197,2015-03-12,R-B4.1,"Bise III, John H.",641,R,B,1,B4
+4198,2015-03-12,R-B5.1,"Miller, Ryan",653,R,B,1,B5
+4199,2015-03-12,R-E1.1,"Decker, Ernie",652,R,E,1,E1
+4200,2015-03-12,R-E2.1,"Matthews, Roy",656,R,E,1,E2
+4201,2015-03-12,R-E2.2,"Bell, Creigh",656,R,E,2,E2
+4202,2015-03-12,R-E2.3,"Guo, Xiao",656,R,E,3,E2
+4203,2015-03-12,R-E3.1,"Diakite, Abdoul",662,R,E,1,E3
+4204,2015-03-12,R-X1.1,"Clark, Barbara J.",655,R,X,1,X1
+4205,2015-03-12,R-X1.2,"Clark, Aaron",655,R,X,2,X1
+4206,2015-03-12,R-X2.1,"Shannon, Michiael",660,R,X,1,X2
+4207,2015-03-12,R-X2.2,"Eakle, Robert W",660,R,X,2,X2
+4208,2015-03-12,R-X3.1,"Cochrane, Meredith",659,R,X,1,X3
+4209,2015-03-12,R-X3.2,"Hendricks, Sandra",659,R,X,2,X3
+4210,2015-03-13,F-A1.1,"Clark, Aaron",647,F,A,1,A1
+4211,2015-03-13,F-A1.2,"Callahan, James",647,F,A,2,A1
+4212,2015-03-13,F-A1.3,"Clark, Aaron",653,F,A,3,A1
+4213,2015-03-13,F-A2.1,"Miller, Ryan",638,F,A,1,A2
+4214,2015-03-13,F-A2.2,"Jackman, Dorian",660,F,A,2,A2
+4215,2015-03-13,F-A2.3,"Bell, Creigh",660,F,A,3,A2
+4216,2015-03-13,F-A3.1,"Hargrove, Paul Brady",652,F,A,1,A3
+4217,2015-03-13,F-A3.2,"Dickerson, Terin Joseph",,F,A,2,A3
+4218,2015-03-13,F-A4.1,"Foley, Shannon",648,F,A,1,A4
+4219,2015-03-13,F-A4.2,"Muhammad, Natalie",648,F,A,2,A4
+4220,2015-03-13,F-A5.1,"Carter, David Alexander",642,F,A,1,A5
+4221,2015-03-13,F-B1.1,"Grant, Maria LaGee",649,F,B,1,B1
+4222,2015-03-13,F-B1.2,"Vogt, Austin",649,F,B,2,B1
+4223,2015-03-13,F-B1.3,"Ventura, Erin",649,F,B,3,B1
+4224,2015-03-13,F-B2.1,"Cochrane, Meredith",637,F,B,1,B2
+4225,2015-03-13,F-B2.2,"Cunningham, Ian",637,F,B,2,B2
+4226,2015-03-13,F-E1.1,"Matthews, Roy",657,F,E,1,E1
+4227,2015-03-13,F-E1.2,"Cuevas, Rebekah",657,F,E,2,E1
+4228,2015-03-13,F-E1.3,"Widlowski, Robert",640,F,E,3,E1
+4229,2015-03-13,F-E2.1,"Figg, Korbin Patrick",662,F,E,1,E2
+4230,2015-03-13,F-E2.2,"Englebert, Briana",662,F,E,2,E2
+4231,2015-03-13,F-X1.1,"Clark, Barbara J.",659,F,X,1,X1
+4232,2015-03-13,F-X1.2,"Liechty, Abbey",659,F,X,2,X1
+4233,2015-03-13,F-X2.1,"Shannon, Michiael",654,F,X,1,X2
+4234,2015-03-13,F-X2.2,"Hedges, Cody",654,F,X,2,X2
+4235,2015-03-14,SB-S-E1.1,"Clark, Aaron",658,SB,S,,S
+4236,2015-03-15,SB-U-E1.1,"Bise III, John H.",659,SB,U,,U
+4237,2015-03-16,SB-M-E1.1,"Shannon, Michiael",661,SB,M,,M
+4238,2015-03-16,SB-M-E1.2,"Fischer, Steven",661,SB,M,,M
+4239,2015-03-17,SB-T-E1.1,"Shannon, Michiael",645,SB,T,,T
+4240,2015-03-17,SB-T-E1.2,"Francis, Marshall",645,SB,T,,T
+4241,2015-03-18,SB-W-E1.1,"LaGarde, Nancy",641,SB,W,,W
+4242,2015-03-18,SB-W-E1.2,"Hargrove, Paul Brady",641,SB,W,,W
+4243,2015-03-19,SB-R-E1.1,"Matthews, Roy",652,SB,R,,R
+4244,2015-03-19,SB-R-E1.2,"LaGarde, Nancy",652,SB,R,,R
+4245,2015-03-20,SB-F-E1.1,"Lakes, Michael A.",662,SB,F,,F
+4246,2015-03-20,SB-F-E1.2,"Matthews, Roy",662,SB,F,,F
+4247,2015-03-21,SB-S-E1.1,"Francis, Marshall",650,SB,S,,S
+4248,2015-03-22,U-A1.1,"Widlowski, Robert",652,U,A,1,A1
+4249,2015-03-22,U-A1.2,"Miessler, Cy",652,U,A,2,A1
+4250,2015-03-22,U-B1.1,"Cochrane, Meredith",662,U,B,1,B1
+4251,2015-03-22,U-B1.2,"Cochrane, Meredith",662,U,B,2,B1
+4252,2015-03-22,U-E1.1,"Timm, Aaron",650,U,E,1,E1
+4253,2015-03-22,U-E1.2,"Hendricks, Sandra",650,U,E,2,E1
+4254,2015-03-23,M-A1.1,"Heaton, Brian D.",638,M,A,1,A1
+4255,2015-03-23,M-A1.2,"Bell, Creigh",638,M,A,2,A1
+4256,2015-03-23,M-A1.3,"Phillips, Jenna",638,M,A,3,A1
+4257,2015-03-23,M-A2.1,"LaGarde, Nancy",647,M,A,1,A2
+4258,2015-03-23,M-A2.2,"Englebert, Briana",647,M,A,2,A2
+4259,2015-03-23,M-A3.1,"Hargrove, Paul Brady",652,M,A,1,A3
+4260,2015-03-23,M-A3.2,"Gillespie, Nathan",652,M,A,2,A3
+4261,2015-03-23,M-A4.1,"Foley, Shannon",645,M,A,1,A4
+4262,2015-03-23,M-A4.2,"Warren, Jeremy",645,M,A,2,A4
+4263,2015-03-23,M-A5.1,"Lipa, Tyler",640,M,A,1,A5
+4264,2015-03-23,M-A6.1,"Gallalee, Jack",642,M,A,1,A6
+4265,2015-03-23,M-A7.1,"Fischer, Steven",648,M,A,1,A7
+4266,2015-03-23,M-B1.1,"Hunter, Rob",653,M,B,1,B1
+4267,2015-03-23,M-B1.2,"Russell, Briana",653,M,B,2,B1
+4268,2015-03-23,M-B2.1,"Francis, Marshall",651,M,B,1,B2
+4269,2015-03-23,M-B2.2,"Vogt, Austin",656,M,B,2,B2
+4270,2015-03-23,M-B2.3,"Bobyak, Lindsay",656,M,B,3,B2
+4271,2015-03-23,M-B3.1,"Hock, Paul",643,M,B,1,B3
+4272,2015-03-23,M-B4.1,"Bise III, John H.",637,M,B,1,B4
+4273,2015-03-23,M-B5.1,"Miller, Ryan",642,M,B,1,B5
+4274,2015-03-23,M-E1.1,"Decker, Ernie",662,M,E,1,E1
+4275,2015-03-23,M-E2.1,"Matthews, Roy",658,M,E,1,E2
+4276,2015-03-23,M-E2.2,"Carter, David Alexander",658,M,E,2,E2
+4277,2015-03-23,M-E2.3,"Spicer, Mitch",658,M,E,3,E2
+4278,2015-03-23,M-E3.1,"Diakite, Abdoul",659,M,E,1,E3
+4279,2015-03-23,M-X1.1,"Clark, Barbara J.",661,M,X,1,X1
+4280,2015-03-23,M-X1.2,"Hedges, Cody",661,M,X,2,X1
+4281,2015-03-23,M-X2.1,"Shannon, Michiael",660,M,X,1,X2
+4282,2015-03-23,M-X2.2,"Eakle, Robert W",660,M,X,2,X2
+4283,2015-03-23,M-X3.1,"Hedges, Cody",655,M,X,1,X3
+4284,2015-03-23,M-X3.2,"Ginty, Kyle",655,M,X,2,X3
+4285,2015-03-24,T-A1.1,"Heaton, Brian D.",650,T,A,1,A1
+4286,2015-03-24,T-A1.2,"Muhammad, Natalie",650,T,A,2,A1
+4288,2015-03-24,T-A1.3,"Miller, Gregg",650,T,A,3,A1
+4289,2015-03-24,T-A2.1,"LaGarde, Nancy",645,T,A,1,A2
+4290,2015-03-24,T-A2.2,"Freet, Heather",645,T,A,2,A2
+4291,2015-03-24,T-A3.1,"Hargrove, Paul Brady",647,T,A,1,A3
+4292,2015-03-24,T-A3.2,"Carter, David Alexander",647,T,A,2,A3
+4293,2015-03-24,T-A4.1,"Foley, Shannon",648,T,A,1,A4
+4294,2015-03-24,T-A4.2,"Huffman, Haley",648,T,A,2,A4
+4295,2015-03-24,T-A5.1,"Leathers, Daniel",640,T,A,1,A5
+4296,2015-03-24,T-A6.1,"Gallalee, Jack",652,T,A,1,A6
+4297,2015-03-24,T-A7.1,"Fischer, Steven",642,T,A,1,A7
+4298,2015-03-24,T-B1.1,"Hunter, Rob",643,T,B,1,B1
+4299,2015-03-24,T-B1.2,"Struyf, Nick",643,T,B,2,B1
+4300,2015-03-24,T-B2.1,"Leathers, Daniel",637,T,B,1,B2
+4301,2015-03-24,T-B2.2,"Vogt, Austin",637,T,B,2,B2
+4302,2015-03-24,T-B2.3,"Dickerson, Terin Joseph",637,T,B,3,B2
+4303,2015-03-24,T-B3.1,"Hock, Paul",639,T,B,1,B3
+4304,2015-03-24,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+4305,2015-03-24,T-B5.1,"Pinkney, Dewayne J",653,T,B,1,B5
+4306,2015-03-24,T-E1.1,"Decker, Ernie",662,T,E,1,E1
+4307,2015-03-24,T-E2.1,"Matthews, Roy",660,T,E,1,E2
+4308,2015-03-24,T-E2.2,"Bell, Creigh",660,T,E,2,E2
+4309,2015-03-24,T-E2.3,"Kim, Christopher",660,T,E,3,E2
+4310,2015-03-24,T-E3.1,"Chen, Jason",659,T,E,1,E3
+4311,2015-03-24,T-X1.1,"Clark, Barbara J.",657,T,X,1,X1
+4312,2015-03-24,T-X1.2,"Cunningham, Ian",661,T,X,2,X1
+4313,2015-03-24,T-X2.1,"Shannon, Michiael",658,T,X,1,X2
+4314,2015-03-24,T-X2.2,"Miller, Ryan",658,T,X,2,X2
+4315,2015-03-24,T-X3.1,"Clark, Aaron",657,T,X,1,X3
+4316,2015-03-24,T-X3.2,"Hendricks, Sandra",657,T,X,2,X3
+4317,2015-03-25,W-A1.1,"Heaton, Brian D.",652,W,A,1,A1
+4318,2015-03-25,W-A1.2,"Bryan, Katie",652,W,A,2,A1
+4319,2015-03-25,W-A1.3,"Cunningham, Ian",652,W,A,3,A1
+4320,2015-03-25,W-A2.1,"LaGarde, Nancy",642,W,A,1,A2
+4321,2015-03-25,W-A2.2,"Prichard, Curtis",642,W,A,2,A2
+4322,2015-03-25,W-A3.1,"Hargrove, Paul Brady",640,W,A,1,A3
+4323,2015-03-25,W-A3.2,"Palmer, Fileve",640,W,A,2,A3
+4324,2015-03-25,W-A4.1,"Foley, Shannon",656,W,A,1,A4
+4325,2015-03-25,W-A4.2,"Vogt, Austin",656,W,A,2,A4
+4326,2015-03-25,W-A5.1,"Figg, Korbin Patrick",659,W,A,1,A5
+4327,2015-03-25,W-A6.1,"Gallalee, Jack",647,W,A,1,A6
+4328,2015-03-25,W-A7.1,"Fischer, Steven",650,W,A,1,A7
+4329,2015-03-25,W-B1.1,"Hunter, Rob",639,W,B,1,B1
+4330,2015-03-25,W-B1.2,"Russell, Briana",639,W,B,2,B1
+4331,2015-03-25,W-B2.1,"Ventura, Erin",637,W,B,1,B2
+4332,2015-03-25,W-B2.2,"Kenny, Dominic",637,W,B,2,B2
+4333,2015-03-25,W-B2.3,"Gaisser, Karl",637,W,B,3,B2
+4334,2015-03-25,W-B3.1,"Hock, Paul",649,W,B,1,B3
+4335,2015-03-25,W-B4.1,"Thomas, Phillip",641,W,B,1,B4
+4336,2015-03-25,W-B5.1,"Hedges, Cody",653,W,B,1,B5
+4337,2015-03-25,W-E1.1,"Decker, Ernie",657,W,E,1,E1
+4338,2015-03-25,W-E2.1,"Matthews, Roy",660,W,E,1,E2
+4339,2015-03-25,W-E2.2,"Miller, Gregg",660,W,E,2,E2
+4340,2015-03-25,W-E2.3,"Ainsworth, Sam",660,W,E,3,E2
+4341,2015-03-25,W-E3.1,"Bandy, Kyle",658,W,E,1,E3
+4342,2015-03-25,W-X1.1,"Clark, Barbara J.",662,W,X,1,X1
+4343,2015-03-25,W-X1.2,"Cain, Caleb",662,W,X,2,X1
+4344,2015-03-25,W-X2.1,"Shannon, Michiael",661,W,X,1,X2
+4345,2015-03-25,W-X2.2,"Ginty, Kyle",661,W,X,2,X2
+4346,2015-03-25,W-X3.1,"Carter, David Alexander",655,W,X,1,X3
+4347,2015-03-25,W-X3.2,"Carter, David Alexander",655,W,X,2,X3
+4348,2015-03-26,R-A1.1,"Heaton, Brian D.",650,R,A,1,A1
+4349,2015-03-26,R-A1.2,"Cunningham, Ian",650,R,A,2,A1
+4350,2015-03-26,R-A1.3,"Miessler, Cy",650,R,A,3,A1
+4351,2015-03-26,R-A2.1,"LaGarde, Nancy",641,R,A,1,A2
+4352,2015-03-26,R-A2.2,"Cochrane, Meredith",641,R,A,2,A2
+4353,2015-03-26,R-A3.1,"Hargrove, Paul Brady",642,R,A,1,A3
+4354,2015-03-26,R-A3.2,"Ainsworth, Sam",642,R,A,2,A3
+4355,2015-03-26,R-A4.1,"Foley, Shannon",645,R,A,1,A4
+4356,2015-03-26,R-A4.2,"Carter, David Alexander",645,R,A,2,A4
+4357,2015-03-26,R-A5.1,"Carter, David Alexander",652,R,A,1,A5
+4358,2015-03-26,R-A6.1,"Gallalee, Jack",647,R,A,1,A6
+4359,2015-03-26,R-A7.1,"Fischer, Steven",638,R,A,1,A7
+4360,2015-03-26,R-B1.1,"Hunter, Rob",649,R,B,1,B1
+4361,2015-03-26,R-B1.2,"Struyf, Nick",649,R,B,2,B1
+4362,2015-03-26,R-B2.1,"Francis, Marshall",653,R,B,1,B2
+4363,2015-03-26,R-B2.2,"Ginet, Chris",653,R,B,2,B2
+4364,2015-03-26,R-B2.3,"Ventura, Erin",653,R,B,3,B2
+4365,2015-03-26,R-B3.1,"Hock, Paul",637,R,B,1,B3
+4366,2015-03-26,R-B4.1,"Bise III, John H.",640,R,B,1,B4
+4367,2015-03-26,R-B5.1,"Hedges, Cody",636,R,B,1,B5
+4368,2015-03-26,R-E1.1,"Guo, Xiao",657,R,E,1,E1
+4369,2015-03-26,R-E2.1,"Matthews, Roy",659,R,E,1,E2
+4370,2015-03-26,R-E2.2,"Bell, Creigh",659,R,E,2,E2
+4371,2015-03-26,R-E2.3,"Dickerson, Terin Joseph",659,R,E,3,E2
+4372,2015-03-26,R-E3.1,"Diakite, Abdoul",654,R,E,1,E3
+4373,2015-03-26,R-X1.1,"Clark, Barbara J.",656,R,X,1,X1
+4374,2015-03-26,R-X1.2,"Clark, Aaron",656,R,X,2,X1
+4375,2015-03-26,R-X2.1,"Shannon, Michiael",662,R,X,1,X2
+4376,2015-03-26,R-X2.2,"Eakle, Robert W",662,R,X,2,X2
+4377,2015-03-26,R-X3.1,"Jackman, Dorian",655,R,X,1,X3
+4378,2015-03-26,R-X3.2,"Hendricks, Sandra",655,R,X,2,X3
+4379,2015-03-27,F-A1.1,"Clark, Aaron",647,F,A,1,A1
+4380,2015-03-27,F-A1.2,"Warren, Jeremy",647,F,A,2,A1
+4381,2015-03-27,F-A1.3,"Clark, Aaron",647,F,A,3,A1
+4382,2015-03-27,F-A1.4,"Phillips, Jenna",647,F,A,4,A1
+4383,2015-03-27,F-A2.1,"Ginet, Chris",652,F,A,1,A2
+4384,2015-03-27,F-A2.2,"Ginty, Kyle",652,F,A,2,A2
+4385,2015-03-27,F-A2.3,"Cain, Caleb",652,F,A,3,A2
+4386,2015-03-27,F-A2.4,"Freet, Heather",652,F,A,4,A2
+4387,2015-03-27,F-A3.1,"Hargrove, Paul Brady",641,F,A,1,A3
+4388,2015-03-27,F-A3.2,"Dickerson, Terin Joseph",641,F,A,2,A3
+4389,2015-03-27,F-A4.1,"Foley, Shannon",654,F,A,1,A4
+4390,2015-03-27,F-A4.2,"Muhammad, Natalie",654,F,A,2,A4
+4391,2015-03-27,F-A5.1,"Ainsworth, Sam",658,F,A,1,A5
+4392,2015-03-27,F-B1.1,"Carter, David Alexander",637,F,B,1,B1
+4393,2015-03-27,F-B1.2,"Bobyak, Lindsay",637,F,B,2,B1
+4394,2015-03-27,F-B1.3,"Cochrane, Meredith",637,F,B,3,B1
+4395,2015-03-27,F-B2.1,"Hunter, Rob",660,F,B,1,B2
+4396,2015-03-27,F-B2.2,"Guo, Xiao",660,F,B,2,B2
+4397,2015-03-27,F-E1.1,"Matthews, Roy",661,F,E,1,E1
+4398,2015-03-27,F-E1.2,"Cuevas, Rebekah",661,F,E,2,E1
+4399,2015-03-27,F-E1.3,"Widlowski, Robert",661,F,E,3,E1
+4400,2015-03-27,F-E2.1,"Figg, Korbin Patrick",662,F,E,1,E2
+4401,2015-03-27,F-E2.2,"Bryan, Katie",662,F,E,2,E2
+4402,2015-03-27,F-X1.1,"Clark, Barbara J.",655,F,X,1,X1
+4403,2015-03-27,F-X1.2,"Liechty, Abbey",655,F,X,2,X1
+4404,2015-03-27,F-X2.1,"Shannon, Michiael",659,F,X,1,X2
+4405,2015-03-27,F-X2.2,"Hedges, Cody",659,F,X,2,X2
+4406,2015-03-27,Special,"Cunningham, Ian",644,Special,,,
+4407,2015-03-28,S-A1.1,"Ainsworth, Sam",658,S,A,1,A1
+4408,2015-03-28,S-A1.2,"Ventura, Erin",658,S,A,2,A1
+4409,2015-03-28,S-A1.3,"Phillips, Jenna",658,S,A,3,A1
+4410,2015-03-28,S-B1.1,"Struyf, Nick",652,S,B,1,B1
+4411,2015-03-28,S-B1.2,"Cochrane, Meredith",652,S,B,2,B1
+4412,2015-03-28,S-E1.1,"Diakite, Abdoul",657,S,E,1,E1
+4413,2015-03-28,S-E1.2,"Timm, Aaron",657,S,E,2,E1
+4414,2015-03-28,S-E1.3,"Cunningham, Ian",657,S,E,3,E1
+4415,2015-03-29,U-A1.1,"Ainsworth, Sam",654,U,A,1,A1
+4416,2015-03-29,U-A1.2,"Miessler, Cy",654,U,A,2,A1
+4417,2015-03-29,U-B1.1,"Widlowski, Robert",640,U,B,1,B1
+4418,2015-03-29,U-B1.2,"Cochrane, Meredith",640,U,B,2,B1
+4419,2015-03-29,U-E1.1,"Timm, Aaron",655,U,E,1,E1
+4420,2015-03-29,U-E1.2,"Hendricks, Sandra",655,U,E,2,E1
+4421,2015-03-30,M-A1.1,"Heaton, Brian D.",654,M,A,1,A1
+4422,2015-03-30,M-A1.2,"Bell, Creigh",654,M,A,2,A1
+4423,2015-03-30,M-A1.3,"Phillips, Jenna",640,M,A,3,A1
+4424,2015-03-30,M-A2.1,"LaGarde, Nancy",642,M,A,1,A2
+4425,2015-03-30,M-A2.2,"Cunningham, Ian",642,M,A,2,A2
+4426,2015-03-30,M-A3.1,"Liechty, Abbey",637,M,A,1,A3
+4427,2015-03-30,M-A3.2,"Gillespie, Nathan",637,M,A,2,A3
+4428,2015-03-30,M-A4.1,"Foley, Shannon",644,M,A,1,A4
+4429,2015-03-30,M-A4.2,"Warren, Jeremy",644,M,A,2,A4
+4430,2015-03-30,M-A5.1,"Gallalee, Jack",661,M,A,1,A5
+4431,2015-03-30,M-A6.1,"Fischer, Steven",640,M,A,1,A6
+4432,2015-03-30,M-B1.1,"Hunter, Rob",649,M,B,1,B1
+4433,2015-03-30,M-B1.2,"Kenny, Dominic",649,M,B,2,B1
+4434,2015-03-30,M-B2.1,"Francis, Marshall",636,M,B,1,B2
+4435,2015-03-30,M-B2.2,"Vogt, Austin",636,M,B,2,B2
+4436,2015-03-30,M-B2.3,"Bobyak, Lindsay",636,M,B,3,B2
+4437,2015-03-30,M-B3.1,"Hock, Paul",653,M,B,1,B3
+4438,2015-03-30,M-B4.1,"Cunningham, Ian",641,M,B,1,B4
+4439,2015-03-30,M-B5.1,"Grant, Maria LaGee",639,M,B,1,B5
+4440,2015-03-30,M-E1.1,"Decker, Ernie",659,M,E,1,E1
+4441,2015-03-30,M-E2.1,"Matthews, Roy",660,M,E,1,E2
+4442,2015-03-30,M-E2.2,"Carter, David Alexander",659,M,E,2,E2
+4443,2015-03-30,M-E2.3,"Spicer, Mitch",660,M,E,3,E2
+4444,2015-03-30,M-E3.1,"Miller, Ryan",638,M,E,1,E3
+4445,2015-03-30,M-X1.1,"Clark, Barbara J.",657,M,X,1,X1
+4446,2015-03-30,M-X1.2,"Hedges, Cody",657,M,X,2,X1
+4447,2015-03-30,M-X2.1,"Shannon, Michiael",655,M,X,1,X2
+4448,2015-03-30,M-X2.2,"Eakle, Robert W",655,M,X,2,X2
+4449,2015-03-30,M-X3.1,"Hedges, Cody",656,M,X,1,X3
+4450,2015-03-30,M-X3.2,"Ginty, Kyle",656,M,X,2,X3
+4451,2015-03-31,T-A1.1,"Heaton, Brian D.",661,T,A,1,A1
+4452,2015-03-31,T-A1.2,"Muhammad, Natalie",661,T,A,2,A1
+4453,2015-03-31,T-A1.3,"Warren, Jeremy",661,T,A,3,A1
+4454,2015-03-31,T-A2.1,"LaGarde, Nancy",640,T,A,1,A2
+4455,2015-03-31,T-A2.2,"Freet, Heather",640,T,A,2,A2
+4456,2015-03-31,T-A3.1,"Hargrove, Paul Brady",642,T,A,1,A3
+4457,2015-03-31,T-A3.2,"Carter, David Alexander",642,T,A,2,A3
+4458,2015-03-31,T-A4.1,"Leathers, Daniel",650,T,A,1,A4
+4459,2015-03-31,T-A4.2,"Huffman, Haley",650,T,A,2,A4
+4460,2015-03-31,T-A5.1,"Gallalee, Jack",655,T,A,1,A5
+4461,2015-03-31,T-A6.1,"Fischer, Steven",652,T,A,1,A6
+4462,2015-03-31,T-B1.1,"Hunter, Rob",653,T,B,1,B1
+4463,2015-03-31,T-B1.2,"Struyf, Nick",653,T,B,2,B1
+4464,2015-03-31,T-B2.1,"Francis, Marshall",643,T,B,1,B2
+4465,2015-03-31,T-B2.2,"Clark, Aaron",643,T,B,2,B2
+4466,2015-03-31,T-B2.3,"Dickerson, Terin Joseph",640,T,B,3,B2
+4467,2015-03-31,T-B3.1,"Hock, Paul",639,T,B,1,B3
+4468,2015-03-31,T-B4.1,"Cunningham, Ian",641,T,B,1,B4
+4469,2015-03-31,T-B5.1,"Pinkney, Dewayne J",649,T,B,1,B5
+4470,2015-03-31,T-E1.1,"Decker, Ernie",659,T,E,1,E1
+4471,2015-03-31,T-E2.1,"Matthews, Roy",657,T,E,1,E2
+4472,2015-03-31,T-E2.2,"Bell, Creigh",657,T,E,2,E2
+4473,2015-03-31,T-E2.3,"Kim, Christopher",657,T,E,3,E2
+4474,2015-03-31,T-E3.1,"Chen, Jason",645,T,E,1,E3
+4475,2015-03-31,T-X1.1,"Clark, Barbara J.",662,T,X,1,X1
+4476,2015-03-31,T-X1.2,"Cunningham, Ian",662,T,X,2,X1
+4477,2015-03-31,T-X2.1,"Shannon, Michiael",653,T,X,1,X2
+4478,2015-03-31,T-X2.2,"Miller, Ryan",658,T,X,2,X2
+4479,2015-03-31,T-X3.1,"Lakes, Michael A.",638,T,X,1,X3
+4480,2015-03-31,T-X3.2,"Hendricks, Sandra",638,T,X,2,X3
+4481,2015-04-01,W-A1.1,"Heaton, Brian D.",638,W,A,1,A1
+4482,2015-04-01,W-A1.2,"Miller, Ryan",638,W,A,2,A1
+4483,2015-04-01,W-A1.3,"Gaisser, Karl",638,W,A,3,A1
+4484,2015-04-01,W-A2.1,"LaGarde, Nancy",647,W,A,1,A2
+4485,2015-04-01,W-A2.2,"Prichard, Curtis",647,W,A,2,A2
+4486,2015-04-01,W-A3.1,"Ventura, Erin",640,W,A,1,A3
+4487,2015-04-01,W-A3.2,"Palmer, Fileve",640,W,A,2,A3
+4488,2015-04-01,W-A4.1,"Foley, Shannon",645,W,A,1,A4
+4489,2015-04-01,W-A4.2,"Vogt, Austin",636,W,A,2,A4
+4490,2015-04-01,W-A5.1,"Gallalee, Jack",650,W,A,1,A5
+4491,2015-04-01,W-A6.1,"Fischer, Steven",652,W,A,1,A6
+4492,2015-04-01,W-B1.1,"Hunter, Rob",639,W,B,1,B1
+4493,2015-04-01,W-B1.2,"Russell, Briana",639,W,B,2,B1
+4494,2015-04-01,W-B2.1,"Francis, Marshall",653,W,B,1,B2
+4495,2015-04-01,W-B2.2,"Kenny, Dominic",653,W,B,2,B2
+4496,2015-04-01,W-B2.3,"Widlowski, Robert",653,W,B,3,B2
+4497,2015-04-01,W-B3.1,"Hock, Paul",637,W,B,1,B3
+4498,2015-04-01,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+4499,2015-04-01,W-B5.1,"Hedges, Cody",649,W,B,1,B5
+4500,2015-04-01,W-E1.1,"Decker, Ernie",657,W,E,1,E1
+4501,2015-04-01,W-E2.1,"Matthews, Roy",660,W,E,1,E2
+4502,2015-04-01,W-E2.2,"Cuevas, Rebekah",660,W,E,2,E2
+4503,2015-04-01,W-E2.2,"Bell, Creigh",656,W,E,2,E2
+4504,2015-04-01,W-E2.3,"Ainsworth, Sam",660,W,E,3,E2
+4505,2015-04-01,W-E3.1,"Grant, Maria LaGee",656,W,E,1,E3
+4506,2015-04-01,W-X1.1,"Clark, Barbara J.",659,W,X,1,X1
+4507,2015-04-01,W-X1.2,"Cain, Caleb",659,W,X,2,X1
+4508,2015-04-01,W-X2.1,"Shannon, Michiael",654,W,X,1,X2
+4509,2015-04-01,W-X2.2,"Ginty, Kyle",654,W,X,2,X2
+4510,2015-04-01,W-X3.1,"Liechty, Abbey",662,W,X,1,X3
+4511,2015-04-01,W-X3.2,"Carter, David Alexander",662,W,X,2,X3
+4512,2015-04-01,Auditorium,"Bryan, Katie",652,Auditorium,,,
+4513,2015-04-02,R-A1.1,"Heaton, Brian D.",661,R,A,1,A1
+4514,2015-04-02,R-A1.2,"Cunningham, Ian",661,R,A,2,A1
+4515,2015-04-02,R-A1.3,"Miessler, Cy",661,R,A,3,A1
+4516,2015-04-02,R-A2.1,"LaGarde, Nancy",645,R,A,1,A2
+4517,2015-04-02,R-A2.2,"Cochrane, Meredith",645,R,A,2,A2
+4518,2015-04-02,R-A3.1,"Jackman, Dorian",640,R,A,1,A3
+4519,2015-04-02,R-A3.2,"Ainsworth, Sam",640,R,A,2,A3
+4520,2015-04-02,R-A4.1,"Foley, Shannon",647,R,A,1,A4
+4521,2015-04-02,R-A4.2,"Carter, David Alexander",647,R,A,2,A4
+4522,2015-04-02,R-A5.1,"Gallalee, Jack",652,R,A,1,A5
+4523,2015-04-02,R-A6.1,"Fischer, Steven",642,R,A,1,A6
+4524,2015-04-02,R-B1.1,"Hunter, Rob",644,R,B,1,B1
+4525,2015-04-02,R-B1.2,"Struyf, Nick",644,R,B,2,B1
+4526,2015-04-02,R-B2.1,"Francis, Marshall",653,R,B,1,B2
+4527,2015-04-02,R-B2.2,"Keating, Logan",653,R,B,2,B2
+4528,2015-04-02,R-B2.3,"Ventura, Erin",653,R,B,3,B2
+4529,2015-04-02,R-B3.1,"Cochrane, Meredith",639,R,B,1,B3
+4530,2015-04-02,R-B4.1,"Bise III, John H.",641,R,B,1,B4
+4531,2015-04-02,R-B5.1,"Miller, Ryan",637,R,B,1,B5
+4532,2015-04-02,R-E1.1,"Decker, Ernie",658,R,E,1,E1
+4533,2015-04-02,R-E2.1,"Matthews, Roy",656,R,E,1,E2
+4534,2015-04-02,R-E2.3,"Dickerson, Terin Joseph",656,R,E,3,E2
+4535,2015-04-02,R-E3.1,"Diakite, Abdoul",654,R,E,1,E3
+4536,2015-04-02,R-X1.1,"Clark, Barbara J.",659,R,X,1,X1
+4537,2015-04-02,R-X1.2,"Clark, Aaron",659,R,X,2,X1
+4538,2015-04-02,R-X2.1,"Shannon, Michiael",657,R,X,1,X2
+4539,2015-04-02,R-X2.2,"Eakle, Robert W",657,R,X,2,X2
+4540,2015-04-02,R-X3.1,"Kim, Christopher",662,R,X,1,X3
+4541,2015-04-02,R-X3.2,"Hendricks, Sandra",662,R,X,2,X3
+4542,2015-04-03,F-A1.1,"Clark, Aaron",650,F,A,1,A1
+4543,2015-04-03,F-A1.2,"Warren, Jeremy",650,F,A,2,A1
+4544,2015-04-03,F-A1.3,"Thomas, Phillip",650,F,A,3,A1
+4545,2015-04-03,F-A1.4,"Phillips, Jenna",650,F,A,4,A1
+4546,2015-04-03,F-A2.1,"Ginet, Chris",640,F,A,1,A2
+4547,2015-04-03,F-A2.2,"Ginty, Kyle",640,F,A,2,A2
+4548,2015-04-03,F-A2.3,"Cain, Caleb",640,F,A,3,A2
+4549,2015-04-03,F-A2.4,"Freet, Heather",640,F,A,4,A2
+4550,2015-04-03,F-A3.1,"Carter, David Alexander",647,F,A,1,A3
+4551,2015-04-03,F-A3.2,"Dickerson, Terin Joseph",647,F,A,2,A3
+4552,2015-04-03,F-A4.1,"Foley, Shannon",648,F,A,1,A4
+4553,2015-04-03,F-A4.2,"Muhammad, Natalie",648,F,A,2,A4
+4554,2015-04-03,F-A5.1,"Ainsworth, Sam",652,F,A,1,A5
+4555,2015-04-03,F-B1.1,"Grant, Maria LaGee",653,F,B,1,B1
+4556,2015-04-03,F-B1.2,"Kim, Christopher",653,F,B,2,B1
+4557,2015-04-03,F-B1.3,"Gillespie, Nathan",653,F,B,3,B1
+4558,2015-04-03,F-B2.1,"Hunter, Rob",649,F,B,1,B2
+4559,2015-04-03,F-B2.2,"Miller, Ryan",645,F,B,2,B2
+4560,2015-04-03,F-E1.1,"Matthews, Roy",654,F,E,1,E1
+4561,2015-04-03,F-E1.2,"Cuevas, Rebekah",654,F,E,2,E1
+4562,2015-04-03,F-E1.3,"Widlowski, Robert",654,F,E,3,E1
+4563,2015-04-03,F-E2.1,"Jackman, Dorian",659,F,E,1,E2
+4564,2015-04-03,F-E2.2,"Englebert, Briana",659,F,E,2,E2
+4565,2015-04-03,F-X1.1,"Clark, Barbara J.",662,F,X,1,X1
+4566,2015-04-03,F-X1.2,"Liechty, Abbey",662,F,X,2,X1
+4567,2015-04-03,F-X2.1,"Shannon, Michiael",658,F,X,1,X2
+4568,2015-04-03,F-X2.2,"Hedges, Cody",658,F,X,2,X2
+4569,2015-04-04,S-A1.1,"Liechty, Abbey",652,S,A,1,A1
+4570,2015-04-04,S-A1.2,"Ventura, Erin",652,S,A,2,A1
+4571,2015-04-04,S-A1.3,"Englebert, Briana",652,S,A,3,A1
+4572,2015-04-04,S-B1.1,"Struyf, Nick",648,S,B,1,B1
+4573,2015-04-04,S-B1.2,"Cochrane, Meredith",648,S,B,2,B1
+4574,2015-04-04,S-E1.1,"Diakite, Abdoul",653,S,E,1,E1
+4575,2015-04-04,S-E1.2,"Timm, Aaron",652,S,E,2,E1
+4576,2015-04-04,S-E1.3,"Freet, Heather",653,S,E,3,E1
+4577,2015-04-05,U-A1.1,"Phillips, Jenna",638,U,A,1,A1
+4578,2015-04-05,U-A1.2,"Miessler, Cy",638,U,A,2,A1
+4579,2015-04-05,U-B1.1,"Liechty, Abbey",639,U,B,1,B1
+4580,2015-04-05,U-B1.2,"Cochrane, Meredith",639,U,B,2,B1
+4581,2015-04-05,U-E1.1,"Cochrane, Meredith",656,U,E,1,E1
+4582,2015-04-05,U-E1.2,"Hendricks, Sandra",656,U,E,2,E1
+4583,2015-04-06,M-A1.1,"Heaton, Brian D.",640,M,A,1,A1
+4584,2015-04-06,M-A1.2,"Bell, Creigh",640,M,A,2,A1
+4585,2015-04-06,M-A1.3,"Phillips, Jenna",640,M,A,3,A1
+4586,2015-04-06,M-A2.1,"LaGarde, Nancy",645,M,A,1,A2
+4587,2015-04-06,M-A2.2,"Cunningham, Ian",645,M,A,2,A2
+4588,2015-04-06,M-A3.1,"Hargrove, Paul Brady",652,M,A,1,A3
+4589,2015-04-06,M-A3.2,"Gillespie, Nathan",652,M,A,2,A3
+4590,2015-04-06,M-A4.1,"Foley, Shannon",636,M,A,1,A4
+4591,2015-04-06,M-A4.2,"Warren, Jeremy",636,M,A,2,A4
+4592,2015-04-06,M-A5.1,"Gallalee, Jack",648,M,A,1,A5
+4593,2015-04-06,M-A6.1,"Fischer, Steven",650,M,A,1,A6
+4594,2015-04-06,M-B1.1,"Hunter, Rob",639,M,B,1,B1
+4595,2015-04-06,M-B1.2,"Russell, Briana",639,M,B,2,B1
+4596,2015-04-06,M-B2.1,"Francis, Marshall",651,M,B,1,B2
+4597,2015-04-06,M-B2.2,"Bryan, Katie",651,M,B,2,B2
+4598,2015-04-06,M-B2.3,"Miller, Gregg",651,M,B,3,B2
+4599,2015-04-06,M-B3.1,"Hock, Paul",637,M,B,1,B3
+4600,2015-04-06,M-B4.1,"Bise III, John H.",641,M,B,1,B4
+4601,2015-04-06,M-B5.1,"Grant, Maria LaGee",643,M,B,1,B5
+4602,2015-04-06,M-E1.1,"Decker, Ernie",662,M,E,1,E1
+4603,2015-04-06,M-E2.1,"Matthews, Roy",659,M,E,1,E2
+4604,2015-04-06,M-E2.2,"Carter, David Alexander",659,M,E,2,E2
+4605,2015-04-06,M-E2.3,"Spicer, Mitch",659,M,E,3,E2
+4606,2015-04-06,M-E3.1,"Diakite, Abdoul",654,M,E,1,E3
+4607,2015-04-06,M-X1.1,"Clark, Barbara J.",658,M,X,1,X1
+4609,2015-04-06,M-X1.2,"Hedges, Cody",658,M,X,2,X1
+4610,2015-04-06,M-X2.1,"Shannon, Michiael",657,M,X,1,X2
+4611,2015-04-06,M-X2.2,"Eakle, Robert W",657,M,X,2,X2
+4612,2015-04-06,M-X3.1,"Carter, David Alexander",656,M,X,1,X3
+4613,2015-04-06,M-X3.2,"Ginty, Kyle",656,M,X,2,X3
+4614,2015-04-07,T-A1.1,"Heaton, Brian D.",642,T,A,1,A1
+4615,2015-04-07,T-A1.2,"Muhammad, Natalie",651,T,A,2,A1
+4616,2015-04-07,T-A1.3,"Warren, Jeremy",651,T,A,3,A1
+4617,2015-04-07,T-A2.1,"LaGarde, Nancy",645,T,A,1,A2
+4618,2015-04-07,T-A2.2,"Bandy, Kyle",645,T,A,2,A2
+4619,2015-04-07,T-A3.1,"Hargrove, Paul Brady",647,T,A,1,A3
+4620,2015-04-07,T-A3.2,"Carter, David Alexander",647,T,A,2,A3
+4621,2015-04-07,T-A4.1,"Foley, Shannon",643,T,A,1,A4
+4622,2015-04-07,T-A4.2,"Huffman, Haley",643,T,A,2,A4
+4623,2015-04-07,T-A5.1,"Gallalee, Jack",640,T,A,1,A5
+4624,2015-04-07,T-A6.1,"Fischer, Steven",638,T,A,1,A6
+4625,2015-04-07,T-B1.1,"Hunter, Rob",637,T,B,1,B1
+4626,2015-04-07,T-B1.2,"Struyf, Nick",637,T,B,2,B1
+4627,2015-04-07,T-B2.1,"Francis, Marshall",653,T,B,1,B2
+4628,2015-04-07,T-B2.2,"Shannon, Michiael",653,T,B,2,B2
+4629,2015-04-07,T-B2.3,"Dickerson, Terin Joseph",653,T,B,3,B2
+4630,2015-04-07,T-B3.1,"Hock, Paul",644,T,B,1,B3
+4631,2015-04-07,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+4632,2015-04-07,T-B5.1,"Pinkney, Dewayne J",639,T,B,1,B5
+4633,2015-04-07,T-E1.1,"Decker, Ernie",662,T,E,1,E1
+4634,2015-04-07,T-E2.1,"Matthews, Roy",655,T,E,1,E2
+4635,2015-04-07,T-E2.2,"Bell, Creigh",655,T,E,2,E2
+4636,2015-04-07,T-E2.3,"Huffman, Haley",643,T,E,3,E2
+4637,2015-04-07,T-E3.1,"Chen, Jason",656,T,E,1,E3
+4638,2015-04-07,T-X1.1,"Clark, Barbara J.",661,T,X,1,X1
+4639,2015-04-07,T-X1.2,"Cunningham, Ian",661,T,X,2,X1
+4640,2015-04-07,T-X2.1,"Shannon, Michiael",657,T,X,1,X2
+4641,2015-04-07,T-X2.2,"Miller, Ryan",657,T,X,2,X2
+4642,2015-04-07,T-X3.1,"Lakes, Michael A.",654,T,X,1,X3
+4643,2015-04-07,T-X3.2,"Hendricks, Sandra",654,T,X,2,X3
+4644,2015-04-07,Auditorium,"Timm, Aaron",662,Auditorium,,,
+4645,2015-04-08,W-A1.1,"Heaton, Brian D.",647,W,A,1,A1
+4646,2015-04-08,W-A1.2,"Bryan, Katie",647,W,A,2,A1
+4647,2015-04-08,W-A1.3,"Guo, Xiao",647,W,A,3,A1
+4648,2015-04-08,W-A2.1,"LaGarde, Nancy",638,W,A,1,A2
+4649,2015-04-08,W-A2.2,"Cochrane, Meredith",638,W,A,2,A2
+4650,2015-04-08,W-A3.1,"Hargrove, Paul Brady",653,W,A,1,A3
+4651,2015-04-08,W-A3.2,"Cunningham, Ian",653,W,A,2,A3
+4652,2015-04-08,W-A4.1,"Foley, Shannon",640,W,A,1,A4
+4653,2015-04-08,W-A4.2,"Vogt, Austin",640,W,A,2,A4
+4654,2015-04-08,W-A5.1,"Gallalee, Jack",645,W,A,1,A5
+4655,2015-04-08,W-A6.1,"Fischer, Steven",648,W,A,1,A6
+4656,2015-04-08,W-B1.1,"Hunter, Rob",643,W,B,1,B1
+4657,2015-04-08,W-B1.2,"Russell, Briana",643,W,B,2,B1
+4658,2015-04-08,W-B2.1,"Freet, Heather",636,W,B,1,B2
+4659,2015-04-08,W-B2.2,"Englebert, Briana",636,W,B,2,B2
+4660,2015-04-08,W-B2.3,"Gaisser, Karl",636,W,B,3,B2
+4661,2015-04-08,W-B3.1,"Hock, Paul",639,W,B,1,B3
+4662,2015-04-08,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+4663,2015-04-08,W-B5.1,"Pinkney, Dewayne J",637,W,B,1,B5
+4664,2015-04-08,W-E1.1,"Decker, Ernie",658,W,E,1,E1
+4665,2015-04-08,W-E2.1,"Matthews, Roy",659,W,E,1,E2
+4666,2015-04-08,W-E2.2,"Cuevas, Rebekah",659,W,E,2,E2
+4667,2015-04-08,W-E2.3,"Ginty, Kyle",659,W,E,3,E2
+4668,2015-04-08,W-E3.1,"Grant, Maria LaGee",654,W,E,1,E3
+4669,2015-04-08,W-X1.1,"Clark, Barbara J.",656,W,X,1,X1
+4670,2015-04-08,W-X1.2,"Cain, Caleb",656,W,X,2,X1
+4671,2015-04-08,W-X2.1,"Shannon, Michiael",657,W,X,1,X2
+4672,2015-04-08,W-X2.2,"Ginty, Kyle",657,W,X,2,X2
+4673,2015-04-08,W-X3.1,"Liechty, Abbey",662,W,X,1,X3
+4674,2015-04-08,W-X3.2,"Carter, David Alexander",662,W,X,2,X3
+4675,2015-04-09,R-A1.1,"Heaton, Brian D.",648,R,A,1,A1
+4676,2015-04-09,R-A1.2,"Cunningham, Ian",648,R,A,2,A1
+4677,2015-04-09,R-A1.3,"Miessler, Cy",648,R,A,3,A1
+4678,2015-04-09,R-A2.1,"Leathers, Daniel",642,R,A,1,A2
+4679,2015-04-09,R-A2.2,"Figg, Korbin Patrick",642,R,A,2,A2
+4680,2015-04-09,R-A3.1,"Hargrove, Paul Brady",640,R,A,1,A3
+4681,2015-04-09,R-A3.2,"Ainsworth, Sam",640,R,A,2,A3
+4682,2015-04-09,R-A4.1,"Foley, Shannon",638,R,A,1,A4
+4683,2015-04-09,R-A4.2,"Cochrane, Meredith",638,R,A,2,A4
+4684,2015-04-09,R-A5.1,"Gallalee, Jack",637,R,A,1,A5
+4685,2015-04-09,R-A6.1,"Fischer, Steven",650,R,A,1,A6
+4686,2015-04-09,R-B1.1,"Hunter, Rob",653,R,B,1,B1
+4687,2015-04-09,R-B1.2,"Palmer, Fileve",662,R,B,2,B1
+4688,2015-04-09,R-B2.1,"Francis, Marshall",643,R,B,1,B2
+4689,2015-04-09,R-B2.2,"Bryan, Katie",643,R,B,2,B2
+4690,2015-04-09,R-B2.3,"Ventura, Erin",643,R,B,3,B2
+4691,2015-04-09,R-B3.1,"Hock, Paul",636,R,B,1,B3
+4692,2015-04-09,R-B4.1,"Bise III, John H.",641,R,B,1,B4
+4693,2015-04-09,R-B5.1,"Hedges, Cody",654,R,B,1,B5
+4694,2015-04-09,R-E1.1,"Decker, Ernie",658,R,E,1,E1
+4695,2015-04-09,R-E2.1,"Matthews, Roy",659,R,E,1,E2
+4696,2015-04-09,R-E2.2,"Bell, Creigh",659,R,E,2,E2
+4697,2015-04-09,R-E2.3,"Dickerson, Terin Joseph",659,R,E,3,E2
+4698,2015-04-09,R-E3.1,"Diakite, Abdoul",657,R,E,1,E3
+4699,2015-04-09,R-X1.1,"Clark, Barbara J.",661,R,X,1,X1
+4700,2015-04-09,R-X1.2,"Clark, Aaron",661,R,X,2,X1
+4701,2015-04-09,R-X2.1,"Shannon, Michiael",655,R,X,1,X2
+4702,2015-04-09,R-X2.2,"Eakle, Robert W",655,R,X,2,X2
+4703,2015-04-09,R-X3.1,"Kim, Christopher",656,R,X,1,X3
+4704,2015-04-09,R-X3.2,"Hendricks, Sandra",656,R,X,2,X3
+4705,2015-04-10,F-A1.1,"Clark, Aaron",645,F,A,1,A1
+4706,2015-04-10,F-A1.2,"Warren, Jeremy",645,F,A,2,A1
+4707,2015-04-10,F-A1.3,"Clark, Aaron",645,F,A,3,A1
+4708,2015-04-10,F-A1.4,"Phillips, Jenna",645,F,A,4,A1
+4709,2015-04-10,F-A2.1,"Ginet, Chris",647,F,A,1,A2
+4710,2015-04-10,F-A2.2,"Ginty, Kyle",647,F,A,2,A2
+4711,2015-04-10,F-A2.3,"Cain, Caleb",647,F,A,3,A2
+4712,2015-04-10,F-A2.4,"Freet, Heather",647,F,A,4,A2
+4713,2015-04-10,F-A3.1,"Hargrove, Paul Brady",652,F,A,1,A3
+4714,2015-04-10,F-A3.2,"Dickerson, Terin Joseph",652,F,A,2,A3
+4715,2015-04-10,F-A4.1,"Foley, Shannon",641,F,A,1,A4
+4716,2015-04-10,F-A4.2,"Muhammad, Natalie",641,F,A,2,A4
+4717,2015-04-10,F-A5.1,"Ainsworth, Sam",650,F,A,1,A5
+4718,2015-04-10,F-B1.1,"Grant, Maria LaGee",643,F,B,1,B1
+4719,2015-04-10,F-B1.2,"Kim, Christopher",643,F,B,2,B1
+4720,2015-04-10,F-B1.3,"Hendricks, Sandra",643,F,B,3,B1
+4721,2015-04-10,F-B2.1,"Hunter, Rob",636,F,B,1,B2
+4722,2015-04-10,F-B2.2,"Callahan, James",636,F,B,2,B2
+4723,2015-04-10,F-E1.1,"Matthews, Roy",654,F,E,1,E1
+4724,2015-04-10,F-E1.2,"Cuevas, Rebekah",654,F,E,2,E1
+4725,2015-04-10,F-E1.3,"Widlowski, Robert",654,F,E,3,E1
+4726,2015-04-10,F-E2.2,"Cunningham, Ian",657,F,E,2,E2
+4727,2015-04-10,F-X1.1,"Hedges, Cody",662,F,X,1,X1
+4728,2015-04-10,F-X1.2,"Liechty, Abbey",662,F,X,2,X1
+4729,2015-04-10,F-X2.1,"Shannon, Michiael",648,F,X,1,X2
+4730,2015-04-10,F-X2.2,"Hedges, Cody",648,F,X,2,X2
+4731,2015-04-11,S-A1.1,"Bobyak, Lindsay",662,S,A,1,A1
+4732,2015-04-11,S-A1.2,"Ventura, Erin",662,S,A,2,A1
+4733,2015-04-11,S-A1.3,"Warren, Jeremy",662,S,A,3,A1
+4734,2015-04-11,S-B1.1,"Bell, Creigh",661,S,B,1,B1
+4735,2015-04-11,S-B1.2,"Cochrane, Meredith",661,S,B,2,B1
+4736,2015-04-11,S-E1.1,"Diakite, Abdoul",658,S,E,1,E1
+4737,2015-04-11,S-E1.2,"Timm, Aaron",658,S,E,2,E1
+4738,2015-04-11,S-E1.3,"Cunningham, Ian",652,S,E,3,E1
+4739,2015-04-11,Auditorium,"Ainsworth, Sam",638,Auditorium,,,
+4740,2015-04-12,U-A1.1,"Palmer, Fileve",652,U,A,1,A1
+4741,2015-04-12,U-A1.2,"Ainsworth, Sam",652,U,A,2,A1
+4742,2015-04-12,U-B1.1,"Widlowski, Robert",641,U,B,1,B1
+4743,2015-04-12,U-B1.2,"Cochrane, Meredith",641,U,B,2,B1
+4744,2015-04-12,U-E1.1,"Timm, Aaron",661,U,E,1,E1
+4745,2015-04-12,U-E1.2,"Hendricks, Sandra",661,U,E,2,E1
+4746,2015-04-12,Auditorium,"Freet, Heather",648,Auditorium,,,
+4747,2015-04-12,Special,"Thomas, Phillip",654,Special,,,
+4748,2015-04-13,M-A1.1,"Heaton, Brian D.",647,M,A,1,A1
+4749,2015-04-13,M-A1.2,"Bell, Creigh",647,M,A,2,A1
+4750,2015-04-13,M-A1.3,"Phillips, Jenna",647,M,A,3,A1
+4751,2015-04-13,M-A2.1,"Liechty, Abbey",645,M,A,1,A2
+4752,2015-04-13,M-A2.2,"Cunningham, Ian",645,M,A,2,A2
+4753,2015-04-13,M-A3.1,"Hargrove, Paul Brady",640,M,A,1,A3
+4754,2015-04-13,M-A3.2,"Cochrane, Meredith",640,M,A,2,A3
+4755,2015-04-13,M-A4.1,"Foley, Shannon",652,M,A,1,A4
+4756,2015-04-13,M-A4.2,"Warren, Jeremy",652,M,A,2,A4
+4757,2015-04-13,M-A5.1,"Gallalee, Jack",650,M,A,1,A5
+4758,2015-04-13,M-A6.1,"Fischer, Steven",648,M,A,1,A6
+4759,2015-04-13,M-B1.1,"Hunter, Rob",639,M,B,1,B1
+4760,2015-04-13,M-B1.2,"Russell, Briana",639,M,B,2,B1
+4761,2015-04-13,M-B2.1,"Francis, Marshall",651,M,B,1,B2
+4762,2015-04-13,M-B2.2,"Vogt, Austin",651,M,B,2,B2
+4763,2015-04-13,M-B2.3,"Bobyak, Lindsay",651,M,B,3,B2
+4764,2015-04-13,M-B3.1,"Hock, Paul",637,M,B,1,B3
+4765,2015-04-13,M-B4.1,"Bise III, John H.",641,M,B,1,B4
+4766,2015-04-13,M-B5.1,"Grant, Maria LaGee",644,M,B,1,B5
+4767,2015-04-13,M-E1.1,"Decker, Ernie",662,M,E,1,E1
+4768,2015-04-13,M-E2.1,"Matthews, Roy",661,M,E,1,E2
+4769,2015-04-13,M-E2.2,"Carter, David Alexander",661,M,E,2,E2
+4770,2015-04-13,M-E2.3,"Spicer, Mitch",661,M,E,3,E2
+4771,2015-04-13,M-E3.1,"Diakite, Abdoul",636,M,E,1,E3
+4772,2015-04-13,M-X1.1,"Clark, Barbara J.",656,M,X,1,X1
+4773,2015-04-13,M-X1.2,"Hedges, Cody",656,M,X,2,X1
+4774,2015-04-13,M-X2.1,"Shannon, Michiael",655,M,X,1,X2
+4775,2015-04-13,M-X2.2,"Eakle, Robert W",655,M,X,2,X2
+4776,2015-04-13,M-X3.1,"Hedges, Cody",657,M,X,1,X3
+4777,2015-04-13,M-X3.2,"Ginty, Kyle",657,M,X,2,X3
+4778,2015-04-14,T-A1.1,"Heaton, Brian D.",652,T,A,1,A1
+4779,2015-04-14,T-A1.2,"Muhammad, Natalie",657,T,A,2,A1
+4780,2015-04-14,T-A1.3,"Warren, Jeremy",657,T,A,3,A1
+4781,2015-04-14,T-A2.1,"LaGarde, Nancy",647,T,A,1,A2
+4782,2015-04-14,T-A2.2,"Freet, Heather",647,T,A,2,A2
+4783,2015-04-14,T-A3.1,"Hargrove, Paul Brady",650,T,A,1,A3
+4784,2015-04-14,T-A3.2,"Carter, David Alexander",650,T,A,2,A3
+4785,2015-04-14,T-A4.1,"Foley, Shannon",645,T,A,1,A4
+4786,2015-04-14,T-A4.2,"Huffman, Haley",645,T,A,2,A4
+4787,2015-04-14,T-A5.1,"Gallalee, Jack",648,T,A,1,A5
+4788,2015-04-14,T-A6.1,"Fischer, Steven",640,T,A,1,A6
+4789,2015-04-14,T-B1.1,"Hunter, Rob",639,T,B,1,B1
+4790,2015-04-14,T-B1.2,"Palmer, Fileve",639,T,B,2,B1
+4791,2015-04-14,T-B2.1,"Francis, Marshall",643,T,B,1,B2
+4792,2015-04-14,T-B2.2,"Vogt, Austin",643,T,B,2,B2
+4793,2015-04-14,T-B2.3,"Dickerson, Terin Joseph",643,T,B,3,B2
+4794,2015-04-14,T-B3.1,"Hock, Paul",637,T,B,1,B3
+4795,2015-04-14,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+4796,2015-04-14,T-B5.1,"Hedges, Cody",651,T,B,1,B5
+4797,2015-04-14,T-E1.1,"Decker, Ernie",656,T,E,1,E1
+4798,2015-04-14,T-E2.1,"Matthews, Roy",661,T,E,1,E2
+4799,2015-04-14,T-E2.2,"Bell, Creigh",661,T,E,2,E2
+4800,2015-04-14,T-E2.3,"Liechty, Abbey",661,T,E,3,E2
+4801,2015-04-14,T-E3.1,"Chen, Jason",662,T,E,1,E3
+4802,2015-04-14,T-X1.1,"Clark, Barbara J.",658,T,X,1,X1
+4803,2015-04-14,T-X1.2,"Cunningham, Ian",658,T,X,2,X1
+4804,2015-04-14,T-X2.1,"Shannon, Michiael",660,T,X,1,X2
+4805,2015-04-14,T-X2.2,"Miller, Ryan",660,T,X,2,X2
+4806,2015-04-14,T-X3.1,"Lakes, Michael A.",655,T,X,1,X3
+4807,2015-04-14,T-X3.2,"Hendricks, Sandra",655,T,X,2,X3
+4808,2015-04-14,Auditorium,"Timm, Aaron",640,Auditorium,,,
+4809,2015-04-15,W-A1.1,"Heaton, Brian D.",638,W,A,1,A1
+4810,2015-04-15,W-A1.2,"Bryan, Katie",638,W,A,2,A1
+4811,2015-04-15,W-A1.3,"Guo, Xiao",638,W,A,3,A1
+4812,2015-04-15,W-A2.1,"LaGarde, Nancy",645,W,A,1,A2
+4813,2015-04-15,W-A2.2,"Cochrane, Meredith",645,W,A,2,A2
+4814,2015-04-15,W-A3.1,"Hargrove, Paul Brady",650,W,A,1,A3
+4815,2015-04-15,W-A3.2,"Jackman, Dorian",650,W,A,2,A3
+4816,2015-04-15,W-A4.1,"Foley, Shannon",652,W,A,1,A4
+4817,2015-04-15,W-A4.2,"Vogt, Austin",652,W,A,2,A4
+4818,2015-04-15,W-A5.1,"Gallalee, Jack",647,W,A,1,A5
+4819,2015-04-15,W-A6.1,"Fischer, Steven",648,W,A,1,A6
+4820,2015-04-15,W-B1.1,"Ventura, Erin",643,W,B,1,B1
+4821,2015-04-15,W-B1.2,"Russell, Briana",643,W,B,2,B1
+4822,2015-04-15,M-B2.1,"Francis, Marshall",639,M,B,1,B2
+4823,2015-04-15,W-B2.2,"Kenny, Dominic",639,W,B,2,B2
+4824,2015-04-15,W-B2.3,"Bandy, Kyle",639,W,B,3,B2
+4825,2015-04-15,W-B3.1,"Hock, Paul",644,W,B,1,B3
+4826,2015-04-15,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+4827,2015-04-15,W-B5.1,"Cunningham, Ian",651,W,B,1,B5
+4828,2015-04-15,W-E1.1,"Decker, Ernie",661,W,E,1,E1
+4829,2015-04-15,W-E2.1,"Matthews, Roy",655,W,E,1,E2
+4830,2015-04-15,W-E2.2,"Cuevas, Rebekah",655,W,E,2,E2
+4831,2015-04-15,W-E2.3,"Ainsworth, Sam",655,W,E,3,E2
+4832,2015-04-15,W-E3.1,"Grant, Maria LaGee",660,W,E,1,E3
+4833,2015-04-15,W-X1.1,"Clark, Barbara J.",657,W,X,1,X1
+4834,2015-04-15,W-X1.2,"Cain, Caleb",657,W,X,2,X1
+4835,2015-04-15,W-X2.1,"Shannon, Michiael",658,W,X,1,X2
+4836,2015-04-15,W-X2.2,"Ginty, Kyle",658,W,X,2,X2
+4837,2015-04-15,W-X3.1,"Liechty, Abbey",656,W,X,1,X3
+4838,2015-04-15,W-X3.2,"Carter, David Alexander",656,W,X,2,X3
+4839,2015-04-15,Auditorium,"Keating, Logan",661,Auditorium,,,
+4840,2015-04-16,R-A1.1,"Heaton, Brian D.",647,R,A,1,A1
+4841,2015-04-16,R-A1.2,"Cunningham, Ian",647,R,A,2,A1
+4842,2015-04-16,R-A1.3,"Miessler, Cy",647,R,A,3,A1
+4843,2015-04-16,R-A2.1,"LaGarde, Nancy",645,R,A,1,A2
+4844,2015-04-16,R-A2.2,"Bandy, Kyle",645,R,A,2,A2
+4845,2015-04-16,R-A3.1,"Hargrove, Paul Brady",638,R,A,1,A3
+4846,2015-04-16,R-A3.2,"Ainsworth, Sam",638,R,A,2,A3
+4847,2015-04-16,R-A4.1,"Foley, Shannon",650,R,A,1,A4
+4848,2015-04-16,R-A4.2,"Cochrane, Meredith",650,R,A,2,A4
+4849,2015-04-16,R-A5.1,"Gallalee, Jack",652,R,A,1,A5
+4850,2015-04-16,R-A6.1,"Fischer, Steven",640,R,A,1,A6
+4851,2015-04-16,R-B1.1,"Carter, David Alexander",651,R,B,1,B1
+4852,2015-04-16,R-B1.2,"Palmer, Fileve",651,R,B,2,B1
+4853,2015-04-16,R-B2.1,"Francis, Marshall",643,R,B,1,B2
+4854,2015-04-16,R-B2.2,"Englebert, Briana",643,R,B,2,B2
+4855,2015-04-16,R-B2.3,"Ventura, Erin",643,R,B,3,B2
+4856,2015-04-16,R-B3.1,"Hock, Paul",637,R,B,1,B3
+4857,2015-04-16,R-B4.1,"Bise III, John H.",641,R,B,1,B4
+4858,2015-04-16,R-B5.1,"Callahan, James",648,R,B,1,B5
+4859,2015-04-16,R-E1.1,"Decker, Ernie",658,R,E,1,E1
+4860,2015-04-16,R-E2.1,"Matthews, Roy",656,R,E,1,E2
+4861,2015-04-16,R-E2.2,"Bell, Creigh",656,R,E,2,E2
+4862,2015-04-16,R-E2.3,"Cuevas, Rebekah",656,R,E,3,E2
+4863,2015-04-16,R-E3.1,"Diakite, Abdoul",662,R,E,1,E3
+4864,2015-04-16,R-X1.1,"Clark, Barbara J.",661,R,X,1,X1
+4865,2015-04-16,R-X1.2,"Clark, Aaron",661,R,X,2,X1
+4866,2015-04-16,R-X2.1,"Shannon, Michiael",655,R,X,1,X2
+4867,2015-04-16,R-X2.2,"Eakle, Robert W",658,R,X,2,X2
+4868,2015-04-16,R-X3.1,"Kim, Christopher",660,R,X,1,X3
+4869,2015-04-16,R-X3.2,"Hendricks, Sandra",660,R,X,2,X3
+4870,2015-04-16,Auditorium,"Hendricks, Sandra",660,Auditorium,,,
+4871,2015-04-17,F-A1.1,"Clark, Aaron",641,F,A,1,A1
+4872,2015-04-17,F-A1.2,"Warren, Jeremy",641,F,A,2,A1
+4873,2015-04-17,F-A1.3,"Kappes, Thomas",641,F,A,3,A1
+4874,2015-04-17,F-A1.4,"Cunningham, Ian",641,F,A,4,A1
+4875,2015-04-17,F-A2.1,"Ginet, Chris",640,F,A,1,A2
+4876,2015-04-17,F-A2.2,"Ginty, Kyle",640,F,A,2,A2
+4877,2015-04-17,F-A2.3,"Cain, Caleb",640,F,A,3,A2
+4878,2015-04-17,F-A2.4,"Freet, Heather",640,F,A,4,A2
+4879,2015-04-17,F-A3.1,"Hargrove, Paul Brady",650,F,A,1,A3
+4880,2015-04-17,F-A3.2,"Dickerson, Terin Joseph",661,F,A,2,A3
+4881,2015-04-17,F-A4.1,"Foley, Shannon",652,F,A,1,A4
+4882,2015-04-17,F-A4.2,"Muhammad, Natalie",652,F,A,2,A4
+4883,2015-04-17,F-A5.1,"Ainsworth, Sam",647,F,A,1,A5
+4884,2015-04-17,F-B1.1,"Grant, Maria LaGee",638,F,B,1,B1
+4885,2015-04-17,F-B1.2,"Vogt, Austin",638,F,B,2,B1
+4886,2015-04-17,F-B1.3,"Gillespie, Nathan",638,F,B,3,B1
+4887,2015-04-17,F-B2.1,"Carter, David Alexander",637,F,B,1,B2
+4888,2015-04-17,F-B2.2,"Kenny, Dominic",637,F,B,2,B2
+4889,2015-04-17,F-E1.1,"Matthews, Roy",662,F,E,1,E1
+4890,2015-04-17,F-E1.2,"Cuevas, Rebekah",662,F,E,2,E1
+4891,2015-04-17,F-E1.3,"Keating, Logan",662,F,E,3,E1
+4892,2015-04-17,F-E2.1,"Thomas, Phillip",656,F,E,1,E2
+4893,2015-04-17,F-E2.2,"Englebert, Briana",656,F,E,2,E2
+4894,2015-04-17,F-X1.1,"Clark, Barbara J.",655,F,X,1,X1
+4895,2015-04-17,F-X1.2,"Liechty, Abbey",655,F,X,2,X1
+4896,2015-04-17,F-X2.1,"Shannon, Michiael",660,F,X,1,X2
+4897,2015-04-17,F-X2.2,"Bryan, Katie",660,F,X,2,X2
+4898,2015-04-10,F-E2.1,"Figg, Korbin Patrick",657,F,E,1,E2
+4899,2015-04-18,S-A1.1,"Bobyak, Lindsay",657,S,A,1,A1
+4900,2015-04-18,S-A1.2,"Thomas, Phillip",657,S,A,2,A1
+4901,2015-04-18,S-A1.3,"Englebert, Briana",655,S,A,3,A1
+4902,2015-04-18,S-B1.1,"Struyf, Nick",653,S,B,1,B1
+4903,2015-04-18,S-B1.2,"Cochrane, Meredith",653,S,B,2,B1
+4904,2015-04-18,S-E1.1,"Diakite, Abdoul",648,S,E,1,E1
+4905,2015-04-18,S-E1.2,"Vogt, Austin",648,S,E,2,E1
+4906,2015-04-18,S-E1.3,"Cunningham, Ian",648,S,E,3,E1
+4907,2015-04-19,U-A1.1,"Spicer, Mitch",656,U,A,1,A1
+4908,2015-04-19,U-A1.2,"Miessler, Cy",656,U,A,2,A1
+4909,2015-04-19,U-B1.1,"Cochrane, Meredith",662,U,B,1,B1
+4910,2015-04-19,U-B1.2,"Cochrane, Meredith",662,U,B,2,B1
+4911,2015-04-19,U-E1.1,"Timm, Aaron",661,U,E,1,E1
+4912,2015-04-19,U-E1.2,"Hendricks, Sandra",661,U,E,2,E1
+4913,2015-04-20,M-A1.1,"Heaton, Brian D.",640,M,A,1,A1
+4914,2015-04-20,M-A1.2,"Bell, Creigh",640,M,A,2,A1
+4915,2015-04-20,M-A1.3,"Phillips, Jenna",640,M,A,3,A1
+4916,2015-04-20,M-A2.1,"LaGarde, Nancy",648,M,A,1,A2
+4917,2015-04-20,M-A2.2,"Cunningham, Ian",648,M,A,2,A2
+4918,2015-04-20,M-A3.1,"Hargrove, Paul Brady",652,M,A,1,A3
+4919,2015-04-20,M-A3.2,"Gillespie, Nathan",652,M,A,2,A3
+4920,2015-04-20,M-A4.1,"Foley, Shannon",645,M,A,1,A4
+4921,2015-04-20,M-A4.2,"Warren, Jeremy",645,M,A,2,A4
+4922,2015-04-20,M-A5.1,"Jackman, Dorian",647,M,A,1,A5
+4923,2015-04-20,M-A6.1,"Fischer, Steven",647,M,A,1,A6
+4924,2015-04-20,M-B1.1,"Liechty, Abbey",639,M,B,1,B1
+4925,2015-04-20,M-B1.2,"Russell, Briana",639,M,B,2,B1
+4926,2015-04-20,M-B2.1,"Francis, Marshall",644,M,B,1,B2
+4927,2015-04-20,M-B2.2,"Vogt, Austin",644,M,B,2,B2
+4928,2015-04-20,M-B2.3,"Bobyak, Lindsay",644,M,B,3,B2
+4929,2015-04-20,M-B3.1,"Hock, Paul",651,M,B,1,B3
+4930,2015-04-20,M-B4.1,"Bise III, John H.",641,M,B,1,B4
+4931,2015-04-20,M-B5.1,"Grant, Maria LaGee",643,M,B,1,B5
+4932,2015-04-20,M-E1.1,"Decker, Ernie",661,M,E,1,E1
+4933,2015-04-20,M-E2.1,"Matthews, Roy",660,M,E,1,E2
+4934,2015-04-20,M-E2.2,"Bryan, Katie",660,M,E,2,E2
+4935,2015-04-20,M-E2.3,"Spicer, Mitch",660,M,E,3,E2
+4936,2015-04-20,M-E3.1,"Diakite, Abdoul",662,M,E,1,E3
+4937,2015-04-20,M-X1.1,"Clark, Barbara J.",656,M,X,1,X1
+4938,2015-04-20,M-X1.2,"Hendricks, Sandra",656,M,X,2,X1
+4939,2015-04-20,M-X2.1,"Shannon, Michiael",655,M,X,1,X2
+4940,2015-04-20,M-X2.2,"Eakle, Robert W",655,M,X,2,X2
+4941,2015-04-20,M-X3.1,"Carter, David Alexander",657,M,X,1,X3
+4942,2015-04-20,M-X3.2,"Ginty, Kyle",657,M,X,2,X3
+4943,2015-04-21,T-A1.1,"Heaton, Brian D.",647,T,A,1,A1
+4944,2015-04-21,T-A1.2,"Matthews, Roy",647,T,A,2,A1
+4945,2015-04-21,T-A1.3,"Warren, Jeremy",647,T,A,3,A1
+4946,2015-04-21,T-A2.1,"LaGarde, Nancy",656,T,A,1,A2
+4947,2015-04-21,T-A2.2,"Freet, Heather",656,T,A,2,A2
+4948,2015-04-21,T-A3.1,"Hargrove, Paul Brady",652,T,A,1,A3
+4949,2015-04-21,T-A3.2,"Carter, David Alexander",652,T,A,2,A3
+4950,2015-04-21,T-A4.1,"Callahan, James",645,T,A,1,A4
+4951,2015-04-21,T-A4.2,"Huffman, Haley",645,T,A,2,A4
+4952,2015-04-21,T-A5.1,"Gallalee, Jack",638,T,A,1,A5
+4953,2015-04-21,T-A6.1,"Fischer, Steven",653,T,A,1,A6
+4954,2015-04-21,T-B1.1,"Hunter, Rob",651,T,B,1,B1
+4955,2015-04-21,T-B1.2,"Struyf, Nick",651,T,B,2,B1
+4956,2015-04-21,T-B2.1,"Francis, Marshall",639,T,B,1,B2
+4957,2015-04-21,T-B2.2,"Vogt, Austin",639,T,B,2,B2
+4958,2015-04-21,T-B2.3,"Dickerson, Terin Joseph",639,T,B,3,B2
+4959,2015-04-21,T-B3.1,"Hock, Paul",655,T,B,1,B3
+4960,2015-04-21,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+4961,2015-04-21,T-B5.1,"Palmer, Fileve",637,T,B,1,B5
+4962,2015-04-21,T-E1.1,"Decker, Ernie",657,T,E,1,E1
+4963,2015-04-21,T-E2.1,"Matthews, Roy",658,T,E,1,E2
+4964,2015-04-21,T-E2.2,"Bell, Creigh",658,T,E,2,E2
+4965,2015-04-21,T-E2.3,"Cuevas, Rebekah",658,T,E,3,E2
+4966,2015-04-21,T-E3.1,"Chen, Jason",640,T,E,1,E3
+4967,2015-04-21,T-X1.1,"Clark, Barbara J.",661,T,X,1,X1
+4968,2015-04-21,T-X1.2,"Cunningham, Ian",661,T,X,2,X1
+4969,2015-04-21,T-X2.1,"Shannon, Michiael",660,T,X,1,X2
+4970,2015-04-21,T-X2.2,"Liechty, Abbey",660,T,X,2,X2
+4971,2015-04-21,T-X3.1,"Lakes, Michael A.",662,T,X,1,X3
+4972,2015-04-21,T-X3.2,"Callahan, James",662,T,X,2,X3
+4973,2015-04-21,Auditorium,"Englebert, Briana",657,Auditorium,,,
+4974,2015-04-22,W-A1.1,"Ventura, Erin",638,W,A,1,A1
+4975,2015-04-22,W-A1.2,"Muhammad, Natalie",647,W,A,2,A1
+4976,2015-04-22,W-A1.3,"Gaisser, Karl",651,W,A,3,A1
+4977,2015-04-22,W-A2.1,"LaGarde, Nancy",645,W,A,1,A2
+4978,2015-04-22,W-A2.2,"Prichard, Curtis",645,W,A,2,A2
+4979,2015-04-22,W-A3.1,"Hargrove, Paul Brady",637,W,A,1,A3
+4980,2015-04-22,W-A3.2,"Palmer, Fileve",637,W,A,2,A3
+4981,2015-04-22,W-A4.1,"Foley, Shannon",647,W,A,1,A4
+4982,2015-04-22,W-A4.2,"Vogt, Austin",647,W,A,2,A4
+4983,2015-04-22,W-A5.1,"Gallalee, Jack",653,W,A,1,A5
+4984,2015-04-22,W-A6.1,"Fischer, Steven",648,W,A,1,A6
+4985,2015-04-22,W-B1.1,"Hunter, Rob",636,W,B,1,B1
+4986,2015-04-22,W-B1.2,"Russell, Briana",636,W,B,2,B1
+4987,2015-04-22,W-B2.1,"Freet, Heather",651,W,B,1,B2
+4988,2015-04-22,W-B2.2,"Kenny, Dominic",651,W,B,2,B2
+4989,2015-04-22,W-B2.3,"Widlowski, Robert",651,W,B,3,B2
+4990,2015-04-22,W-B3.1,"Hock, Paul",639,W,B,1,B3
+4991,2015-04-22,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+4992,2015-04-22,W-B5.1,"Hedges, Cody",643,W,B,1,B5
+4993,2015-04-22,W-E1.1,"Decker, Ernie",661,W,E,1,E1
+4994,2015-04-22,W-E2.1,"Matthews, Roy",659,W,E,1,E2
+4995,2015-04-22,W-E2.2,"Bobyak, Lindsay",659,W,E,2,E2
+4996,2015-04-22,W-E2.3,"Ainsworth, Sam",659,W,E,3,E2
+4997,2015-04-22,W-E3.1,"Grant, Maria LaGee",657,W,E,1,E3
+4998,2015-04-22,W-X1.1,"Clark, Barbara J.",655,W,X,1,X1
+4999,2015-04-22,W-X1.2,"Bandy, Kyle",655,W,X,2,X1
+5001,2015-04-22,W-X2.1,"Shannon, Michiael",660,W,X,1,X2
+5002,2015-04-22,W-X2.2,"Ginty, Kyle",660,W,X,2,X2
+5003,2015-04-22,W-X3.1,"Liechty, Abbey",658,W,X,1,X3
+5004,2015-04-22,W-X3.2,"Carter, David Alexander",658,W,X,2,X3
+5005,2015-04-23,R-A1.1,"Heaton, Brian D.",653,R,A,1,A1
+5006,2015-04-23,R-A1.2,"Ginet, Chris",653,R,A,2,A1
+5007,2015-04-23,R-A1.3,"Warren, Jeremy",653,R,A,3,A1
+5008,2015-04-23,R-A2.1,"LaGarde, Nancy",636,R,A,1,A2
+5009,2015-04-23,R-A2.2,"Cunningham, Ian",636,R,A,2,A2
+5010,2015-04-23,R-A3.1,"Hargrove, Paul Brady",660,R,A,1,A3
+5011,2015-04-23,R-A3.2,"Ainsworth, Sam",660,R,A,2,A3
+5012,2015-04-23,R-A4.1,"Foley, Shannon",652,R,A,1,A4
+5013,2015-04-23,R-A4.2,"Cochrane, Meredith",652,R,A,2,A4
+5014,2015-04-23,R-A5.1,"Gallalee, Jack",638,R,A,1,A5
+5015,2015-04-23,R-A6.1,"Fischer, Steven",640,R,A,1,A6
+5016,2015-04-23,R-B1.1,"Hunter, Rob",645,R,B,1,B1
+5017,2015-04-23,R-B1.2,"Struyf, Nick",645,R,B,2,B1
+5018,2015-04-23,R-B2.1,"Hedges, Cody",641,R,B,1,B2
+5019,2015-04-23,R-B2.2,"Hedges, Cody",641,R,B,2,B2
+5020,2015-04-23,R-B2.3,"Ventura, Erin",641,R,B,3,B2
+5021,2015-04-23,R-B3.1,"Hock, Paul",656,R,B,1,B3
+5022,2015-04-23,R-B4.1,"Bise III, John H.",657,R,B,1,B4
+5023,2015-04-23,R-B5.1,"Miller, Ryan",643,R,B,1,B5
+5024,2015-04-23,R-E1.1,"Decker, Ernie",659,R,E,1,E1
+5025,2015-04-23,R-E2.1,"Leathers, Daniel",662,R,E,1,E2
+5026,2015-04-23,R-E2.2,"Bell, Creigh",662,R,E,2,E2
+5027,2015-04-23,R-E2.3,"Guo, Xiao",662,R,E,3,E2
+5028,2015-04-23,R-E3.1,"Diakite, Abdoul",644,R,E,1,E3
+5029,2015-04-23,R-X1.1,"Clark, Barbara J.",661,R,X,1,X1
+5030,2015-04-23,R-X1.2,"Cunningham, Ian",661,R,X,2,X1
+5031,2015-04-23,R-X2.1,"Shannon, Michiael",655,R,X,1,X2
+5032,2015-04-23,R-X2.2,"Eakle, Robert W",655,R,X,2,X2
+5033,2015-04-23,R-X3.1,"Kim, Christopher",639,R,X,1,X3
+5034,2015-04-23,R-X3.2,"Hendricks, Sandra",639,R,X,2,X3
+5035,2015-04-24,F-A1.1,"Miller, Ryan",640,F,A,1,A1
+5036,2015-04-24,F-A1.2,"Warren, Jeremy",640,F,A,2,A1
+5037,2015-04-24,F-A1.3,"Vogt, Austin",640,F,A,3,A1
+5038,2015-04-24,F-A1.4,"Phillips, Jenna",640,F,A,4,A1
+5039,2015-04-24,F-A2.1,"Ginet, Chris",645,F,A,1,A2
+5040,2015-04-24,F-A2.2,"Clark, Aaron",645,F,A,2,A2
+5041,2015-04-24,F-A2.3,"Hedges, Cody",660,F,A,3,A2
+5042,2015-04-24,F-A2.4,"Cochrane, Meredith",660,F,A,4,A2
+5043,2015-04-24,F-A3.1,"Hargrove, Paul Brady",647,F,A,1,A3
+5044,2015-04-24,F-A3.2,"Dickerson, Terin Joseph",647,F,A,2,A3
+5045,2015-04-24,F-A4.1,"Foley, Shannon",648,F,A,1,A4
+5046,2015-04-24,F-A4.2,"Muhammad, Natalie",648,F,A,2,A4
+5047,2015-04-24,F-A5.1,"Callahan, James",643,F,A,1,A5
+5048,2015-04-24,F-B1.1,"Grant, Maria LaGee",637,F,B,1,B1
+5049,2015-04-24,F-B1.2,"Bandy, Kyle",637,F,B,2,B1
+5050,2015-04-24,F-B1.3,"Bell, Creigh",637,F,B,3,B1
+5051,2015-04-24,F-B2.1,"Hunter, Rob",638,F,B,1,B2
+5052,2015-04-24,F-B2.2,"Hendricks, Sandra",638,F,B,2,B2
+5053,2015-04-24,F-E1.1,"Carter, David Alexander",659,F,E,1,E1
+5054,2015-04-24,F-E1.2,"Cuevas, Rebekah",659,F,E,2,E1
+5055,2015-04-24,F-E1.3,"Gaisser, Karl",659,F,E,3,E1
+5056,2015-04-24,F-E2.1,"Figg, Korbin Patrick",658,F,E,1,E2
+5057,2015-04-24,F-E2.2,"Englebert, Briana",658,F,E,2,E2
+5058,2015-04-24,F-X1.1,"Clark, Barbara J.",655,F,X,1,X1
+5059,2015-04-24,F-X1.2,"Liechty, Abbey",655,F,X,2,X1
+5060,2015-04-24,F-X2.1,"Shannon, Michiael",660,F,X,1,X2
+5061,2015-04-24,F-X2.2,"Hedges, Cody",660,F,X,2,X2
+5062,2015-04-24,SNOW-A,"Warren, Jeremy",645,SNOW,A,,A
+5063,2015-04-25,S-A1.1,"Clark, Aaron",650,S,A,1,A1
+5064,2015-04-25,S-A1.2,"Ventura, Erin",650,S,A,2,A1
+5065,2015-04-25,S-A1.3,"Englebert, Briana",650,S,A,3,A1
+5066,2015-04-25,S-B1.1,"Struyf, Nick",658,S,B,1,B1
+5067,2015-04-25,S-B1.2,"Cochrane, Meredith",658,S,B,2,B1
+5068,2015-04-25,S-E1.1,"Diakite, Abdoul",652,S,E,1,E1
+5069,2015-04-25,S-E1.2,"Timm, Aaron",652,S,E,2,E1
+5070,2015-04-25,S-E1.3,"Vogt, Austin",652,S,E,3,E1
+5071,2015-04-25,SNOW-A,"Warren, Jeremy",641,SNOW,A,,A
+5072,2015-04-26,U-A1.1,"Guo, Xiao",659,U,A,1,A1
+5073,2015-04-26,U-A1.2,"Miessler, Cy",659,U,A,2,A1
+5074,2015-04-26,U-B1.1,"Cochrane, Meredith",661,U,B,1,B1
+5075,2015-04-26,U-B1.2,"Kenny, Dominic",661,U,B,2,B1
+5076,2015-04-26,U-E1.1,"Timm, Aaron",662,U,E,1,E1
+5077,2015-04-26,U-E1.2,"Warren, Jeremy",659,U,E,2,E1
+5078,2015-04-27,M-A1.1,"Heaton, Brian D.",652,M,A,1,A1
+5079,2015-04-27,M-A1.2,"Bell, Creigh",652,M,A,2,A1
+5080,2015-04-27,M-A1.3,"Phillips, Jenna",652,M,A,3,A1
+5081,2015-04-27,M-A2.1,"LaGarde, Nancy",641,M,A,1,A2
+5082,2015-04-27,M-A2.2,"Cunningham, Ian",641,M,A,2,A2
+5083,2015-04-27,M-A3.1,"Hargrove, Paul Brady",641,M,A,1,A3
+5084,2015-04-27,M-A3.2,"Carter, David Alexander",652,M,A,2,A3
+5085,2015-04-27,M-A4.1,"Foley, Shannon",657,M,A,1,A4
+5086,2015-04-27,M-A4.2,"Warren, Jeremy",657,M,A,2,A4
+5087,2015-04-27,M-A5.1,"Gallalee, Jack",656,M,A,1,A5
+5088,2015-04-27,M-A6.1,"Fischer, Steven",648,M,A,1,A6
+5089,2015-04-27,M-B1.1,"Hunter, Rob",644,M,B,1,B1
+5090,2015-04-27,M-B1.2,"Russell, Briana",644,M,B,2,B1
+5091,2015-04-27,M-B2.1,"Francis, Marshall",639,M,B,1,B2
+5092,2015-04-27,M-B2.2,"Vogt, Austin",639,M,B,2,B2
+5093,2015-04-27,M-B2.3,"Clark, Aaron",639,M,B,3,B2
+5094,2015-04-27,M-B3.1,"Hock, Paul",636,M,B,1,B3
+5095,2015-04-27,M-B4.1,"Bise III, John H.",643,M,B,1,B4
+5096,2015-04-27,M-B5.1,"Grant, Maria LaGee",653,M,B,1,B5
+5097,2015-04-27,M-E1.1,"Decker, Ernie",662,M,E,1,E1
+5098,2015-04-27,M-E2.1,"Matthews, Roy",659,M,E,1,E2
+5099,2015-04-27,M-E2.2,"Carter, David Alexander",659,M,E,2,E2
+5100,2015-04-27,M-E2.3,"Spicer, Mitch",659,M,E,3,E2
+5101,2015-04-27,M-E3.1,"Diakite, Abdoul",660,M,E,1,E3
+5102,2015-04-27,M-X1.1,"Clark, Barbara J.",658,M,X,1,X1
+5103,2015-04-27,M-X1.2,"Hedges, Cody",658,M,X,2,X1
+5104,2015-04-27,M-X2.1,"Shannon, Michiael",655,M,X,1,X2
+5105,2015-04-27,M-X2.2,"Eakle, Robert W",655,M,X,2,X2
+5106,2015-04-27,M-X3.1,"Callahan, James",638,M,X,1,X3
+5107,2015-04-27,M-X3.2,"Ginty, Kyle",638,M,X,2,X3
+5108,2015-04-27,Special,"Englebert, Briana",648,Special,,,
+5109,2015-04-28,T-A1.1,"Heaton, Brian D.",658,T,A,1,A1
+5110,2015-04-28,T-A1.2,"Muhammad, Natalie",658,T,A,2,A1
+5111,2015-04-28,T-A1.3,"Warren, Jeremy",658,T,A,3,A1
+5112,2015-04-28,T-A2.1,"LaGarde, Nancy",645,T,A,1,A2
+5113,2015-04-28,T-A2.2,"Freet, Heather",645,T,A,2,A2
+5114,2015-04-28,T-A3.1,"Hargrove, Paul Brady",655,T,A,1,A3
+5115,2015-04-28,T-A3.2,"Carter, David Alexander",655,T,A,2,A3
+5116,2015-04-28,T-A4.1,"Foley, Shannon",652,T,A,1,A4
+5117,2015-04-28,T-A4.2,"Bandy, Kyle",652,T,A,2,A4
+5118,2015-04-28,T-A5.1,"Gallalee, Jack",640,T,A,1,A5
+5119,2015-04-28,T-A6.1,"Fischer, Steven",636,T,A,1,A6
+5120,2015-04-28,T-B1.1,"Hunter, Rob",648,T,B,1,B1
+5121,2015-04-28,T-B1.2,"Struyf, Nick",648,T,B,2,B1
+5122,2015-04-28,T-B2.1,"Francis, Marshall",653,T,B,1,B2
+5123,2015-04-28,T-B2.2,"Englebert, Briana",653,T,B,2,B2
+5124,2015-04-28,T-B2.3,"Bandy, Kyle",652,T,B,3,B2
+5125,2015-04-28,T-B3.1,"Hock, Paul",639,T,B,1,B3
+5126,2015-04-28,T-B4.1,"Bise III, John H.",641,T,B,1,B4
+5127,2015-04-28,T-B5.1,"Palmer, Fileve",643,T,B,1,B5
+5128,2015-04-28,T-E1.1,"Decker, Ernie",661,T,E,1,E1
+5129,2015-04-28,T-E2.1,"Matthews, Roy",656,T,E,1,E2
+5130,2015-04-28,T-E2.2,"Bell, Creigh",656,T,E,2,E2
+5131,2015-04-28,T-E2.3,"Kim, Christopher",656,T,E,3,E2
+5132,2015-04-28,T-E3.1,"Chen, Jason",650,T,E,1,E3
+5133,2015-04-28,T-X1.1,"Clark, Barbara J.",662,T,X,1,X1
+5134,2015-04-28,T-X1.2,"Cunningham, Ian",662,T,X,2,X1
+5135,2015-04-28,T-X2.1,"Shannon, Michiael",660,T,X,1,X2
+5136,2015-04-28,T-X2.2,"Miller, Ryan",660,T,X,2,X2
+5137,2015-04-28,T-X3.1,"Lakes, Michael A.",657,T,X,1,X3
+5138,2015-04-28,T-X3.2,"Hendricks, Sandra",657,T,X,2,X3
+5139,2015-04-29,W-A1.1,"Heaton, Brian D.",647,W,A,1,A1
+5140,2015-04-29,W-A1.2,"Bryan, Katie",647,W,A,2,A1
+5141,2015-04-29,W-A1.3,"Hendricks, Sandra",647,W,A,3,A1
+5142,2015-04-29,W-A2.1,"LaGarde, Nancy",645,W,A,1,A2
+5144,2015-04-29,W-A2.2,"Weil, Grant",645,W,A,2,A2
+5145,2015-04-29,W-A3.1,"Hargrove, Paul Brady",652,W,A,1,A3
+5146,2015-04-29,W-A3.2,"Palmer, Fileve",652,W,A,2,A3
+5147,2015-04-29,W-A4.1,"Foley, Shannon",648,W,A,1,A4
+5148,2015-04-29,W-A4.2,"Vogt, Austin",648,W,A,2,A4
+5149,2015-04-29,W-A5.1,"Gallalee, Jack",650,W,A,1,A5
+5150,2015-04-29,W-A6.1,"Ventura, Erin",638,W,A,1,A6
+5151,2015-04-29,W-B1.1,"Hunter, Rob",639,W,B,1,B1
+5152,2015-04-29,W-B1.2,"Russell, Briana",639,W,B,2,B1
+5153,2015-04-29,W-B2.1,"Francis, Marshall",636,W,B,1,B2
+5154,2015-04-29,W-B2.2,"Kenny, Dominic",636,W,B,2,B2
+5155,2015-04-29,W-B2.3,"Clark, Aaron",636,W,B,3,B2
+5156,2015-04-29,W-B3.1,"Hock, Paul",637,W,B,1,B3
+5157,2015-04-29,W-B4.1,"Bise III, John H.",641,W,B,1,B4
+5158,2015-04-29,W-B5.1,"Hedges, Cody",644,W,B,1,B5
+5159,2015-04-29,W-E1.1,"Decker, Ernie",659,W,E,1,E1
+5160,2015-04-29,W-E2.1,"Matthews, Roy",656,W,E,1,E2
+5161,2015-04-29,W-E2.2,"Cuevas, Rebekah",657,W,E,2,E2
+5162,2015-04-29,W-E2.3,"Ainsworth, Sam",657,W,E,3,E2
+5163,2015-04-29,W-E3.1,"Grant, Maria LaGee",660,W,E,1,E3
+5164,2015-04-29,W-X1.1,"Clark, Barbara J.",655,W,X,1,X1
+5165,2015-04-29,W-X1.2,"Cain, Caleb",655,W,X,2,X1
+5166,2015-04-29,W-X2.1,"Shannon, Michiael",662,W,X,1,X2
+5167,2015-04-29,W-X2.2,"Miller, Ryan",662,W,X,2,X2
+5168,2015-04-29,W-X3.1,"Liechty, Abbey",658,W,X,1,X3
+5169,2015-04-29,W-X3.2,"Carter, David Alexander",658,W,X,2,X3
+5170,2015-04-30,R-A1.1,"Thomas, Phillip",656,R,A,1,A1
+5171,2015-04-30,R-A1.2,"Cunningham, Ian",656,R,A,2,A1
+5172,2015-04-30,R-A1.3,"Guo, Xiao",656,R,A,3,A1
+5173,2015-04-30,R-A2.1,"LaGarde, Nancy",642,R,A,1,A2
+5174,2015-04-30,R-A2.2,"Liechty, Abbey",645,R,A,2,A2
+5175,2015-04-30,R-A3.1,"Hargrove, Paul Brady",647,R,A,1,A3
+5176,2015-04-30,R-A3.2,"Ainsworth, Sam",647,R,A,2,A3
+5177,2015-04-30,R-A4.1,"Foley, Shannon",648,R,A,1,A4
+5178,2015-04-30,R-A4.2,"Bandy, Kyle",648,R,A,2,A4
+5179,2015-04-30,R-A5.1,"Gallalee, Jack",650,R,A,1,A5
+5180,2015-04-30,R-A6.1,"Fischer, Steven",638,R,A,1,A6
+5181,2015-04-30,R-B1.1,"Hunter, Rob",653,R,B,1,B1
+5182,2015-04-30,R-B1.2,"Struyf, Nick",653,R,B,2,B1
+5183,2015-04-30,R-B2.1,"Francis, Marshall",637,R,B,1,B2
+5184,2015-04-30,R-B2.2,"Englebert, Briana",662,R,B,2,B2
+5185,2015-04-30,R-B2.3,"Ventura, Erin",662,R,B,3,B2
+5186,2015-04-30,R-B3.1,"Hock, Paul",639,R,B,1,B3
+5187,2015-04-30,R-B4.1,"Bise III, John H.",641,R,B,1,B4
+5188,2015-04-30,R-B5.1,"Miller, Ryan",644,R,B,1,B5
+5189,2015-04-30,R-E1.1,"Decker, Ernie",659,R,E,1,E1
+5190,2015-04-30,R-E2.1,"Matthews, Roy",658,R,E,1,E2
+5191,2015-04-30,R-E2.2,"Bell, Creigh",658,R,E,2,E2
+5192,2015-04-30,R-E2.3,"Bell, Creigh",658,R,E,3,E2
+5193,2015-04-30,R-E3.1,"Diakite, Abdoul",660,R,E,1,E3
+5194,2015-04-30,R-X1.1,"Clark, Barbara J.",655,R,X,1,X1
+5195,2015-04-30,R-X1.2,"Clark, Aaron",655,R,X,2,X1
+5196,2015-04-30,R-X2.1,"Shannon, Michiael",661,R,X,1,X2
+5197,2015-04-30,R-X2.2,"Eakle, Robert W",661,R,X,2,X2
+5198,2015-04-30,R-X3.1,"Kim, Christopher",657,R,X,1,X3
+5199,2015-04-30,R-X3.2,"Hendricks, Sandra",657,R,X,2,X3
+5200,2015-05-01,F-A1.1,"Clark, Aaron",647,F,A,1,A1
+5201,2015-05-01,F-A1.2,"Warren, Jeremy",647,F,A,2,A1
+5202,2015-05-01,F-A1.3,"Vogt, Austin",647,F,A,3,A1
+5203,2015-05-01,F-A1.4,"Phillips, Jenna",647,F,A,4,A1
+5204,2015-05-01,F-A2.1,"Ginet, Chris",650,F,A,1,A2
+5205,2015-05-01,F-A2.2,"Callahan, James",650,F,A,2,A2
+5206,2015-05-01,F-A2.3,"Cain, Caleb",655,F,A,3,A2
+5207,2015-05-01,F-A2.4,"Freet, Heather",650,F,A,4,A2
+5208,2015-05-01,F-A3.1,"Hargrove, Paul Brady",648,F,A,1,A3
+5209,2015-05-01,F-A3.2,"Dickerson, Terin Joseph",648,F,A,2,A3
+5210,2015-05-01,F-A4.1,"Foley, Shannon",645,F,A,1,A4
+5211,2015-05-01,F-A4.2,"Muhammad, Natalie",645,F,A,2,A4
+5212,2015-05-01,F-A5.1,"Thomas, Phillip",656,F,A,1,A5
+5213,2015-05-01,F-B1.1,"Grant, Maria LaGee",644,F,B,1,B1
+5214,2015-05-01,F-B1.2,"Kim, Christopher",644,F,B,2,B1
+5215,2015-05-01,F-B1.3,"Hendricks, Sandra",644,F,B,3,B1
+5216,2015-05-01,F-B2.1,"Hunter, Rob",638,F,B,1,B2
+5217,2015-05-01,F-B2.2,"Miessler, Cy",638,F,B,2,B2
+5218,2015-05-01,F-E1.1,"Matthews, Roy",660,F,E,1,E1
+5219,2015-05-01,F-E1.2,"Cuevas, Rebekah",660,F,E,2,E1
+5220,2015-05-01,F-E1.3,"Miller, Ryan",660,F,E,3,E1
+5221,2015-05-01,F-E2.1,"Figg, Korbin Patrick",662,F,E,1,E2
+5222,2015-05-01,F-E2.2,"Englebert, Briana",662,F,E,2,E2
+5223,2015-05-01,F-X1.1,"Clark, Barbara J.",655,F,X,1,X1
+5224,2015-05-01,F-X1.2,"Liechty, Abbey",655,F,X,2,X1
+5225,2015-05-01,F-X2.1,"Shannon, Michiael",661,F,X,1,X2
+5226,2015-05-01,F-X2.2,"Hedges, Cody",661,F,X,2,X2
+5227,2015-05-02,S-A1.1,"Ginty, Kyle",658,S,A,1,A1
+5228,2015-05-02,S-A1.2,"Ventura, Erin",658,S,A,2,A1
+5229,2015-05-02,S-A1.3,"Englebert, Briana",658,S,A,3,A1
+5230,2015-05-02,S-B1.1,"Jackman, Dorian",641,S,B,1,B1
+5231,2015-05-02,S-B1.2,"Cochrane, Meredith",641,S,B,2,B1
+5232,2015-05-02,S-E1.1,"Diakite, Abdoul",647,S,E,1,E1
+5233,2015-05-02,S-E1.2,"Timm, Aaron",647,S,E,2,E1
+5234,2015-05-02,S-E1.3,"Warren, Jeremy",647,S,E,3,E1
+5235,2015-05-03,U-A1.1,"Liechty, Abbey",648,U,A,1,A1
+5236,2015-05-03,U-A1.2,"Miessler, Cy",648,U,A,2,A1
+5237,2015-05-03,U-B1.1,"Clark, Aaron",640,U,B,1,B1
+5238,2015-05-03,U-B1.2,"Cochrane, Meredith",640,U,B,2,B1
+5239,2015-05-03,U-E1.1,"Timm, Aaron",656,U,E,1,E1
+5240,2015-05-03,U-E1.2,"Hendricks, Sandra",655,U,E,2,E1
+5242,2015-05-04,EX-M-A1.1,"Gallalee, Jack",651,EX,M,,M
+5243,2015-05-04,EX-M-A1.2,"Bandy, Kyle",651,EX,M,,M
+5244,2015-05-04,EX-M-A1.3,"Miessler, Cy",651,EX,M,,M
+5245,2015-05-04,EX-M-A2.1,"LaGarde, Nancy",645,EX,M,,M
+5246,2015-05-04,EX-M-A2.2,"Liechty, Abbey",645,EX,M,,M
+5247,2015-05-04,EX-M-A3.1,"Freet, Heather",642,EX,M,,M
+5248,2015-05-04,EX-M-A3.2,"Hedges, Cody",642,EX,M,,M
+5249,2015-05-04,EX-M-A4.1,"Hargrove, Paul Brady",647,EX,M,,M
+5250,2015-05-04,EX-M-A4.2,"Miller, Ryan",647,EX,M,,M
+5251,2015-05-04,EX-M-A5.1,"Foley, Shannon",657,EX,M,,M
+5252,2015-05-04,EX-M-B1.1,"Hunter, Rob",640,EX,M,,M
+5253,2015-05-04,EX-M-B1.2,"Ginty, Kyle",640,EX,M,,M
+5254,2015-05-04,EX-M-B1.3,"Cochrane, Meredith",640,EX,M,,M
+5255,2015-05-04,EX-M-B2.1,"Fischer, Steven",660,EX,M,,M
+5256,2015-05-04,EX-M-B2.2,"Lakes, Michael A.",660,EX,M,,M
+5257,2015-05-04,EX-M-B2.3,"Lakes, Michael A.",660,EX,M,,M
+5258,2015-05-04,EX-M-B3.1,"Bise III, John H.",641,EX,M,,M
+5259,2015-05-04,EX-M-B3.2,"Weil, Grant",641,EX,M,,M
+5260,2015-05-04,EX-M-B4.1,"Hock, Paul",639,EX,M,,M
+5261,2015-05-04,EX-M-E1.1,"Cuevas, Rebekah",655,EX,M,,M
+5262,2015-05-04,EX-M-E2.1,"Matthews, Roy",658,EX,M,,M
+5263,2015-05-04,EX-M-E2.2,"Ainsworth, Sam",658,EX,M,,M
+5264,2015-05-04,EX-M-E2.3,"Vogt, Austin",658,EX,M,,M
+5265,2015-05-04,EX-M-E3.1,"Timm, Aaron",653,EX,M,,M
+5266,2015-05-04,EX-M-X1.1,"Clark, Barbara J.",662,EX,M,,M
+5267,2015-05-04,EX-M-X1.2,"Cunningham, Ian",662,EX,M,,M
+5268,2015-05-04,EX-M-X2.1,"Shannon, Michiael",661,EX,M,,M
+5269,2015-05-04,EX-M-X2.2,"Thomas, Phillip",661,EX,M,,M
+5270,2015-05-04,EX-M-X3.1,"Kappes, Thomas",659,EX,M,,M
+5271,2015-05-04,EX-M-X3.2,"Kappes, Thomas",659,EX,M,,M
+5272,2015-05-05,EX-T-A1.1,"Gallalee, Jack",650,EX,T,,T
+5273,2015-05-05,EX-T-A1.2,"Hendricks, Sandra",650,EX,T,,T
+5274,2015-05-05,EX-T-A1.3,"Ainsworth, Sam",650,EX,T,,T
+5275,2015-05-05,EX-T-A2.1,"LaGarde, Nancy",648,EX,T,,T
+5276,2015-05-05,EX-T-A2.2,"Cunningham, Ian",648,EX,T,,T
+5277,2015-05-05,EX-T-A3.1,"Carter, David Alexander",645,EX,T,,T
+5278,2015-05-05,EX-T-A3.2,"Miller, Ryan",645,EX,T,,T
+5279,2015-05-05,EX-T-A4.1,"Hargrove, Paul Brady",647,EX,T,,T
+5280,2015-05-05,EX-T-A4.2,"Miessler, Cy",647,EX,T,,T
+5281,2015-05-05,EX-T-A5.1,"Foley, Shannon",640,EX,T,,T
+5282,2015-05-05,EX-T-B1.1,"Hunter, Rob",637,EX,T,,T
+5283,2015-05-05,EX-T-B1.2,"Liechty, Abbey",637,EX,T,,T
+5284,2015-05-05,EX-T-B1.3,"Vogt, Austin",637,EX,T,,T
+5285,2015-05-05,EX-T-B2.1,"Fischer, Steven",653,EX,T,,T
+5286,2015-05-05,EX-T-B2.2,"Kim, Christopher",653,EX,T,,T
+5287,2015-05-05,EX-T-B2.3,"Bell, Creigh",653,EX,T,,T
+5288,2015-05-05,EX-T-B3.1,"Bise III, John H.",641,EX,T,,T
+5289,2015-05-05,EX-T-B3.2,"Bobyak, Lindsay",641,EX,T,,T
+5290,2015-05-05,EX-T-B4.1,"Hock, Paul",639,EX,T,,T
+5291,2015-05-05,EX-T-E1.1,"Bandy, Kyle",656,EX,T,,T
+5293,2015-05-05,EX-T-E2.1,"Matthews, Roy",660,EX,T,,T
+5294,2015-05-05,EX-T-E2.2,"Lakes, Michael A.",660,EX,T,,T
+5295,2015-05-05,EX-T-E2.3,"Englebert, Briana",660,EX,T,,T
+5296,2015-05-05,EX-T-E3.1,"Muhammad, Natalie",661,EX,T,,T
+5297,2015-05-05,EX-T-X1.1,"Clark, Barbara J.",657,EX,T,,T
+5298,2015-05-05,EX-T-X1.2,"Freet, Heather",655,EX,T,,T
+5299,2015-05-05,EX-T-X2.1,"Shannon, Michiael",658,EX,T,,T
+5300,2015-05-05,EX-T-X2.2,"Cochrane, Meredith",658,EX,T,,T
+5301,2015-05-05,EX-T-X3.1,"Phillips, Jenna",662,EX,T,,T
+5302,2015-05-05,EX-T-X3.2,"Phillips, Jenna",662,EX,T,,T
+5303,2015-05-06,EX-W-A1.1,"Gallalee, Jack",640,EX,W,,W
+5304,2015-05-06,EX-W-A1.2,"McAnaly, Brian",640,EX,W,,W
+5305,2015-05-06,EX-W-A1.3,"Ventura, Erin",640,EX,W,,W
+5306,2015-05-06,EX-W-A2.1,"LaGarde, Nancy",652,EX,W,,W
+5307,2015-05-06,EX-W-A2.2,"Muhammad, Natalie",652,EX,W,,W
+5308,2015-05-06,EX-W-A3.1,"Carter, David Alexander",642,EX,W,,W
+5309,2015-05-06,EX-W-A3.2,"Lakes, Michael A.",642,EX,W,,W
+5310,2015-05-06,EX-W-A4.1,"Hargrove, Paul Brady",647,EX,W,,W
+5311,2015-05-06,EX-W-A4.2,"Kappes, Thomas",638,EX,W,,W
+5312,2015-05-06,EX-W-A5.1,"Foley, Shannon",648,EX,W,,W
+5313,2015-05-06,EX-W-B1.1,"Cochrane, Meredith",639,EX,W,,W
+5314,2015-05-06,EX-W-B1.2,"Miller, Ryan",639,EX,W,,W
+5315,2015-05-06,EX-W-B1.3,"Vogt, Austin",639,EX,W,,W
+5316,2015-05-06,EX-W-B2.1,"Fischer, Steven",644,EX,W,,W
+5317,2015-05-06,EX-W-B2.2,"Bell, Creigh",644,EX,W,,W
+5318,2015-05-06,EX-W-B2.3,"Jackman, Dorian",644,EX,W,,W
+5319,2015-05-06,EX-W-B3.1,"Bise III, John H.",641,EX,W,,W
+5320,2015-05-06,EX-W-B3.2,"Liechty, Abbey",641,EX,W,,W
+5321,2015-05-06,EX-W-B4.1,"Hock, Paul",637,EX,W,,W
+5322,2015-05-06,EX-W-E1.1,"Hendricks, Sandra",661,EX,W,,W
+5323,2015-05-06,EX-W-E2.1,"Matthews, Roy",660,EX,W,,W
+5324,2015-05-06,EX-W-E2.2,"Cuevas, Rebekah",660,EX,W,,W
+5325,2015-05-06,EX-W-E2.3,"Englebert, Briana",660,EX,W,,W
+5326,2015-05-06,EX-W-E3.1,"Thomas, Phillip",656,EX,W,,W
+5327,2015-05-06,EX-W-X1.1,"Clark, Barbara J.",658,EX,W,,W
+5328,2015-05-06,EX-W-X1.2,"Cunningham, Ian",647,EX,W,,W
+5329,2015-05-06,EX-W-X2.1,"Shannon, Michiael",638,EX,W,,W
+5330,2015-05-06,EX-W-X2.2,"Hedges, Cody",655,EX,W,,W
+5331,2015-05-06,EX-W-X3.1,"Phillips, Jenna",662,EX,W,,W
+5332,2015-05-06,EX-W-X3.2,"Phillips, Jenna",662,EX,W,,W
+5333,2015-05-07,EX-R-A1.1,"Gallalee, Jack",650,EX,R,,R
+5334,2015-05-07,EX-R-A1.2,"Bryan, Katie",650,EX,R,,R
+5335,2015-05-07,EX-R-A1.3,"Miessler, Cy",650,EX,R,,R
+5336,2015-05-07,EX-R-A2.1,"LaGarde, Nancy",645,EX,R,,R
+5337,2015-05-07,EX-R-A2.2,"Cunningham, Ian",645,EX,R,,R
+5338,2015-05-07,EX-R-A3.1,"Carter, David Alexander",647,EX,R,,R
+5339,2015-05-07,EX-R-A3.2,"Miller, Ryan",647,EX,R,,R
+5340,2015-05-07,EX-R-A4.1,"Hargrove, Paul Brady",652,EX,R,,R
+5341,2015-05-07,EX-R-A4.2,"Figg, Korbin Patrick",652,EX,R,,R
+5342,2015-05-07,EX-R-A5.1,"Foley, Shannon",637,EX,R,,R
+5343,2015-05-07,EX-R-B1.1,"Hunter, Rob",639,EX,R,,R
+5344,2015-05-07,EX-R-B1.2,"Liechty, Abbey",639,EX,R,,R
+5345,2015-05-07,EX-R-B1.3,"Timm, Aaron",639,EX,R,,R
+5346,2015-05-07,EX-R-B2.1,"Fischer, Steven",643,EX,R,,R
+5347,2015-05-07,EX-R-B2.2,"Bell, Creigh",645,EX,R,,R
+5348,2015-05-07,EX-R-B2.3,"Weil, Grant",643,EX,R,,R
+5349,2015-05-07,EX-R-B3.1,"Bise III, John H.",641,EX,R,,R
+5350,2015-05-07,EX-R-B3.2,"Vogt, Austin",641,EX,R,,R
+5351,2015-05-07,EX-R-B4.1,"Hock, Paul",653,EX,R,,R
+5352,2015-05-07,EX-R-E1.1,"Francis, Marshall",662,EX,R,,R
+5353,2015-05-07,EX-R-E2.1,"Matthews, Roy",657,EX,R,,R
+5354,2015-05-07,EX-R-E2.2,"Hendricks, Sandra",657,EX,R,,R
+5355,2015-05-07,EX-R-E2.3,"Ainsworth, Sam",657,EX,R,,R
+5356,2015-05-07,EX-R-E3.1,"Kappes, Thomas",661,EX,R,,R
+5357,2015-05-07,EX-R-X1.1,"Clark, Barbara J.",656,EX,R,,R
+5358,2015-05-07,EX-R-X1.2,"Cochrane, Meredith",656,EX,R,,R
+5359,2015-05-07,EX-R-X2.1,"Shannon, Michiael",660,EX,R,,R
+5360,2015-05-07,EX-R-X2.2,"Spicer, Mitch",660,EX,R,,R
+5361,2015-05-07,EX-R-X3.1,"Phillips, Jenna",638,EX,R,,R
+5362,2015-05-07,EX-R-X3.2,"Phillips, Jenna",638,EX,R,,R
+5363,2015-05-08,EX-F-A1.1,"Hargrove, Paul Brady",645,EX,F,,F
+5364,2015-05-08,EX-F-A1.2,"Miessler, Cy",645,EX,F,,F
+5365,2015-05-08,EX-F-A1.3,"Weil, Grant",645,EX,F,,F
+5366,2015-05-08,EX-F-A2.1,"Miller, Ryan",642,EX,F,,F
+5367,2015-05-08,EX-F-A2.2,"Keating, Logan",642,EX,F,,F
+5368,2015-05-08,EX-F-A3.1,"Huffman, Haley",652,EX,F,,F
+5369,2015-05-08,EX-F-A3.2,"Vogt, Austin",652,EX,F,,F
+5370,2015-05-08,EX-F-A4.1,"Jackman, Dorian",638,EX,F,,F
+5371,2015-05-08,EX-F-A4.2,"Callahan, James",638,EX,F,,F
+5372,2015-05-08,EX-F-B1.1,"Carter, David Alexander",639,EX,F,,F
+5373,2015-05-08,EX-F-B1.2,"Cunningham, Ian",639,EX,F,,F
+5374,2015-05-08,EX-F-B1.3,"Cochrane, Meredith",639,EX,F,,F
+5375,2015-05-08,EX-F-B2.1,"Liechty, Abbey",651,EX,F,,F
+5376,2015-05-08,EX-F-B2.2,"Freet, Heather",651,EX,F,,F
+5377,2015-05-08,EX-F-E1.1,"Kim, Christopher",656,EX,F,,F
+5378,2015-05-08,EX-F-E1.2,"Muhammad, Natalie",656,EX,F,,F
+5379,2015-05-08,EX-F-E1.3,"Clark, Aaron",656,EX,F,,F
+5380,2015-05-08,EX-F-E2.1,"Cuevas, Rebekah",660,EX,F,,F
+5381,2015-05-08,EX-F-E2.2,"Timm, Aaron",660,EX,F,,F
+5382,2015-05-08,EX-F-X1.1,"Clark, Barbara J.",655,EX,F,,F
+5383,2015-05-08,EX-F-X1.2,"Hendricks, Sandra",655,EX,F,,F
+5384,2015-05-08,EX-F-X2.1,"Shannon, Michiael",650,EX,F,,F
+5385,2015-05-08,EX-F-X2.2,"Figg, Korbin Patrick",650,EX,F,,F
+5386,2015-05-08,Special,"Ventura, Erin",638,Special,,,

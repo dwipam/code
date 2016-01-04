@@ -1,0 +1,14 @@
+route ,from,to,observed,scheduled,k
+A,Stadium,Well's Library,502.4329,420,82.4239
+A,Well's Library,3rd & Jordan,115.685,120,-4.315
+A,3rd & Jordan,IMU,226.4918,600,-337.2986
+A,IMU,Stadium,386,480,-94
+B,Fishercourt (),10th & Jordan,142.1967,360,-217.8033
+B,10th & Jordan,3rd & Jordan,82.60263,240,-157.4
+E,Evermann,Union & 10th,181.6516,240,-58.3484
+E,Union & 10th,Wilkie,50,120,-70
+E,Wilkie,3rd & Jordan,61,180,-119
+E,3rd & Jordan ,IMU,65.43594,240,-174.56406
+E,IMU,Well's Library,61,240,-179
+X,Stadium,IMU,216,420,-204
+X,IMU,Stadium(),262,420,-158

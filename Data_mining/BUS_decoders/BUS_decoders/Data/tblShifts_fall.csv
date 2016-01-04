@@ -1,0 +1,2696 @@
+Shift ID,observed_date,Week_Day,Bus_no,route_id,Shift,Driver,bus_id
+2,2014-08-24,U,A1,A,1,"Russell, Briana",641
+3,2014-08-24,U,A1,A,2,"Kenny, Dominic",641
+4,2014-08-24,U,B1,B,1,"Ellison, Tyler",656
+5,2014-08-24,U,B1,B,2,"Miessler, Cy",656
+6,2014-08-24,U,E1,E,1,"Cain, Caleb",657
+7,2014-08-24,U,E1,E,2,"Jackman, Dorian",657
+8,2014-08-25,M,A1,A,1,"Miller, Ryan",641
+9,2014-08-25,M,A1,A,2,"Keating, Logan",641
+10,2014-08-25,M,A1,A,3,"Leggins, Anna",641
+11,2014-08-25,M,A2,A,1,"LaGarde, Nancy",649
+12,2014-08-25,M,A2,A,2,"Cunningham, Ian",649
+13,2014-08-25,M,A3,A,1,"Hargrove, Paul Brady",647
+14,2014-08-25,M,A3,A,2,"Warren, Jeremy",647
+15,2014-08-25,M,A4,A,1,"Foley, Shannon",639
+16,2014-08-25,M,A4,A,2,"Kappes, Thomas",639
+17,2014-08-25,M,A5,A,1,"Bise III, John H.",636
+18,2014-08-25,M,A6,A,1,"Hedges, Cody",640
+19,2014-08-25,M,B1,B,1,"Hunter, Rob",652
+20,2014-08-25,M,B1,B,2,"Fischer, Steven",652
+21,2014-08-25,M,B1,B,3,"Fischer, Steven",652
+22,2014-08-25,M,B2,B,1,"Zabel, Phil",644
+23,2014-08-25,M,B2,B,2,"Palmer, Fileve",644
+24,2014-08-25,M,B2,B,3,"Kim, Christopher",644
+25,2014-08-25,M,B3,B,1,"Hock, Paul",653
+26,2014-08-25,M,B4,B,1,"Matthews, Roy",651
+27,2014-08-25,M,B5,B,1,"Eakle, Robert W",660
+28,2014-08-25,M,E1,E,1,"Decker, Ernie",657
+29,2014-08-25,M,E2,E,1,"Francis, Marshall",654
+30,2014-08-25,M,E2,E,2,"Ainsworth, Sam",650
+31,2014-08-25,M,E2,E,3,"Gallalee, Jack",650
+32,2014-08-25,M,E3,E,1,"Cochrane, Meredith",656
+33,2014-08-25,M,X1,X,1,"Clark, Barbara J.",661
+34,2014-08-25,M,X1,X,2,"Freet, Heather",661
+35,2014-08-25,M,X2,X,1,"Shannon, Michiael",659
+36,2014-08-25,M,X2,X,2,"Ginty, Kyle",659
+37,2014-08-25,M,X3,X,1,"Heaton, Brian D.",648
+38,2014-08-25,M,B4,B,2,"Bobyak, Lindsay",651
+39,2014-08-26,T,A1,A,1,"Thomas, Phillip",649
+40,2014-08-26,T,A1,A,2,"Diakite, Abdoul",649
+41,2014-08-26,T,A1,A,3,"Gallalee, Jack",649
+42,2014-08-26,T,A2,A,1,"LaGarde, Nancy",652
+43,2014-08-26,T,A2,A,2,"Timm, Aaron",657
+44,2014-08-26,T,A3,A,1,"Hargrove, Paul Brady",647
+45,2014-08-26,T,A3,A,2,"Miller, Ryan",647
+46,2014-08-26,T,A4,A,1,"Foley, Shannon",645
+47,2014-08-26,T,A4,A,2,"Leggins, Anna",637
+48,2014-08-26,T,A5,A,1,"Bise III, John H.",639
+49,2014-08-26,T,A6,A,1,"Guo, Xiao",651
+50,2014-08-26,T,B1,B,1,"Hunter, Rob",650
+51,2014-08-26,T,B1,B,2,"Fischer, Steven",650
+52,2014-08-26,T,B1,B,3,"Fischer, Steven",650
+53,2014-08-26,T,B2,B,1,"Zabel, Phil",641
+54,2014-08-26,T,B2,B,2,"Hacker, Douglas",641
+55,2014-08-26,T,B2,B,3,"Vannice, William",641
+56,2014-08-26,T,B3,B,1,"Hock, Paul",653
+57,2014-08-26,T,B4,B,1,"Matthews, Roy",644
+58,2014-08-26,T,B4,B,2,"Kim, Christopher",644
+59,2014-08-26,T,B5,B,1,"Phillips, Jenna",636
+60,2014-08-26,T,E1,E,1,"Decker, Ernie",655
+61,2014-08-26,T,E2,E,1,"Francis, Marshall",656
+62,2014-08-26,T,E2,E,2,"Guo, Xiao",650
+63,2014-08-26,T,E2,E,3,"Lipa, Tyler",656
+64,2014-08-26,T,E3,E,1,"Chen, Jason",648
+65,2014-08-26,T,X1,X,1,"Clark, Barbara J.",657
+66,2014-08-26,T,X1,X,2,"Freet, Heather",652
+67,2014-08-26,T,X2,X,1,"Shannon, Michiael",661
+68,2014-08-26,T,X2,X,2,"Greene, Zachary Wade",661
+69,2014-08-26,T,X3,X,1,"Heaton, Brian D.",660
+70,2014-08-27,W,A1,A,1,"Miller, Ryan",652
+71,2014-08-27,W,A1,A,2,"Huffman, Haley",652
+72,2014-08-27,W,A1,A,3,"Warren, Jeremy",652
+73,2014-08-27,W,A2,A,1,"LaGarde, Nancy",639
+74,2014-08-27,W,A2,A,2,"Hendricks, Sandra",639
+75,2014-08-27,W,A3,A,1,"Hargrove, Paul Brady",644
+76,2014-08-27,W,A3,A,2,"Bell, Creigh",644
+77,2014-08-27,W,A4,A,1,"Foley, Shannon",648
+78,2014-08-27,W,A4,A,2,"Bryan, Katie",640
+79,2014-08-27,W,A5,A,1,"Bise III, John H.",641
+80,2014-08-27,W,A6,A,1,"Hedges, Cody",640
+81,2014-08-27,W,B1,B,1,"Hunter, Rob",637
+82,2014-08-27,W,B1,B,2,"Fischer, Steven",637
+83,2014-08-27,W,B1,B,3,"Fischer, Steven",637
+84,2014-08-27,W,B2,B,1,"Zabel, Phil",653
+85,2014-08-27,W,B2,B,2,"Struyf, Nick",654
+86,2014-08-27,W,B2,B,3,"Vannice, William",653
+87,2014-08-27,W,B3,B,1,"Hock, Paul",649
+88,2014-08-27,W,B4,B,1,"Matthews, Roy",650
+89,2014-08-27,W,B4,B,2,"Figg, Korbin Patrick",650
+90,2014-08-27,W,B5,B,1,"Kenny, Dominic",655
+91,2014-08-27,W,E1,E,1,"Decker, Ernie",659
+92,2014-08-27,W,E2,E,1,"Francis, Marshall",660
+93,2014-08-27,W,E2,E,2,"Liechty, Abbey",660
+94,2014-08-27,W,E2,E,3,"Ginet, Chris",660
+95,2014-08-27,W,E3,E,1,"Palmer, Fileve",647
+96,2014-08-27,W,X1,X,1,"Clark, Barbara J.",656
+97,2014-08-27,W,X1,X,2,"Ainsworth, Sam",656
+98,2014-08-27,W,X2,X,1,"Shannon, Michiael",661
+99,2014-08-27,W,X2,X,2,"Lakes, Michael A.",661
+100,2014-08-27,W,X3,X,1,"Heaton, Brian D.",657
+101,2014-08-28,R,A1,A,1,"Thomas, Phillip",651
+102,2014-08-28,R,A1,A,2,"Miller, Ryan",651
+103,2014-08-28,R,A1,A,3,"Miessler, Cy",651
+104,2014-08-28,R,A2,A,1,"LaGarde, Nancy",647
+105,2014-08-28,R,A2,A,2,"Phillips, Jenna",647
+106,2014-08-28,R,A3,A,1,"Hargrove, Paul Brady",641
+107,2014-08-28,R,A3,A,2,"Hacker, Douglas",641
+108,2014-08-28,R,A4,A,1,"Foley, Shannon",650
+109,2014-08-28,R,A4,A,2,"Kim, Christopher",650
+110,2014-08-28,R,A5,A,1,"Bise III, John H.",636
+111,2014-08-28,R,A6,A,1,"Freet, Heather",649
+112,2014-08-28,R,B1,B,1,"Hunter, Rob",639
+113,2014-08-28,R,B1,B,2,"Fischer, Steven",639
+114,2014-08-28,R,B1,B,3,"Fischer, Steven",639
+115,2014-08-28,R,B2,B,1,"Zabel, Phil",640
+116,2014-08-28,R,B2,B,2,"Gaisser, Karl",640
+117,2014-08-28,R,B2,B,3,"Kenny, Dominic",640
+118,2014-08-28,R,B3,B,1,"Hock, Paul",637
+119,2014-08-28,R,B4,B,1,"Matthews, Roy",653
+120,2014-08-28,R,B4,B,2,"Bryan, Katie",653
+121,2014-08-28,R,B5,B,1,"Muhammad, Natalie",657
+122,2014-08-28,R,E1,E,1,"Chen, Jason",654
+123,2014-08-28,R,E2,E,1,"Francis, Marshall",655
+124,2014-08-28,R,E2,E,2,"Cuevas, Rebekah",649
+125,2014-08-28,R,E2,E,3,"Bobyak, Lindsay",649
+126,2014-08-28,R,E3,E,1,"Grant, Maria LaGee",659
+127,2014-08-28,R,X1,X,1,"Clark, Barbara J.",656
+128,2014-08-28,R,X1,X,2,"Cochrane, Meredith",656
+129,2014-08-28,R,X2,X,1,"Shannon, Michiael",660
+130,2014-08-28,R,X2,X,2,"Eakle, Robert W",660
+131,2014-08-28,R,X3,X,1,"Heaton, Brian D.",661
+132,2014-08-29,F,A1,A,1,"Thomas, Phillip",652
+133,2014-08-29,F,A1,A,2,"Miller, Gregg",652
+134,2014-08-29,F,A1,A,3,"Widlowski, Robert",652
+135,2014-08-29,F,A1,A,4,"Vannice, William",652
+136,2014-08-29,F,A2,A,1,"Ellison, Tyler",637
+137,2014-08-29,F,A2,A,2,"Ginty, Kyle",637
+138,2014-08-29,F,A2,A,3,"Bryan, Katie",637
+139,2014-08-29,F,A2,A,4,"Gaisser, Karl",659
+140,2014-08-29,F,A3,A,1,"Hargrove, Paul Brady",647
+141,2014-08-29,F,A3,A,2,"Dickerson, Terin Joseph",647
+142,2014-08-29,F,A4,A,1,"Foley, Shannon",650
+143,2014-08-29,F,A4,A,2,"Callahan, James",650
+144,2014-08-29,F,A5,A,1,"Ginet, Chris",636
+145,2014-08-29,F,B1,B,1,"Miller, Gregg",653
+146,2014-08-29,F,B1,B,2,"Fischer, Steven",653
+147,2014-08-29,F,B1,B,3,"Fischer, Steven",653
+148,2014-08-29,F,B1,B,4,"Hendricks, Sandra",653
+149,2014-08-29,F,B2,B,1,"Hunter, Rob",644
+150,2014-08-29,F,B2,B,2,"Struyf, Nick",644
+151,2014-08-29,F,E1,E,1,"Cain, Caleb",661
+152,2014-08-29,F,E1,E,2,"Muhammad, Natalie",661
+153,2014-08-29,F,E1,E,3,"Cunningham, Ian",661
+154,2014-08-29,F,E2,E,1,"Callahan, James",660
+155,2014-08-29,F,E2,E,2,"Miller, Ryan",660
+156,2014-08-29,F,X1,X,1,"Clark, Barbara J.",659
+157,2014-08-29,F,X1,X,2,"Bell, Creigh",659
+158,2014-08-29,F,X2,X,1,"Shannon, Michiael",656
+159,2014-08-29,F,X2,X,2,"Cuevas, Rebekah",656
+160,2014-08-30,S,A1,A,1,"Widlowski, Robert",641
+161,2014-08-30,S,A1,A,2,"Timm, Aaron",660
+162,2014-08-30,S,A1,A,3,"Gaisser, Karl",660
+163,2014-08-30,S,B1,B,1,"Gillespie, Nathan",661
+164,2014-08-30,S,B1,B,2,"Greene, Zachary Wade",661
+165,2014-08-30,S,E1,E,1,"Diakite, Abdoul",653
+166,2014-08-30,S,E1,E,3,"Clark, Aaron",658
+167,2014-08-31,U,A1,A,1,"Russell, Briana",648
+168,2014-08-31,U,A1,A,2,"Clark, Aaron",648
+169,2014-08-31,U,B1,B,1,"Ellison, Tyler",639
+170,2014-08-31,U,B1,B,2,"Miessler, Cy",639
+171,2014-08-31,U,E1,E,1,"Cain, Caleb",661
+172,2014-08-31,U,E1,E,2,"Jackman, Dorian",661
+173,2014-09-01,LD,M,M,,"Keating, Logan",651
+174,2014-09-01,LD,M,M,,"Gallalee, Jack",651
+175,2014-09-01,LD,M,M,,"Spicer, Mitch",651
+176,2014-09-01,LD,M,M,,"Bobyak, Lindsay",649
+177,2014-09-01,LD,M,M,,"Cunningham, Ian",649
+178,2014-09-01,LD,M,M,,"Vannice, William",649
+179,2014-09-01,LD,M,M,,"Ginty, Kyle",660
+180,2014-09-01,LD,M,M,,"Kappes, Thomas",660
+181,2014-09-01,LD,M,M,,"Phillips, Jenna",660
+182,2014-09-02,T,A1,A,1,"Hardesty, Sean",640
+183,2014-09-02,T,A1,A,2,"Diakite, Abdoul",640
+184,2014-09-02,T,A1,A,3,"Hedges, Cody",651
+185,2014-09-02,T,A2,A,1,"LaGarde, Nancy",639
+186,2014-09-02,T,A2,A,2,"Timm, Aaron",636
+187,2014-09-02,T,A3,A,1,"Hargrove, Paul Brady",637
+188,2014-09-02,T,A3,A,2,"Miller, Ryan",637
+189,2014-09-02,T,A4,A,1,"Foley, Shannon",651
+190,2014-09-02,T,A4,A,2,"Hedges, Cody",651
+191,2014-09-02,T,A5,A,1,"Bise III, John H.",636
+192,2014-09-02,T,A6,A,1,"Fischer, Steven",653
+193,2014-09-02,T,B1,B,1,"Hunter, Rob",644
+194,2014-09-02,T,B1,B,2,"Grant, Maria LaGee",644
+195,2014-09-02,T,B1,B,3,"Cochrane, Meredith",644
+196,2014-09-02,T,B2,B,1,"Zabel, Phil",648
+197,2014-09-02,T,B2,B,2,"Hacker, Douglas",648
+198,2014-09-02,T,B2,B,3,"Vannice, William",648
+199,2014-09-02,T,B3,B,1,"Hock, Paul",652
+200,2014-09-02,T,B4,B,1,"Matthews, Roy",650
+201,2014-09-02,T,B4,B,2,"Kim, Christopher",650
+202,2014-09-02,T,B5,B,1,"Phillips, Jenna",659
+203,2014-09-02,T,E1,E,1,"Decker, Ernie",657
+204,2014-09-02,T,E2,E,1,"Francis, Marshall",655
+205,2014-09-02,T,E2,E,2,"Guo, Xiao",655
+206,2014-09-02,T,E2,E,3,"Lipa, Tyler",655
+207,2014-09-02,T,E3,E,1,"Chen, Jason",660
+208,2014-09-02,T,X1,X,1,"Thomas, Phillip",656
+209,2014-09-02,T,X1,X,2,"Freet, Heather",656
+210,2014-09-02,T,X2,X,1,"Shannon, Michiael",661
+211,2014-09-02,T,X2,X,2,"Greene, Zachary Wade",661
+212,2014-09-02,T,X3,X,1,"Heaton, Brian D.",649
+213,2014-09-03,W,A1,A,1,"Hardesty, Sean",640
+214,2014-09-03,W,A1,A,2,"Huffman, Haley",640
+215,2014-09-03,W,A1,A,3,"Warren, Jeremy",640
+216,2014-09-03,W,A2,A,1,"LaGarde, Nancy",648
+217,2014-09-03,W,A2,A,2,"Miller, Ryan",648
+218,2014-09-03,W,A3,A,1,"Hargrove, Paul Brady",639
+219,2014-09-03,W,A3,A,2,"Bell, Creigh",639
+220,2014-09-03,W,A4,A,1,"Foley, Shannon",647
+221,2014-09-03,W,A4,A,2,"Bryan, Katie",647
+222,2014-09-03,W,A5,A,1,"Bise III, John H.",645
+223,2014-09-03,W,A6,A,1,"Fischer, Steven",649
+224,2014-09-03,W,B1,B,1,"Hunter, Rob",651
+225,2014-09-03,W,B1,B,2,"Diakite, Abdoul",651
+226,2014-09-03,W,B1,B,3,"Clark, Aaron",651
+227,2014-09-03,W,B2,B,1,"Zabel, Phil",655
+228,2014-09-03,W,B2,B,2,"Struyf, Nick",655
+229,2014-09-03,W,B2,B,3,"Vannice, William",655
+230,2014-09-03,W,B3,B,1,"Hock, Paul",636
+231,2014-09-03,W,B4,B,1,"Matthews, Roy",644
+232,2014-09-03,W,B4,B,2,"Figg, Korbin Patrick",644
+233,2014-09-03,W,B5,B,1,"Kenny, Dominic",653
+234,2014-09-03,W,E1,E,1,"Decker, Ernie",661
+235,2014-09-03,W,E2,E,1,"Francis, Marshall",654
+236,2014-09-03,W,E2,E,2,"Liechty, Abbey",654
+237,2014-09-03,W,E2,E,3,"Kim, Christopher",654
+238,2014-09-03,W,E3,E,1,"Palmer, Fileve",657
+239,2014-09-03,W,X1,X,1,"Freet, Heather",656
+240,2014-09-03,W,X1,X,2,"Ainsworth, Sam",656
+241,2014-09-03,W,X2,X,1,"Shannon, Michiael",660
+242,2014-09-03,W,X2,X,2,"Lakes, Michael A.",660
+243,2014-09-03,W,X3,X,1,"Heaton, Brian D.",659
+244,2014-09-04,R,A1,A,2,"Timm, Aaron",649
+245,2014-09-04,R,A1,A,3,"Miessler, Cy",660
+246,2014-09-04,R,A2,A,1,"LaGarde, Nancy",653
+247,2014-09-04,R,A2,A,2,"Phillips, Jenna",653
+248,2014-09-04,R,A3,A,1,"Hargrove, Paul Brady",637
+249,2014-09-04,R,A3,A,2,"Hacker, Douglas",637
+250,2014-09-04,R,A4,A,1,"Foley, Shannon",650
+251,2014-09-04,R,A4,A,2,"Hedges, Cody",650
+252,2014-09-04,R,A5,A,1,"Bise III, John H.",636
+253,2014-09-04,R,A6,A,1,"Fischer, Steven",645
+254,2014-09-04,R,B1,B,1,"Hunter, Rob",639
+255,2014-09-04,R,B1,B,2,"Gaisser, Karl",639
+256,2014-09-04,R,B1,B,3,"Vannice, William",639
+257,2014-09-04,R,B2,B,1,"Zabel, Phil",647
+258,2014-09-04,R,B2,B,3,"Kenny, Dominic",647
+259,2014-09-04,R,B2,B,2,"Hendricks, Sandra",647
+260,2014-09-04,R,B3,B,1,"Hock, Paul",660
+261,2014-09-04,R,B4,B,1,"Matthews, Roy",648
+262,2014-09-04,R,B4,B,2,"Bryan, Katie",648
+263,2014-09-04,R,B5,B,1,"Muhammad, Natalie",651
+264,2014-09-04,R,E1,E,1,"Phillips, Jenna",661
+265,2014-09-04,R,E2,E,1,"Francis, Marshall",654
+266,2014-09-04,R,E2,E,2,"Cuevas, Rebekah",656
+267,2014-09-04,R,E2,E,3,"Bobyak, Lindsay",656
+268,2014-09-04,R,E3,E,1,"Grant, Maria LaGee",655
+269,2014-09-04,R,X1,X,1,"Freet, Heather",659
+270,2014-09-04,R,X1,X,2,"Cochrane, Meredith",659
+271,2014-09-04,R,X2,X,1,"Shannon, Michiael",657
+272,2014-09-04,R,X2,X,2,"Eakle, Robert W",657
+273,2014-09-04,R,X3,X,1,"Heaton, Brian D.",662
+274,2014-09-05,F,A1,A,1,"Thomas, Phillip",636
+275,2014-09-05,F,A1,A,2,"Miller, Gregg",636
+276,2014-09-05,F,A1,A,3,"Widlowski, Robert",636
+277,2014-09-05,F,A1,A,4,"Vannice, William",636
+278,2014-09-05,F,A2,A,1,"Ellison, Tyler",657
+279,2014-09-05,F,A2,A,2,"Ginty, Kyle",657
+280,2014-09-05,F,A2,A,3,"Guo, Xiao",657
+281,2014-09-05,F,A2,A,4,"Gaisser, Karl",657
+282,2014-09-05,F,A3,A,1,"Hargrove, Paul Brady",656
+283,2014-09-05,F,A3,A,2,"Dickerson, Terin Joseph",656
+284,2014-09-05,F,A4,A,1,"Foley, Shannon",655
+285,2014-09-05,F,A4,A,2,"Callahan, James",655
+286,2014-09-05,F,A5,A,1,"Ginet, Chris",659
+287,2014-09-05,F,B1,B,1,"Hunter, Rob",644
+288,2014-09-05,F,B1,B,2,"Grant, Maria LaGee",637
+289,2014-09-05,F,B1,B,3,"Bryan, Katie",637
+290,2014-09-05,F,B1,B,4,"Hendricks, Sandra",637
+291,2014-09-05,F,B2,B,1,"Hunter, Rob",644
+292,2014-09-05,F,B2,B,2,"Struyf, Nick",644
+293,2014-09-05,F,E1,E,1,"Cain, Caleb",661
+294,2014-09-05,F,E1,E,2,"Muhammad, Natalie",661
+295,2014-09-05,F,E1,E,3,"Cunningham, Ian",661
+296,2014-09-05,F,E2,E,1,"Callahan, James",648
+297,2014-09-05,F,E2,E,2,"Hedges, Cody",648
+298,2014-09-05,F,X1,X,1,"Leggins, Anna",662
+299,2014-09-05,F,X1,X,2,"Bell, Creigh",662
+300,2014-09-05,F,X2,X,1,"Shannon, Michiael",654
+301,2014-09-05,F,X2,X,1,"Shannon, Michiael",654
+302,2014-09-05,F,X2,X,2,"Cuevas, Rebekah",655
+303,2014-09-06,S,A1,A,1,"Widlowski, Robert",658
+304,2014-09-06,S,A1,A,2,"Timm, Aaron",658
+305,2014-09-06,S,B1,B,1,"Kenny, Dominic",641
+306,2014-09-06,S,B1,B,2,"Greene, Zachary Wade",636
+307,2014-09-06,S,E1,E,1,"Diakite, Abdoul",637
+308,2014-09-06,S,E1,E,3,"Clark, Aaron",659
+309,2014-09-07,U,A1,A,1,"Russell, Briana",641
+310,2014-09-07,U,A1,A,2,"Clark, Aaron",641
+311,2014-09-06,S,A1,A,3,"Gaisser, Karl",658
+312,2014-09-07,U,B1,B,1,"Ellison, Tyler",661
+313,2014-09-07,U,B1,B,2,"Miessler, Cy",661
+314,2014-09-07,U,E1,E,1,"Cain, Caleb",662
+315,2014-09-07,U,E1,E,2,"Jackman, Dorian",662
+316,2014-09-08,M,A1,A,1,"Hedges, Cody",640
+317,2014-09-08,M,A1,A,2,"Moir, AJ",640
+318,2014-09-08,M,A1,A,3,"Bandy, Kyle",640
+319,2014-09-08,M,A2,A,1,"LaGarde, Nancy",659
+320,2014-09-08,M,A2,A,2,"Vannice, William",659
+321,2014-09-08,M,A3,A,1,"Hargrove, Paul Brady",636
+322,2014-09-08,M,A3,A,2,"Warren, Jeremy",636
+323,2014-09-08,M,A4,A,1,"Foley, Shannon",653
+324,2014-09-08,M,A4,A,2,"Kappes, Thomas",653
+325,2014-09-08,M,A5,A,1,"Hacker, Douglas",643
+326,2014-09-08,M,A6,A,1,"Fischer, Steven",650
+327,2014-09-08,M,B1,B,1,"Hunter, Rob",651
+328,2014-09-08,M,B1,B,2,"Hacker, Douglas",651
+329,2014-09-08,M,B1,B,3,"Clark, Aaron",651
+330,2014-09-08,M,B2,B,1,"Zabel, Phil",657
+331,2014-09-08,M,B2,B,2,"Palmer, Fileve",657
+332,2014-09-08,M,B2,B,3,"Kim, Christopher",657
+333,2014-09-08,M,B3,B,1,"Hock, Paul",655
+334,2014-09-08,M,B4,B,1,"Matthews, Roy",641
+335,2014-09-08,M,B4,B,2,"Bobyak, Lindsay",641
+336,2014-09-08,M,B5,B,1,"Eakle, Robert W",661
+337,2014-09-08,M,E1,E,1,"Decker, Ernie",654
+338,2014-09-08,M,E2,E,1,"Francis, Marshall",647
+339,2014-09-08,M,E2,E,2,"Ainsworth, Sam",647
+340,2014-09-08,M,E2,E,3,"Gallalee, Jack",647
+341,2014-09-08,M,E3,E,1,"Cochrane, Meredith",662
+342,2014-09-08,M,X1,X,1,"Clark, Barbara J.",650
+343,2014-09-08,M,X1,X,2,"Freet, Heather",644
+344,2014-09-08,M,X2,X,1,"Shannon, Michiael",639
+345,2014-09-08,M,X2,X,2,"Ginty, Kyle",639
+346,2014-09-08,M,X3,X,1,"Heaton, Brian D.",645
+347,2014-09-09,T,A1,A,1,"Fischer, Steven",653
+348,2014-09-09,T,A1,A,2,"Diakite, Abdoul",653
+349,2014-09-09,T,A1,A,3,"Gallalee, Jack",653
+350,2014-09-09,T,A2,A,1,"LaGarde, Nancy",649
+351,2014-09-09,T,A2,A,2,"Timm, Aaron",649
+352,2014-09-09,T,A3,A,1,"Hargrove, Paul Brady",648
+353,2014-09-09,T,A3,A,2,"Miller, Ryan",648
+354,2014-09-09,T,A4,A,1,"Foley, Shannon",647
+355,2014-09-09,T,A5,A,1,"Bise III, John H.",637
+356,2014-09-09,T,A6,A,1,"Hedges, Cody",650
+357,2014-09-09,T,B1,B,1,"Hunter, Rob",636
+358,2014-09-09,T,B1,B,2,"Grant, Maria LaGee",636
+359,2014-09-09,T,B1,B,3,"Cochrane, Meredith",636
+360,2014-09-09,T,B2,B,1,"Zabel, Phil",662
+361,2014-09-09,T,B2,B,2,"Hacker, Douglas",662
+362,2014-09-09,T,B2,B,3,"Vannice, William",662
+363,2014-09-09,T,B3,B,1,"Hock, Paul",640
+364,2014-09-09,T,B4,B,1,"Matthews, Roy",651
+365,2014-09-09,T,B4,B,2,"Kim, Christopher",651
+366,2014-09-09,T,B5,B,1,"Phillips, Jenna",656
+367,2014-09-09,T,E1,E,1,"Decker, Ernie",660
+368,2014-09-09,T,E2,E,1,"Hedges, Cody",654
+369,2014-09-09,T,E2,E,2,"Kenny, Dominic",650
+370,2014-09-09,T,E2,E,3,"Lipa, Tyler",650
+371,2014-09-09,T,E3,E,1,"Chen, Jason",658
+372,2014-09-09,T,X1,X,1,"Clark, Aaron",655
+373,2014-09-09,T,X1,X,2,"Freet, Heather",655
+374,2014-09-09,T,X2,X,1,"Shannon, Michiael",657
+375,2014-09-09,T,X2,X,2,"Greene, Zachary Wade",657
+376,2014-09-09,T,X3,X,1,"Heaton, Brian D.",661
+377,2014-09-10,W,A1,A,1,"Hedges, Cody",640
+378,2014-09-10,W,A1,A,2,"Huffman, Haley",653
+379,2014-09-10,W,A1,A,3,"Warren, Jeremy",658
+380,2014-09-10,W,A2,A,1,"LaGarde, Nancy",647
+381,2014-09-10,W,A2,A,2,"Hacker, Douglas",647
+382,2014-09-10,W,A3,A,1,"Hargrove, Paul Brady",648
+383,2014-09-10,W,A3,A,2,"Bell, Creigh",648
+384,2014-09-10,W,A4,A,1,"Leathers, Daniel",651
+385,2014-09-10,W,A4,A,2,"Bryan, Katie",651
+386,2014-09-10,W,A5,A,1,"Bise III, John H.",660
+387,2014-09-10,W,A6,A,1,"Fischer, Steven",649
+388,2014-09-10,W,B1,B,1,"Hunter, Rob",644
+389,2014-09-10,W,B1,B,2,"Diakite, Abdoul",644
+390,2014-09-10,W,B1,B,3,"Clark, Aaron",644
+391,2014-09-10,W,B2,B,1,"Zabel, Phil",641
+392,2014-09-10,W,B2,B,2,"Struyf, Nick",641
+393,2014-09-10,W,B2,B,3,"Vannice, William",641
+394,2014-09-10,W,B3,B,1,"Hock, Paul",652
+395,2014-09-10,W,B4,B,1,"Matthews, Roy",645
+396,2014-09-10,W,B4,B,2,"Figg, Korbin Patrick",645
+397,2014-09-10,W,B5,B,1,"Kenny, Dominic",637
+398,2014-09-10,W,E1,E,1,"Decker, Ernie",657
+399,2014-09-10,W,E2,E,1,"Francis, Marshall",661
+400,2014-09-10,W,E2,E,2,"Liechty, Abbey",661
+401,2014-09-10,W,E2,E,3,"Ginet, Chris",661
+402,2014-09-10,W,E3,E,1,"Palmer, Fileve",662
+403,2014-09-10,W,X1,X,1,"Clark, Barbara J.",659
+404,2014-09-10,W,X1,X,2,"Ainsworth, Sam",659
+405,2014-09-10,W,X2,X,1,"Shannon, Michiael",658
+406,2014-09-10,W,X2,X,2,"Lakes, Michael A.",658
+407,2014-09-10,W,X3,X,1,"Heaton, Brian D.",656
+408,2014-09-11,R,A1,A,1,"Liechty, Abbey",648
+409,2014-09-11,R,A1,A,2,"Miller, Ryan",648
+410,2014-09-11,W,A1,A,3,"Miessler, Cy",648
+411,2014-09-11,R,A2,A,1,"LaGarde, Nancy",647
+412,2014-09-11,R,A2,A,2,"Phillips, Jenna",647
+413,2014-09-11,R,A3,A,1,"Hargrove, Paul Brady",650
+414,2014-09-11,R,A3,A,2,"Hacker, Douglas",650
+415,2014-09-11,R,A4,A,1,"Foley, Shannon",644
+416,2014-09-11,R,A4,A,2,"Hedges, Cody",644
+417,2014-09-11,R,A5,A,1,"Bise III, John H.",636
+418,2014-09-11,R,A6,A,1,"Fischer, Steven",653
+419,2014-09-11,R,B1,B,1,"Hunter, Rob",639
+420,2014-09-11,R,B1,B,2,"Kenny, Dominic",639
+421,2014-09-11,R,B1,B,3,"Vannice, William",639
+422,2014-09-11,R,B2,B,1,"Zabel, Phil",637
+423,2014-09-11,R,B2,B,2,"Hendricks, Sandra",637
+424,2014-09-11,R,B2,B,3,"Lipa, Tyler",637
+425,2014-09-11,R,B3,B,1,"Hock, Paul",651
+426,2014-09-11,R,B4,B,1,"Matthews, Roy",658
+427,2014-09-11,R,B4,B,2,"Bryan, Katie",658
+428,2014-09-11,R,B5,B,1,"Muhammad, Natalie",652
+429,2014-09-11,R,E1,E,1,"Decker, Ernie",657
+430,2014-09-11,R,E2,E,1,"Francis, Marshall",661
+431,2014-09-11,R,E2,E,2,"Cuevas, Rebekah",643
+432,2014-09-11,R,E3,E,1,"Grant, Maria LaGee",660
+433,2014-09-11,R,X1,X,1,"Clark, Aaron",655
+434,2014-09-11,R,X1,X,2,"Timm, Aaron",655
+435,2014-09-11,R,X2,X,1,"Shannon, Michiael",656
+436,2014-09-11,R,X2,X,2,"Eakle, Robert W",656
+437,2014-09-11,R,X3,X,1,"Heaton, Brian D.",662
+438,2014-09-12,F,A1,A,1,"Thomas, Phillip",647
+439,2014-09-12,F,A1,A,2,"Miller, Gregg",647
+440,2014-09-12,F,A1,A,3,"Widlowski, Robert",647
+441,2014-09-12,F,A1,A,4,"Vannice, William",647
+442,2014-09-12,F,A2,A,1,"Ellison, Tyler",652
+443,2014-09-12,F,A2,A,2,"Ginty, Kyle",652
+444,2014-09-12,F,A2,A,3,"Ginty, Kyle",652
+445,2014-09-12,F,A2,A,4,"Gaisser, Karl",652
+446,2014-09-12,F,A3,A,1,"Hargrove, Paul Brady",640
+447,2014-09-12,F,A3,A,2,"Dickerson, Terin Joseph",640
+448,2014-09-12,F,A4,A,1,"Foley, Shannon",661
+449,2014-09-12,F,A4,A,2,"Huffman, Haley",661
+450,2014-09-12,F,A5,A,1,"Ginet, Chris",649
+451,2014-09-12,F,B1,B,1,"Miller, Gregg",657
+452,2014-09-12,F,B1,B,2,"Grant, Maria LaGee",657
+453,2014-09-12,F,B1,B,3,"Kenny, Dominic",657
+454,2014-09-12,F,B1,B,4,"Hendricks, Sandra",657
+455,2014-09-12,F,B2,B,1,"Hunter, Rob",651
+456,2014-09-12,F,B2,B,2,"Struyf, Nick",651
+457,2014-09-12,F,E1,E,1,"Cain, Caleb",662
+458,2014-09-12,F,E1,E,2,"Muhammad, Natalie",662
+459,2014-09-12,F,E1,E,3,"Cunningham, Ian",662
+460,2014-09-12,F,E2,E,1,"Bryan, Katie",658
+461,2014-09-12,F,E2,E,2,"Moir, AJ",658
+462,2014-09-12,F,X2,X,1,"Shannon, Michiael",660
+463,2014-09-12,F,X2,X,2,"Cuevas, Rebekah",660
+464,2014-09-12,F,X1,X,1,"Clark, Barbara J.",654
+465,2014-09-12,F,X1,X,2,"Bell, Creigh",654
+466,2014-09-13,S,A1,A,1,"Widlowski, Robert",643
+467,2014-09-13,S,A1,A,2,"Timm, Aaron",643
+468,2014-09-13,S,A1,A,3,"Gaisser, Karl",643
+469,2014-09-13,S,B1,B,1,"Gillespie, Nathan",655
+470,2014-09-13,S,B1,B,2,"Greene, Zachary Wade",655
+471,2014-09-13,S,E1,E,1,"Diakite, Abdoul",662
+472,2014-09-13,S,E1,E,3,"Warren, Jeremy",662
+473,2014-09-06,S,E1,E,2,"Dickerson, Terin Joseph",639
+474,2014-09-13,S,E1,E,2,"Dickerson, Terin Joseph",662
+475,2014-09-04,R,A1,A,1,"Hardesty, Sean",649
+476,2014-09-14,U,A1,A,1,"Hacker, Douglas",658
+477,2014-09-14,U,A1,A,2,"Cuevas, Rebekah",658
+478,2014-09-14,U,B1,B,2,"Kenny, Dominic",647
+479,2014-09-14,U,B1,B,1,"Ellison, Tyler",647
+480,2014-09-14,U,E1,E,1,"Jackman, Dorian",652
+481,2014-09-14,U,E1,E,2,"Jackman, Dorian",652
+482,2014-09-15,M,A1,A,1,"Hardesty, Sean",653
+483,2014-09-15,M,A1,A,2,"Lakes, Michael A.",653
+484,2014-09-15,M,A1,A,3,"Leggins, Anna",658
+485,2014-09-15,M,A2,A,1,"LaGarde, Nancy",637
+486,2014-09-15,M,A2,A,2,"Cunningham, Ian",637
+487,2014-09-15,M,A4,A,1,"Foley, Shannon",645
+488,2014-09-15,M,A4,A,2,"Kappes, Thomas",645
+489,2014-09-15,M,A3,A,1,"Hargrove, Paul Brady",661
+490,2014-09-15,M,A3,A,2,"Warren, Jeremy",661
+491,2014-09-15,M,A5,A,1,"Bise III, John H.",656
+492,2014-09-15,M,A6,A,1,"Fischer, Steven",648
+493,2014-09-15,M,B1,B,1,"Hunter, Rob",651
+494,2014-09-15,M,B1,B,2,"Hacker, Douglas",651
+495,2014-09-15,M,B1,B,3,"Clark, Aaron",651
+496,2014-09-15,M,B2,B,1,"Zabel, Phil",649
+497,2014-09-15,M,B2,B,2,"Palmer, Fileve",649
+498,2014-09-15,M,B2,B,3,"Kim, Christopher",649
+499,2014-09-15,M,B3,B,1,"Hock, Paul",660
+500,2014-09-15,M,B4,B,1,"Matthews, Roy",662
+501,2014-09-15,M,B4,B,2,"Bobyak, Lindsay",662
+502,2014-09-15,M,B5,B,1,"Eakle, Robert W",644
+503,2014-09-15,M,E1,E,1,"Decker, Ernie",655
+504,2014-09-15,M,E2,E,1,"Francis, Marshall",640
+505,2014-09-15,M,E2,E,2,"Ainsworth, Sam",640
+506,2014-09-15,M,E2,E,3,"Gallalee, Jack",640
+507,2014-09-15,M,E3,E,1,"Cochrane, Meredith",636
+508,2014-09-15,M,X1,X,1,"Clark, Barbara J.",643
+509,2014-09-15,M,X1,X,2,"Freet, Heather",648
+510,2014-09-15,M,X2,X,1,"Shannon, Michiael",659
+511,2014-09-15,M,X2,X,2,"Miller, Ryan",659
+512,2014-09-15,M,X3,X,1,"Heaton, Brian D.",652
+513,2014-09-16,T,X1,X,1,"Clark, Barbara J.",656
+514,2014-09-16,T,X1,X,2,"Freet, Heather",656
+515,2014-09-16,T,X2,X,1,"Shannon, Michiael",
+516,2014-09-16,M,X2,X,2,"Greene, Zachary Wade",660
+517,2014-09-16,M,X3,X,1,"Heaton, Brian D.",654
+518,2014-09-17,W,X1,X,1,"Clark, Barbara J.",659
+519,2014-09-17,W,X1,X,2,"Ainsworth, Sam",659
+520,2014-09-17,W,X2,X,1,"Shannon, Michiael",660
+521,2014-09-17,M,X2,X,2,"Lakes, Michael A.",660
+522,2014-09-17,W,X3,X,1,"Heaton, Brian D.",655
+523,2014-09-18,R,X1,X,1,"Clark, Barbara J.",655
+524,2014-09-18,R,X1,X,2,"Cochrane, Meredith",655
+525,2014-09-18,R,X2,X,1,"Shannon, Michiael",661
+526,2014-09-18,R,X2,X,2,"Eakle, Robert W",661
+527,2014-09-18,R,X3,X,1,"Heaton, Brian D.",654
+528,2014-09-19,F,X1,X,1,"Clark, Barbara J.",660
+529,2014-09-19,F,X1,X,2,"Bell, Creigh",654
+530,2014-09-19,F,X2,X,1,"Shannon, Michiael",662
+531,2014-09-19,F,X2,X,2,"Cuevas, Rebekah",662
+532,2014-09-09,T,A4,A,2,"Leggins, Anna",647
+533,2014-09-16,T,A1,A,1,"Hardesty, Sean",653
+534,2014-09-16,T,A1,A,2,"Diakite, Abdoul",653
+535,2014-09-16,T,A1,A,3,"Hedges, Cody",653
+536,2014-09-16,T,A2,A,1,"LaGarde, Nancy",652
+537,2014-09-16,T,A2,A,2,"Timm, Aaron",647
+538,2014-09-16,T,A3,A,1,"Hargrove, Paul Brady",648
+539,2014-09-16,T,A3,A,2,"Miller, Ryan",648
+540,2014-09-16,T,A4,A,1,"Foley, Shannon",650
+541,2014-09-16,T,A4,A,2,"Leggins, Anna",650
+542,2014-09-16,T,A5,A,1,"Bise III, John H.",649
+543,2014-09-16,T,A6,A,1,"Fischer, Steven",645
+544,2014-09-16,T,B1,B,1,"Hunter, Rob",637
+545,2014-09-16,T,B1,B,2,"Grant, Maria LaGee",637
+546,2014-09-16,T,B1,B,3,"Cochrane, Meredith",637
+547,2014-09-16,T,B2,B,1,"Zabel, Phil",651
+548,2014-09-16,T,B2,B,2,"Hacker, Douglas",651
+549,2014-09-16,T,B2,B,3,"Vannice, William",651
+550,2014-09-16,T,B3,B,1,"Hock, Paul",640
+551,2014-09-16,T,B4,B,1,"Matthews, Roy",639
+552,2014-09-16,T,B4,B,2,"Liechty, Abbey",639
+553,2014-09-16,T,B5,B,1,"Hedges, Cody",659
+554,2014-09-16,T,E1,E,1,"Decker, Ernie",662
+555,2014-09-16,T,E2,E,1,"Francis, Marshall",661
+556,2014-09-16,T,E2,E,2,"Guo, Xiao",661
+557,2014-09-16,T,E2,E,3,"Lipa, Tyler",661
+558,2014-09-16,T,E3,E,1,"Chen, Jason",655
+559,2014-09-17,W,A1,A,1,"Hardesty, Sean",645
+560,2014-09-17,W,A1,A,2,"Huffman, Haley",645
+561,2014-09-17,W,A1,A,3,"Warren, Jeremy",645
+562,2014-09-17,W,A2,A,1,"LaGarde, Nancy",648
+563,2014-09-17,W,A2,A,2,"Hacker, Douglas",648
+564,2014-09-17,W,A3,A,1,"Hargrove, Paul Brady",658
+565,2014-09-17,W,A3,A,2,"Bell, Creigh",658
+566,2014-09-17,W,A4,A,1,"Foley, Shannon",650
+567,2014-09-17,W,A4,A,2,"Bryan, Katie",650
+568,2014-09-17,W,A5,A,1,"Bise III, John H.",641
+569,2014-09-17,W,A6,A,1,"Fischer, Steven",647
+570,2014-09-17,W,B1,B,1,"Hunter, Rob",636
+571,2014-09-17,W,B1,B,2,"Diakite, Abdoul",636
+572,2014-09-17,W,B1,B,3,"Clark, Aaron",636
+573,2014-09-17,W,B2,B,1,"Zabel, Phil",649
+574,2014-09-17,W,B2,B,2,"Struyf, Nick",649
+575,2014-09-17,W,B2,B,3,"Vannice, William",649
+576,2014-09-17,W,B3,B,1,"Hock, Paul",637
+577,2014-09-17,W,B4,B,1,"Matthews, Roy",653
+578,2014-09-17,W,B4,B,1,"Matthews, Roy",653
+579,2014-09-17,W,B4,B,2,"Figg, Korbin Patrick",653
+580,2014-09-17,W,B5,B,1,"Kenny, Dominic",640
+581,2014-09-17,W,E1,E,1,"Decker, Ernie",662
+582,2014-09-17,W,E2,E,1,"Francis, Marshall",654
+583,2014-09-17,W,E2,E,2,"Liechty, Abbey",654
+584,2014-09-17,W,E2,E,3,"Ginet, Chris",654
+585,2014-09-17,W,E3,E,1,"Palmer, Fileve",661
+586,2014-09-18,R,A3,A,1,"Hargrove, Paul Brady",640
+587,2014-09-18,R,A2,A,1,"LaGarde, Nancy",648
+588,2014-09-18,R,A1,A,1,"Hardesty, Sean",647
+589,2014-09-18,R,A6,A,1,"Fischer, Steven",649
+590,2014-09-18,R,A1,A,2,"Miller, Ryan",647
+591,2014-09-18,R,A1,A,3,"Ginty, Kyle",647
+592,2014-09-18,R,A2,A,2,"Phillips, Jenna",648
+593,2014-09-18,R,A3,A,2,"Hacker, Douglas",645
+594,2014-09-18,R,A4,A,1,"Foley, Shannon",650
+595,2014-09-18,R,A4,A,2,"Jackman, Dorian",650
+596,2014-09-18,R,A5,A,1,"Bise III, John H.",641
+597,2014-09-18,R,B1,B,1,"Hunter, Rob",636
+598,2014-09-18,R,B1,B,2,"Vannice, William",636
+599,2014-09-18,R,B1,B,3,"Vannice, William",636
+600,2014-09-18,R,B2,B,1,"Zabel, Phil",653
+601,2014-09-18,R,B2,B,2,"Hendricks, Sandra",653
+602,2014-09-18,R,B2,B,3,"Kenny, Dominic",653
+603,2014-09-18,R,B3,B,1,"Hock, Paul",651
+604,2014-09-18,R,B4,B,1,"Matthews, Roy",637
+605,2014-09-18,R,B4,B,2,"Bryan, Katie",637
+606,2014-09-18,R,B5,B,1,"Muhammad, Natalie",639
+607,2014-09-18,R,E1,E,1,"Decker, Ernie",661
+608,2014-09-18,R,E2,E,1,"Francis, Marshall",656
+609,2014-09-18,R,E2,E,2,"Cuevas, Rebekah",656
+610,2014-09-18,R,E3,E,1,"Grant, Maria LaGee",658
+611,2014-09-19,F,A1,A,1,"Thomas, Phillip",650
+612,2014-09-19,F,A1,A,2,"Miller, Gregg",650
+613,2014-09-19,F,A1,A,3,"Timm, Aaron",650
+614,2014-09-19,F,A1,A,4,"Vannice, William",650
+615,2014-09-19,F,A2,A,1,"Ellison, Tyler",653
+616,2014-09-19,F,A2,A,2,"Ginty, Kyle",653
+617,2014-09-19,F,A2,A,3,"Hacker, Douglas",653
+618,2014-09-19,F,A2,A,4,"Gaisser, Karl",653
+619,2014-09-19,F,A3,A,1,"Hargrove, Paul Brady",659
+620,2014-09-19,F,A3,A,2,"Dickerson, Terin Joseph",659
+621,2014-09-19,F,A4,A,1,"Foley, Shannon",641
+622,2014-09-19,F,A4,A,2,"Huffman, Haley",641
+623,2014-09-19,F,A5,A,1,"Ginet, Chris",661
+624,2014-09-19,F,B1,B,1,"Miller, Gregg",637
+625,2014-09-19,F,B1,B,2,"Grant, Maria LaGee",637
+626,2014-09-19,F,B1,B,3,"Kenny, Dominic",637
+627,2014-09-19,F,B1,B,4,"Hendricks, Sandra",637
+628,2014-09-19,F,B2,B,1,"Hunter, Rob",649
+629,2014-09-19,F,B2,B,2,"Struyf, Nick",649
+630,2014-09-19,F,E1,E,1,"Cain, Caleb",658
+631,2014-09-19,F,E1,E,2,"Muhammad, Natalie",658
+632,2014-09-19,F,E1,E,3,"Cunningham, Ian",658
+633,2014-09-19,F,E2,E,1,"Hedges, Cody",660
+634,2014-09-19,F,E2,E,2,"Hedges, Cody",660
+635,2014-09-11,R,E2,E,3,"Bobyak, Lindsay",658
+636,2014-09-18,R,E2,E,3,"Bobyak, Lindsay",656
+637,2014-09-20,S,A1,A,1,"Widlowski, Robert",655
+638,2014-09-20,S,A1,A,2,"Timm, Aaron",655
+639,2014-09-20,S,A1,A,3,"Gaisser, Karl",655
+640,2014-09-20,S,B1,B,1,"Dunford, Jeff",658
+641,2014-09-20,S,B1,B,2,"Greene, Zachary Wade",658
+642,2014-09-20,S,E1,E,1,"Diakite, Abdoul",659
+643,2014-09-20,S,E1,E,2,"Dickerson, Terin Joseph",659
+644,2014-09-21,U,A1,A,1,"Russell, Briana",647
+645,2014-09-21,U,A1,A,2,"Clark, Aaron",659
+646,2014-09-21,U,B1,B,1,"Ellison, Tyler",659
+647,2014-09-21,U,B1,B,2,"Miessler, Cy",659
+648,2014-09-21,U,E1,E,1,"Cain, Caleb",641
+649,2014-09-21,U,E1,E,2,"Jackman, Dorian",641
+650,2014-09-22,M,A1,A,1,"Hardesty, Sean",640
+651,2014-09-22,M,A1,A,2,"Moir, AJ",640
+652,2014-09-22,M,A1,A,3,"Hedges, Cody",640
+653,2014-09-22,M,A2,A,1,"LaGarde, Nancy",648
+654,2014-09-22,M,A2,A,2,"Cunningham, Ian",648
+655,2014-09-22,M,A3,A,1,"Hargrove, Paul Brady",647
+656,2014-09-22,M,A3,A,2,"Warren, Jeremy",647
+657,2014-09-22,M,A4,A,1,"Foley, Shannon",639
+658,2014-09-22,M,A4,A,2,"Kappes, Thomas",639
+659,2014-09-22,M,A5,A,1,"Bise III, John H.",641
+660,2014-09-22,M,A6,A,1,"Fischer, Steven",645
+661,2014-09-22,M,B1,B,1,"Hunter, Rob",651
+662,2014-09-22,M,B1,B,2,"Miller, Ryan",651
+663,2014-09-22,M,B1,B,3,"Clark, Aaron",651
+664,2014-09-22,M,B2,B,1,"Zabel, Phil",637
+665,2014-09-22,M,B2,B,2,"Palmer, Fileve",637
+666,2014-09-22,M,B2,B,3,"Kim, Christopher",637
+667,2014-09-22,M,B3,B,1,"Hock, Paul",653
+668,2014-09-22,M,B4,B,1,"Matthews, Roy",636
+669,2014-09-22,M,B4,B,2,"Bobyak, Lindsay",636
+670,2014-09-22,M,B5,B,1,"Eakle, Robert W",649
+671,2014-09-22,M,E1,E,1,"Decker, Ernie",660
+672,2014-09-22,M,E2,E,1,"Francis, Marshall",662
+673,2014-09-22,M,E2,E,2,"Ainsworth, Sam",662
+674,2014-09-22,M,E2,E,3,"Gallalee, Jack",662
+675,2014-09-22,M,E3,E,1,"Pinkney, Dewayne J",656
+676,2014-09-22,M,X1,X,1,"Clark, Barbara J.",654
+677,2014-09-22,M,X1,X,2,"Freet, Heather",654
+678,2014-09-22,M,X2,X,1,"Shannon, Michiael",658
+679,2014-09-22,M,X2,X,2,"Ginty, Kyle",658
+680,2014-09-22,M,X3,X,1,"Heaton, Brian D.",661
+681,2014-09-23,T,A1,A,1,"Hardesty, Sean",645
+682,2014-09-23,T,A1,A,2,"Hedges, Cody",645
+683,2014-09-23,T,A1,A,3,"Gallalee, Jack",645
+684,2014-09-23,T,A2,A,1,"LaGarde, Nancy",660
+685,2014-09-23,T,A2,A,2,"Diakite, Abdoul",660
+686,2014-09-23,T,A3,A,1,"Hargrove, Paul Brady",640
+687,2014-09-23,T,A3,A,2,"Miller, Ryan",640
+688,2014-09-23,T,A4,A,1,"Foley, Shannon",648
+689,2014-09-23,T,A4,A,2,"Leggins, Anna",648
+690,2014-09-23,T,A5,A,1,"Bise III, John H.",661
+691,2014-09-23,T,A6,A,1,"Fischer, Steven",650
+692,2014-09-23,T,B1,B,1,"Hunter, Rob",654
+693,2014-09-23,T,B1,B,2,"Grant, Maria LaGee",654
+694,2014-09-23,T,B1,B,3,"Cochrane, Meredith",654
+695,2014-09-23,T,B2,B,1,"Zabel, Phil",658
+696,2014-09-23,T,B2,B,2,"Hacker, Douglas",658
+697,2014-09-23,T,B2,B,3,"Vannice, William",658
+698,2014-09-23,T,B3,B,1,"Hock, Paul",641
+699,2014-09-23,T,B4,B,1,"Matthews, Roy",651
+700,2014-09-23,T,B4,B,2,"Struyf, Nick",637
+701,2014-09-23,T,B5,B,1,"Phillips, Jenna",649
+702,2014-09-23,T,E1,E,1,"Decker, Ernie",659
+703,2014-09-23,T,E2,E,1,"Francis, Marshall",656
+704,2014-09-23,T,E2,E,2,"Guo, Xiao",656
+705,2014-09-23,T,E2,E,3,"Lipa, Tyler",656
+706,2014-09-23,T,E3,E,1,"Chen, Jason",636
+707,2014-09-23,T,X1,X,1,"Clark, Barbara J.",639
+708,2014-09-23,T,X1,X,2,"Freet, Heather",639
+709,2014-09-23,T,X2,X,1,"Shannon, Michiael",662
+710,2014-09-23,T,X2,X,2,"Greene, Zachary Wade",662
+711,2014-09-23,T,X3,X,1,"Heaton, Brian D.",643
+712,2014-09-24,W,A1,A,1,"Hardesty, Sean",659
+713,2014-09-24,W,A1,A,2,"Huffman, Haley",659
+714,2014-09-24,W,A1,A,3,"Warren, Jeremy",659
+715,2014-09-24,W,A2,A,1,"LaGarde, Nancy",650
+716,2014-09-24,W,A2,A,2,"Hacker, Douglas",650
+717,2014-09-24,W,A3,A,1,"Hargrove, Paul Brady",640
+718,2014-09-24,W,A3,A,2,"Bell, Creigh",640
+719,2014-09-24,W,A4,A,1,"Foley, Shannon",639
+720,2014-09-24,W,A4,A,2,"Bryan, Katie",639
+721,2014-09-24,W,A5,A,1,"Bise III, John H.",641
+722,2014-09-24,W,A6,A,1,"Fischer, Steven",654
+723,2014-09-24,W,B1,B,1,"Hunter, Rob",653
+724,2014-09-24,W,B1,B,2,"Ginty, Kyle",653
+725,2014-09-24,W,B1,B,3,"Clark, Aaron",653
+726,2014-09-24,W,B2,B,1,"Zabel, Phil",644
+727,2014-09-24,W,B2,B,2,"Struyf, Nick",644
+728,2014-09-24,W,B2,B,3,"Vannice, William",644
+729,2014-09-24,W,B3,B,1,"Hock, Paul",636
+730,2014-09-24,W,B4,B,1,"Matthews, Roy",661
+731,2014-09-24,W,B4,B,2,"Lipa, Tyler",661
+732,2014-09-24,W,B5,B,1,"Kenny, Dominic",643
+733,2014-09-24,W,E1,E,1,"Decker, Ernie",656
+734,2014-09-24,W,E2,E,1,"Francis, Marshall",637
+735,2014-09-24,W,E2,E,2,"Liechty, Abbey",637
+736,2014-09-24,W,E2,E,3,"Ginet, Chris",637
+737,2014-09-24,W,E3,E,1,"Palmer, Fileve",658
+738,2014-09-24,W,X1,X,1,"Clark, Barbara J.",651
+739,2014-09-24,W,X1,X,2,"Ainsworth, Sam",656
+740,2014-09-24,W,X2,X,1,"Shannon, Michiael",662
+741,2014-09-24,W,X2,X,2,"Lakes, Michael A.",662
+742,2014-09-24,W,X3,X,1,"Heaton, Brian D.",649
+743,2014-09-25,R,A1,A,1,"Hardesty, Sean",656
+744,2014-09-25,R,A1,A,2,"Miller, Ryan",656
+745,2014-09-25,R,A1,A,3,"Miessler, Cy",656
+746,2014-09-25,R,A2,A,1,"LaGarde, Nancy",641
+747,2014-09-25,R,A2,A,2,"Phillips, Jenna",641
+748,2014-09-25,R,A3,A,1,"Hargrove, Paul Brady",648
+749,2014-09-25,R,A3,A,2,"Hacker, Douglas",648
+750,2014-09-25,R,A4,A,1,"Foley, Shannon",640
+751,2014-09-25,R,A4,A,2,"Hedges, Cody",640
+752,2014-09-25,R,A5,A,1,"Bise III, John H.",644
+753,2014-09-25,R,A6,A,1,"Fischer, Steven",645
+754,2014-09-25,R,B1,B,1,"Hunter, Rob",636
+755,2014-09-25,R,B1,B,2,"Vannice, William",640
+756,2014-09-25,R,B1,B,3,"Vannice, William",640
+757,2014-09-25,R,B2,B,1,"Zabel, Phil",637
+758,2014-09-25,R,B2,B,2,"Hendricks, Sandra",637
+759,2014-09-25,R,B2,B,3,"Kenny, Dominic",637
+760,2014-09-25,R,B3,B,1,"Hock, Paul",643
+761,2014-09-25,R,B4,B,1,"Matthews, Roy",639
+762,2014-09-25,R,B4,B,2,"Bryan, Katie",639
+763,2014-09-25,R,B5,B,1,"Muhammad, Natalie",649
+764,2014-09-25,R,E1,E,1,"Decker, Ernie",660
+765,2014-09-25,R,E2,E,1,"Francis, Marshall",661
+766,2014-09-25,R,E2,E,2,"Cuevas, Rebekah",661
+767,2014-09-25,R,E3,E,1,"Grant, Maria LaGee",655
+768,2014-09-25,R,X1,X,1,"Clark, Barbara J.",654
+769,2014-09-25,R,X1,X,2,"Cochrane, Meredith",654
+770,2014-09-25,R,X2,X,1,"Shannon, Michiael",662
+771,2014-09-25,R,X2,X,2,"Eakle, Robert W",662
+772,2014-09-25,R,X3,X,1,"Heaton, Brian D.",659
+773,2014-09-25,R,E2,E,3,"Bobyak, Lindsay",654
+774,2014-10-20,M,A1,A,1,"Heaton, Brian D.",648
+775,2014-09-25,Special,,,,,
+776,2014-09-25,Auditorium,,,,"Leggins, Anna",659
+777,2014-09-25,Auditorium,,,,"Gallalee, Jack",643
+778,2014-09-25,Auditorium,,,,"Thomas, Phillip",643
+779,2014-09-26,F,A1,A,1,"Thomas, Phillip",648
+780,2014-09-26,F,A1,A,2,"Miller, Gregg",648
+781,2014-09-26,F,A1,A,3,"Widlowski, Robert",648
+782,2014-09-26,F,A1,A,4,"Vannice, William",648
+783,2014-09-26,F,A2,A,1,"Ellison, Tyler",641
+784,2014-09-26,F,A2,A,2,"Ginty, Kyle",641
+785,2014-09-26,F,A2,A,3,"Guo, Xiao",641
+786,2014-09-26,F,A3,A,1,"Hargrove, Paul Brady",653
+787,2014-09-26,F,A3,A,2,"Dickerson, Terin Joseph",653
+788,2014-09-26,F,A4,A,1,"Foley, Shannon",656
+789,2014-09-26,F,A4,A,2,"Hacker, Douglas",656
+790,2014-09-26,F,A5,A,1,"Ginet, Chris",654
+791,2014-09-26,F,B1,B,1,"Miller, Gregg",651
+792,2014-09-26,F,B1,B,2,"Grant, Maria LaGee",651
+793,2014-09-26,F,B1,B,3,"Kenny, Dominic",651
+794,2014-09-26,F,B1,B,4,"Kappes, Thomas",651
+795,2014-09-26,F,B2,B,1,"Hunter, Rob",649
+796,2014-09-26,F,B2,B,2,"Bryan, Katie",649
+797,2014-09-26,F,E1,E,1,"Ginty, Kyle",662
+798,2014-09-26,F,E1,E,2,"Muhammad, Natalie",662
+799,2014-09-26,F,E1,E,3,"Cunningham, Ian",662
+800,2014-09-26,F,E2,E,1,"Hedges, Cody",660
+801,2014-09-26,F,E2,E,2,"Hedges, Cody",660
+802,2014-09-26,F,X1,X,1,"Clark, Barbara J.",661
+803,2014-09-26,F,X1,X,2,"Bell, Creigh",661
+804,2014-09-26,F,X2,X,1,"Shannon, Michiael",658
+805,2014-09-26,F,X2,X,2,"Cuevas, Rebekah",658
+806,2014-09-26,Special,,,,"Phillips, Jenna",661
+807,2014-09-27,S,A1,A,1,"Widlowski, Robert",656
+808,2014-09-27,S,A1,A,2,"Bryan, Katie",
+809,2014-09-27,S,A1,A,3,"Gaisser, Karl",656
+810,2014-09-27,S,B1,B,1,"Gillespie, Nathan",653
+811,2014-09-27,S,B1,B,2,"Greene, Zachary Wade",653
+812,2014-09-27,S,E1,E,1,"Diakite, Abdoul",660
+813,2014-09-28,U,A1,A,1,"Cochrane, Meredith",650
+814,2014-09-28,U,A1,A,2,"Clark, Aaron",650
+815,2014-09-28,U,B1,B,1,"Bryan, Katie",655
+816,2014-09-28,U,B1,B,2,"Miessler, Cy",658
+817,2014-09-28,U,E1,E,1,"Kenny, Dominic",641
+818,2014-09-28,U,E1,E,2,"Jackman, Dorian",641
+819,2014-09-29,M,A1,A,1,"Heaton, Brian D.",640
+820,2014-09-29,M,A1,A,3,"Huffman, Haley",640
+821,2014-09-29,M,A2,A,1,"LaGarde, Nancy",641
+822,2014-09-29,M,A2,A,2,"Cunningham, Ian",641
+823,2014-09-29,M,A3,A,1,"Hargrove, Paul Brady",650
+824,2014-09-29,M,A3,A,2,"Warren, Jeremy",650
+825,2014-09-29,M,A4,A,1,"Foley, Shannon",637
+826,2014-09-29,M,A4,A,2,"Kappes, Thomas",655
+827,2014-09-29,M,A5,A,1,"Zabel, Phil",649
+828,2014-09-29,M,A6,A,1,"Fischer, Steven",643
+829,2014-09-29,M,B1,B,1,"Hunter, Rob",644
+830,2014-09-29,M,B1,B,2,"Hacker, Douglas",644
+831,2014-09-29,M,B1,B,3,"Clark, Aaron",644
+832,2014-09-29,M,B2,B,1,"Bise III, John H.",639
+833,2014-09-29,M,B2,B,2,"Palmer, Fileve",639
+834,2014-09-29,M,B2,B,3,"Phillips, Jenna",639
+835,2014-09-29,M,B3,B,1,"Hock, Paul",653
+836,2014-09-29,M,B4,B,1,"Matthews, Roy",651
+837,2014-09-29,M,B5,B,1,"Eakle, Robert W",636
+838,2014-09-29,M,E1,E,1,"Decker, Ernie",658
+839,2014-09-29,M,E2,E,1,"Francis, Marshall",660
+840,2014-09-29,M,E2,E,2,"Ainsworth, Sam",659
+841,2014-09-29,M,E2,E,3,"Gallalee, Jack",660
+842,2014-09-29,M,E3,E,1,"Cochrane, Meredith",662
+843,2014-09-29,M,X1,X,1,"Clark, Barbara J.",656
+844,2014-09-29,M,X1,X,2,"Freet, Heather",656
+845,2014-09-29,M,X2,X,1,"Shannon, Michiael",654
+846,2014-09-29,M,X2,X,2,"Ginty, Kyle",654
+847,2014-09-29,M,X3,X,,"Hedges, Cody",661
+848,2014-09-29,M,X4,X,,"Greene, Zachary Wade",661
+849,2014-09-29,M,B4,B,2,"Bobyak, Lindsay",651
+850,2014-09-30,T,A1,A,1,"Heaton, Brian D.",647
+851,2014-09-30,T,A1,A,2,"Diakite, Abdoul",647
+852,2014-09-30,T,A1,A,3,"Gallalee, Jack",647
+853,2014-09-30,T,A2,A,1,"LaGarde, Nancy",641
+854,2014-09-30,T,A2,A,2,"Timm, Aaron",641
+855,2014-09-30,T,A3,A,1,"Hargrove, Paul Brady",650
+856,2014-09-30,T,A3,A,2,"Miller, Ryan",650
+857,2014-09-30,T,A4,A,1,"Foley, Shannon",640
+858,2014-09-30,T,A4,A,2,"Leggins, Anna",640
+859,2014-09-30,T,A5,A,1,"Zabel, Phil",654
+860,2014-09-30,T,A6,A,1,"Fischer, Steven",639
+861,2014-09-30,T,B1,B,1,"Hunter, Rob",649
+862,2014-09-30,T,B1,B,2,"Grant, Maria LaGee",649
+863,2014-09-30,T,B1,B,3,"Cochrane, Meredith",649
+864,2014-09-30,T,B2,B,1,"Bise III, John H.",636
+865,2014-09-30,T,B2,B,2,"Hacker, Douglas",636
+866,2014-09-30,T,B2,B,3,"Vannice, William",636
+867,2014-09-30,T,B3,B,1,"Hock, Paul",651
+868,2014-09-30,T,B4,B,1,"Matthews, Roy",659
+869,2014-09-30,T,B4,B,2,"Bryan, Katie",653
+870,2014-09-30,T,B5,B,1,"Phillips, Jenna",644
+871,2014-09-30,T,E1,E,1,"Decker, Ernie",662
+872,2014-09-30,T,E2,E,1,"Francis, Marshall",655
+873,2014-09-30,T,E2,E,2,"Guo, Xiao",655
+874,2014-09-30,T,E2,E,3,"Clark, Aaron",653
+875,2014-09-30,T,E3,E,1,"Chen, Jason",659
+876,2014-09-30,T,X1,X,1,"Clark, Barbara J.",656
+877,2014-09-30,T,X1,X,2,"Freet, Heather",656
+878,2014-09-30,T,X2,X,1,"Shannon, Michiael",661
+879,2014-09-30,T,X2,X,2,"Greene, Zachary Wade",661
+880,2014-09-30,T,X3,X,,"Hedges, Cody",660
+881,2014-09-30,T,X4,X,,"Hedges, Cody",660
+882,2014-10-01,W,A1,A,1,"Heaton, Brian D.",640
+883,2014-10-01,W,A1,A,2,"Huffman, Haley",640
+884,2014-10-01,W,A1,A,3,"Warren, Jeremy",640
+885,2014-10-01,W,A2,A,1,"LaGarde, Nancy",650
+886,2014-10-01,W,A2,A,2,"Hacker, Douglas",650
+887,2014-10-01,W,A3,A,1,"Hargrove, Paul Brady",649
+888,2014-10-01,W,A3,A,2,"Bell, Creigh",649
+889,2014-10-01,W,A4,A,1,"Leathers, Daniel",654
+890,2014-10-01,W,A4,A,2,"Bryan, Katie",654
+891,2014-10-01,W,A5,A,1,"Zabel, Phil",660
+892,2014-10-01,W,A6,A,1,"Fischer, Steven",651
+893,2014-10-01,W,B1,B,1,"Hunter, Rob",637
+894,2014-10-01,W,B1,B,2,"Diakite, Abdoul",637
+895,2014-10-01,W,B1,B,3,"Clark, Aaron",637
+896,2014-10-01,W,B2,B,1,"Bise III, John H.",641
+897,2014-10-01,W,B2,B,2,"Struyf, Nick",641
+898,2014-10-01,W,B2,B,3,"Bandy, Kyle",641
+899,2014-10-01,W,B3,B,1,"Hock, Paul",639
+900,2014-10-01,W,B4,B,1,"Matthews, Roy",656
+901,2014-10-01,W,B4,B,2,"Figg, Korbin Patrick",656
+902,2014-10-01,W,B5,B,1,"Kenny, Dominic",653
+903,2014-10-01,W,E1,E,1,"Decker, Ernie",658
+904,2014-10-01,W,E2,E,1,"Francis, Marshall",659
+905,2014-10-01,W,E2,E,2,"Liechty, Abbey",659
+906,2014-10-01,W,E2,E,3,"Ginet, Chris",659
+907,2014-10-01,W,E3,E,1,"Palmer, Fileve",636
+908,2014-10-01,W,X1,X,1,"Clark, Barbara J.",662
+909,2014-10-01,W,X1,X,2,"Ainsworth, Sam",662
+910,2014-10-01,W,X2,X,1,"Shannon, Michiael",657
+911,2014-10-01,W,X2,X,2,"Lakes, Michael A.",657
+912,2014-10-01,W,X3,X,,"Miller, Ryan",655
+913,2014-10-01,W,X4,X,,"Ginty, Kyle",655
+914,2014-09-29,M,A1,A,2,"Lakes, Michael A.",640
+915,2014-10-02,R,A1,A,1,"Heaton, Brian D.",647
+916,2014-10-02,R,A1,A,2,"Clark, Aaron",647
+917,2014-10-02,R,A1,A,3,"Miessler, Cy",647
+918,2014-10-02,R,A2,A,1,"LaGarde, Nancy",650
+919,2014-10-02,R,A2,A,2,"Phillips, Jenna",650
+920,2014-10-02,R,A3,A,1,"Hargrove, Paul Brady",648
+921,2014-10-02,R,A3,A,2,"Hacker, Douglas",648
+922,2014-10-02,R,A4,A,1,"Foley, Shannon",640
+923,2014-10-02,R,A4,A,2,"Hedges, Cody",640
+924,2014-10-02,R,A5,A,1,"Zabel, Phil",662
+925,2014-10-02,R,A6,A,1,"Liechty, Abbey",659
+926,2014-10-02,R,B1,B,1,"Hunter, Rob",644
+927,2014-10-02,R,B1,B,2,"Bandy, Kyle",644
+928,2014-10-02,R,B1,B,3,"Lipa, Tyler",644
+929,2014-10-02,R,B2,B,1,"Bise III, John H.",641
+930,2014-10-02,R,B2,B,2,"Hendricks, Sandra",641
+931,2014-10-02,R,B2,B,3,"Kenny, Dominic",641
+932,2014-10-02,R,B3,B,1,"Hock, Paul",658
+933,2014-10-02,R,B4,B,1,"Matthews, Roy",636
+934,2014-10-02,R,B4,B,2,"Bryan, Katie",636
+935,2014-10-02,R,B5,B,1,"Muhammad, Natalie",649
+936,2014-10-02,R,E1,E,1,"Decker, Ernie",660
+937,2014-10-02,R,E2,E,1,"Francis, Marshall",661
+938,2014-10-02,R,E2,E,2,"Cuevas, Rebekah",661
+939,2014-10-02,R,E2,E,3,"Bobyak, Lindsay",661
+940,2014-10-02,R,E3,E,1,"Grant, Maria LaGee",656
+941,2014-10-02,R,X1,X,1,"Clark, Barbara J.",655
+942,2014-10-02,R,X1,X,2,"Cochrane, Meredith",655
+943,2014-10-02,R,X2,X,1,"Shannon, Michiael",654
+944,2014-10-02,R,X2,X,2,"Eakle, Robert W",645
+945,2014-10-02,R,X3,X,,"Hedges, Cody",657
+946,2014-10-02,R,X4,X,,"Timm, Aaron",657
+947,2014-10-03,F,A1,A,1,"Thomas, Phillip",645
+948,2014-10-03,F,A1,A,2,"Miller, Gregg",645
+949,2014-10-03,F,A1,A,3,"Widlowski, Robert",645
+950,2014-10-03,F,A1,A,4,"Vannice, William",645
+951,2014-10-03,F,A2,A,1,"Ellison, Tyler",647
+952,2014-10-03,F,A2,A,2,"Bandy, Kyle",647
+953,2014-10-03,F,A2,A,3,"Bryan, Katie",655
+954,2014-10-03,F,A2,A,4,"Gaisser, Karl",655
+955,2014-10-03,F,A3,A,1,"Hargrove, Paul Brady",656
+956,2014-10-03,F,A3,A,2,"Dickerson, Terin Joseph",656
+957,2014-10-03,F,A4,A,1,"Figg, Korbin Patrick",648
+958,2014-10-03,F,A4,A,2,"Cochrane, Meredith",648
+959,2014-10-03,F,A5,A,1,"Ginet, Chris",650
+960,2014-10-03,F,B1,B,1,"Miller, Gregg",637
+961,2014-10-03,F,B1,B,2,"Dunford, Jeff",637
+962,2014-10-03,F,B1,B,3,"Kenny, Dominic",637
+963,2014-10-03,F,B1,B,4,"Hendricks, Sandra",637
+964,2014-10-03,F,B2,B,1,"Hunter, Rob",649
+965,2014-10-03,F,B2,B,2,"Struyf, Nick",649
+966,2014-10-03,F,E1,E,1,"Cain, Caleb",660
+967,2014-10-03,F,E1,E,2,"Muhammad, Natalie",660
+968,2014-10-03,F,E1,E,3,"Cunningham, Ian",660
+969,2014-10-03,F,E2,E,1,"Leathers, Daniel",661
+970,2014-10-03,F,E2,E,2,"Hacker, Douglas",661
+971,2014-10-03,F,X1,X,1,"Clark, Barbara J.",659
+972,2014-10-03,F,X1,X,2,"Bell, Creigh",659
+973,2014-10-03,F,X2,X,1,"Shannon, Michiael",655
+974,2014-10-03,F,X2,X,2,"Cuevas, Rebekah",655
+975,2014-10-03,Auditorium,,,,"Phillips, Jenna",661
+976,2014-10-03,Auditorium,,,,"Leggins, Anna",650
+977,2014-10-03,Auditorium,,,,"Warren, Jeremy",654
+978,2014-10-04,S,A1,A,1,"Widlowski, Robert",662
+979,2014-10-04,S,A1,A,2,"Timm, Aaron",662
+980,2014-10-04,S,A1,A,3,"Gaisser, Karl",662
+981,2014-10-04,S,B1,B,1,"Dunford, Jeff",644
+982,2014-10-04,S,B1,B,2,"Greene, Zachary Wade",644
+983,2014-10-04,S,E1,E,1,"Kim, Christopher",637
+984,2014-10-04,S,E1,E,2,"Dickerson, Terin Joseph",637
+985,2014-10-04,S,E1,E,3,"Guo, Xiao",637
+986,2014-10-05,U,A1,A,1,"Kenny, Dominic",654
+987,2014-10-05,U,A1,A,2,"Clark, Aaron",654
+988,2014-10-05,U,B1,B,1,"Ellison, Tyler",660
+989,2014-10-05,U,B1,B,2,"Miessler, Cy",660
+990,2014-10-05,U,E1,E,2,,
+991,2014-10-06,M,A1,A,1,"Heaton, Brian D.",648
+992,2014-10-06,M,A1,A,2,"Gallalee, Jack",648
+993,2014-10-06,M,A1,A,3,"Kenny, Dominic",648
+994,2014-10-06,M,A2,A,1,"LaGarde, Nancy",650
+995,2014-10-06,M,A2,A,2,"Cunningham, Ian",650
+996,2014-10-06,M,A3,A,1,"Hargrove, Paul Brady",647
+997,2014-10-06,M,A3,A,2,"Warren, Jeremy",647
+998,2014-10-06,M,A4,A,1,"Foley, Shannon",645
+999,2014-10-06,M,A4,A,2,"Kappes, Thomas",645
+1000,2014-10-06,M,A5,A,1,"Zabel, Phil",644
+1001,2014-10-06,M,A6,A,1,"Fischer, Steven",654
+1002,2014-10-06,M,B1,B,1,"Hunter, Rob",637
+1003,2014-10-06,M,B1,B,2,"Hacker, Douglas",637
+1004,2014-10-06,M,B1,B,3,"Miller, Ryan",637
+1005,2014-10-06,M,B2,B,1,"Bise III, John H.",639
+1006,2014-10-06,M,B2,B,2,"Palmer, Fileve",639
+1007,2014-10-06,M,B2,B,3,"Kim, Christopher",639
+1008,2014-10-06,M,B3,B,1,"Chen, Jason",653
+1009,2014-10-06,M,B4,B,1,"Matthews, Roy",636
+1010,2014-10-06,M,B4,B,2,"Bobyak, Lindsay",636
+1011,2014-10-06,M,B5,B,1,"Eakle, Robert W",649
+1012,2014-10-06,M,E1,E,1,"Decker, Ernie",662
+1013,2014-10-06,M,E2,E,1,"Francis, Marshall",658
+1014,2014-10-06,M,E2,E,2,"Bandy, Kyle",658
+1015,2014-10-06,M,E2,E,3,"Gallalee, Jack",658
+1016,2014-10-06,M,E3,E,1,"Cochrane, Meredith",643
+1017,2014-10-06,M,X1,X,1,"Clark, Barbara J.",655
+1018,2014-10-06,M,X1,X,2,"Freet, Heather",655
+1019,2014-10-06,M,X1,X,2,"Freet, Heather",655
+1020,2014-10-06,M,X2,X,1,"Shannon, Michiael",656
+1021,2014-10-06,M,X2,X,2,"Ginty, Kyle",656
+1022,2014-10-06,M,X3,X,,"Hedges, Cody",657
+1023,2014-10-06,M,X4,X,,"Greene, Zachary Wade",657
+1024,2014-10-07,T,A1,A,1,"Heaton, Brian D.",650
+1025,2014-10-07,T,A1,A,2,"Diakite, Abdoul",650
+1026,2014-10-07,T,A1,A,3,"Gallalee, Jack",650
+1027,2014-10-07,T,A2,A,1,"LaGarde, Nancy",645
+1028,2014-10-07,T,A2,A,2,"Timm, Aaron",645
+1029,2014-10-07,T,A3,A,1,"Hargrove, Paul Brady",648
+1030,2014-10-07,T,A3,A,2,"Miller, Ryan",648
+1031,2014-10-07,T,A4,A,1,"Foley, Shannon",647
+1032,2014-10-07,T,A4,A,2,"Leggins, Anna",647
+1033,2014-10-07,T,A5,A,1,"Zabel, Phil",637
+1034,2014-10-07,T,A6,A,1,"Fischer, Steven",654
+1035,2014-10-07,T,B1,B,1,"Hunter, Rob",649
+1036,2014-10-07,T,B1,B,2,"Grant, Maria LaGee",649
+1037,2014-10-07,T,B1,B,3,"Cochrane, Meredith",649
+1038,2014-10-07,T,B2,B,1,"Bise III, John H.",636
+1039,2014-10-07,T,B2,B,2,"Hacker, Douglas",636
+1040,2014-10-07,T,B2,B,3,"Vannice, William",636
+1041,2014-10-07,T,B3,B,1,"Liechty, Abbey",639
+1042,2014-10-07,T,B4,B,1,"Matthews, Roy",653
+1043,2014-10-07,T,B4,B,2,"Figg, Korbin Patrick",653
+1044,2014-10-07,T,B5,B,1,"Phillips, Jenna",644
+1045,2014-10-07,T,E1,E,1,"Decker, Ernie",662
+1046,2014-10-07,T,E2,E,1,"Bandy, Kyle",658
+1047,2014-10-07,T,E2,E,2,"Hendricks, Sandra",658
+1048,2014-10-07,T,E2,E,3,"Clark, Aaron",658
+1049,2014-10-07,T,E3,E,1,"Chen, Jason",657
+1050,2014-10-07,T,X1,X,1,"Clark, Barbara J.",656
+1051,2014-10-07,T,X1,X,2,"Freet, Heather",656
+1052,2014-10-07,T,X2,X,1,"Shannon, Michiael",661
+1053,2014-10-07,T,X2,X,2,"Greene, Zachary Wade",661
+1054,2014-10-07,T,X3,X,,"Hedges, Cody",660
+1055,2014-10-07,T,X4,X,,"Hedges, Cody",655
+1056,2014-10-07,Special,,,,"Cuevas, Rebekah",637
+1057,2014-10-05,U,E1,E,1,"Cain, Caleb",661
+1058,2014-10-08,W,A1,A,1,"Heaton, Brian D.",648
+1059,2014-10-08,W,A1,A,2,"Huffman, Haley",648
+1060,2014-10-08,W,A1,A,3,"Grant, Maria LaGee",661
+1061,2014-10-08,W,A2,A,1,"LaGarde, Nancy",650
+1062,2014-10-08,W,A2,A,2,"Hacker, Douglas",650
+1063,2014-10-08,W,A3,A,1,"Hargrove, Paul Brady",661
+1064,2014-10-08,W,A3,A,2,"Bell, Creigh",661
+1065,2014-10-08,W,A4,A,1,"Foley, Shannon",647
+1066,2014-10-08,W,A4,A,2,"Bryan, Katie",645
+1067,2014-10-08,W,A5,A,1,"Zabel, Phil",658
+1068,2014-10-08,W,A6,A,1,"Fischer, Steven",645
+1069,2014-10-08,W,B1,B,1,"Hunter, Rob",644
+1070,2014-10-08,W,B1,B,2,"Diakite, Abdoul",644
+1071,2014-10-08,W,B1,B,3,"Clark, Aaron",644
+1072,2014-10-08,W,B2,B,1,"Bise III, John H.",636
+1073,2014-10-08,W,B2,B,2,"Struyf, Nick",636
+1074,2014-10-08,W,B2,B,3,"Vannice, William",636
+1075,2014-10-08,W,B3,B,1,"Clark, Aaron",637
+1076,2014-10-08,W,B4,B,1,"Matthews, Roy",639
+1077,2014-10-08,W,B4,B,2,"Figg, Korbin Patrick",639
+1078,2014-10-08,W,B5,B,1,"Kenny, Dominic",649
+1079,2014-10-08,W,E1,E,1,"Decker, Ernie",662
+1080,2014-10-08,W,E2,E,1,"Francis, Marshall",654
+1081,2014-10-08,W,E2,E,3,"Ginet, Chris",654
+1082,2014-10-08,W,E2,E,2,"Liechty, Abbey",654
+1083,2014-10-08,W,E3,E,1,"Cochrane, Meredith",656
+1084,2014-10-08,W,X1,X,1,"Clark, Barbara J.",659
+1085,2014-10-08,W,X1,X,2,"Ainsworth, Sam",659
+1086,2014-10-08,W,X2,X,1,"Shannon, Michiael",657
+1087,2014-10-08,W,X2,X,2,"Lakes, Michael A.",657
+1088,2014-10-08,W,X3,X,,"Miller, Ryan",660
+1089,2014-10-08,W,X4,X,,"Ginty, Kyle",660
+1090,2014-10-09,R,A1,A,1,"Heaton, Brian D.",651
+1091,2014-10-09,R,A1,A,2,"Miller, Ryan",651
+1092,2014-10-09,R,A1,A,3,"Miessler, Cy",651
+1093,2014-10-09,R,A2,A,1,"LaGarde, Nancy",653
+1094,2014-10-09,R,A2,A,2,"Phillips, Jenna",653
+1095,2014-10-09,R,A3,A,1,"Hargrove, Paul Brady",660
+1096,2014-10-09,R,A3,A,2,"Hacker, Douglas",660
+1097,2014-10-09,R,A4,A,1,"Foley, Shannon",645
+1098,2014-10-09,R,A4,A,2,"Hedges, Cody",645
+1099,2014-10-09,R,A5,A,1,"Zabel, Phil",658
+1100,2014-10-09,R,A6,A,1,"Fischer, Steven",649
+1101,2014-10-09,R,B1,B,1,"Hunter, Rob",637
+1102,2014-10-09,R,B1,B,2,"Vannice, William",637
+1103,2014-10-09,R,B1,B,3,"Vannice, William",637
+1104,2014-10-09,R,B2,B,1,"Bise III, John H.",643
+1105,2014-10-09,R,B2,B,2,"Hendricks, Sandra",643
+1106,2014-10-09,R,B2,B,3,"Kenny, Dominic",643
+1107,2014-10-09,R,B3,B,1,"Liechty, Abbey",639
+1108,2014-10-09,R,B4,B,1,"Matthews, Roy",644
+1109,2014-10-09,R,B4,B,2,"Lipa, Tyler",644
+1110,2014-10-09,R,B5,B,1,"Muhammad, Natalie",650
+1111,2014-10-09,R,E1,E,1,"Decker, Ernie",662
+1112,2014-10-09,R,E2,E,1,"Phillips, Jenna",656
+1113,2014-10-09,R,E2,E,2,"Cuevas, Rebekah",662
+1114,2014-10-09,R,E2,E,3,"Bobyak, Lindsay",662
+1115,2014-10-09,R,E3,E,1,"Grant, Maria LaGee",661
+1116,2014-10-09,R,X1,X,1,"Clark, Barbara J.",655
+1117,2014-10-09,R,X1,X,2,"Cochrane, Meredith",655
+1118,2014-10-09,R,X2,X,1,"Shannon, Michiael",659
+1119,2014-10-09,R,X2,X,2,"Eakle, Robert W",659
+1120,2014-10-09,R,X3,X,,"Hedges, Cody",657
+1121,2014-10-09,R,X4,X,,"Timm, Aaron",657
+1122,2014-10-10,FB,F,F,,"Diakite, Abdoul",647
+1123,2014-10-10,FB,F,F,,"Gaisser, Karl",660
+1124,2014-10-10,FB,F,F,,"Cochrane, Meredith",655
+1125,2014-10-10,FB,F,F,,"Miller, Ryan",660
+1126,2014-10-10,FB,F,F,,"Vannice, William",658
+1127,2014-10-11,S,A1,A,1,"Widlowski, Robert",644
+1128,2014-10-11,S,A1,A,2,"Timm, Aaron",644
+1129,2014-10-11,S,A1,A,3,"Gaisser, Karl",644
+1130,2014-10-11,S,B1,B,1,"Gillespie, Nathan",643
+1131,2014-10-11,S,B1,B,2,"Greene, Zachary Wade",643
+1132,2014-10-11,S,E1,E,1,"Diakite, Abdoul",651
+1133,2014-10-11,S,E1,E,3,"Clark, Aaron",651
+1134,2014-10-12,U,A1,A,1,"Russell, Briana",662
+1135,2014-10-12,U,A1,A,2,"Clark, Aaron",662
+1136,2014-10-12,U,B1,B,1,"Timm, Aaron",649
+1137,2014-10-12,U,B1,B,2,"Miessler, Cy",649
+1138,2014-10-12,U,E1,E,1,"Cochrane, Meredith",654
+1139,2014-10-12,U,E1,E,2,"Warren, Jeremy",654
+1140,2014-10-13,M,A1,A,1,"Heaton, Brian D.",650
+1141,2014-10-13,M,A1,A,2,"Gallalee, Jack",650
+1142,2014-10-13,M,A1,A,3,"Kenny, Dominic",653
+1143,2014-10-13,M,A2,A,1,"LaGarde, Nancy",648
+1144,2014-10-13,M,A2,A,2,"Cunningham, Ian",648
+1145,2014-10-13,M,A3,A,1,"Hargrove, Paul Brady",645
+1146,2014-10-13,M,A3,A,2,"Warren, Jeremy",645
+1147,2014-10-13,M,A4,A,1,"Foley, Shannon",660
+1148,2014-10-13,M,A4,A,2,"Kappes, Thomas",636
+1149,2014-10-13,M,A5,A,1,"Zabel, Phil",657
+1150,2014-10-13,M,A6,A,1,"Fischer, Steven",647
+1151,2014-10-13,M,B1,B,1,"Hunter, Rob",651
+1152,2014-10-13,M,B1,B,2,"Hacker, Douglas",651
+1153,2014-10-13,M,B1,B,3,"Clark, Aaron",651
+1154,2014-10-13,M,B2,B,1,"Bise III, John H.",637
+1155,2014-10-13,M,B2,B,2,"Miller, Ryan",637
+1156,2014-10-13,M,B2,B,3,"Kim, Christopher",637
+1157,2014-10-13,M,B3,B,1,"Hock, Paul",649
+1158,2014-10-13,M,B4,B,1,"Matthews, Roy",644
+1159,2014-10-13,M,B4,B,2,"Grant, Maria LaGee",644
+1160,2014-10-13,M,B5,B,1,"Eakle, Robert W",639
+1161,2014-10-13,M,E1,E,1,"Decker, Ernie",658
+1162,2014-10-13,M,E2,E,1,"Francis, Marshall",661
+1163,2014-10-13,M,E2,E,2,"Lipa, Tyler",661
+1164,2014-10-13,M,E2,E,3,"Gallalee, Jack",661
+1165,2014-10-13,M,E3,E,1,"Cochrane, Meredith",643
+1166,2014-10-13,M,X1,X,1,"Clark, Barbara J.",655
+1167,2014-10-13,M,X1,X,2,"Freet, Heather",655
+1168,2014-10-13,M,X2,X,1,"Shannon, Michiael",654
+1169,2014-10-13,M,X2,X,2,"Ginty, Kyle",654
+1170,2014-10-13,M,X3,X,,"Hedges, Cody",660
+1171,2014-10-13,M,X4,X,,"Greene, Zachary Wade",660
+1172,2014-10-14,T,A1,A,1,"Heaton, Brian D.",645
+1173,2014-10-14,T,A1,A,2,"Diakite, Abdoul",645
+1174,2014-10-14,T,A2,A,1,"LaGarde, Nancy",661
+1175,2014-10-14,T,A2,A,2,"Timm, Aaron",647
+1176,2014-10-14,T,A3,A,1,"Hargrove, Paul Brady",650
+1177,2014-10-14,T,A3,A,2,"Miller, Ryan",650
+1178,2014-10-14,T,A4,A,1,"Foley, Shannon",648
+1179,2014-10-14,T,A4,A,2,"Leggins, Anna",648
+1180,2014-10-14,T,A5,A,1,"Zabel, Phil",660
+1181,2014-10-14,T,A6,A,1,"Fischer, Steven",643
+1182,2014-10-14,T,B1,B,1,"Figg, Korbin Patrick",649
+1183,2014-10-14,T,B1,B,2,"Grant, Maria LaGee",649
+1184,2014-10-14,T,B1,B,3,"Grant, Maria LaGee",649
+1185,2014-10-14,T,B2,B,1,"Bise III, John H.",641
+1186,2014-10-14,T,B2,B,2,"Hacker, Douglas",641
+1187,2014-10-14,T,B3,B,1,"Hock, Paul",653
+1188,2014-10-14,T,B4,B,1,"Matthews, Roy",637
+1189,2014-10-14,T,B4,B,2,"Kim, Christopher",637
+1190,2014-10-14,T,B5,B,1,"Phillips, Jenna",636
+1191,2014-10-14,T,E1,E,1,"Decker, Ernie",662
+1192,2014-10-14,T,E2,E,1,"Jackman, Dorian",659
+1193,2014-10-14,T,E3,E,1,"Chen, Jason",657
+1194,2014-10-14,T,X1,X,1,"Clark, Aaron",658
+1195,2014-10-14,T,X1,X,2,"Freet, Heather",658
+1196,2014-10-14,T,X2,X,1,"Shannon, Michiael",655
+1197,2014-10-14,T,X2,X,2,"Greene, Zachary Wade",655
+1198,2014-10-14,T,X3,X,,"Hedges, Cody",654
+1199,2014-10-14,T,X4,X,,"Hedges, Cody",654
+1200,2014-10-12,Special,,,,"Clark, Aaron",662
+1201,2014-10-14,T,A1,A,3,"Gallalee, Jack",645
+1202,2014-10-14,T,B2,B,3,"Vannice, William",641
+1203,2014-10-14,T,E2,E,2,"Lipa, Tyler",659
+1204,2014-10-14,T,E2,E,3,"Lipa, Tyler",659
+1205,2014-10-15,Special,,,,"Leggins, Anna",637
+1206,2014-10-16,Special,,,,"Leggins, Anna",645
+1207,2014-10-15,W,A1,A,1,"Heaton, Brian D.",653
+1208,2014-10-15,W,A1,A,2,"Huffman, Haley",639
+1209,2014-10-15,W,A1,A,3,"Warren, Jeremy",655
+1210,2014-10-15,W,A2,A,1,"LaGarde, Nancy",643
+1211,2014-10-15,W,A2,A,2,"Hacker, Douglas",643
+1212,2014-10-15,W,A3,A,1,"Hargrove, Paul Brady",640
+1213,2014-10-15,W,A3,A,2,"Bell, Creigh",640
+1214,2014-10-15,W,A4,A,1,"Foley, Shannon",660
+1215,2014-10-15,W,A4,A,2,"Bryan, Katie",653
+1216,2014-10-15,W,A5,A,1,"Zabel, Phil",661
+1217,2014-10-15,W,A6,A,1,"Fischer, Steven",639
+1218,2014-10-15,W,B1,B,1,"Hunter, Rob",659
+1219,2014-10-15,W,B1,B,2,"Diakite, Abdoul",659
+1220,2014-10-15,W,B1,B,3,"Clark, Aaron",659
+1221,2014-10-15,W,B2,B,1,"Bise III, John H.",662
+1222,2014-10-15,W,B2,B,2,"Struyf, Nick",662
+1223,2014-10-15,W,B3,B,1,"Hock, Paul",644
+1224,2014-10-15,W,B4,B,1,"Matthews, Roy",641
+1225,2014-10-15,W,B4,B,2,"Figg, Korbin Patrick",644
+1226,2014-10-15,W,B5,B,1,"Kenny, Dominic",637
+1227,2014-10-15,W,E1,E,1,"Decker, Ernie",658
+1228,2014-10-15,W,E2,E,1,"Francis, Marshall",657
+1229,2014-10-15,W,E2,E,2,"Liechty, Abbey",657
+1230,2014-10-15,W,E2,E,3,"Ginet, Chris",657
+1231,2014-10-15,W,E3,E,1,"Freet, Heather",650
+1232,2014-10-15,W,X1,X,1,"Clark, Barbara J.",651
+1233,2014-10-15,W,X1,X,2,"Ainsworth, Sam",651
+1234,2014-10-15,W,X2,X,1,"Shannon, Michiael",655
+1235,2014-10-15,W,X2,X,2,"Lakes, Michael A.",655
+1236,2014-10-15,W,X3,X,,"Miller, Ryan",648
+1237,2014-10-15,W,X4,X,,"Ginty, Kyle",648
+1238,2014-10-16,R,A1,A,1,"Heaton, Brian D.",661
+1239,2014-10-16,R,A1,A,2,"Miller, Ryan",661
+1240,2014-10-16,R,A1,A,3,"Miessler, Cy",661
+1241,2014-10-16,R,A2,A,1,"LaGarde, Nancy",658
+1242,2014-10-16,R,A2,A,2,"Phillips, Jenna",658
+1243,2014-10-16,R,A3,A,1,"Hargrove, Paul Brady",639
+1244,2014-10-16,R,A3,A,2,"Hacker, Douglas",639
+1245,2014-10-16,R,A4,A,1,"Foley, Shannon",653
+1246,2014-10-16,R,A4,A,2,"Hedges, Cody",653
+1247,2014-10-16,R,A5,A,1,"Zabel, Phil",644
+1248,2014-10-16,R,A6,A,1,"Fischer, Steven",650
+1249,2014-10-16,R,B1,B,1,"Hunter, Rob",640
+1250,2014-10-16,R,B1,B,2,"Lipa, Tyler",640
+1251,2014-10-16,R,B1,B,3,"Ginty, Kyle",640
+1252,2014-10-16,R,B2,B,1,"Bise III, John H.",660
+1253,2014-10-16,R,B2,B,2,"Hendricks, Sandra",660
+1254,2014-10-16,R,B2,B,3,"Kenny, Dominic",660
+1255,2014-10-16,R,B4,B,1,"Matthews, Roy",651
+1256,2014-10-16,R,B4,B,2,"Bryan, Katie",651
+1257,2014-10-16,R,B5,B,1,"Muhammad, Natalie",649
+1258,2014-10-16,R,E1,E,1,"Decker, Ernie",659
+1259,2014-10-16,R,E2,E,1,"Francis, Marshall",654
+1260,2014-10-16,R,E2,E,2,"Cuevas, Rebekah",654
+1261,2014-10-16,R,E2,E,3,"Bobyak, Lindsay",654
+1262,2014-10-16,R,E3,E,1,"Grant, Maria LaGee",647
+1263,2014-10-16,R,X1,X,1,"Clark, Aaron",657
+1264,2014-10-16,R,X1,X,2,"Cochrane, Meredith",657
+1265,2014-10-16,R,X2,X,1,"Muhammad, Natalie",636
+1266,2014-10-16,R,X2,X,2,"Eakle, Robert W",636
+1267,2014-10-16,R,X3,X,,"Hedges, Cody",662
+1268,2014-10-16,R,X4,X,,"Timm, Aaron",662
+1269,2014-10-16,R,B3,B,1,"Hock, Paul",643
+1270,2014-10-17,F,A1,A,1,"Bryan, Katie",654
+1271,2014-10-17,F,A1,A,2,"Warren, Jeremy",654
+1272,2014-10-17,F,A1,A,3,"Grant, Maria LaGee",654
+1273,2014-10-17,F,A1,A,4,"Grant, Maria LaGee",654
+1274,2014-10-17,F,A2,A,1,"Ellison, Tyler",647
+1275,2014-10-17,F,A2,A,2,"Ginet, Chris",647
+1276,2014-10-17,F,A2,A,3,"Guo, Xiao",647
+1277,2014-10-17,F,A3,A,1,"Hargrove, Paul Brady",648
+1278,2014-10-17,F,A3,A,2,"Dickerson, Terin Joseph",648
+1279,2014-10-17,F,A4,A,1,"Foley, Shannon",640
+1280,2014-10-17,F,A4,A,2,"Cochrane, Meredith",640
+1281,2014-10-17,F,A5,A,1,"Guo, Xiao",649
+1282,2014-10-17,F,B1,B,1,"Miller, Gregg",639
+1283,2014-10-17,F,B1,B,2,"Grant, Maria LaGee",639
+1284,2014-10-17,F,B1,B,3,"Kenny, Dominic",639
+1285,2014-10-17,F,B1,B,4,"Hendricks, Sandra",639
+1286,2014-10-17,F,B2,B,1,"Hunter, Rob",655
+1287,2014-10-17,F,B2,B,2,"Struyf, Nick",655
+1288,2014-10-17,F,E1,E,1,"Cain, Caleb",661
+1289,2014-10-17,F,E1,E,2,"Muhammad, Natalie",661
+1290,2014-10-17,F,E1,E,3,"Cunningham, Ian",661
+1291,2014-10-17,F,E2,E,1,"Chen, Jason",659
+1292,2014-10-17,F,E2,E,2,"Hacker, Douglas",659
+1293,2014-10-17,F,X1,X,1,"Clark, Barbara J.",645
+1294,2014-10-17,F,X1,X,2,"Bell, Creigh",645
+1295,2014-10-17,F,X2,X,1,"Shannon, Michiael",658
+1296,2014-10-17,F,X2,X,2,"Cuevas, Rebekah",658
+1297,2014-10-17,Auditorium,,,,"Huffman, Haley",637
+1298,2014-10-17,Auditorium,,,,"Clark, Aaron",662
+1299,2014-10-17,Auditorium,,,,"Bryan, Katie",643
+1300,2014-10-17,Auditorium,,,,"Kappes, Thomas",651
+1301,2014-10-17,Special,,,,"Clark, Aaron",660
+1302,2014-10-17,Special,,,,"Phillips, Jenna",644
+1303,2014-10-18,S,A1,A,1,"Widlowski, Robert",658
+1304,2014-10-18,S,A1,A,2,"Timm, Aaron",651
+1305,2014-10-18,S,A1,A,3,"Gaisser, Karl",637
+1306,2014-10-18,S,B1,B,1,"Keating, Logan",655
+1307,2014-10-18,S,B1,B,2,"Greene, Zachary Wade",655
+1308,2014-10-18,S,E1,E,1,"Diakite, Abdoul",641
+1309,2014-10-18,S,E1,E,2,"Dickerson, Terin Joseph",641
+1310,2014-10-18,S,E1,E,3,"Warren, Jeremy",641
+1311,2014-10-19,U,A1,A,1,"Russell, Briana",655
+1312,2014-10-19,U,A1,A,2,"Clark, Aaron",655
+1313,2014-10-19,U,B1,B,1,"Ellison, Tyler",636
+1314,2014-10-19,U,B1,B,2,"Miessler, Cy",636
+1315,2014-10-19,U,E1,E,1,"Cain, Caleb",661
+1316,2014-10-19,U,E1,E,2,"Jackman, Dorian",661
+1317,2014-10-20,M,A1,A,2,"Gallalee, Jack",648
+1318,2014-10-20,M,A1,A,3,"Kenny, Dominic",655
+1319,2014-10-20,M,A2,A,1,"LaGarde, Nancy",647
+1320,2014-10-20,M,A2,A,2,"Cunningham, Ian",647
+1321,2014-10-20,M,A3,A,1,"Hargrove, Paul Brady",651
+1322,2014-10-20,M,A3,A,2,"Warren, Jeremy",651
+1323,2014-10-20,M,A4,A,1,"Foley, Shannon",645
+1324,2014-10-20,M,A4,A,2,"Miller, Ryan",645
+1325,2014-10-20,M,A5,A,1,"Zabel, Phil",640
+1326,2014-10-20,M,A6,A,1,"Fischer, Steven",650
+1327,2014-10-20,M,B1,B,1,"Hunter, Rob",637
+1328,2014-10-20,M,B1,B,2,"Hacker, Douglas",637
+1329,2014-10-20,M,B1,B,3,"Clark, Aaron",637
+1330,2014-10-20,M,B2,B,1,"Bise III, John H.",641
+1331,2014-10-20,M,B2,B,2,"Palmer, Fileve",641
+1332,2014-10-20,M,B2,B,3,"Kim, Christopher",636
+1333,2014-10-20,M,B3,B,1,"Hock, Paul",643
+1334,2014-10-20,M,B4,B,1,"Matthews, Roy",649
+1335,2014-10-20,M,B4,B,2,"Bobyak, Lindsay",649
+1336,2014-10-20,M,B5,B,1,"Eakle, Robert W",644
+1337,2014-10-20,M,E1,E,1,"Decker, Ernie",662
+1338,2014-10-20,M,E2,E,1,"Francis, Marshall",660
+1339,2014-10-20,M,E2,E,2,"Ainsworth, Sam",653
+1340,2014-10-20,M,E2,E,3,"Gallalee, Jack",660
+1341,2014-10-20,M,E3,E,1,"Cochrane, Meredith",661
+1342,2014-10-20,M,X1,X,1,"Clark, Barbara J.",655
+1343,2014-10-20,M,X1,X,2,"Freet, Heather",648
+1344,2014-10-20,M,X2,X,1,"Shannon, Michiael",654
+1345,2014-10-20,M,X2,X,2,"Ginty, Kyle",654
+1346,2014-10-20,M,X3,X,,"Hedges, Cody",657
+1347,2014-10-20,M,X4,X,,"Greene, Zachary Wade",657
+1348,2014-10-21,T,A1,A,1,"Heaton, Brian D.",654
+1349,2014-10-21,T,A1,A,2,"Diakite, Abdoul",654
+1350,2014-10-21,T,A1,A,3,"Gallalee, Jack",654
+1351,2014-10-21,T,A2,A,1,"LaGarde, Nancy",647
+1352,2014-10-21,T,A2,A,2,"Timm, Aaron",647
+1353,2014-10-21,T,A3,A,1,"Hargrove, Paul Brady",639
+1354,2014-10-21,T,A3,A,2,"Miller, Ryan",639
+1355,2014-10-21,M,A4,A,1,"Foley, Shannon",650
+1356,2014-10-21,T,A4,A,2,"Leggins, Anna",650
+1357,2014-10-21,T,A5,A,1,"Zabel, Phil",651
+1358,2014-10-21,T,A6,A,1,"Fischer, Steven",640
+1359,2014-10-21,T,B1,B,1,"Hunter, Rob",637
+1360,2014-10-21,T,B1,B,2,"Grant, Maria LaGee",637
+1361,2014-10-21,T,B1,B,3,"Cochrane, Meredith",637
+1362,2014-10-21,T,B2,B,1,"Bise III, John H.",641
+1363,2014-10-21,T,B2,B,2,"Hacker, Douglas",641
+1364,2014-10-21,T,B2,B,3,"Ellison, Tyler",641
+1365,2014-10-21,T,B3,B,1,"Hock, Paul",636
+1366,2014-10-21,T,B4,B,1,"Matthews, Roy",649
+1367,2014-10-21,T,B4,B,2,"Kim, Christopher",649
+1368,2014-10-21,T,B5,B,1,"Phillips, Jenna",643
+1369,2014-10-21,T,E1,E,1,"Decker, Ernie",657
+1370,2014-10-21,T,E2,E,1,"Francis, Marshall",661
+1371,2014-10-21,T,E2,E,2,"Clark, Aaron",661
+1372,2014-10-21,T,E2,E,3,"Lipa, Tyler",661
+1373,2014-10-21,T,E3,E,1,"Chen, Jason",655
+1374,2014-10-21,T,X1,X,1,"Clark, Barbara J.",656
+1375,2014-10-21,T,X1,X,2,"Freet, Heather",656
+1376,2014-10-21,T,X2,X,1,"Shannon, Michiael",645
+1377,2014-10-21,T,X2,X,2,"Greene, Zachary Wade",645
+1378,2014-10-21,T,X3,X,,"Hedges, Cody",662
+1379,2014-10-21,T,X4,X,,"Kappes, Thomas",662
+1380,2014-10-21,Special,,,,"Hendricks, Sandra",644
+1381,2014-10-22,W,A1,A,1,"Heaton, Brian D.",640
+1382,2014-10-22,W,A1,A,2,"Freet, Heather",640
+1383,2014-10-22,W,A1,A,3,"Warren, Jeremy",640
+1384,2014-10-22,W,A2,A,1,"LaGarde, Nancy",647
+1385,2014-10-22,W,A2,A,2,"Hacker, Douglas",647
+1386,2014-10-22,W,A3,A,1,"Hargrove, Paul Brady",649
+1387,2014-10-22,W,A3,A,2,"Bell, Creigh",649
+1388,2014-10-22,W,A4,A,1,"Foley, Shannon",645
+1389,2014-10-22,W,A4,A,2,"Bryan, Katie",645
+1390,2014-10-22,W,A5,A,1,"Zabel, Phil",636
+1391,2014-10-22,W,A6,A,1,"Fischer, Steven",650
+1392,2014-10-22,W,B1,B,1,"Hunter, Rob",644
+1393,2014-10-22,W,B1,B,2,"Diakite, Abdoul",644
+1394,2014-10-22,W,B1,B,3,"Clark, Aaron",644
+1395,2014-10-22,W,B2,B,1,"Bise III, John H.",641
+1396,2014-10-22,W,B2,B,2,"Struyf, Nick",641
+1397,2014-10-22,W,B2,B,3,"Russell, Briana",641
+1398,2014-10-22,W,B3,B,1,"Hock, Paul",643
+1399,2014-10-22,W,B4,B,1,"Matthews, Roy",637
+1400,2014-10-22,W,B4,B,2,"Figg, Korbin Patrick",637
+1401,2014-10-22,W,B5,B,1,"Kenny, Dominic",651
+1402,2014-10-22,W,E1,E,1,"Decker, Ernie",657
+1403,2014-10-22,W,E2,E,1,"Freet, Heather",654
+1404,2014-10-22,T,E2,E,2,"Liechty, Abbey",654
+1405,2014-10-22,W,E2,E,3,"Ginet, Chris",654
+1406,2014-10-22,W,E3,E,1,"Palmer, Fileve",655
+1407,2014-10-22,W,X1,X,1,"Clark, Barbara J.",661
+1408,2014-10-22,W,X1,X,2,"Ainsworth, Sam",661
+1409,2014-10-22,W,X2,X,1,"Shannon, Michiael",656
+1410,2014-10-22,W,X2,X,2,"Lakes, Michael A.",656
+1411,2014-10-22,W,X3,X,,"Miller, Ryan",662
+1412,2014-10-22,W,X4,X,,"Ginty, Kyle",662
+1413,2014-10-23,R,A1,A,1,"Heaton, Brian D.",650
+1414,2014-10-23,R,A1,A,2,"Miller, Ryan",650
+1415,2014-10-23,R,A1,A,3,"Miessler, Cy",650
+1416,2014-10-23,R,A2,A,1,"LaGarde, Nancy",640
+1417,2014-10-23,R,A2,A,2,"Phillips, Jenna",640
+1418,2014-10-23,R,A3,A,1,"Hargrove, Paul Brady",645
+1419,2014-10-23,R,A3,A,2,"Hacker, Douglas",645
+1420,2014-10-23,R,A4,A,1,"Foley, Shannon",649
+1421,2014-10-23,R,A4,A,2,"Hedges, Cody",659
+1422,2014-10-23,R,A5,A,1,"Zabel, Phil",639
+1423,2014-10-23,R,A6,A,1,"Fischer, Steven",648
+1424,2014-10-23,R,B1,B,1,"Hunter, Rob",643
+1425,2014-10-23,R,B1,B,2,"Noojin, Brian",643
+1426,2014-10-23,R,B1,B,3,"Ellison, Tyler",643
+1427,2014-10-23,R,B2,B,1,"Bise III, John H.",637
+1428,2014-10-23,R,B2,B,2,"Hendricks, Sandra",637
+1429,2014-10-23,R,B2,B,3,"Kenny, Dominic",637
+1430,2014-10-23,R,B3,B,1,"Hock, Paul",661
+1431,2014-10-23,R,B4,B,1,"Matthews, Roy",651
+1432,2014-10-23,R,B4,B,2,"Bryan, Katie",651
+1433,2014-10-23,R,B5,B,1,"Muhammad, Natalie",644
+1434,2014-10-23,R,E2,E,1,"Francis, Marshall",656
+1435,2014-10-23,R,E2,E,2,"Cuevas, Rebekah",656
+1436,2014-10-23,R,E2,E,3,"Bobyak, Lindsay",654
+1437,2014-10-23,R,E3,E,1,"Grant, Maria LaGee",654
+1438,2014-10-23,R,X1,X,1,"Clark, Barbara J.",657
+1439,2014-10-23,R,X1,X,2,"Cochrane, Meredith",657
+1440,2014-10-23,R,X2,X,1,"Shannon, Michiael",660
+1441,2014-10-23,R,X2,X,2,"Eakle, Robert W",660
+1442,2014-10-23,R,X3,X,,"Hedges, Cody",655
+1443,2014-10-23,R,X4,X,,"Timm, Aaron",655
+1444,2014-10-23,R,E1,E,1,"Decker, Ernie",662
+1445,2014-10-24,F,A1,A,1,"Leathers, Daniel",647
+1446,2014-10-24,F,A1,A,2,"Miller, Gregg",647
+1447,2014-10-24,F,A1,A,3,"Widlowski, Robert",647
+1448,2014-10-24,F,A1,A,4,"Warren, Jeremy",647
+1449,2014-10-24,F,A2,A,1,"Ellison, Tyler",650
+1450,2014-10-24,F,A2,A,2,"Ginty, Kyle",650
+1451,2014-10-24,F,A2,A,3,"Guo, Xiao",650
+1452,2014-10-24,F,A2,A,4,"Gaisser, Karl",650
+1453,2014-10-24,F,A3,A,1,"Hargrove, Paul Brady",640
+1454,2014-10-24,F,A3,A,2,"Dickerson, Terin Joseph",640
+1455,2014-10-24,F,A4,A,1,"Foley, Shannon",657
+1456,2014-10-24,F,A4,A,2,"Cochrane, Meredith",657
+1457,2014-10-24,F,A5,A,1,"Ginet, Chris",660
+1458,2014-10-24,F,B1,B,1,"Miller, Gregg",639
+1459,2014-10-24,F,B1,B,2,"Grant, Maria LaGee",639
+1460,2014-10-24,F,B1,B,3,"Kenny, Dominic",639
+1461,2014-10-24,F,B1,B,4,"Cochrane, Meredith",639
+1462,2014-10-24,F,B2,B,1,"Hunter, Rob",651
+1463,2014-10-24,F,B2,B,2,"Struyf, Nick",651
+1464,2014-10-24,F,E1,E,1,"Cain, Caleb",643
+1465,2014-10-24,F,E1,E,2,"Muhammad, Natalie",643
+1466,2014-10-24,F,E1,E,3,"Ellison, Tyler",643
+1467,2014-10-24,F,E2,E,1,"Chen, Jason",659
+1468,2014-10-24,F,E2,E,1,"Chen, Jason",659
+1469,2014-10-24,F,E2,E,2,"Hacker, Douglas",659
+1470,2014-10-24,F,X1,X,1,"Clark, Barbara J.",661
+1471,2014-10-24,F,X1,X,2,"Bell, Creigh",661
+1472,2014-10-24,F,X2,X,1,"Shannon, Michiael",654
+1473,2014-10-24,F,X2,X,2,"Cuevas, Rebekah",654
+1474,2014-10-25,s,A1,A,1,"Widlowski, Robert",655
+1475,2014-10-25,s,A1,A,2,"Timm, Aaron",655
+1476,2014-10-25,S,A1,A,3,"Gaisser, Karl",655
+1477,2014-10-25,S,B1,B,1,"Gillespie, Nathan",651
+1478,2014-10-25,S,B1,B,2,"Greene, Zachary Wade",657
+1479,2014-10-25,S,E1,E,1,"Diakite, Abdoul",657
+1480,2014-10-25,S,E1,E,2,"Clark, Aaron",651
+1481,2014-10-25,S,E1,E,3,"Warren, Jeremy",651
+1482,2014-10-24,Auditorium,,,,"Kappes, Thomas",639
+1483,2014-10-24,Auditorium,,,,"Jackman, Dorian",662
+1484,2014-10-26,U,A1,A,1,"Russell, Briana",637
+1485,2014-10-26,U,A1,A,2,"Clark, Aaron",637
+1486,2014-10-26,U,B1,B,1,"Ellison, Tyler",649
+1487,2014-10-26,U,B1,B,2,"Miessler, Cy",649
+1488,2014-10-26,U,E1,E,1,"Cain, Caleb",651
+1489,2014-10-26,U,E1,E,2,"Jackman, Dorian",651
+1490,2014-10-27,M,A1,A,1,"Heaton, Brian D.",650
+1491,2014-10-27,M,A1,A,2,"Miller, Ryan",650
+1492,2014-10-27,M,A1,A,3,"Kenny, Dominic",650
+1493,2014-10-27,M,A2,A,1,"LaGarde, Nancy",647
+1494,2014-10-27,M,A2,A,2,"Cunningham, Ian",647
+1495,2014-10-27,M,A3,A,1,"Hargrove, Paul Brady",648
+1496,2014-10-27,M,A3,A,2,"Warren, Jeremy",648
+1497,2014-10-27,M,A4,A,1,"Foley, Shannon",645
+1498,2014-10-27,M,A4,A,2,"Kappes, Thomas",645
+1499,2014-10-27,M,A5,A,1,"Zabel, Phil",655
+1500,2014-10-27,M,A5,A,1,"Zabel, Phil",655
+1501,2014-10-27,M,A6,A,1,"Fischer, Steven",640
+1502,2014-10-27,M,B1,B,1,"Hunter, Rob",636
+1503,2014-10-27,M,B1,B,2,"Hacker, Douglas",636
+1504,2014-10-27,M,B1,B,3,"Clark, Aaron",636
+1505,2014-10-27,M,B2,B,1,"Bise III, John H.",643
+1506,2014-10-27,M,B2,B,2,"Palmer, Fileve",643
+1507,2014-10-27,M,B2,B,3,"Kim, Christopher",643
+1508,2014-10-27,M,B3,B,1,"Hock, Paul",649
+1509,2014-10-27,M,B4,B,1,"Matthews, Roy",644
+1510,2014-10-27,M,B4,B,2,"Bobyak, Lindsay",644
+1511,2014-10-27,M,B5,B,1,"Eakle, Robert W",637
+1512,2014-10-27,M,E1,E,1,"Decker, Ernie",659
+1513,2014-10-27,M,E2,E,1,"Francis, Marshall",660
+1514,2014-10-27,M,E2,E,2,"Gallalee, Jack",660
+1515,2014-10-27,M,E2,E,3,"Gallalee, Jack",660
+1516,2014-10-27,M,E3,E,1,"Cochrane, Meredith",654
+1517,2014-10-27,M,X1,X,1,"Clark, Barbara J.",656
+1518,2014-10-27,M,X1,X,2,"Freet, Heather",656
+1519,2014-10-27,M,X2,X,1,"Shannon, Michiael",662
+1520,2014-10-27,M,X2,X,2,"Ginty, Kyle",662
+1521,2014-10-27,M,X3,X,,"Hedges, Cody",657
+1522,2014-10-27,M,X4,X,,"Greene, Zachary Wade",657
+1523,2014-10-28,T,A1,A,1,"Heaton, Brian D.",640
+1524,2014-10-28,T,A1,A,2,"Diakite, Abdoul",640
+1525,2014-10-28,T,A1,A,3,"Gallalee, Jack",640
+1526,2014-10-28,T,A2,A,1,"LaGarde, Nancy",647
+1527,2014-10-28,T,A2,A,2,"Clark, Aaron",642
+1528,2014-10-28,T,A3,A,1,"Hargrove, Paul Brady",654
+1529,2014-10-28,T,A3,A,2,"Miller, Ryan",654
+1530,2014-10-28,T,A4,A,1,"Foley, Shannon",650
+1531,2014-10-28,T,A4,A,2,"Leggins, Anna",650
+1532,2014-10-28,T,A5,A,1,"Zabel, Phil",657
+1533,2014-10-28,T,A6,A,1,"Fischer, Steven",648
+1534,2014-10-28,T,B1,B,1,"Hunter, Rob",649
+1535,2014-10-28,T,B1,B,2,"Grant, Maria LaGee",649
+1536,2014-10-28,T,B1,B,3,"Cuevas, Rebekah",649
+1537,2014-10-28,T,B2,B,1,"Bise III, John H.",641
+1538,2014-10-28,T,B2,B,2,"Hacker, Douglas",641
+1539,2014-10-28,T,B2,B,3,"Cunningham, Ian",641
+1540,2014-10-28,T,B3,B,1,"Hock, Paul",636
+1541,2014-10-28,T,B4,B,1,"Matthews, Roy",651
+1542,2014-10-28,T,B4,B,2,"Hendricks, Sandra",657
+1543,2014-10-28,T,B5,B,1,"Phillips, Jenna",643
+1544,2014-10-28,T,E1,E,1,"Decker, Ernie",661
+1545,2014-10-28,T,E2,E,1,"Francis, Marshall",662
+1546,2014-10-28,T,E2,E,2,"Guo, Xiao",662
+1547,2014-10-28,T,E2,E,3,"Phillips, Jenna",662
+1548,2014-10-28,T,E3,E,1,"Chen, Jason",659
+1549,2014-10-28,T,X1,X,1,"Clark, Barbara J.",637
+1550,2014-10-28,t,x1,x,2,"Freet, Heather",637
+1551,2014-10-28,T,X2,X,1,"Shannon, Michiael",662
+1552,2014-10-28,T,X2,X,2,"Greene, Zachary Wade",656
+1553,2014-10-28,T,X3,X,,"Hedges, Cody",660
+1554,2014-10-28,T,X4,X,,"Hedges, Cody",660
+1555,2014-10-29,W,A1,A,1,"Heaton, Brian D.",648
+1556,2014-10-29,W,A1,A,2,"Cunningham, Ian",648
+1557,2014-10-29,W,A1,A,3,"Warren, Jeremy",648
+1558,2014-10-29,W,A2,A,1,"LaGarde, Nancy",650
+1559,2014-10-29,W,A2,A,2,"Hacker, Douglas",650
+1560,2014-10-29,W,A3,A,1,"Hargrove, Paul Brady",651
+1561,2014-10-29,W,A3,A,2,"Bell, Creigh",651
+1562,2014-10-29,W,A4,A,1,"Foley, Shannon",654
+1563,2014-10-29,W,A4,A,2,"Bryan, Katie",654
+1564,2014-10-29,W,A5,A,1,"Zabel, Phil",643
+1565,2014-10-29,W,A6,A,1,"Fischer, Steven",647
+1566,2014-10-29,W,B1,B,1,"Hunter, Rob",636
+1567,2014-10-29,W,B1,B,2,"Diakite, Abdoul",636
+1568,2014-10-29,W,B1,B,3,"Clark, Aaron",636
+1569,2014-10-29,W,B2,B,1,"Bise III, John H.",641
+1570,2014-10-29,W,B2,B,2,"Struyf, Nick",641
+1571,2014-10-29,W,B2,B,3,"Guo, Xiao",641
+1572,2014-10-29,W,B3,B,1,"Hock, Paul",637
+1573,2014-10-29,W,B4,B,1,"Matthews, Roy",644
+1574,2014-10-29,W,B4,B,2,"Figg, Korbin Patrick",644
+1575,2014-10-29,W,B5,B,1,"Kenny, Dominic",649
+1576,2014-10-29,W,E1,E,1,"Decker, Ernie",662
+1577,2014-10-29,W,E2,E,1,"Leathers, Daniel",659
+1578,2014-10-29,W,E2,E,2,"Liechty, Abbey",659
+1579,2014-10-29,W,E2,E,3,"Ginet, Chris",659
+1580,2014-10-29,W,E3,E,1,"Palmer, Fileve",653
+1581,2014-10-29,W,X1,X,1,"Clark, Barbara J.",656
+1582,2014-10-29,W,X1,X,2,"Ainsworth, Sam",656
+1583,2014-10-29,W,X2,X,1,"Shannon, Michiael",661
+1584,2014-10-29,W,X2,X,2,"Lakes, Michael A.",661
+1585,2014-10-29,W,X3,X,,"Miller, Ryan",657
+1586,2014-10-29,W,X4,X,,"Ginty, Kyle",657
+1587,2014-10-30,R,A1,A,1,"Heaton, Brian D.",647
+1588,2014-10-30,R,A1,A,2,"Miller, Ryan",647
+1589,2014-10-30,R,A1,A,3,"Miessler, Cy",647
+1590,2014-10-30,R,A2,A,1,"LaGarde, Nancy",640
+1591,2014-10-30,R,A3,A,1,"Hargrove, Paul Brady",654
+1592,2014-10-30,R,A3,A,2,"Hacker, Douglas",654
+1593,2014-10-30,R,A4,A,1,"Foley, Shannon",645
+1594,2014-10-30,R,A4,A,2,"Hedges, Cody",645
+1595,2014-10-30,R,A5,A,1,"Zabel, Phil",661
+1596,2014-10-30,R,A6,A,1,"Fischer, Steven",650
+1597,2014-10-30,R,B1,B,1,"Hunter, Rob",636
+1598,2014-10-30,R,B1,B,2,"Clark, Aaron",636
+1599,2014-10-30,R,B1,B,3,"Russell, Briana",656
+1600,2014-10-30,R,B2,B,1,"Bise III, John H.",641
+1601,2014-10-30,r,b2,b,2,"Hendricks, Sandra",641
+1602,2014-10-30,R,B2,B,3,"Kenny, Dominic",641
+1603,2014-10-30,R,B3,B,1,"Hock, Paul",649
+1604,2014-10-30,R,B4,B,1,"Matthews, Roy",643
+1605,2014-10-30,R,B4,B,2,"Liechty, Abbey",643
+1606,2014-10-30,R,B5,B,1,"Muhammad, Natalie",653
+1607,2014-10-30,R,E1,E,1,"Decker, Ernie",662
+1608,2014-10-30,R,E2,E,1,"Francis, Marshall",660
+1609,2014-10-30,R,E2,E,2,"Cuevas, Rebekah",659
+1610,2014-10-30,R,E2,E,3,"Bobyak, Lindsay",659
+1611,2014-10-30,R,E3,E,1,"Grant, Maria LaGee",657
+1612,2014-10-30,R,X1,X,1,"Clark, Barbara J.",655
+1613,2014-10-30,R,X1,X,2,"Cochrane, Meredith",655
+1614,2014-10-30,R,X2,X,1,"Shannon, Michiael",656
+1615,2014-10-30,R,X2,X,2,"Eakle, Robert W",644
+1616,2014-10-30,R,X3,X,,"Hedges, Cody",637
+1617,2014-10-30,R,X4,X,,"Timm, Aaron",637
+1618,2014-10-30,Auditorium,,,,"Clark, Aaron",636
+1619,2014-10-30,Auditorium,,,,"Freet, Heather",637
+1620,2014-10-30,Auditorium,,,,"Leggins, Anna",662
+1621,2014-10-15,W,B2,B,3,"Vannice, William",641
+1622,2014-10-31,F,A1,A,1,"Miller, Ryan",647
+1623,2014-10-31,F,A1,A,2,"Miller, Gregg",647
+1624,2014-10-31,F,A1,A,3,"Widlowski, Robert",647
+1625,2014-10-31,F,A1,A,4,"Freet, Heather",653
+1626,2014-10-31,F,A2,A,1,"Leathers, Daniel",655
+1627,2014-10-31,F,A2,A,2,"Ginty, Kyle",655
+1628,2014-10-31,F,A2,A,3,"Russell, Briana",655
+1629,2014-10-31,F,A2,A,4,"Gaisser, Karl",655
+1630,2014-10-31,F,A3,A,1,"Hargrove, Paul Brady",640
+1631,2014-10-31,F,A3,A,2,"Dickerson, Terin Joseph",640
+1632,2014-10-31,F,A4,A,1,"Hendricks, Sandra",648
+1633,2014-10-31,F,A4,A,2,"Leggins, Anna",648
+1634,2014-10-31,F,A5,A,1,"Ginet, Chris",645
+1635,2014-10-31,F,B1,B,1,"Noojin, Brian",637
+1636,2014-10-31,F,B1,B,2,"Grant, Maria LaGee",637
+1637,2014-10-31,F,B1,B,3,"Kenny, Dominic",637
+1638,2014-10-31,F,B1,B,4,"Hendricks, Sandra",637
+1639,2014-10-31,F,B2,B,1,"Hunter, Rob",653
+1640,2014-10-31,F,B2,B,2,"Struyf, Nick",653
+1641,2014-10-31,F,E1,E,1,"Cain, Caleb",662
+1642,2014-10-31,F,E1,E,2,"Muhammad, Natalie",662
+1643,2014-10-31,F,E1,E,3,"Warren, Jeremy",662
+1644,2014-10-31,F,E2,E,1,"Chen, Jason",661
+1645,2014-10-31,F,E2,E,2,"Hacker, Douglas",661
+1646,2014-10-31,F,X1,X,1,"Clark, Barbara J.",659
+1647,2014-10-31,F,X1,X,2,"Bell, Creigh",659
+1648,2014-10-31,F,X2,X,1,"Shannon, Michiael",654
+1649,2014-10-31,F,X2,X,2,"Cuevas, Rebekah",654
+1650,2014-10-17,F,A2,A,4,"Gaisser, Karl",647
+1651,2014-10-11,S,E1,E,2,"Dickerson, Terin Joseph",651
+1653,2014-10-30,R,A2,A,2,"Gaisser, Karl",640
+1654,2014-11-01,S,A1,A,1,"Widlowski, Robert",656
+1655,2014-11-01,S,A1,A,2,"Timm, Aaron",656
+1656,2014-11-01,S,A1,A,3,"Gaisser, Karl",656
+1657,2014-11-01,S,B1,B,1,"Cochrane, Meredith",654
+1658,2014-11-01,S,B1,B,2,"Greene, Zachary Wade",654
+1659,2014-08-30,S,E1,E,2,"Dickerson, Terin Joseph",639
+1660,2014-11-01,S,E1,E,1,"Diakite, Abdoul",639
+1661,2014-11-01,S,E1,E,2,"Dickerson, Terin Joseph",639
+1662,2014-11-01,S,E1,E,3,"Warren, Jeremy",639
+1663,2014-11-01,S,E1,E,3,"Lipa, Tyler",660
+1664,2014-11-02,U,A1,A,1,"Russell, Briana",657
+1665,2014-11-02,U,A1,A,2,"Clark, Aaron",657
+1666,2014-11-02,U,B1,B,1,"Kenny, Dominic",643
+1667,2014-11-02,U,B1,B,2,"Miessler, Cy",643
+1668,2014-11-02,U,E1,E,1,"Cain, Caleb",
+1669,2014-11-02,U,E1,E,2,"Jackman, Dorian",659
+1670,2014-11-03,M,A1,A,1,"Heaton, Brian D.",648
+1671,2014-11-03,M,A1,A,2,"Gallalee, Jack",648
+1672,2014-11-03,M,A1,A,3,"Kenny, Dominic",654
+1673,2014-11-03,M,A2,A,1,"LaGarde, Nancy",640
+1674,2014-11-03,M,A2,A,2,"Cunningham, Ian",640
+1675,2014-11-03,M,A3,A,1,"Hargrove, Paul Brady",647
+1676,2014-11-03,M,A3,A,2,"Warren, Jeremy",647
+1677,2014-11-03,M,A4,A,1,"Foley, Shannon",650
+1678,2014-11-03,M,A4,A,2,"Kappes, Thomas",650
+1679,2014-11-03,M,A5,A,1,"Zabel, Phil",651
+1680,2014-11-03,M,A6,A,1,"Fischer, Steven",645
+1681,2014-11-03,M,B1,B,1,"Hunter, Rob",637
+1682,2014-11-03,M,B1,B,2,"Hacker, Douglas",637
+1683,2014-11-03,M,B1,B,3,"Clark, Aaron",637
+1684,2014-11-03,M,B2,B,1,"Bise III, John H.",641
+1685,2014-11-03,M,B2,B,2,"Palmer, Fileve",641
+1686,2014-11-03,M,B2,B,3,"Kim, Christopher",641
+1687,2014-11-03,M,B3,B,1,"Hock, Paul",643
+1688,2014-11-03,M,B4,B,1,"Matthews, Roy",644
+1689,2014-11-03,M,B4,B,2,"Bobyak, Lindsay",644
+1690,2014-11-03,M,B5,B,1,"Eakle, Robert W",636
+1691,2014-11-03,M,E1,E,1,"Decker, Ernie",662
+1692,2014-11-03,M,E2,E,1,"Ginet, Chris",660
+1693,2014-11-03,M,E2,E,2,"Ainsworth, Sam",660
+1694,2014-11-03,M,E2,E,3,"Gallalee, Jack",660
+1695,2014-11-03,M,E3,E,1,"Cochrane, Meredith",659
+1696,2014-11-03,M,X1,X,1,"Clark, Barbara J.",659
+1697,2014-11-03,M,X1,X,2,"Freet, Heather",654
+1698,2014-11-03,M,X2,X,1,"Shannon, Michiael",661
+1699,2014-11-03,M,X2,X,2,"Hendricks, Sandra",661
+1700,2014-11-03,M,X3,X,,"Hedges, Cody",657
+1701,2014-11-03,M,X4,X,,"Greene, Zachary Wade",657
+1702,2014-11-04,T,A1,A,1,"Heaton, Brian D.",643
+1703,2014-11-04,T,A1,A,2,"Diakite, Abdoul",643
+1704,2014-11-04,T,A1,A,3,"Gallalee, Jack",643
+1705,2014-11-04,T,A2,A,1,"LaGarde, Nancy",657
+1706,2014-11-04,T,A2,A,2,"Timm, Aaron",657
+1707,2014-11-04,T,A3,A,1,"Hargrove, Paul Brady",661
+1708,2014-11-04,T,A3,A,2,"Miller, Ryan",661
+1709,2014-11-04,T,A4,A,1,"Foley, Shannon",653
+1710,2014-11-04,T,A4,A,2,"Leggins, Anna",653
+1711,2014-11-04,T,A5,A,1,"Zabel, Phil",645
+1712,2014-11-04,T,A6,A,1,"Fischer, Steven",662
+1713,2014-11-04,T,B1,B,1,"Hunter, Rob",656
+1714,2014-11-04,T,B1,B,2,"Grant, Maria LaGee",656
+1715,2014-11-04,T,B1,B,3,"Cochrane, Meredith",656
+1716,2014-11-04,T,B2,B,1,"Bise III, John H.",641
+1717,2014-11-04,T,B2,B,2,"Hacker, Douglas",641
+1718,2014-11-04,T,B2,B,3,"Clark, Aaron",641
+1719,2014-11-04,T,B3,B,1,"Hock, Paul",644
+1720,2014-11-04,T,B4,B,1,"Matthews, Roy",651
+1721,2014-11-04,T,B4,B,2,"Bandy, Kyle",651
+1722,2014-11-04,T,B5,B,1,"Phillips, Jenna",655
+1723,2014-11-04,T,E1,E,1,"Decker, Ernie",654
+1724,2014-11-04,T,E2,E,1,"Phillips, Jenna",655
+1725,2014-11-04,T,E2,E,2,"Guo, Xiao",636
+1726,2014-11-04,T,E2,E,3,"Lipa, Tyler",636
+1727,2014-11-04,T,E3,E,1,"Chen, Jason",660
+1728,2014-11-04,T,X1,X,1,"Clark, Barbara J.",648
+1729,2014-11-04,T,X1,X,2,"Freet, Heather",648
+1730,2014-11-04,T,X2,X,1,"Shannon, Michiael",640
+1731,2014-11-04,T,X2,X,2,"Greene, Zachary Wade",640
+1732,2014-11-04,T,X3,X,,"Hedges, Cody",637
+1733,2014-11-04,T,X4,X,,"Hedges, Cody",637
+1734,2014-11-05,W,A1,A,1,"Heaton, Brian D.",645
+1735,2014-11-05,W,A1,A,2,"Cunningham, Ian",645
+1736,2014-11-05,W,A1,A,3,"Hendricks, Sandra",645
+1737,2014-11-05,W,A2,A,1,"LaGarde, Nancy",650
+1738,2014-11-05,W,A2,A,2,"Hacker, Douglas",650
+1739,2014-11-05,W,A3,A,1,"Hargrove, Paul Brady",648
+1740,2014-11-05,W,A3,A,2,"Bell, Creigh",648
+1741,2014-11-05,W,A4,A,1,"Foley, Shannon",640
+1742,2014-11-05,W,A4,A,2,"Bryan, Katie",640
+1743,2014-11-05,W,A5,A,1,"Miessler, Cy",660
+1744,2014-11-05,W,A6,A,1,"Fischer, Steven",647
+1745,2014-11-05,W,B1,B,1,"Hunter, Rob",644
+1746,2014-11-05,W,B1,B,2,"Diakite, Abdoul",644
+1747,2014-11-05,W,B1,B,3,"Clark, Aaron",644
+1748,2014-11-05,W,B2,B,1,"Bise III, John H.",643
+1749,2014-11-05,W,B2,B,2,"Struyf, Nick",643
+1750,2014-11-05,W,B2,B,3,"Guo, Xiao",643
+1751,2014-11-05,W,B3,B,1,"Hock, Paul",653
+1752,2014-11-05,W,B4,B,1,"Matthews, Roy",637
+1753,2014-11-05,W,B4,B,2,"Figg, Korbin Patrick",637
+1754,2014-11-05,W,B5,B,1,"Kenny, Dominic",651
+1755,2014-11-05,W,E1,E,1,"Decker, Ernie",661
+1756,2014-11-05,W,E2,E,1,"Francis, Marshall",656
+1757,2014-11-05,W,E2,E,2,"Liechty, Abbey",656
+1758,2014-11-05,W,E2,E,3,"Ginty, Kyle",656
+1759,2014-11-05,W,E3,E,1,"Palmer, Fileve",657
+1760,2014-11-05,W,X1,X,1,"Clark, Aaron",662
+1761,2014-11-05,W,X1,X,2,"Ainsworth, Sam",662
+1762,2014-11-05,W,X2,X,1,"Shannon, Michiael",654
+1763,2014-11-05,W,X2,X,2,"Lakes, Michael A.",654
+1764,2014-11-05,W,X3,X,,"Miller, Ryan",655
+1765,2014-11-05,W,X4,X,,"Ginty, Kyle",655
+1766,2014-11-06,R,A1,A,1,"Heaton, Brian D.",648
+1767,2014-11-06,R,A1,A,2,"Miller, Ryan",648
+1768,2014-11-06,R,A1,A,3,"Miessler, Cy",648
+1769,2014-11-06,R,A2,A,1,"LaGarde, Nancy",645
+1770,2014-11-06,R,A2,A,2,"Guo, Xiao",645
+1771,2014-11-06,R,A3,A,1,"Hargrove, Paul Brady",662
+1772,2014-11-06,R,A3,A,2,"Hacker, Douglas",662
+1773,2014-11-06,R,A4,A,1,"Foley, Shannon",640
+1774,2014-11-06,R,A4,A,2,"Hedges, Cody",640
+1775,2014-11-06,R,A5,A,1,"Zabel, Phil",644
+1776,2014-11-06,R,A6,A,1,"Fischer, Steven",647
+1777,2014-11-06,R,B1,B,1,"Hunter, Rob",637
+1778,2014-11-06,R,B1,B,2,"Lipa, Tyler",637
+1779,2014-11-06,R,B1,B,3,"Russell, Briana",637
+1780,2014-11-06,R,B2,B,1,"Bise III, John H.",641
+1781,2014-11-06,R,B2,B,2,"Hendricks, Sandra",641
+1782,2014-11-06,R,B2,B,3,"Kenny, Dominic",641
+1783,2014-11-06,R,B3,B,1,"Hock, Paul",643
+1784,2014-11-06,R,B4,B,1,"Matthews, Roy",639
+1785,2014-11-06,R,B4,B,2,"Bryan, Katie",639
+1786,2014-11-06,R,B5,B,1,"Muhammad, Natalie",653
+1787,2014-11-06,R,E1,E,1,"Decker, Ernie",661
+1788,2014-11-06,R,E2,E,1,"Francis, Marshall",657
+1789,2014-11-06,R,E2,E,2,"Cuevas, Rebekah",657
+1790,2014-11-06,R,E2,E,3,"Jackman, Dorian",657
+1791,2014-11-06,R,E3,E,1,"Grant, Maria LaGee",656
+1792,2014-11-06,R,X1,X,1,"Clark, Barbara J.",659
+1793,2014-11-06,R,X1,X,2,"Cochrane, Meredith",659
+1794,2014-11-06,R,X2,X,1,"Shannon, Michiael",660
+1795,2014-11-06,R,X2,X,2,"Eakle, Robert W",660
+1796,2014-11-06,R,X3,X,,"Hedges, Cody",655
+1797,2014-11-06,R,X4,X,,"Timm, Aaron",655
+1798,2014-11-07,F,A1,A,1,"Thomas, Phillip",647
+1799,2014-11-07,F,A1,A,2,"Miller, Gregg",647
+1800,2014-11-07,F,A1,A,3,"Widlowski, Robert",647
+1801,2014-11-07,F,A1,A,4,"Freet, Heather",647
+1802,2014-11-07,F,A2,A,1,"Leggins, Anna",648
+1803,2014-11-07,F,A2,A,2,"Jackman, Dorian",648
+1804,2014-11-07,F,A2,A,3,"Miessler, Cy",648
+1805,2014-11-07,F,A2,A,4,"Gaisser, Karl",648
+1806,2014-11-07,F,A3,A,1,"Hargrove, Paul Brady",640
+1807,2014-11-07,F,A3,A,2,"Dickerson, Terin Joseph",640
+1808,2014-11-07,F,A4,A,1,"Foley, Shannon",649
+1809,2014-11-07,F,A4,A,2,"Cochrane, Meredith",649
+1810,2014-11-07,F,A5,A,1,"Ginet, Chris",653
+1811,2014-11-07,F,B1,B,1,"Miller, Gregg",643
+1812,2014-11-07,F,B1,B,2,"Grant, Maria LaGee",643
+1813,2014-11-07,F,B1,B,3,"Kenny, Dominic",643
+1814,2014-11-07,F,B1,B,4,"Hendricks, Sandra",643
+1815,2014-11-07,F,B2,B,1,"Hunter, Rob",636
+1816,2014-11-07,F,B2,B,2,"Struyf, Nick",636
+1817,2014-11-07,F,E1,E,1,"Hendricks, Sandra",661
+1818,2014-11-07,F,E1,E,2,"Muhammad, Natalie",661
+1819,2014-11-07,F,E1,E,3,"Cunningham, Ian",661
+1820,2014-11-07,F,E2,E,1,"Chen, Jason",659
+1821,2014-11-07,F,E2,E,2,"Hacker, Douglas",645
+1822,2014-11-07,F,X1,X,1,"Clark, Barbara J.",657
+1823,2014-11-07,F,X1,X,2,"Dunford, Jeff",657
+1824,2014-11-07,F,X2,X,1,"Lipa, Tyler",645
+1825,2014-11-07,F,X2,X,2,"Liechty, Abbey",645
+1826,2014-11-08,S,E1,E,2,"Dickerson, Terin Joseph",652
+1827,2014-11-08,S,A1,A,1,"Widlowski, Robert",651
+1828,2014-11-08,S,A1,A,2,"Timm, Aaron",657
+1829,2014-11-08,S,A1,A,3,"Gaisser, Karl",651
+1830,2014-11-08,S,B1,B,1,"Gillespie, Nathan",645
+1831,2014-11-08,S,B1,B,2,"Greene, Zachary Wade",645
+1832,2014-11-08,S,E1,E,1,"Diakite, Abdoul",657
+1833,2014-11-08,S,E1,E,3,"Clark, Aaron",652
+1834,2014-11-09,U,A1,A,1,"Russell, Briana",661
+1835,2014-11-09,U,A1,A,2,"Clark, Aaron",657
+1836,2014-11-09,U,B1,B,1,"Kenny, Dominic",643
+1837,2014-11-09,U,B1,B,2,"Miessler, Cy",643
+1838,2014-11-09,U,E1,E,1,"Cain, Caleb",657
+1839,2014-11-09,U,E1,E,2,"Hendricks, Sandra",657
+1840,2014-11-10,M,A1,A,1,"Heaton, Brian D.",645
+1841,2014-11-10,M,A1,A,2,"Gallalee, Jack",645
+1842,2014-11-10,M,A1,A,3,"Kenny, Dominic",645
+1843,2014-11-10,M,A2,A,1,"LaGarde, Nancy",650
+1844,2014-11-10,M,A2,A,2,"Cunningham, Ian",650
+1845,2014-11-10,M,A3,A,1,"Hargrove, Paul Brady",654
+1846,2014-11-10,M,A3,A,2,"Warren, Jeremy",654
+1847,2014-11-10,M,A4,A,1,"Foley, Shannon",640
+1848,2014-11-10,M,A4,A,2,"Kappes, Thomas",640
+1849,2014-11-10,M,A5,A,1,"Ginet, Chris",647
+1850,2014-11-10,M,A6,A,1,"Fischer, Steven",648
+1851,2014-11-10,M,B1,B,1,"Hunter, Rob",636
+1852,2014-11-10,M,B1,B,2,"Hacker, Douglas",636
+1853,2014-11-10,M,B1,B,3,"Clark, Aaron",636
+1854,2014-11-10,M,B2,B,1,"Bise III, John H.",641
+1855,2014-11-10,M,B2,B,2,"Palmer, Fileve",641
+1856,2014-11-10,M,B2,B,3,"Kim, Christopher",641
+1857,2014-11-10,M,B3,B,1,"Hock, Paul",653
+1858,2014-11-10,M,B4,B,1,"Matthews, Roy",637
+1859,2014-11-10,M,B4,B,2,"Widlowski, Robert",637
+1860,2014-11-10,M,B5,B,1,"Eakle, Robert W",644
+1861,2014-11-10,M,E1,E,1,"Decker, Ernie",660
+1862,2014-11-10,M,E2,E,1,"Francis, Marshall",662
+1863,2014-11-10,M,E2,E,2,"Ainsworth, Sam",662
+1864,2014-11-10,M,E2,E,3,"Gallalee, Jack",662
+1865,2014-11-10,M,E3,E,1,"Cochrane, Meredith",655
+1866,2014-11-10,M,X1,X,1,"Clark, Barbara J.",651
+1867,2014-11-10,M,X1,X,2,"Freet, Heather",651
+1868,2014-11-10,M,X2,X,1,"Shannon, Michiael",659
+1869,2014-11-10,M,X2,X,2,"Ginty, Kyle",659
+1870,2014-11-10,M,X3,X,,"Hedges, Cody",657
+1871,2014-11-10,M,X4,X,,"Greene, Zachary Wade",657
+1872,2014-11-11,T,A1,A,1,"Heaton, Brian D.",640
+1873,2014-11-11,T,A1,A,2,"Diakite, Abdoul",649
+1874,2014-11-11,T,A1,A,3,"Gallalee, Jack",640
+1875,2014-11-11,T,A2,A,1,"LaGarde, Nancy",647
+1876,2014-11-11,T,A2,A,2,"Timm, Aaron",647
+1877,2014-11-11,T,A3,A,1,"Hargrove, Paul Brady",657
+1878,2014-11-11,T,A3,A,2,"Miller, Ryan",653
+1879,2014-11-11,T,A4,A,1,"Foley, Shannon",648
+1880,2014-11-11,T,A4,A,2,"Bandy, Kyle",648
+1881,2014-11-11,T,A5,A,1,"Grant, Maria LaGee",662
+1882,2014-11-11,T,A6,A,1,"Fischer, Steven",650
+1883,2014-11-11,T,B1,B,1,"Hunter, Rob",644
+1884,2014-11-11,T,B1,B,2,"Grant, Maria LaGee",644
+1885,2014-11-11,T,B1,B,3,"Cochrane, Meredith",644
+1886,2014-11-11,T,B2,B,1,"Bise III, John H.",641
+1887,2014-11-11,T,B2,B,2,"Hacker, Douglas",641
+1888,2014-11-11,T,B2,B,3,"Clark, Aaron",641
+1889,2014-11-11,T,B3,B,1,"Hock, Paul",643
+1890,2014-11-11,T,B4,B,1,"Matthews, Roy",636
+1891,2014-11-11,T,B4,B,2,"Cunningham, Ian",636
+1892,2014-11-11,T,B5,B,1,"Phillips, Jenna",639
+1893,2014-11-11,T,E1,E,1,"Decker, Ernie",657
+1894,2014-11-11,T,E2,E,1,"Francis, Marshall",660
+1895,2014-11-11,T,E2,E,2,"Hendricks, Sandra",660
+1896,2014-11-11,T,E2,E,3,"Lipa, Tyler",660
+1897,2014-11-11,T,E3,E,1,"Chen, Jason",661
+1898,2014-11-11,T,X1,X,1,"Clark, Aaron",655
+1899,2014-11-11,T,X1,X,2,"Freet, Heather",655
+1900,2014-11-11,T,X2,X,1,"Shannon, Michiael",645
+1901,2014-11-11,t,x2,x,2,"Greene, Zachary Wade",645
+1902,2014-11-11,T,X3,X,,"Hedges, Cody",651
+1903,2014-11-11,T,X4,X,,"Hedges, Cody",651
+1904,2014-11-12,W,A1,A,1,"Heaton, Brian D.",640
+1905,2014-11-12,W,A1,A,2,"Cochrane, Meredith",640
+1906,2014-11-12,W,A1,A,3,"Warren, Jeremy",640
+1907,2014-11-12,W,A2,A,1,"LaGarde, Nancy",647
+1908,2014-11-12,W,A2,A,2,"Hacker, Douglas",655
+1909,2014-11-12,W,A3,A,1,"Hargrove, Paul Brady",645
+1910,2014-11-12,W,A3,A,2,"Bell, Creigh",645
+1911,2014-11-12,W,A4,A,1,"Foley, Shannon",648
+1912,2014-11-12,W,A4,A,2,"Freet, Heather",648
+1913,2014-11-12,W,A5,A,1,"Lipa, Tyler",651
+1914,2014-11-12,W,A6,A,1,"Fischer, Steven",650
+1915,2014-11-12,W,B1,B,1,"Hunter, Rob",649
+1916,2014-11-12,W,B1,B,2,"Diakite, Abdoul",649
+1917,2014-11-12,W,B1,B,3,"Clark, Aaron",649
+1918,2014-11-12,W,B2,B,1,"Bise III, John H.",641
+1919,2014-11-12,W,B2,B,2,"Struyf, Nick",641
+1920,2014-11-12,W,B2,B,3,"Gaisser, Karl",641
+1922,2014-11-12,W,B3,B,1,"Hock, Paul",644
+1923,2014-11-12,W,B4,B,1,"Matthews, Roy",639
+1924,2014-11-12,W,B4,B,2,"Figg, Korbin Patrick",639
+1925,2014-11-12,W,B5,B,1,"Kenny, Dominic",653
+1926,2014-11-12,W,E1,E,1,"Decker, Ernie",662
+1927,2014-11-12,W,E2,E,1,"Francis, Marshall",657
+1928,2014-11-12,W,E2,E,2,"Liechty, Abbey",657
+1929,2014-11-12,W,E2,E,3,"Ginet, Chris",657
+1930,2014-11-12,W,X1,X,1,"Clark, Barbara J.",654
+1931,2014-11-12,W,X1,X,2,"Ainsworth, Sam",654
+1932,2014-11-12,W,X2,X,1,"Shannon, Michiael",661
+1933,2014-11-12,W,X2,X,2,"Lakes, Michael A.",661
+1934,2014-11-12,W,X3,X,,"Miller, Ryan",636
+1935,2014-11-12,W,X4,X,,"Ginty, Kyle",636
+1936,2014-11-13,R,A1,A,1,"Heaton, Brian D.",637
+1937,2014-11-13,R,A1,A,2,"Bobyak, Lindsay",637
+1938,2014-11-13,R,A1,A,3,"Miessler, Cy",637
+1939,2014-11-13,R,A2,A,1,"LaGarde, Nancy",648
+1940,2014-11-13,T,A2,A,2,"Phillips, Jenna",648
+1941,2014-11-13,R,A3,A,1,"Hargrove, Paul Brady",636
+1942,2014-11-13,R,A3,A,2,"Hacker, Douglas",636
+1943,2014-11-13,R,A4,A,1,"Foley, Shannon",639
+1944,2014-11-13,R,A4,A,2,"Hedges, Cody",639
+1945,2014-11-13,R,A5,A,1,"Freet, Heather",644
+1946,2014-11-13,R,A6,A,1,"Fischer, Steven",645
+1947,2014-11-13,R,B1,B,1,"Hunter, Rob",651
+1948,2014-11-13,R,B1,B,2,"Lipa, Tyler",651
+1949,2014-11-13,R,B1,B,3,"Cunningham, Ian",651
+1950,2014-11-13,R,B2,B,1,"Bise III, John H.",641
+1951,2014-11-13,R,B2,B,2,"Hendricks, Sandra",641
+1952,2014-11-13,R,B2,B,3,"Kenny, Dominic",641
+1953,2014-11-13,R,B3,B,1,"Hock, Paul",643
+1954,2014-11-13,R,B4,B,1,"Matthews, Roy",649
+1955,2014-11-13,R,B4,B,2,"Bryan, Katie",649
+1956,2014-11-13,R,B5,B,1,"Muhammad, Natalie",653
+1957,2014-11-13,R,E1,E,1,"Decker, Ernie",662
+1958,2014-11-13,R,E2,E,1,"Francis, Marshall",657
+1959,2014-11-13,R,E2,E,2,"Cuevas, Rebekah",657
+1960,2014-11-13,R,E2,E,3,"Widlowski, Robert",657
+1961,2014-11-12,W,E3,E,1,"Palmer, Fileve",660
+1962,2014-11-13,R,X1,X,1,"Clark, Barbara J.",654
+1963,2014-11-13,R,X1,X,2,"Cochrane, Meredith",654
+1964,2014-11-13,R,X2,X,1,"Shannon, Michiael",660
+1965,2014-11-13,R,X2,X,2,"Eakle, Robert W",660
+1966,2014-11-13,R,X3,X,,"Phillips, Jenna",661
+1967,2014-11-13,R,X4,X,,"Timm, Aaron",661
+1968,2014-11-14,F,A1,A,1,"Thomas, Phillip",643
+1969,2014-11-14,F,A1,A,2,"Miller, Gregg",657
+1970,2014-11-14,R,A1,A,3,"Widlowski, Robert",657
+1971,2014-11-14,F,A1,A,4,"Freet, Heather",657
+1972,2014-11-14,F,A2,A,1,"Leggins, Anna",650
+1973,2014-11-14,F,A2,A,2,"Ginty, Kyle",650
+1974,2014-11-14,F,A2,A,3,"Ginty, Kyle",650
+1975,2014-11-14,F,A2,A,4,"Pinkney, Dewayne J",650
+1976,2014-11-14,F,A3,A,1,"Hargrove, Paul Brady",653
+1977,2014-11-14,F,A3,A,2,"Dickerson, Terin Joseph",653
+1978,2014-11-14,F,A4,A,1,"Foley, Shannon",656
+1979,2014-11-14,F,A4,A,2,"Lipa, Tyler",656
+1980,2014-11-14,F,A5,A,1,"Ginet, Chris",654
+1981,2014-11-14,F,B1,B,1,"Miller, Gregg",651
+1982,2014-11-14,F,B1,B,2,"Grant, Maria LaGee",651
+1983,2014-11-14,F,B1,B,3,"Kenny, Dominic",651
+1984,2014-11-14,F,B1,B,4,"Hendricks, Sandra",651
+1985,2014-11-14,F,B2,B,1,"Hunter, Rob",637
+1986,2014-11-14,F,B2,B,2,"Struyf, Nick",637
+1987,2014-11-14,F,E1,E,1,"Lipa, Tyler",659
+1988,2014-11-14,F,E1,E,2,"Muhammad, Natalie",659
+1989,2014-11-14,F,E1,E,3,"Cunningham, Ian",659
+1990,2014-11-14,F,E2,E,1,"Chen, Jason",655
+1991,2014-11-14,F,E2,E,2,"Hacker, Douglas",655
+1992,2014-11-13,R,E3,E,1,"Grant, Maria LaGee",655
+1993,2014-11-14,F,X1,X,1,"Clark, Barbara J.",662
+1994,2014-11-14,F,X1,X,2,"Bell, Creigh",662
+1995,2014-11-14,F,X2,X,1,"Shannon, Michiael",648
+1996,2014-11-14,F,X2,X,2,"Cuevas, Rebekah",648
+1997,2014-11-14,Special,,,,"Huffman, Haley",661
+1998,2014-11-15,S,A1,A,1,"Widlowski, Robert",641
+1999,2014-11-15,S,A1,A,2,"Timm, Aaron",641
+2000,2014-11-15,S,A1,A,3,"Gaisser, Karl",641
+2001,2014-11-15,S,B1,B,1,"Gillespie, Nathan",639
+2002,2014-11-15,S,B1,B,2,"Greene, Zachary Wade",639
+2003,2014-11-15,S,E1,E,1,"Diakite, Abdoul",637
+2004,2014-11-15,S,E1,E,2,"Cunningham, Ian",637
+2005,2014-11-15,S,E1,E,3,"Clark, Aaron",637
+2006,2014-11-16,U,A1,A,2,"Cochrane, Meredith",651
+2007,2014-11-16,U,A1,A,2,"Clark, Aaron",651
+2008,2014-11-16,U,B1,B,1,"Kenny, Dominic",640
+2009,2014-11-16,U,B1,B,2,"Miessler, Cy",640
+2010,2014-11-16,U,E1,E,1,"Widlowski, Robert",655
+2011,2014-11-16,U,E1,E,2,"Jackman, Dorian",655
+2012,2014-11-17,M,A1,A,1,"Heaton, Brian D.",647
+2013,2014-11-17,M,A1,A,2,"Gallalee, Jack",647
+2014,2014-11-17,M,A1,A,3,"Kenny, Dominic",647
+2015,2014-11-17,M,A2,A,1,"LaGarde, Nancy",650
+2016,2014-11-17,M,A2,A,2,"Cunningham, Ian",650
+2017,2014-11-17,M,A3,A,1,"Hargrove, Paul Brady",645
+2018,2014-11-17,M,A3,A,2,"Warren, Jeremy",645
+2019,2014-11-17,M,A4,A,1,"Foley, Shannon",662
+2020,2014-11-17,M,A4,A,2,"Kappes, Thomas",662
+2021,2014-11-17,M,A5,A,1,"Ginet, Chris",660
+2022,2014-11-17,M,A6,A,1,"Fischer, Steven",648
+2023,2014-11-17,M,B1,B,1,"Hunter, Rob",637
+2024,2014-11-17,M,B1,B,2,"Hacker, Douglas",637
+2025,2014-11-17,M,B1,B,3,"Clark, Aaron",637
+2026,2014-11-17,M,B2,B,1,"Bise III, John H.",644
+2027,2014-11-17,M,B2,B,2,"Palmer, Fileve",644
+2028,2014-11-17,M,B2,B,3,"Hendricks, Sandra",644
+2029,2014-11-17,M,B3,B,1,"Hock, Paul",639
+2030,2014-11-17,M,B4,B,1,"Matthews, Roy",653
+2031,2014-11-17,M,B4,B,2,"Bobyak, Lindsay",653
+2032,2014-11-17,M,B5,B,1,"Eakle, Robert W",654
+2033,2014-11-17,M,E1,E,1,"Chen, Jason",661
+2034,2014-11-17,M,E2,E,1,"Francis, Marshall",649
+2035,2014-11-17,M,E2,E,2,"Ainsworth, Sam",649
+2036,2014-11-17,M,E2,E,3,"Gallalee, Jack",649
+2037,2014-11-17,M,E3,E,1,"Cochrane, Meredith",655
+2038,2014-11-17,M,X1,X,1,"Clark, Barbara J.",657
+2039,2014-11-17,M,X1,X,2,"Freet, Heather",657
+2040,2014-11-17,M,X2,X,2,"Thomas, Phillip",651
+2041,2014-11-17,M,X2,X,1,"Shannon, Michiael",651
+2042,2014-11-17,M,X3,X,,"Hedges, Cody",636
+2043,2014-11-17,M,X4,X,,"Greene, Zachary Wade",636
+2044,2014-11-17,Auditorium,,,,"Lakes, Michael A.",661
+2045,2014-11-18,T,A1,A,1,"Heaton, Brian D.",640
+2046,2014-11-18,T,A1,A,2,"Diakite, Abdoul",640
+2047,2014-11-18,T,A1,A,3,"Gallalee, Jack",640
+2048,2014-11-18,T,A2,A,1,"LaGarde, Nancy",648
+2049,2014-11-18,T,A2,A,2,"Timm, Aaron",648
+2050,2014-11-18,T,A3,A,1,"Hargrove, Paul Brady",655
+2051,2014-11-18,T,A3,A,2,"Miller, Ryan",655
+2052,2014-11-18,T,A4,A,1,"Foley, Shannon",647
+2053,2014-11-18,T,A4,A,2,"Hendricks, Sandra",647
+2054,2014-11-18,T,A5,A,1,"Grant, Maria LaGee",649
+2055,2014-11-18,T,A6,A,1,"Fischer, Steven",645
+2056,2014-11-18,T,B1,B,1,"Hunter, Rob",643
+2057,2014-11-18,T,B1,B,2,"Grant, Maria LaGee",643
+2058,2014-11-18,T,B1,B,3,"Cochrane, Meredith",643
+2059,2014-11-18,T,B2,B,1,"Bise III, John H.",641
+2060,2014-11-18,T,B2,B,2,"Hacker, Douglas",641
+2061,2014-11-18,T,B2,B,3,"Clark, Aaron",641
+2062,2014-11-18,T,B3,B,1,"Hock, Paul",644
+2063,2014-11-18,T,B4,B,1,"Matthews, Roy",637
+2064,2014-11-18,T,B4,B,2,"Warren, Jeremy",637
+2065,2014-11-18,T,B5,B,1,"Phillips, Jenna",653
+2066,2014-11-18,T,E1,E,1,"Decker, Ernie",651
+2067,2014-11-18,T,E2,E,1,"Francis, Marshall",660
+2068,2014-11-18,T,E2,E,2,"Guo, Xiao",660
+2069,2014-11-18,T,E2,E,3,"Lipa, Tyler",660
+2070,2014-11-18,T,E3,E,1,"Chen, Jason",654
+2071,2014-11-18,T,X1,X,1,"Clark, Barbara J.",657
+2072,2014-11-18,T,X1,X,2,"Thomas, Phillip",657
+2073,2014-11-18,T,X2,X,1,"Shannon, Michiael",650
+2074,2014-11-18,T,X2,X,2,"Greene, Zachary Wade",650
+2075,2014-11-18,T,X3,X,,"Liechty, Abbey",639
+2076,2014-11-18,T,X4,X,,"Hedges, Cody",639
+2077,2014-11-18,Auditorium,,,,"Gaisser, Karl",645
+2078,2014-11-18,Auditorium,,,,"Figg, Korbin Patrick",662
+2079,2014-11-18,Auditorium,,,,"Leggins, Anna",639
+2080,2014-11-19,W,A1,A,1,"Leathers, Daniel",645
+2081,2014-11-19,W,A1,A,2,"Huffman, Haley",645
+2082,2014-11-19,W,A1,A,3,"Warren, Jeremy",645
+2083,2014-11-19,W,A2,A,1,"LaGarde, Nancy",647
+2084,2014-11-19,W,A2,A,2,"Hacker, Douglas",647
+2085,2014-11-19,W,A3,A,1,"Hargrove, Paul Brady",649
+2086,2014-11-19,W,A3,A,2,"Bell, Creigh",649
+2087,2014-11-19,W,A4,A,1,"Foley, Shannon",653
+2088,2014-11-19,W,A4,A,2,"Bryan, Katie",653
+2089,2014-11-19,W,A5,A,1,"Lipa, Tyler",643
+2090,2014-11-19,W,A6,A,1,"Fischer, Steven",640
+2091,2014-11-19,W,B1,B,1,"Hunter, Rob",651
+2092,2014-11-19,W,B1,B,2,"Diakite, Abdoul",651
+2093,2014-11-19,W,B1,B,3,"Miller, Ryan",651
+2094,2014-11-19,W,B2,B,1,"Bise III, John H.",641
+2095,2014-11-19,W,B2,B,2,"Struyf, Nick",641
+2096,2014-11-19,W,B2,B,3,"Russell, Briana",641
+2097,2014-11-19,W,B3,B,1,"Hock, Paul",654
+2098,2014-11-19,W,B4,B,1,"Matthews, Roy",639
+2099,2014-11-19,W,B4,B,2,"Figg, Korbin Patrick",639
+2100,2014-11-19,W,B5,B,1,"Kenny, Dominic",644
+2101,2014-11-19,W,E1,E,1,"Decker, Ernie",662
+2102,2014-11-19,W,E2,E,1,"Francis, Marshall",661
+2103,2014-11-19,W,E2,E,2,"Liechty, Abbey",661
+2104,2014-11-19,W,E2,E,3,"Ginet, Chris",661
+2105,2014-11-19,W,E3,E,1,"Palmer, Fileve",655
+2106,2014-11-19,W,X1,X,1,"Clark, Barbara J.",657
+2107,2014-11-19,W,X1,X,2,"Thomas, Phillip",657
+2108,2014-11-19,W,X2,X,1,"Shannon, Michiael",660
+2109,2014-11-19,W,X2,X,2,"Lakes, Michael A.",660
+2110,2014-11-19,W,X3,X,,"Miller, Ryan",650
+2111,2014-11-19,W,X4,X,,"Ginty, Kyle",650
+2112,2014-11-20,R,A1,A,1,"Liechty, Abbey",645
+2113,2014-11-20,R,A1,A,2,"Miller, Ryan",645
+2114,2014-11-20,R,A1,A,3,"Gaisser, Karl",645
+2115,2014-11-20,R,A2,A,1,"LaGarde, Nancy",640
+2116,2014-11-20,R,A2,A,2,"Phillips, Jenna",651
+2117,2014-11-20,R,A3,A,1,"Hargrove, Paul Brady",639
+2118,2014-11-20,R,A3,A,2,"Hacker, Douglas",639
+2119,2014-11-20,R,A4,A,1,"Foley, Shannon",653
+2120,2014-11-20,R,A4,A,2,"Figg, Korbin Patrick",653
+2121,2014-11-20,R,A5,A,1,"Freet, Heather",636
+2122,2014-11-20,R,A6,A,1,"Fischer, Steven",643
+2123,2014-11-20,R,B1,B,1,"Hunter, Rob",647
+2124,2014-11-20,R,B1,B,2,"Lipa, Tyler",647
+2125,2014-11-20,R,B1,B,3,"Russell, Briana",647
+2126,2014-11-20,R,B2,B,1,"Bise III, John H.",641
+2127,2014-11-20,R,B2,B,2,"Hendricks, Sandra",641
+2128,2014-11-20,R,B2,B,3,"Kenny, Dominic",641
+2129,2014-11-20,R,B3,B,1,"Hock, Paul",644
+2130,2014-11-20,R,B4,B,1,"Matthews, Roy",649
+2131,2014-11-20,R,B4,B,2,"Leggins, Anna",649
+2132,2014-11-20,R,B5,B,1,"Muhammad, Natalie",637
+2133,2014-11-20,R,E1,E,1,"Decker, Ernie",662
+2134,2014-11-20,R,E2,E,1,"Francis, Marshall",655
+2135,2014-11-20,R,E2,E,2,"Cuevas, Rebekah",655
+2136,2014-11-20,R,E2,E,3,"Widlowski, Robert",655
+2137,2014-11-20,R,E3,E,1,"Grant, Maria LaGee",656
+2138,2014-11-20,R,X1,X,1,"Clark, Barbara J.",659
+2139,2014-11-20,R,X1,X,2,"Clark, Aaron",659
+2140,2014-11-20,R,X2,X,1,"Shannon, Michiael",661
+2141,2014-11-20,R,X2,X,2,"Eakle, Robert W",661
+2142,2014-11-20,R,X3,X,,"Hedges, Cody",660
+2143,2014-11-20,R,X4,X,,"Timm, Aaron",660
+2144,2014-11-21,F,A1,A,1,11/21/2014,650
+2145,2014-11-21,F,A1,A,2,"Hendricks, Sandra",650
+2146,2014-11-21,F,A1,A,3,"Widlowski, Robert",650
+2147,2014-11-21,F,A1,A,4,"Freet, Heather",650
+2148,2014-11-21,F,A2,A,1,"Leggins, Anna",661
+2149,2014-11-21,F,A2,A,2,"Ginty, Kyle",661
+2150,2014-11-21,F,A2,A,3,"Lipa, Tyler",661
+2151,2014-11-21,F,A2,A,4,"Spicer, Mitch",661
+2152,2014-11-21,F,A3,A,1,"Hargrove, Paul Brady",641
+2153,2014-11-21,F,A3,A,2,"Dickerson, Terin Joseph",644
+2154,2014-11-21,F,A4,A,1,"Foley, Shannon",647
+2155,2014-11-21,F,A4,A,2,"Cochrane, Meredith",647
+2156,2014-11-21,F,A5,A,1,"Ginet, Chris",637
+2157,2014-11-21,F,B1,B,1,"Leathers, Daniel",643
+2158,2014-11-21,F,B1,B,2,"Grant, Maria LaGee",643
+2159,2014-11-21,F,B1,B,3,"Kenny, Dominic",643
+2160,2014-11-21,F,B1,B,4,"Miller, Ryan",643
+2161,2014-11-21,F,B2,B,1,"Hunter, Rob",639
+2162,2014-11-21,F,B2,B,2,"Struyf, Nick",639
+2163,2014-11-21,F,E1,E,1,"Cain, Caleb",660
+2164,2014-11-21,F,E1,E,2,"Muhammad, Natalie",660
+2165,2014-11-21,F,E1,E,3,"Clark, Aaron",660
+2166,2014-11-21,F,E2,E,1,"Chen, Jason",662
+2167,2014-11-21,F,E2,E,2,"Hacker, Douglas",662
+2168,2014-11-21,F,X1,X,1,"Lipa, Tyler",654
+2169,2014-11-21,F,X1,X,2,"Bell, Creigh",654
+2170,2014-11-21,F,X2,X,1,"Shannon, Michiael",657
+2171,2014-11-21,F,X2,X,2,"Cuevas, Rebekah",657
+2179,2014-09-27,S,E1,E,2,"Clark, Aaron",655
+2180,2014-11-22,BR,S,S,,"Hedges, Cody",662
+2181,2014-11-23,BR,U,U,,"Francis, Marshall",661
+2182,2014-11-24,BR,M,M,,"Hunter, Rob",644
+2183,2014-11-24,BR,M,M,,"Hedges, Cody",644
+2184,2014-11-25,BR,T,T,,"Hunter, Rob",662
+2185,2014-11-25,BR,T,T,,"Matthews, Roy",662
+2186,2014-11-26,BR,W,W,,"Hunter, Rob",662
+2187,2014-11-26,BR,W,W,,"Matthews, Roy",662
+2188,2014-11-29,BR,S,S,,"Hargrove, Paul Brady",659
+2189,2014-11-30,U,A1,A,1,"Ginet, Chris",647
+2190,2014-11-30,U,B1,B,1,"Widlowski, Robert",648
+2191,2014-11-30,U,E1,E,1,"Cain, Caleb",656
+2192,2014-11-30,U,A1,A,2,"Clark, Aaron",647
+2193,2014-11-30,U,B1,B,2,"Miessler, Cy",648
+2194,2014-11-30,U,E1,E,2,"Jackman, Dorian",656
+2195,2014-11-17,Auditorium,,,,"Bryan, Katie",
+2196,2014-11-17,Auditorium,,,,"Timm, Aaron",
+2197,2014-11-17,Auditorium,,,,"Ginet, Chris",
+2198,2014-11-18,Auditorium,,,,"Bryan, Katie",
+2199,2014-12-01,M,A1,A,1,"Heaton, Brian D.",640
+2200,2014-12-01,M,A1,A,2,"Gallalee, Jack",640
+2201,2014-12-01,M,A1,A,3,"Kenny, Dominic",640
+2202,2014-12-01,M,A2,A,1,"LaGarde, Nancy",647
+2203,2014-12-01,M,A2,A,2,"Cunningham, Ian",647
+2204,2014-12-01,M,A3,A,1,"Hargrove, Paul Brady",649
+2205,2014-12-01,M,A3,A,2,"Warren, Jeremy",649
+2206,2014-12-01,M,A4,A,1,"Foley, Shannon",650
+2207,2014-12-01,M,A4,A,2,"Kappes, Thomas",650
+2208,2014-12-01,M,A5,A,1,"Ginet, Chris",657
+2209,2014-12-01,M,A6,A,1,"Fischer, Steven",662
+2210,2014-12-01,M,B1,B,1,"Hunter, Rob",653
+2211,2014-12-01,M,B1,B,2,"Hacker, Douglas",653
+2212,2014-12-01,M,B1,B,3,"Clark, Aaron",653
+2213,2014-12-01,M,B2,B,1,"Chen, Jason",637
+2214,2014-12-01,M,B2,B,2,"Palmer, Fileve",637
+2215,2014-12-01,M,B2,B,3,"Kim, Christopher",637
+2216,2014-12-01,M,B3,B,1,"Hock, Paul",636
+2217,2014-12-01,M,B4,B,1,"Matthews, Roy",639
+2218,2014-12-01,M,B4,B,2,"Bobyak, Lindsay",639
+2219,2014-12-01,M,B5,B,1,"Eakle, Robert W",644
+2220,2014-12-01,M,E1,E,1,"Decker, Ernie",661
+2221,2014-12-01,M,E2,E,1,"Francis, Marshall",654
+2222,2014-12-01,M,E2,E,2,"Ainsworth, Sam",654
+2223,2014-12-01,M,E2,E,3,"Gallalee, Jack",654
+2224,2014-12-01,M,E3,E,1,"Cochrane, Meredith",660
+2225,2014-12-01,M,X1,X,1,"Clark, Barbara J.",655
+2226,2014-12-01,M,X1,X,2,"Freet, Heather",655
+2227,2014-12-01,M,X2,X,1,"Shannon, Michiael",648
+2228,2014-12-01,M,X2,X,2,"Ginty, Kyle",648
+2229,2014-12-01,M,X3,X,,"Hedges, Cody",656
+2230,2014-12-01,M,X4,X,,"Greene, Zachary Wade",656
+2231,2014-12-02,T,A1,A,1,"Heaton, Brian D.",656
+2232,2014-12-02,T,A1,A,2,"Diakite, Abdoul",656
+2233,2014-12-02,T,A1,A,3,"Cunningham, Ian",656
+2234,2014-12-02,T,A2,A,1,"LaGarde, Nancy",660
+2235,2014-12-02,T,A2,A,2,"Warren, Jeremy",660
+2236,2014-12-02,T,A3,A,1,"Hargrove, Paul Brady",640
+2237,2014-12-02,T,A3,A,2,"Miller, Ryan",640
+2238,2014-12-02,T,A4,A,1,"Foley, Shannon",659
+2239,2014-12-02,T,A4,A,2,"Leggins, Anna",659
+2240,2014-12-02,T,A5,A,1,"Grant, Maria LaGee",655
+2241,2014-12-02,T,A6,A,1,"Fischer, Steven",644
+2242,2014-12-02,T,B1,B,1,"Hunter, Rob",650
+2243,2014-12-02,T,B1,B,2,"Grant, Maria LaGee",650
+2244,2014-12-02,T,B1,B,3,"Cochrane, Meredith",650
+2245,2014-12-02,T,B2,B,1,"Bise III, John H.",652
+2246,2014-12-02,T,B2,B,2,"Hacker, Douglas",652
+2247,2014-12-02,T,B2,B,3,"Phillips, Jenna",652
+2248,2014-12-02,T,B3,B,1,"Hock, Paul",653
+2249,2014-12-02,T,B4,B,1,"Matthews, Roy",647
+2250,2014-12-02,T,B4,B,2,"Kim, Christopher",647
+2251,2014-12-02,T,B5,B,1,"Phillips, Jenna",637
+2252,2014-12-02,T,E1,E,1,"Decker, Ernie",662
+2253,2014-12-02,T,E2,E,1,"Francis, Marshall",657
+2254,2014-12-02,T,E2,E,2,"Lipa, Tyler",657
+2255,2014-12-02,T,E2,E,3,"Lipa, Tyler",657
+2256,2014-12-02,T,E3,E,1,"Chen, Jason",654
+2257,2014-12-02,T,X1,X,1,"Clark, Barbara J.",645
+2258,2014-12-02,T,X1,X,2,"Freet, Heather",645
+2259,2014-12-02,T,X2,X,1,"Shannon, Michiael",661
+2260,2014-12-02,T,X2,X,2,"Greene, Zachary Wade",661
+2261,2014-12-02,T,X3,X,,"Hedges, Cody",651
+2262,2014-12-02,T,X4,X,,"Palmer, Fileve",651
+2263,2014-12-03,W,A1,A,1,"Heaton, Brian D.",645
+2264,2014-12-03,W,A1,A,2,"Cunningham, Ian",645
+2265,2014-12-03,W,A1,A,3,"Warren, Jeremy",645
+2266,2014-12-03,W,A2,A,1,"LaGarde, Nancy",652
+2267,2014-12-03,W,A2,A,2,"Hacker, Douglas",652
+2268,2014-12-03,W,A3,A,1,"Hargrove, Paul Brady",647
+2269,2014-12-03,W,A3,A,2,"Bell, Creigh",647
+2270,2014-12-03,T,A4,A,1,"Foley, Shannon",640
+2271,2014-12-03,W,A4,A,2,"Bryan, Katie",640
+2272,2014-12-03,W,A5,A,1,"Lipa, Tyler",656
+2273,2014-12-03,W,A6,A,1,"Leathers, Daniel",650
+2274,2014-12-03,W,B1,B,1,"Hunter, Rob",639
+2275,2014-12-03,W,B1,B,2,"Diakite, Abdoul",639
+2276,2014-12-03,W,B1,B,3,"Clark, Aaron",639
+2277,2014-12-03,W,B2,B,1,"Bise III, John H.",637
+2278,2014-12-03,W,B2,B,2,"Struyf, Nick",637
+2279,2014-12-03,W,B2,B,3,"Hedges, Cody",637
+2280,2014-12-03,W,B3,B,1,"Hock, Paul",660
+2281,2014-12-03,W,B4,B,1,"Matthews, Roy",644
+2282,2014-12-03,W,B4,B,2,"Figg, Korbin Patrick",644
+2283,2014-12-03,W,B5,B,1,"Kenny, Dominic",653
+2284,2014-12-03,W,E1,E,1,"Decker, Ernie",662
+2285,2014-12-03,W,E2,E,1,"Francis, Marshall",661
+2286,2014-12-03,W,E2,E,2,"Liechty, Abbey",661
+2287,2014-12-03,W,E2,E,3,"Ginet, Chris",661
+2288,2014-12-03,W,E3,E,1,"Warren, Jeremy",655
+2289,2014-12-03,W,X1,X,1,"Clark, Barbara J.",659
+2290,2014-12-03,W,X1,X,2,"Ainsworth, Sam",659
+2291,2014-12-03,W,X2,X,1,"Shannon, Michiael",654
+2292,2014-12-03,W,X2,X,2,"Lakes, Michael A.",654
+2293,2014-12-03,W,X3,X,,"Miller, Ryan",657
+2294,2014-12-03,W,X4,X,,"Ginty, Kyle",657
+2295,2014-12-04,R,A1,A,1,"Heaton, Brian D.",648
+2296,2014-12-04,R,A1,A,2,"Miller, Ryan",648
+2297,2014-12-04,R,A1,A,3,"Miessler, Cy",648
+2298,2014-12-04,R,A2,A,1,"LaGarde, Nancy",640
+2299,2014-12-04,R,A2,A,2,"Phillips, Jenna",640
+2300,2014-12-04,R,A3,A,1,"Hargrove, Paul Brady",661
+2301,2014-12-04,R,A3,A,2,"Hacker, Douglas",661
+2302,2014-12-04,R,A4,A,1,"Foley, Shannon",652
+2303,2014-12-04,R,A4,A,2,"Figg, Korbin Patrick",652
+2304,2014-12-04,R,A5,A,1,"Freet, Heather",653
+2305,2014-12-04,R,B1,B,1,"Hunter, Rob",649
+2306,2014-12-04,R,B1,B,2,"Lipa, Tyler",649
+2307,2014-12-04,R,B1,B,3,"Russell, Briana",649
+2308,2014-12-04,R,B2,B,1,"Bise III, John H.",636
+2309,2014-12-04,R,B2,B,2,"Clark, Aaron",636
+2310,2014-12-04,R,B2,B,3,"Kenny, Dominic",653
+2311,2014-12-04,R,B3,B,1,"Hock, Paul",644
+2312,2014-12-04,R,B4,B,1,"Matthews, Roy",637
+2313,2014-12-04,R,B4,B,2,"Cunningham, Ian",647
+2314,2014-12-04,R,B5,B,1,"Muhammad, Natalie",639
+2315,2014-12-04,R,E1,E,1,"Decker, Ernie",662
+2316,2014-12-04,R,E2,E,1,"Francis, Marshall",660
+2317,2014-12-04,R,E2,E,2,"Cuevas, Rebekah",660
+2318,2014-12-04,R,E2,E,3,"Bobyak, Lindsay",656
+2319,2014-12-04,R,E3,E,1,"Grant, Maria LaGee",650
+2320,2014-12-04,R,X1,X,1,"Clark, Barbara J.",655
+2321,2014-12-04,R,X1,X,2,"Ainsworth, Sam",655
+2322,2014-12-04,R,X2,X,1,"Shannon, Michiael",659
+2323,2014-12-04,R,X2,X,2,"Eakle, Robert W",659
+2324,2014-12-04,R,X3,X,,"Liechty, Abbey",654
+2325,2014-12-04,R,X4,X,,"Timm, Aaron",654
+2326,2014-12-04,R,A6,A,1,"Fischer, Steven",647
+2327,2014-12-05,F,A1,A,1,"Bryan, Katie",645
+2328,2014-12-05,F,A1,A,2,"Hendricks, Sandra",645
+2329,2014-12-05,F,A1,A,3,"Widlowski, Robert",647
+2330,2014-12-05,F,A1,A,4,"Warren, Jeremy",647
+2331,2014-12-05,F,A2,A,1,"Leathers, Daniel",648
+2332,2014-12-05,F,A2,A,2,"Liechty, Abbey",648
+2333,2014-12-05,F,A2,A,3,"Guo, Xiao",657
+2334,2014-12-05,F,A2,A,4,"Grant, Maria LaGee",640
+2335,2014-12-05,F,A3,A,1,"Hargrove, Paul Brady",640
+2336,2014-12-05,F,A3,A,2,"Bryan, Katie",640
+2337,2014-12-05,F,A4,A,1,"Foley, Shannon",647
+2338,2014-12-05,F,A4,A,2,"Cochrane, Meredith",647
+2339,2014-12-05,F,A5,A,1,"Ginet, Chris",650
+2340,2014-12-05,F,B1,B,1,"Miller, Gregg",644
+2341,2014-12-05,F,B1,B,2,"Grant, Maria LaGee",644
+2342,2014-12-05,F,B1,B,3,"Kenny, Dominic",644
+2343,2014-12-05,F,B1,B,4,"Hendricks, Sandra",644
+2344,2014-12-05,F,B2,B,1,"Hunter, Rob",653
+2345,2014-12-05,F,B2,B,2,"Struyf, Nick",653
+2346,2014-12-05,F,E1,E,1,"Cain, Caleb",662
+2347,2014-12-05,F,E1,E,2,"Muhammad, Natalie",662
+2348,2014-12-05,F,E1,E,3,"Cunningham, Ian",662
+2349,2014-12-05,F,E2,E,1,"Miller, Ryan",656
+2350,2014-12-05,F,E2,E,2,"Hacker, Douglas",656
+2351,2014-12-05,F,X1,X,1,"Clark, Barbara J.",661
+2352,2014-12-05,F,X1,X,2,"Bell, Creigh",661
+2353,2014-12-05,F,X2,X,1,"Shannon, Michiael",659
+2354,2014-12-05,F,X2,X,2,"Cuevas, Rebekah",659
+2355,2014-12-06,S,A1,A,1,"Widlowski, Robert",651
+2356,2014-12-06,S,A1,A,2,"Timm, Aaron",651
+2357,2014-12-06,S,A1,A,3,"Gaisser, Karl",657
+2358,2014-12-06,S,B1,B,1,"Gillespie, Nathan",660
+2359,2014-12-06,S,B1,B,2,"Greene, Zachary Wade",660
+2360,2014-12-06,S,E1,E,1,"Bell, Creigh",637
+2361,2014-12-06,S,E1,E,2,"Cunningham, Ian",637
+2362,2014-12-06,S,E1,E,3,"Guo, Xiao",637
+2363,2014-12-06,Auditorium,,,,"Bobyak, Lindsay",
+2364,2014-12-07,U,A1,A,1,"Russell, Briana",647
+2365,2014-12-07,U,A1,A,2,"Cunningham, Ian",647
+2366,2014-12-07,U,B1,B,1,"Kenny, Dominic",639
+2367,2014-12-07,U,B1,B,2,"Miessler, Cy",639
+2368,2014-12-07,U,E1,E,1,"Cain, Caleb",638
+2369,2014-12-07,U,E1,E,2,"Warren, Jeremy",659
+2370,2014-12-07,Auditorium,,,,"Timm, Aaron",645
+2371,2014-12-08,M,A1,A,1,"Heaton, Brian D.",660
+2372,2014-12-08,M,A1,A,2,"Gallalee, Jack",660
+2373,2014-12-08,M,A1,A,3,"Kenny, Dominic",660
+2374,2014-12-08,M,A2,A,1,"LaGarde, Nancy",650
+2375,2014-12-08,M,A2,A,2,"Cunningham, Ian",650
+2376,2014-12-08,M,A3,A,1,"Hargrove, Paul Brady",638
+2377,2014-12-08,M,A3,A,2,"Warren, Jeremy",638
+2378,2014-12-08,M,A4,A,1,"Foley, Shannon",659
+2379,2014-12-08,M,A4,A,2,"Kappes, Thomas",659
+2380,2014-12-08,M,A5,A,1,"Ginet, Chris",644
+2381,2014-12-08,M,A6,A,1,"Fischer, Steven",647
+2382,2014-12-08,M,B1,B,1,"Hunter, Rob",649
+2383,2014-12-08,M,B1,B,2,"Hacker, Douglas",662
+2384,2014-12-08,M,B1,B,3,"Clark, Aaron",662
+2385,,,,,,,
+2386,2014-12-08,M,B2,B,1,"Bise III, John H.",637
+2387,2014-12-08,M,B2,B,2,"Palmer, Fileve",637
+2388,2014-12-08,M,B2,B,3,"Kim, Christopher",637
+2389,2014-12-08,M,B3,B,1,"Hock, Paul",639
+2390,2014-12-08,M,B4,B,1,"Matthews, Roy",636
+2391,2014-12-08,M,B4,B,2,"Dunford, Jeff",636
+2392,2014-12-08,M,B5,B,1,"Eakle, Robert W",653
+2393,2014-12-08,M,E1,E,1,"Bandy, Kyle",657
+2394,2014-12-08,M,E2,E,1,"Francis, Marshall",661
+2395,2014-12-08,M,E2,E,2,"Ainsworth, Sam",661
+2396,2014-12-08,M,E2,E,3,"Gallalee, Jack",661
+2397,2014-12-08,M,E3,E,1,"Cochrane, Meredith",640
+2398,2014-12-08,M,X1,X,1,"Clark, Barbara J.",656
+2399,2014-12-08,M,X1,X,2,"Freet, Heather",656
+2400,2014-12-08,M,X2,X,1,"Shannon, Michiael",654
+2401,2014-12-08,M,X2,X,2,"Ginty, Kyle",654
+2402,2014-12-08,M,X3,X,,"Greene, Zachary Wade",645
+2403,2014-12-08,M,X4,X,,"Greene, Zachary Wade",645
+2404,2014-12-09,T,A1,A,1,"Heaton, Brian D.",647
+2405,2014-12-09,T,A1,A,2,"Diakite, Abdoul",647
+2406,2014-12-09,M,A1,A,3,"Gallalee, Jack",647
+2407,2014-12-09,M,A2,A,1,"LaGarde, Nancy",645
+2408,2014-12-09,M,A2,A,2,"Timm, Aaron",645
+2409,2014-12-09,M,A3,A,1,"Hargrove, Paul Brady",662
+2410,2014-12-09,M,A3,A,2,"Miller, Ryan",662
+2411,2014-12-09,M,A4,A,1,"Foley, Shannon",652
+2412,2014-12-09,M,A4,A,2,"Leggins, Anna",652
+2413,2014-12-09,M,A5,A,1,"Grant, Maria LaGee",639
+2414,2014-12-09,T,A6,A,1,"Fischer, Steven",650
+2415,2014-12-09,T,B1,B,1,"Hunter, Rob",644
+2416,2014-12-09,T,B1,B,2,"Grant, Maria LaGee",644
+2417,2014-12-09,T,B1,B,3,"Cochrane, Meredith",644
+2418,2014-12-09,T,B2,B,1,"Bise III, John H.",636
+2419,2014-12-09,T,B2,B,2,"Hacker, Douglas",636
+2420,2014-12-09,T,B2,B,3,"Clark, Aaron",636
+2421,2014-12-09,T,B3,B,1,"Hock, Paul",653
+2422,2014-12-09,T,B4,B,1,"Matthews, Roy",649
+2423,2014-12-09,T,B4,B,2,"Gillespie, Nathan",649
+2424,2014-12-09,T,B5,B,1,"Phillips, Jenna",656
+2425,2014-12-09,T,E1,E,1,"Decker, Ernie",657
+2426,2014-12-09,T,E2,E,1,"Francis, Marshall",661
+2427,2014-12-09,T,E2,E,2,"Guo, Xiao",661
+2428,2014-12-09,T,E2,E,3,"Lipa, Tyler",661
+2429,2014-12-09,T,E3,E,1,"Chen, Jason",660
+2430,2014-12-09,T,X1,X,1,"Clark, Barbara J.",654
+2431,2014-12-09,T,X1,X,2,"Freet, Heather",654
+2432,2014-12-09,T,X2,X,1,"Shannon, Michiael",655
+2433,2014-12-09,T,X2,X,2,"Greene, Zachary Wade",655
+2434,2014-12-09,T,X3,X,,"Figg, Korbin Patrick",640
+2435,2014-12-09,T,X4,X,,"Jackman, Dorian",640
+2436,2014-12-10,W,A1,A,1,"Heaton, Brian D.",652
+2437,2014-12-10,W,A1,A,2,"Huffman, Haley",652
+2438,2014-12-10,W,A1,A,3,"Warren, Jeremy",652
+2439,2014-12-10,W,A2,A,1,"LaGarde, Nancy",650
+2441,2014-12-10,W,A2,A,2,"Hacker, Douglas",650
+2442,2014-12-10,W,A3,A,1,"Hargrove, Paul Brady",641
+2443,2014-12-10,W,A3,A,2,"Jackman, Dorian",644
+2444,2014-12-10,W,A4,A,1,"Foley, Shannon",660
+2445,2014-12-10,W,A4,A,2,"Bryan, Katie",660
+2446,2014-12-10,W,A5,A,1,"Chen, Jason",642
+2447,2014-12-10,W,A6,A,1,"Fischer, Steven",640
+2449,2014-12-10,W,B1,B,1,"Hunter, Rob",639
+2450,2014-12-10,W,B1,B,2,"Diakite, Abdoul",639
+2451,2014-12-10,W,B1,B,3,"Clark, Aaron",639
+2452,2014-12-10,W,B2,B,1,"Bise III, John H.",637
+2453,2014-12-10,W,B2,B,2,"Struyf, Nick",637
+2454,2014-12-10,W,B2,B,3,"Guo, Xiao",637
+2455,2014-12-10,W,B3,B,1,"Hock, Paul",643
+2456,2014-12-10,W,B4,B,1,"Matthews, Roy",649
+2458,2014-12-10,W,B5,B,1,"Kenny, Dominic",654
+2459,2014-12-10,W,B4,B,2,"Vogt, Austin",649
+2460,2014-12-10,W,E1,E,1,"Decker, Ernie",657
+2461,2014-12-10,W,E2,E,1,"Francis, Marshall",661
+2462,2014-12-10,W,E2,E,2,"Liechty, Abbey",661
+2463,2014-12-10,W,E2,E,3,"Ginet, Chris",661
+2464,2014-12-10,W,E3,E,1,"Palmer, Fileve",655
+2465,2014-12-10,W,X1,X,1,"Clark, Barbara J.",653
+2466,2014-12-10,W,X1,X,2,"Ainsworth, Sam",653
+2467,2014-12-10,W,X2,X,1,"Shannon, Michiael",647
+2468,2014-12-10,W,X2,X,2,"Lakes, Michael A.",641
+2469,2014-12-10,W,X3,X,,"Miller, Ryan",659
+2470,2014-12-10,W,X4,X,,"Keating, Logan",659
+2471,2014-12-11,R,A1,A,1,"Heaton, Brian D.",645
+2472,2014-12-11,R,A1,A,2,"Ginet, Chris",645
+2473,2014-12-11,R,A1,A,3,"Miessler, Cy",645
+2474,2014-12-11,R,A2,A,1,"LaGarde, Nancy",647
+2475,2014-12-11,R,A2,A,2,"Phillips, Jenna",647
+2476,2014-12-11,R,A3,A,1,"Hargrove, Paul Brady",640
+2477,2014-12-11,R,A3,A,2,"Hacker, Douglas",640
+2478,2014-12-11,R,A4,A,1,"Foley, Shannon",650
+2479,2014-12-11,R,A4,A,2,"Cochrane, Meredith",650
+2480,2014-12-11,R,A5,A,1,"Freet, Heather",639
+2481,2014-12-11,R,A6,A,1,"Fischer, Steven",661
+2482,2014-12-11,R,B1,B,1,"Hunter, Rob",653
+2483,2014-12-11,R,B1,B,2,"Lipa, Tyler",653
+2484,2014-12-11,R,B1,B,3,"Russell, Briana",653
+2485,2014-12-11,R,B2,B,1,"Bise III, John H.",637
+2486,2014-12-11,R,B2,B,2,"Hendricks, Sandra",637
+2487,2014-12-11,R,B2,B,3,"Kenny, Dominic",637
+2488,2014-12-11,R,B3,B,1,"Hock, Paul",636
+2489,2014-12-11,R,B4,B,1,"Matthews, Roy",649
+2490,2014-12-11,R,B4,B,2,"Bobyak, Lindsay",649
+2491,2014-12-11,R,B5,B,1,"Muhammad, Natalie",644
+2492,2014-12-11,R,E1,E,1,"Decker, Ernie",654
+2493,2014-12-11,R,E2,E,1,"Francis, Marshall",660
+2494,2014-12-11,R,E2,E,2,"Cuevas, Rebekah",660
+2495,2014-12-11,R,E2,E,3,"Bobyak, Lindsay",660
+2496,2014-12-11,R,E3,E,1,"Grant, Maria LaGee",657
+2497,2014-12-11,R,X1,X,1,"Clark, Barbara J.",656
+2498,2014-12-11,R,X1,X,2,"Ainsworth, Sam",656
+2499,2014-12-11,R,X2,X,1,"Shannon, Michiael",655
+2500,2014-12-11,R,X2,X,2,"Eakle, Robert W",655
+2501,2014-12-11,R,X3,X,,"Jackman, Dorian",662
+2502,2014-12-11,R,X4,X,,"Timm, Aaron",643
+2503,2014-12-11,Auditorium,,,,"Kappes, Thomas",651
+2504,2014-12-12,F,A1,A,1,"Thomas, Phillip",650
+2505,2014-12-12,F,A1,A,2,"Kim, Christopher",660
+2506,2014-12-12,F,A1,A,3,"Widlowski, Robert",660
+2507,2014-12-12,F,A1,A,4,"Freet, Heather",660
+2508,2014-12-12,F,A2,A,1,"Leggins, Anna",661
+2509,2014-12-12,F,A2,A,2,"Ginty, Kyle",661
+2510,2014-12-12,F,A2,A,3,"Guo, Xiao",661
+2511,2014-12-12,F,A2,A,4,"Lipa, Tyler",661
+2512,2014-12-12,F,A3,A,1,"Hargrove, Paul Brady",640
+2513,2014-12-12,F,A3,A,2,"Warren, Jeremy",640
+2514,2014-12-12,F,A4,A,1,"Foley, Shannon",647
+2515,2014-12-12,F,A4,A,2,"Cochrane, Meredith",647
+2516,2014-12-12,F,A5,A,1,"Ginet, Chris",656
+2517,2014-12-12,F,B1,B,1,"Warren, Jeremy",653
+2518,2014-12-12,F,B1,B,2,"Grant, Maria LaGee",653
+2519,2014-12-12,F,B1,B,3,"Kenny, Dominic",653
+2520,2014-12-12,F,B1,B,4,"Hendricks, Sandra",653
+2521,2014-12-12,F,B2,B,1,"Ventura, Erin",637
+2522,2014-12-12,F,B2,B,2,"Struyf, Nick",637
+2523,2014-12-12,F,E1,E,1,"Leathers, Daniel",662
+2524,2014-12-12,F,E1,E,2,"Muhammad, Natalie",662
+2525,2014-12-12,F,E1,E,3,"Cunningham, Ian",662
+2526,2014-12-12,F,E2,E,1,"Chen, Jason",655
+2527,2014-12-12,F,E2,E,2,"Hacker, Douglas",655
+2528,2014-12-12,F,X1,X,1,"Clark, Barbara J.",659
+2529,2014-12-12,F,X1,X,2,"Dunford, Jeff",659
+2530,2014-12-12,F,X2,X,1,"Shannon, Michiael",657
+2531,2014-12-12,F,X2,X,2,"Cuevas, Rebekah",657
+2532,2014-12-13,S,A1,A,1,"Miller, Ryan",659
+2533,2014-12-13,S,A1,A,2,"Cunningham, Ian",659
+2534,2014-12-13,S,A1,A,3,"Gaisser, Karl",659
+2535,2014-12-13,S,B1,B,1,"Gillespie, Nathan",653
+2536,2014-12-13,S,B1,B,2,"Greene, Zachary Wade",653
+2537,2014-12-13,S,E1,E,1,"Diakite, Abdoul",661
+2538,2014-12-13,S,E1,E,2,"Bandy, Kyle",661
+2539,2014-12-13,S,E1,E,3,"Clark, Aaron",661
+2540,2014-12-14,U,A1,A,1,"Russell, Briana",659
+2541,2014-12-14,U,A1,A,2,"Clark, Aaron",659
+2542,2014-12-14,U,B1,B,1,"Liechty, Abbey",661
+2543,2014-12-14,U,B1,B,2,"Gaisser, Karl",661
+2544,2014-12-14,U,E1,E,1,"Cain, Caleb",642
+2545,2014-12-14,U,E1,E,2,"Leggins, Anna",657
+2546,,,,,,,
+2547,2014-12-15,EX,M,M,,"LaGarde, Nancy",650
+2548,2014-12-15,EX,M,M,,"Miller, Ryan",650
+2549,2014-12-15,EX,M,M,,"Jackman, Dorian",650
+2550,2014-12-15,EX,M,M,,"Foley, Shannon",640
+2551,2014-12-15,EX,M,M,,"Freet, Heather",640
+2552,2014-12-15,EX,M,M,,"Francis, Marshall",652
+2553,2014-12-15,EX,M,M,,"Liechty, Abbey",662
+2554,2014-12-15,EX,M,M,,"Hargrove, Paul Brady",638
+2555,2014-12-15,EX,M,M,,"Jackman, Dorian",638
+2556,2014-12-15,EX,M,M,,"Figg, Korbin Patrick",660
+2557,2014-12-15,EX,M,M,,"Fischer, Steven",644
+2558,2014-12-15,EX,M,M,,"Grant, Maria LaGee",644
+2559,2014-12-15,EX,M,M,,"Grant, Maria LaGee",644
+2560,2014-12-15,EX,M,M,,"Hunter, Rob",653
+2561,2014-12-15,EX,M,M,,"Greene, Zachary Wade",653
+2562,2014-12-15,EX,M,M,,"Timm, Aaron",653
+2563,2014-12-15,EX,M,M,,"Matthews, Roy",643
+2564,2014-12-15,EX,M,M,,"Lipa, Tyler",643
+2565,2014-12-15,EX,M,M,,"Liechty, Abbey",639
+2566,2014-12-15,EX,M,M,,"Decker, Ernie",656
+2567,2014-12-15,EX,M,M,,"Bise III, John H.",661
+2568,2014-12-15,EX,M,M,,"Ginty, Kyle",661
+2569,2014-12-15,EX,M,M,,"Russell, Briana",661
+2570,2014-12-15,EX,M,M,,"Russell, Briana",654
+2571,2014-12-15,EX,M,M,,"Clark, Barbara J.",657
+2572,2014-12-15,EX,M,M,,"Ginet, Chris",657
+2573,2014-12-15,EX,M,M,,"Shannon, Michiael",642
+2574,2014-12-15,EX,M,M,,"Phillips, Jenna",642
+2575,2014-12-15,EX,M,M,,"Phillips, Jenna",649
+2576,2014-12-15,EX,M,M,,"Hendricks, Sandra",649
+2587,2014-12-17,EX,W,W,,"Clark, Aaron",648
+2588,2014-12-17,EX,W,W,,"Bandy, Kyle",645
+2589,2014-12-17,EX,W,W,,"Hargrove, Paul Brady",645
+2590,2014-12-17,EX,W,W,,"Bryan, Katie",647
+2591,2014-12-17,EX,W,W,,"Francis, Marshall",647
+2592,2014-12-17,EX,W,W,,"Miller, Ryan",640
+2593,2014-12-17,EX,W,W,,"Foley, Shannon",640
+2594,2014-12-17,EX,W,W,,"Miessler, Cy",638
+2595,2014-12-17,EX,W,W,,"Hendricks, Sandra",638
+2596,2014-12-17,EX,W,W,,"LaGarde, Nancy",638
+2597,2014-12-16,EX,T,T,,"LaGarde, Nancy",645
+2598,2014-12-16,EX,T,T,,"Liechty, Abbey",645
+2599,2014-12-16,EX,T,T,,"Cochrane, Meredith",645
+2600,2014-12-16,EX,T,T,,"Foley, Shannon",648
+2601,2014-12-16,EX,T,T,,"Miller, Ryan",648
+2602,2014-12-16,EX,T,T,,"Francis, Marshall",647
+2603,2014-12-16,EX,T,T,,"Grant, Maria LaGee",647
+2605,2014-12-16,EX,T,T,,"Hargrove, Paul Brady",640
+2606,2014-12-16,EX,T,T,,"Cochrane, Meredith",640
+2607,2014-12-16,EX,T,T,,"Hacker, Douglas",662
+2608,2014-12-16,EX,T,T,,"Fischer, Steven",649
+2609,2014-12-16,EX,T,T,,"Freet, Heather",649
+2610,2014-12-16,EX,T,T,,"Liechty, Abbey",649
+2611,2014-12-16,EX,T,T,,"Hunter, Rob",653
+2612,2014-12-16,EX,T,T,,"Miller, Gregg",653
+2613,2014-12-16,EX,T,T,,"Miessler, Cy",653
+2614,2014-12-16,EX,T,T,,"Matthews, Roy",651
+2615,2014-12-16,EX,T,T,,"Russell, Briana",651
+2616,2014-12-16,EX,T,T,,"Chen, Jason",643
+2617,2014-12-16,EX,T,T,,"Decker, Ernie",660
+2618,2014-12-16,EX,T,T,,"Bise III, John H.",659
+2619,2014-12-16,EX,T,T,,"Warren, Jeremy",659
+2620,2014-12-16,EX,T,T,,"Lipa, Tyler",659
+2621,2014-12-16,EX,T,T,,"Timm, Aaron",655
+2622,2014-12-16,EX,T,T,,"Clark, Barbara J.",654
+2623,2014-12-16,EX,T,T,,"Ginet, Chris",654
+2624,2014-12-16,EX,T,T,,"Shannon, Michiael",644
+2625,2014-12-16,EX,T,T,,"Figg, Korbin Patrick",644
+2626,2014-12-16,EX,T,T,,"Phillips, Jenna",639
+2627,2014-12-16,EX,T,T,,"Leggins, Anna",639
+2629,2014-12-17,EX,W,W,,"Fischer, Steven",644
+2630,2014-12-17,EX,W,W,,"Lakes, Michael A.",644
+2631,2014-12-17,EX,W,W,,"Lakes, Michael A.",644
+2632,2014-12-17,EX,W,W,,"Hunter, Rob",636
+2633,2014-12-17,EX,W,W,,"Miller, Gregg",636
+2634,2014-12-17,EX,W,W,,"Miller, Gregg",636
+2635,2014-12-17,EX,W,W,,"Matthews, Roy",653
+2636,2014-12-17,EX,W,W,,"Lipa, Tyler",653
+2637,2014-12-17,EX,W,W,,"Hock, Paul",651
+2638,2014-12-17,EX,W,W,,"Decker, Ernie",662
+2639,2014-12-17,EX,W,W,,"Bise III, John H.",656
+2640,2014-12-17,EX,W,W,,"Cuevas, Rebekah",656
+2641,2014-12-17,EX,W,W,,"Warren, Jeremy",656
+2642,2014-12-17,EX,W,W,,"Freet, Heather",660
+2643,2014-12-17,EX,W,W,,"Clark, Barbara J.",655
+2644,2014-12-17,EX,W,W,,"Ginty, Kyle",655
+2645,2014-12-17,EX,W,W,,"Shannon, Michiael",661
+2646,2014-12-17,EX,W,W,,"Cochrane, Meredith",657
+2647,2014-12-17,EX,W,W,,"Vogt, Austin",637
+2648,2014-12-17,EX,W,W,,"Timm, Aaron",637
+2649,2014-12-18,EX,R,R,,"LaGarde, Nancy",652
+2650,2014-12-18,EX,R,R,,"Miessler, Cy",652
+2651,2014-12-18,EX,R,R,,"Cochrane, Meredith",640
+2652,2014-12-18,EX,R,R,,"Foley, Shannon",650
+2653,2014-12-18,EX,R,R,,"Miller, Gregg",650
+2654,2014-12-18,EX,R,R,,"Francis, Marshall",647
+2655,2014-12-18,EX,R,R,,"Hendricks, Sandra",647
+2656,2014-12-18,EX,R,R,,"Hargrove, Paul Brady",640
+2657,2014-12-18,EX,R,R,,"Cochrane, Meredith",640
+2658,2014-12-18,EX,R,R,,"Spicer, Mitch",648
+2659,2014-12-18,EX,R,R,,"Fischer, Steven",653
+2660,2014-12-18,EX,R,R,,"Englebert, Briana",653
+2661,2014-12-18,EX,R,R,,"Gillespie, Nathan",653
+2662,2014-12-18,EX,R,R,,"Hunter, Rob",649
+2663,2014-12-18,EX,R,R,,"Warren, Jeremy",649
+2664,2014-12-18,EX,R,R,,"Figg, Korbin Patrick",649
+2665,2014-12-18,EX,R,R,,"Matthews, Roy",639
+2666,2014-12-18,EX,R,R,,"Hacker, Douglas",639
+2667,2014-12-18,EX,R,R,,"Hock, Paul",644
+2668,2014-12-18,EX,R,R,,"Decker, Ernie",662
+2669,2014-12-18,EX,R,R,,"Bise III, John H.",661
+2670,2014-12-18,EX,R,R,,"Lipa, Tyler",661
+2671,2014-12-18,EX,R,R,,"Lipa, Tyler",661
+2672,2014-12-18,EX,R,R,,"Timm, Aaron",659
+2673,2014-12-18,EX,R,R,,"Clark, Barbara J.",654
+2674,2014-12-18,EX,R,R,,"Liechty, Abbey",654
+2675,2014-12-18,EX,R,R,,"Shannon, Michiael",657
+2676,2014-12-18,EX,R,R,,"Muhammad, Natalie",657
+2677,2014-12-18,EX,R,R,,"Phillips, Jenna",637
+2678,2014-12-18,EX,R,R,,"Russell, Briana",637
+2679,2014-12-18,Auditorium,,,,"Freet, Heather",662
+2680,2014-12-19,EX,F,F,,"Hacker, Douglas",647
+2681,2014-12-19,EX,F,F,,"Phillips, Jenna",647
+2682,2014-12-19,EX,F,F,,"Cochrane, Meredith",647
+2683,2014-12-19,EX,F,F,,"Liechty, Abbey",650
+2684,2014-12-19,EX,F,F,,"Miessler, Cy",650
+2685,2014-12-19,EX,F,F,,"Hendricks, Sandra",648
+2686,2014-12-19,EX,F,F,,"Ginty, Kyle",648
+2687,2014-12-19,EX,F,F,,"Hargrove, Paul Brady",652
+2688,2014-12-19,EX,F,F,,"Leggins, Anna",652
+2689,2014-12-19,EX,F,F,,"Miller, Ryan",644
+2690,2014-12-19,EX,F,F,,"Figg, Korbin Patrick",644
+2691,2014-12-19,EX,F,F,,"Gillespie, Nathan",644
+2692,2014-12-19,EX,F,F,,"Miller, Gregg",653
+2693,2014-12-19,EX,F,F,,"Warren, Jeremy",653
+2694,2014-12-19,EX,F,F,,"Lipa, Tyler",657
+2695,2014-12-19,EX,F,F,,"Spicer, Mitch",657
+2696,2014-12-19,EX,F,F,,"Timm, Aaron",657
+2697,2014-12-19,EX,F,F,,"Vogt, Austin",655
+2698,2014-12-19,EX,F,F,,"Clark, Aaron",655
+2699,2014-12-19,EX,F,F,,"Warren, Jeremy",638
+2700,2014-12-19,EX,F,F,,"Lakes, Michael A.",638
+2701,2014-12-19,EX,F,F,,"Shannon, Michiael",656
+2702,2014-12-19,EX,F,F,,"Kappes, Thomas",656
+2703,2014-12-20,BR,S,S,,"Liechty, Abbey",654
+2704,2014-12-21,BR,U,U,,"LaGarde, Nancy",661
+2705,2014-12-22,BR,M,M,,"Hunter, Rob",662
+2706,2014-12-22,BR,M,M,,"Matthews, Roy",662
+2707,2014-12-23,BR,T,T,,"Decker, Ernie",655
+2708,2014-12-23,BR,T,T,,"Bise III, John H.",660
+2709,2014-12-24,BR,W,W,,"Shannon, Michiael",647
+2710,2014-12-24,BR,W,W,,"Hargrove, Paul Brady",647
+2711,2014-12-26,BR,F,F,,"Decker, Ernie",661
+2712,2014-12-26,BR,F,F,,"Hargrove, Paul Brady",661
+2713,2014-12-27,BR,S,S,,"Shannon, Michiael",662
+2714,2014-12-28,BR,U,U,,"Shannon, Michiael",658
+2715,2014-12-29,BR,M,M,,"LaGarde, Nancy",645
+2716,2014-12-29,BR,M,M,,"Bise III, John H.",645
+2717,2014-12-30,BR,T,T,,"Decker, Ernie",655
+2718,2014-12-30,BR,T,T,,"Spicer, Mitch",655
+2719,2014-12-31,BR,W,W,,"Shannon, Michiael",662
+2720,2014-12-31,BR,W,W,,"Hargrove, Paul Brady",662

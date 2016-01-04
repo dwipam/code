@@ -1,0 +1,348 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{xcolor}
+\usepackage{framed}
+\usepackage{tikz}
+\usepackage{titletoc}
+\usepackage{etoolbox}
+\usepackage{lmodern}
+\graphicspath{ {images/} }
+
+% definition of some personal colors
+\definecolor{myred}{RGB}{125,17,12}
+\definecolor{myyellow}{RGB}{225,216,183}
+
+% command for the circle for the number of part entries
+\newcommand\Circle[1]{\tikz[overlay,remember picture] 
+  \node[draw,circle, text width=18pt,line width=1pt] {#1};}
+
+% patching of \tableofcontents to use sans serif font for the tile
+\patchcmd{\tableofcontents}{\contentsname}{\sffamily\contentsname}{}{}
+% patching of \@part to typeset the part number inside a framed box in its own line
+% and to add color
+\makeatletter
+\patchcmd{\@part}
+  {\addcontentsline{toc}{part}{\thepart\hspace{1em}#1}}
+  {\addtocontents{toc}{\protect\addvspace{20pt}}
+    \addcontentsline{toc}{part}{\huge{\protect\color{myyellow}%
+      \setlength\fboxrule{2pt}\protect\Circle{%
+        \hfil\thepart\hfil%
+      }%
+    }\\[2ex]\color{myred}\sffamily#1}}{}{}
+
+%\patchcmd{\@part}
+%  {\addcontentsline{toc}{part}{\thepart\hspace{1em}#1}}
+%  {\addtocontents{toc}{\protect\addvspace{20pt}}
+%    \addcontentsline{toc}{part}{\huge{\protect\color{myyellow}%
+%      \setlength\fboxrule{2pt}\protect\fbox{\protect\parbox[c][1em][c]{1.5em}{%
+%        \hfil\thepart\hfil%
+%      }}%
+%    }\\[2ex]\color{myred}\sffamily#1}}{}{}
+\makeatother
+
+% this is the environment used to typeset the section entries in the ToC
+% it is a modification of the leftbar environment of the framed package
+\renewenvironment{leftbar}
+  {\def\FrameCommand{\hspace{6em}%
+    {\color{myyellow}\vrule width 2pt depth 6pt}\hspace{1em}}%
+    \MakeFramed{\parshape 1 0cm \dimexpr\textwidth-6em\relax\FrameRestore}\vskip2pt%
+  }
+ {\endMakeFramed}
+
+% using titletoc we redefine the ToC entries for parts, chapters, sections, and subsections
+\titlecontents{part}
+  [0em]{\centering}
+  {\contentslabel}
+  {}{}
+\titlecontents{section}
+  [0em]{\vspace*{1.2\baselineskip}}
+  {\parbox{4.5em}{%
+    \hfill\Huge\sffamily\bfseries\color{myred}\thecontentspage}%
+   \vspace*{-2.3\baselineskip}\leftbar\textsc{\small\thecontentslabel}\\\sffamily}
+  {}{\endleftbar}
+\titlecontents{subsection}
+  [8.4em]
+  {\sffamily\contentslabel{3em}}{}{}
+  {\hspace{1.5em}\nobreak\itshape\color{myred}\contentspage}
+
+\renewenvironment{abstract}
+ {\small
+  \begin{center}
+  \bfseries \abstractname\vspace{-.5em}\vspace{0pt}
+  \end{center}
+  \list{}{
+    \setlength{\leftmargin}{.5cm}%
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \item\relax}
+ {\endlist}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\center 
+ 
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Indiana University Bloomington}\\[1.5cm] 
+\textsc{\Large CSCI B 565}\\[0.5cm] 
+\textsc{\large Data Mining}\\[0.5cm] 
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries IU Bus Route Optimization - Group Name : Decoders}\\[0.4cm] 
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+\textsc{Dwipam Katariya \ Neelam Tikone \ Rudrani Angira \\ Sai Kumar  } 
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+\textsc{Dr. Dalkilic} 
+\end{flushright}
+\end{minipage}\\[2cm]
+
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] 
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+%\includegraphics[width=0.48\textwidth]{image_iub}\\[1cm] 
+%----------------------------------------------------------------------------------------
+
+\vfill 
+
+\end{titlepage}
+
+
+\begin{abstract}
+Indiana University has a bus service which runs the buses on the Indiana University Bloomington Campus to make the commutation of the students easier around the campus. The buses are named as A, B, E and X which runs through different routes around the campus throughout the day from morning till midnight. The data for Spring 2015 and Fall 2015 Semester is considered and used to achieve aim of optimize the bus routes by identifying the variance of the scheduled and observed times and dynamically allocating the timings for each bus and analyzing how various factors like weather, stop timings play an important role. Throughout the project, our main focus has been to reduce the average time the bus needs to travel between each stop by performing various Mathematical Computations on the given data and training the model using the given data in for the dynamic prediction of the bus timings. 
+\end{abstract}
+
+\clearpage
+
+
+\clearpage
+
+\section{Introduction}
+The bus routes for the University Bus service have been the same for years since when there has been a huge change in the number of students getting admitted to the Indiana University due to various reasons like  many new courses being offered each year, increase in the student count for each course etc. The weather also plays an important role in the amount of time the bus takes to travel, hence to make the transportation more efficient, there has been a need to optimize the bus routes according to the current conditions.   \\
+
+About IU Bus System : Following are the architecture details of database system that was used , along with the details of the data : \\
+
+
+We had been provided with IU Bus data for Spring 2015 and Fall 2015 semesters starting from the month of January. Weather data for each hour of the day was downloaded using Forcastio  \\
+
+Tables present : Interval data 2014-15, Route ID, Schedule Data, Stop ID, Weather Data, Work Record. \\
+
+
+Databases used  : MongoDB, SQL Server \\
+
+Hosted on:Burrows.iu.edu \\
+
+Languages used : R, Python \\
+
+
+We have total 66 stops in total, 26 buses running and 4 routes.
+
+\clearpage
+
+\section{Problem Description}
+\subsection{Presentation of case study}
+We have analyzed the given Bus Data and prepared The following Analysis:
+\begin{enumerate}
+	\item Average time to reach Each Stop:
+	\begin{figure}[ht!]
+			\centering
+		\includegraphics[scale=0.8]{AverageTimePlot}
+	\end{figure}
+		\\The above is the graph which has Average Delay time in Seconds against the Bus routes.
+		The X Axis contains the id's of the Routes which you can refer from the table Below.
+		The Y Axis contains the Average Delay in Schedule Time and the Observed Time.
+	\\Following the table for the Average time for each of the the bus Routes and the Time Difference is calucated in Seconds.
+	\\It has been observed that on an Average, only the bus route A on an average is delayed when it has to reach Well's Library from Stadium. \\
+	Else, for rest of the routes on an average, the buses have reached before the Schedule time.
+	\begin{figure}[ht!]
+		\centering
+		\includegraphics[scale=0.65]{TableAvgTime}
+	\end{figure}
+	
+	
+	
+\break	
+	\item The effect of Weather on Time Difference:
+	
+	\begin{figure}[ht!]
+	\includegraphics[scale=0.6]{plot}
+\end{figure}
+\\X Axis: Weather.
+\\Y Axis: Time Difference.
+\\ We calculated the Time Difference for the Observed time and the Scheduled time for the "A" bus to reach the stop. The Negative difference indicates that the bus arrived at the stop earlier than the Scheduled Time, whereas the Positive time indicates that the bus arrived at the stop later than the time it is scheduled to arrive.
+\\We then Plotted this Time difference with the Weather Data of each day which we downloaded using Forcastio.
+\\After plotting both the data against each other, we observed that the weather does not affect the Timings of the bus reaching the stops.We observed and compared the time difference during the various weather condtions like "Cloudy", "Snowy", "Rainy", "Clear Day" and observed that there has not been any significant time difference due to the occurrence of any of the Weather Conditions.
+
+\end{enumerate}
+
+\section{Data Description}
+\subsection{Existing model}
+In the current IU bus service, the buses namely A,B,E, and X are observed to run from morning till midnight. The following is the analysis which we did using the given data:
+\begin{enumerate}
+	\item The Bus has a time constraint only during the start of the shift. That is, only for the first stop, the bus needs to be on time. Rest of the stops, the time is not considered by the driver, hence sometimes the bus reaches the stop much earlier than the scheduled time whereas, sometimes it reaches the stop much later than the scheduled time.
+	\\In the table below contains few examples from the merged data in which the column named time$\_$diff shows the difference in the Scheduled and Observed Time of the "A" Bus.
+	
+		\begin{figure}[ht!]
+			\centering
+			\includegraphics[scale=0.5]{timedifference}
+		\end{figure}
+	
+	\item The bus id for each bus changes with the changes in the shift. The first bus in each shift will have the same bus id accordingly, the second, third and the fourth bus in each shift will have the same bus id. The inconsistencies have been found in the  bus id's where the bus id's changes at any random stop.
+	\item In the current system, The bus id's haven't been assigned properly. We have observed that sometimes, the same shift, the two "A" buses have been assigned the same bus id's which increases the difficulty in interpretation of the data. The following is one of the example:
+	\begin{verbatim}
+	Buss number: 639
+	1/22/2015: R-A4.1, R-A7.1
+	\end{verbatim}
+		
+	In the above provided example, On Thursday's first shift, the bus id: 639 has been assigned to two different buses which are A4 and A7, which is the 4th and the 7th "A" bus in the same shift.
+	
+	\item It is observed that sometimes all the work records are not stored properly. Hence, the Data for extracting the bus route to track the particular bus becomes incomplete.
+	\end{enumerate}
+\subsection{Proposed model}
+After Observing the bus data given to us of the Speing and Fall Semester, we came up with the following Proposals:
+\begin{enumerate}
+	\item One of the major problem we observed while Analyzing the bus data was figuring out the Bus id's. So, we propose that unique bus id's should be given for each shift. i.e for shift A, the bus id's should be 1,2,3,4. and for shift B the bus id should be 5,6,7,8. and so on. Following this pattern will help us know which buses run in which shift.
+	\item A single table should be maintained to calculate the time difference of the observed time and the Scheduled time of the bus simultaneously in the table.
+	
+	\item After working on the Bus data, the following are the UML diagrams of the models which we want to propose:
+	
+	\begin{figure}[ht!]
+		
+		\centering
+		\includegraphics[scale=0.65]{merged}
+		
+	\end{figure}
+	
+	\begin{figure}[ht!]
+		
+		\centering
+		\includegraphics[scale=0.6]{tblshiftsridershp}
+		
+	\end{figure}
+	\break
+	
+	\\The data set which we propose consists of the route model for every route.The following is the description about the data based on the columns present:
+	
+	id: Consists of the unique id that represents the entire tuple.
+	\\observed$\_ $date : Contains information of the date the bus runs.
+	\\bus$\_ $id : It is the unique identification number assigned  to each bus.\\
+	to: the stop from which the bus started.\\
+	From: the destination stop of the bus \\
+	time: Consists of the time taken to travel between the stops in seconds. \\
+	Shift ID : the unique ID given to a particular shift \\
+	Driver: the driver assigned to the particular shift \\
+	Week$\_ $Day : M represents Monday, T represent Tuesday, W represents \\ Wednesday,R represent Thursday,F for Friday,S for Saturday and U for Sunday. \\
+	Shift : Each route runs in three shifts whre 1 represents 1st shift,2- 2nd shift and 3-3rd shift\\
+	Bus$\_ $no: Contains information regarding the bus. Here A1 represents a route 'A' bus in shift 1.\\
+	observed$\_ $time:It is the actual time observed upon reaching a particular stop.\\
+	Scheduled$\_ $time:It is the time that the bus is actually scheduled or expected to arrive the stop.\\
+	time$\_ $diff:It is the difference (observed-scheduled) represented in seconds.
+	
+\end{enumerate}
+\section{Computational Implementation}
+\\ For this project, we have followed two approaches:
+\begin{enumerate}
+	\item Mapping the Data in Java using Hash Maps and using the data as a key value pair for every bus id in a following way:
+	\begin{verbatim}
+	Map<Date_BusID , Route>schedule
+	\end{verbatim}
+	\\Above, we have created a Key-Value Pair where key is Bud_id at the particular date and Route is the value which is to be mapped in the Scheduled Data.
+	
+	As well as:
+	
+	\begin{verbatim}
+	Map< Shift , ArrayList Stop<ArrayList arrivalTime <ArrayList DepartureTime
+	<ArrayList<TimeDifference>>>>> Route
+	\end{verbatim}
+	\\Above we are using shift as a key and arraylist structure as a Value which includes the following data about the bus: Stop, Arrival Time, Departure Time and Time Difference to generate the Route of each Bus.
+	
+	\item \\Using R to merge the table using the Primary key and unique column ids: 
+	\\As per the Schema Definition model, we merged the data with respect to the primary keys thereby doing Inner and Outer Join.
+	\begin{figure}[ht!]
+		
+		\centering
+		\includegraphics[scale=0.45]{CI}
+		
+	\end{figure}
+\end{enumerate}
+
+
+
+\section{Visualizations}
+\\We created a Visualization using HTML 5 and JQuery for the Route "A" to provide the real time bus location at a given time.
+
+\begin{figure}[ht!]
+	
+	\centering
+	\includegraphics[scale=0.65]{visualisation}
+
+\end{figure}
+	\break
+	
+\section{Proposed Changes}
+\begin{enumerate}
+	\item We propose to change the schema definition of the current architecture model to our new architecture, where all the data are consolidated into one table. This approach gives us ease to mine the data using data mining algorithms for classification and regression. Every sample of data can be associated with the time deviation as label and can help us take an accurate decision on the same.
+	
+	\item We propose to install a pedestrian signal at Kelly, as we can analyse that , major times bus gets late at Kelly due to student crossing and inconsistency between previous signal and next. Let this pedestrian signal by sync with the main signal of wells library, this will 
+	Reduce the delay and for reduction for other trips, and buses behind it.
+	
+	\item We also propose for dynamic scheduling of drivers and maintaining accurate data of the the employees, as this can hep for dynamic allotment to the bus.
+	
+	\item We propose to maintain the bus$\_$id unique to every bus type, as this would allow for easy mapping of the data.
+\end{enumerate}
+
+\section{Concluding remarks}
+We can conclude that given the dynamic model for Naive Bayes, we can actually predict if the bus would be late for the next trip and thus take an absolute decision for the number of buses, speed limit, passenger intake and scheduled time for each and every stop.
+\\We have satisfied following goals for this project:
+\begin{enumerate}
+	\item Calculating the Time Difference for the Observed and Scheduled time for each bus and its respective stop.
+	\item Identified the routes for all the buses.
+	\item Analyzed the effect of weather on the Time Deviation.
+	\item Calculated the Average time of commutation between the major stops of each route.
+	\item Visualization of the Proposed Model.
+\end{enumerate}
+\section{References}
+
+\begin{enumerate}
+	\item www.forcastio.com - used to retrieve information regarding the actual weather data.
+	
+	\item https://cran.r-project.org/doc/manuals/r-release/R-intro.html - referred for the help on R modules.
+	
+	\item https://bloomington.doublemap.com/map/ -used for receiving the information about the bus location details.
+	
+\end{enumerate}
+
+\end{document}
