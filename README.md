@@ -5,29 +5,29 @@ Some collection of codes that are used in data mining and data science related f
 Artificial-Intelligence:
 This folder contains programs in python, where I implemented KNN, Neural Nets, BFS, DFS, A*, Naive Baye's, HMM Viterbi, 
 MCMC Gibs Sampling algorithms. The description of every program is returned above the specified program itself. 
-Please check File to run program for each 
+Please check File to run program for each <br />
   1. Image Classifier - 
-    File to run - orient.py
-    Models used - Neural Nets, KNN
-    Train_data - train-data.txt
-    test_data - test-data.txt
+    File to run - orient.py <br />
+    Models used - Neural Nets, KNN <br />
+    Train_data - train-data.txt <br />
+    test_data - test-data.txt <br />
     
   2. Maps -
-    File to run - route.py
-    City Data - road-segments.txt
-    A* data - city-gps.txt
+    File to run - route.py <br />
+    City Data - road-segments.txt <br />
+    A* data - city-gps.txt <br />
     
   3. Parts Of Speech tagger - 
-    File to run - pos_solver.py
-    Train_data - bc.train
-    Test_data - bc.test
+    File to run - pos_solver.py <br />
+    Train_data - bc.train <br />
+    Test_data - bc.test <br />
 
   4. Zacate_Auto_Player -
     File to run - zacate.py
     
   5. Solver_16 -
-    File to run - solver16.py
-    input_matrix_data - input
+    File to run - solver16.py <br />
+    input_matrix_data - input <br />
 
 Algorithms:
   1. Selection Sort - selectionsort.java
@@ -42,24 +42,24 @@ Algorithms:
   
 Data Mining:
   1. Kmeans - kmean_test.R (Implementaion of K-means Algorithm, with number of clusters value(k), tow,l, where l is the 
-      number of points the data to be allocated to.
+      number of points the data to be allocated to. <br />
       Data - http://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/
-  2. K-L distance - kl.R (Calculates the KL distance)
-  3. Data_mining/BUS_decoders/BUS_decoders/Code - has all the codes related to the project, for cleaning, merging the data.
+  2. K-L distance - kl.R (Calculates the KL distance) 
+  3. Data_mining/BUS_decoders/BUS_decoders/Code - has all the codes related to the project, for cleaning, merging the data. <br />
     Please check Readme_Data.txt, Readme_code.txt and Report.pdf
 
 Linear Regression -
-    File to run - ml_assign_1.py
-    Data - kc_house_data.gl
+    File to run - ml_assign_1.py <br />
+    Data - kc_house_data.gl <br />
   
 Distribution by Technologies:-<br />
-  Python - Check for Artificial Intelligence Folder, dijkstra.py, and dfs.py
-  R - Check for Data Mining Folder
-  JAVA - Check for Algorithm folder and Data Mining- BetterCode.java
+  Python - Check for Artificial Intelligence Folder, dijkstra.py, and dfs.py <br />
+  R - Check for Data Mining Folder <br />
+  JAVA - Check for Algorithm folder and Data Mining- BetterCode.java <br />
   
   
   
   If this readme is not understandable, write to:
-  ddkatari@iu.edu
+  ddkatari@iu.edu <br />
   dwipam.katariya@gmail.com
 
