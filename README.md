@@ -1,4 +1,4 @@
-# codes
+# ReadMe for this Branch.
 Some collection of codes that are used in data mining and data science related fields, developed by me 
 (Data Science, Indiana University):
 
@@ -47,3 +47,13 @@ Data Mining:
   2. K-L distance - kl.R (Calculates the KL distance)
   3. Data_mining/BUS_decoders/BUS_decoders/Code - has all the codes related to the project, for cleaning, merging the data.
     Please check Readme_Data.txt, Readme_code.txt and Report.pdf
+
+  Distribution by Technologies:-
+  Python - Check for Artificial Intelligence Folder, dijkstra.py, and dfs.py
+  R - Check for Data Mining Folder
+  JAVA - Check for Algorithm folder and Data Mining- BetterCode.java
+  
+  If this readme is not understandable, write to:
+  ddkatari@iu.edu
+  dwipam.katariya@gmail.com
+
