@@ -48,11 +48,11 @@ Data Mining:
   3. Data_mining/BUS_decoders/BUS_decoders/Code - has all the codes related to the project, for cleaning, merging the data.
     Please check Readme_Data.txt, Readme_code.txt and Report.pdf
 
-  Linear Regression -
+Linear Regression -
     File to run - ml_assign_1.py
     Data - kc_house_data.gl
   
-  Distribution by Technologies:-
+Distribution by Technologies:-
   Python - Check for Artificial Intelligence Folder, dijkstra.py, and dfs.py
   R - Check for Data Mining Folder
   JAVA - Check for Algorithm folder and Data Mining- BetterCode.java
