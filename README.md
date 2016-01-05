@@ -52,7 +52,7 @@ Linear Regression -
     File to run - ml_assign_1.py
     Data - kc_house_data.gl
   
-Distribution by Technologies:-
+Distribution by Technologies:-__
   Python - Check for Artificial Intelligence Folder, dijkstra.py, and dfs.py
   R - Check for Data Mining Folder
   JAVA - Check for Algorithm folder and Data Mining- BetterCode.java
