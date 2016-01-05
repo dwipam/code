@@ -39,3 +39,11 @@ Algorithms:
   7. Dijkstra path finding - dijkstra.py
   8. DFS - dfs.py (recurssion)
   9. Binary Search Tree - BinarySearchTree.java
+  
+Data Mining:
+  1. Kmeans - kmean_test.R (Implementaion of K-means Algorithm, with number of clusters value(k), tow,l, where l is the 
+      number of points the data to be allocated to.
+      Data - http://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/
+  2. K-L distance - kl.R (Calculates the KL distance)
+  3. Data_mining/BUS_decoders/BUS_decoders/Code - has all the codes related to the project, for cleaning, merging the data.
+    Please check Readme_Data.txt, Readme_code.txt and Report.pdf
