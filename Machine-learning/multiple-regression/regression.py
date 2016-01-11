@@ -29,6 +29,8 @@ Derivative with respect to intercept: -4593151092.0
 RSS: 2.70264381584e+14
 
 ** Graphs for Model 2 are stored in this same dir.
+Demo Video:- https://www.youtube.com/watch?v=MCxaQYreTNg
+
 
 """
 import graphlab
