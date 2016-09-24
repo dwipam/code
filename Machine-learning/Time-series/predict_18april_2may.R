@@ -1,0 +1,25 @@
+test = read.table("NEW-DATA-2.T15.txt",sep=" ",header=TRUE)
+test_data = data.frame(x = 1:nrow(test),y = test$Weather_Temperature)
+plot_test = ggplot(test_data,aes(x,y)) + labs(x = "Days",y = "Temperature", title="Average Temperature for 15 mins for 15 Days")
+plot_test + geom_line() + geom_smooth(method = lm) + scale_x_continuous(breaks=(seq(1,nrow(test_data),by=96)),labels = (seq(1,15,by=1)))
+table(test$Date)
+average_temperature = sum(y)/length(y)
+t = data.frame(x = 1:length(y), y = y, season_factor  = y/average_temperature)
+sumarize_test = aggregate(test$Weather_Temperature, by = list(test$Date),FUN="mean")
+sumarize_test = data.frame(y = sumarize_test$x, date = sumarize_test$Group.1)
+sumarize_test = sumarize_test[order(as.Date(sumarize_test$date,format = "%d/%m/%Y")),]
+sumarize_test = data.frame(x = 1:nrow(sumarize_test),sumarize_test)
+plot_sumarize = ggplot(sumarize_test,aes(x,y)) + labs(x = "Days",y = "Temperature", title="Average Temperature for a Day for 15 days")
+plot_sumarize + geom_line() + scale_x_continuous(breaks=seq(1,nrow(sumarize_test),by=1))
+sf = sum(sumarize_test$y)/length(sumarize_test$y)
+sumarize_test = data.frame(sumarize_test,seasonality_factor = sumarize_test$y/sf)
+equation = lm(y ~ x,data=sumarize_test)
+tq  = data.frame(x=seq(16,30,by=1))
+next_15_day = predict(equation,tq)
+exp_temp_next_15 = sum(next_15_day)/length(next_15_day)
+forecast = sumarize_test$seasonality_factor*exp_temp_next_15
+days_30 = data.frame(x=1:30,y=c(sumarize_test$y,forecast),z = as.factor(c(rep(1,15),rep(2,15))))
+plot_30 = ggplot(days_30,aes(x,y,z)) + labs(x = "Days",y = "Temperature", title="Average Temperature for 15 predicted days")
+plot_30 + geom_line(aes(colour=days_30$z),size = 1.5) + geom_smooth(method = lm) + scale_x_continuous(breaks=seq(1,30,by=1)) + scale_colour_manual(values=c("#999999", "#E69F00"),name = "Legend", labels = c("Given","Predicted"))
+
+
