@@ -1,0 +1,74 @@
+---
+title: "Initial Analysis"
+author: "Dwipam, Neelam"
+output: html_document
+---
+
+##Variable description:
+FID:ROW_ID  
+ST_CASE:CASE_ID  
+LATITUDE:LATITUDE (LOCATION)  
+LONGITUDE:LONGITUDE (LOCATION)  
+PERMVIT: Number of Persons in Motor Vehicles in Transport  
+PERSONS: Total number of fatalities  
+MONTH: Month of crash  
+DAY_WEEK: Weekday of crash  
+HOUR: Hour of crash  
+ROUTE: Route Signing  
+1 Interstate  
+2 U.S. Highway  
+3 State Highway  
+4 County Road  
+5 Local Street – Township  
+6 Local Street – Municipality  
+7 Local Street – Frontage Road (Since 1994)  
+8 Other  
+9 Unknown  
+SP_JUR:  
+HARM_EV:  
+RELICT1:  
+RELICT2:  
+TYP_INT:  
+WRK_ZONE:  
+REL_ROAD:  
+LGT_COND:  
+WEATHER:  
+FATALS:  
+STATE:  
+A_RU:  
+A_INTER:  
+A_TOD:  
+A_DOW:  
+A_CT:
+A_MC:
+A_SPCRA:
+A_PRED:
+A_ROLL:
+A_POLPUR:
+A_POSBAC:
+A_D15_20:
+A_D65PLS:
+A_D21_24:
+A_HR:
+A_DIST:
+A_DROWSY:
+
+```{r,message = FALSE}
+library(dplyr)
+county = read.csv('us_county.csv') #Received from prof. D Ficklin from geology department
+fatalities = read.csv('final_data.csv')
+county = county %>% select(STATE_NAME,STATE_FIPS)
+county = county[!duplicated(county$STATE_NAME),]
+fatalities = merge(fatalities,county,by.x = "OBJECT_ID",by.y = "STATE_FIPS",all.x =FALSE)
+```
+##Exploratory Data Analysis:  
+Now we have the data in the desired form with the State_name and their associated values. Lets do some exploratory data analysis:
+```{r}
+library(ggplot2)
+ggplot(fatalities) + aes(x = STATE_NAME) + geom_bar(stat = 'count') + coord_flip() + ylab("Total Number of fatalities accident") + xlab("State Name") + ggtitle("Fatalities accident by State")
+```
+It seems that Texas, has the highest number of fatalities accident in U.S. Also these states has higher number of population in U.S. Let's normalize by the population.  
+#####Population data is collected from 
+```{r}
+
+```
