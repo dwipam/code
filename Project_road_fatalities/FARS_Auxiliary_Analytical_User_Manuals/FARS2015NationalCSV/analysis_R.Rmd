@@ -6,52 +6,222 @@ output: html_document
 
 ##Variable description:
 FID:ROW_ID  
+
 ST_CASE:CASE_ID  
+
 LATITUDE:LATITUDE (LOCATION)  
+
 LONGITUDE:LONGITUDE (LOCATION)  
+
 PERMVIT: Number of Persons in Motor Vehicles in Transport  
+
 PERSONS: Total number of fatalities  
+
 MONTH: Month of crash  
+
 DAY_WEEK: Weekday of crash  
+
 HOUR: Hour of crash  
+
 ROUTE: Route Signing  
-1 Interstate  
-2 U.S. Highway  
-3 State Highway  
-4 County Road  
-5 Local Street – Township  
-6 Local Street – Municipality  
-7 Local Street – Frontage Road (Since 1994)  
-8 Other  
-9 Unknown  
-SP_JUR:  
-HARM_EV:  
-RELICT1:  
-RELICT2:  
-TYP_INT:  
-WRK_ZONE:  
-REL_ROAD:  
-LGT_COND:  
-WEATHER:  
-FATALS:  
-STATE:  
-A_RU:  
-A_INTER:  
-A_TOD:  
-A_DOW:  
-A_CT:
-A_MC:
-A_SPCRA:
-A_PRED:
-A_ROLL:
-A_POLPUR:
-A_POSBAC:
-A_D15_20:
-A_D65PLS:
-A_D21_24:
-A_HR:
-A_DIST:
-A_DROWSY:
+. 1 Interstate  
+
+. 2 U.S. Highway  
+
+. 3 State Highway  
+
+. 4 County Road  
+
+. 5 Local Street – Township  
+
+. 6 Local Street – Municipality  
+
+. 7 Local Street – Frontage Road (Since 1994)  
+
+. 8 Other  
+
+. 9 Unknown  
+
+SP_JUR: (Special Jurisdiction ). identifies if the location on the traffic way where the crash occurred qualifies as a Special Jurisdiction even though it may be patrolled by state, county or local police (e.g., all State highways running through Indian reservations are under the jurisdiction of the Indian reservation).  
+.	0  No Special Jurisdiction (Includes National Forests Since 2008)  
+.	1  National Park Service 
+
+.	2  Military 
+
+.	3  Indian Reservation 
+
+.	4  College/University Campus 
+
+.	5  Other Federal Properties (Since 1977) 
+
+.	8  Other (Since 1976) 
+
+.	9  Unknown 
+
+
+HARM_EV: The first injury or damage producing event of the crash.  
+.	01  Overturn 
+
+.	02  Fire/Explosion 
+
+.	03  Immersion 
+
+.	04  Gas Inhalation 
+
+.	05  Fell from Vehicle 
+
+.	06  Injured in Vehicle 
+
+.	07  Other Non-Collision 
+
+.	08  Pedestrian 
+
+.	09  Pedalcycle 
+
+.	10  Railway Train 
+
+.	11  Animal 
+
+.	12  Motor Vehicle in Transport 
+
+.	13  Motor Vehicle in Transport in Other Roadway 
+
+.	14  Parked Motor Vehicle 
+
+.	15  Other Type Non-Motorist 
+
+.	16  Other Object 
+
+.	17  Bridge or Overpass (1975-1978 Only) 
+
+.	18  Building 
+
+.	19  Culvert 
+
+.	20  Curb or Wall 
+
+.	21  Divider 
+
+.	22  Embankment 
+
+.	23  Fence 
+
+.	24  Guard Rail 
+
+.	25  Light Support 
+
+.	26  Sign Post 
+
+.	27  Tree/Shrubbery
+
+RELJCT1: (Relation to Junction- Within Interchange Area). identifies the crash's location with respect to presence in an interchange area.  
+.	0  No 
+
+.	1  Yes 
+
+.	8  Not Reported 
+
+.	9  Unknown 
+
+RELICT2: (Relation to Junction- Specific Location). identifies the crash's location with respect to presence in or proximity to components typically in junction or interchange areas.  
+.	1  Non-Junction 
+
+.	2  Intersection 
+
+.	3  Intersection-Related 
+
+.	4  Intersection Area 
+
+.	5  Driveway, Alley, Access, etc. 
+
+.	6  Entrance/Exit Ramp (Since 1978) 
+
+.	7  Rail Grade Crossing (Since 1979) 
+
+.	8  In Crossover (Since 1980) 
+
+.	9  Unknown 
+
+TYP_INT: various intersection types on the road.  
+.	 1  Not an Intersection 
+
+.	2  Four-Way Intersection 
+
+.	3  T-Intersection 
+
+.	4  Y-Intersection 
+
+.	5  Traffic Circle 
+
+.	6  Roundabout 
+
+.	7  Five-Point, or More 
+
+.	8  Not Reported 
+
+.	9  Unknown 
+
+WRK_ZONE: identifies a motor vehicle traffic crash in which the first harmful event occurs within the boundaries of a work zone or on an approach to or exit from a work zone, resulting from an activity, behavior, or control related to the movement of the traffic units through the work zone.
+
+REL_ROAD: location of the crash  
+
+LGT_COND: the hour at which the crash occurred  
+
+WEATHER: Weather conditions  
+
+FATALS: Number of Fatalities that Occurred in the Crash.  
+
+STATE: State name.  
+
+A_RU: Rural/ Urban.  
+. 1: Rural  
+
+. 2: Urban.  
+
+. 3: Unknown.  
+
+A_INTER: Interstate. 
+. 1: Interstate.  
+
+. 2: Non-Interstate.  
+
+. 3: Unknown.  
+
+A_TOD: Time of Day.  
+. 1: Daytime.  
+
+. 2: Night time.  
+
+. 3: Unknown  
+
+A_DOW: Day of week. 1: Weekday. 2: Weekend. 3: Unknown  
+
+A_CT: Crash Type. 1: Single Vehicle crash. 2: Two Vehicle Crash. 3: More than two vehicle crash  
+
+A_MC: Accident Involving a Motorcycle. 1: Motorcycle Involved Crash. 2: Other Crash 
+
+A_SPCRA: Accident involving High Speed. 1: Speeding Involved Crash. 2: Other Crash. 3: Unknown  
+
+A_PED: Accident involving a Pedestrian. 1: Yes. 2: Other crash  
+
+A_ROLL: Accident involving a rollover. 1: Yes. 2: Other crash  
+
+A_POLPUR: Accident involving a polis pursuit. 1: Yes. 2: Other crash  
+
+A_POSBAC: Driver whose Blood Alcoholic test was positive or not. 1: Positive BAC test. 2: Zero BAC test. 3: Unknown  
+
+A_D15_20: If the driver was in the age group 15-20. 1: if driver Is young in age group 15-20. 2: other crash  
+
+A_D65PLS: If the driver was olg , Age 65+. 1: if driver Is old having age around 65+. 2: other crash  
+
+A_D21_24: If the driver was in the age group 21-24. 1: if driver Is young in age group 21-24. 2: other crash  
+
+A_HR: If the accident was hit and run. 1: Yes. 2: No  
+
+A_DIST: If the driver was distracted. 1: if driver Is distracted. 2: other crash  
+
+A_DROWSY: If the driver Is drowsy or not. 1: if driver Is drowsy. 2: if driver is not drowsy  
+
 
 ```{r,message = FALSE}
 library(dplyr)
