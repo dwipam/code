@@ -4,241 +4,123 @@ author: "Dwipam, Neelam"
 output: html_document
 ---
 
-##Variable description:
-FID:ROW_ID  
-
-ST_CASE:CASE_ID  
-
-LATITUDE:LATITUDE (LOCATION)  
-
-LONGITUDE:LONGITUDE (LOCATION)  
-
-PERMVIT: Number of Persons in Motor Vehicles in Transport  
-
-PERSONS: Total number of fatalities  
-
-MONTH: Month of crash  
-
-DAY_WEEK: Weekday of crash  
-
-HOUR: Hour of crash  
-
-ROUTE: Route Signing  
-. 1 Interstate  
-
-. 2 U.S. Highway  
-
-. 3 State Highway  
-
-. 4 County Road  
-
-. 5 Local Street – Township  
-
-. 6 Local Street – Municipality  
-
-. 7 Local Street – Frontage Road (Since 1994)  
-
-. 8 Other  
-
-. 9 Unknown  
-
-SP_JUR: (Special Jurisdiction ). identifies if the location on the traffic way where the crash occurred qualifies as a Special Jurisdiction even though it may be patrolled by state, county or local police (e.g., all State highways running through Indian reservations are under the jurisdiction of the Indian reservation).  
-.	0  No Special Jurisdiction (Includes National Forests Since 2008)  
-.	1  National Park Service 
-
-.	2  Military 
-
-.	3  Indian Reservation 
-
-.	4  College/University Campus 
-
-.	5  Other Federal Properties (Since 1977) 
-
-.	8  Other (Since 1976) 
-
-.	9  Unknown 
-
-
-HARM_EV: The first injury or damage producing event of the crash.  
-.	01  Overturn 
-
-.	02  Fire/Explosion 
-
-.	03  Immersion 
-
-.	04  Gas Inhalation 
-
-.	05  Fell from Vehicle 
-
-.	06  Injured in Vehicle 
-
-.	07  Other Non-Collision 
-
-.	08  Pedestrian 
-
-.	09  Pedalcycle 
-
-.	10  Railway Train 
-
-.	11  Animal 
-
-.	12  Motor Vehicle in Transport 
-
-.	13  Motor Vehicle in Transport in Other Roadway 
-
-.	14  Parked Motor Vehicle 
-
-.	15  Other Type Non-Motorist 
-
-.	16  Other Object 
-
-.	17  Bridge or Overpass (1975-1978 Only) 
-
-.	18  Building 
-
-.	19  Culvert 
-
-.	20  Curb or Wall 
-
-.	21  Divider 
-
-.	22  Embankment 
-
-.	23  Fence 
-
-.	24  Guard Rail 
-
-.	25  Light Support 
-
-.	26  Sign Post 
-
-.	27  Tree/Shrubbery
-
-RELJCT1: (Relation to Junction- Within Interchange Area). identifies the crash's location with respect to presence in an interchange area.  
-.	0  No 
-
-.	1  Yes 
-
-.	8  Not Reported 
-
-.	9  Unknown 
-
-RELICT2: (Relation to Junction- Specific Location). identifies the crash's location with respect to presence in or proximity to components typically in junction or interchange areas.  
-.	1  Non-Junction 
-
-.	2  Intersection 
-
-.	3  Intersection-Related 
-
-.	4  Intersection Area 
-
-.	5  Driveway, Alley, Access, etc. 
-
-.	6  Entrance/Exit Ramp (Since 1978) 
-
-.	7  Rail Grade Crossing (Since 1979) 
-
-.	8  In Crossover (Since 1980) 
-
-.	9  Unknown 
-
-TYP_INT: various intersection types on the road.  
-.	 1  Not an Intersection 
-
-.	2  Four-Way Intersection 
-
-.	3  T-Intersection 
-
-.	4  Y-Intersection 
-
-.	5  Traffic Circle 
-
-.	6  Roundabout 
-
-.	7  Five-Point, or More 
-
-.	8  Not Reported 
-
-.	9  Unknown 
-
-WRK_ZONE: identifies a motor vehicle traffic crash in which the first harmful event occurs within the boundaries of a work zone or on an approach to or exit from a work zone, resulting from an activity, behavior, or control related to the movement of the traffic units through the work zone.
-
-REL_ROAD: location of the crash  
-
-LGT_COND: the hour at which the crash occurred  
-
-WEATHER: Weather conditions  
-
-FATALS: Number of Fatalities that Occurred in the Crash.  
-
-STATE: State name.  
-
-A_RU: Rural/ Urban.  
-. 1: Rural  
-
-. 2: Urban.  
-
-. 3: Unknown.  
-
-A_INTER: Interstate. 
-. 1: Interstate.  
-
-. 2: Non-Interstate.  
-
-. 3: Unknown.  
-
-A_TOD: Time of Day.  
-. 1: Daytime.  
-
-. 2: Night time.  
-
-. 3: Unknown  
-
-A_DOW: Day of week. 1: Weekday. 2: Weekend. 3: Unknown  
-
-A_CT: Crash Type. 1: Single Vehicle crash. 2: Two Vehicle Crash. 3: More than two vehicle crash  
-
-A_MC: Accident Involving a Motorcycle. 1: Motorcycle Involved Crash. 2: Other Crash 
-
-A_SPCRA: Accident involving High Speed. 1: Speeding Involved Crash. 2: Other Crash. 3: Unknown  
-
-A_PED: Accident involving a Pedestrian. 1: Yes. 2: Other crash  
-
-A_ROLL: Accident involving a rollover. 1: Yes. 2: Other crash  
-
-A_POLPUR: Accident involving a polis pursuit. 1: Yes. 2: Other crash  
-
-A_POSBAC: Driver whose Blood Alcoholic test was positive or not. 1: Positive BAC test. 2: Zero BAC test. 3: Unknown  
-
-A_D15_20: If the driver was in the age group 15-20. 1: if driver Is young in age group 15-20. 2: other crash  
-
-A_D65PLS: If the driver was olg , Age 65+. 1: if driver Is old having age around 65+. 2: other crash  
-
-A_D21_24: If the driver was in the age group 21-24. 1: if driver Is young in age group 21-24. 2: other crash  
-
-A_HR: If the accident was hit and run. 1: Yes. 2: No  
-
-A_DIST: If the driver was distracted. 1: if driver Is distracted. 2: other crash  
-
-A_DROWSY: If the driver Is drowsy or not. 1: if driver Is drowsy. 2: if driver is not drowsy  
-
-
 ```{r,message = FALSE}
 library(dplyr)
 county = read.csv('us_county.csv') #Received from prof. D Ficklin from geology department
 fatalities = read.csv('final_data.csv')
 county = county %>% select(STATE_NAME,STATE_FIPS)
 county = county[!duplicated(county$STATE_NAME),]
-fatalities = merge(fatalities,county,by.x = "OBJECT_ID",by.y = "STATE_FIPS",all.x =FALSE)
+#fatalities = merge(fatalities,county,by.x = "OBJECT_ID",by.y = "STATE_FIPS",all.x =FALSE)
 ```
 ##Exploratory Data Analysis:  
 Now we have the data in the desired form with the State_name and their associated values. Lets do some exploratory data analysis:
 ```{r}
 library(ggplot2)
-ggplot(fatalities) + aes(x = STATE_NAME) + geom_bar(stat = 'count') + coord_flip() + ylab("Total Number of fatalities accident") + xlab("State Name") + ggtitle("Fatalities accident by State")
+accidentFatalitiesState =  fatalities %>% group_by(STATE_NAME) %>% summarise(count = n())
+ggplot(data.frame(table(fatalities$STATE_NAME))) + aes(y = Freq, x = reorder(Var1,Freq)) + geom_bar(stat = 'identity') + coord_flip() + ylab("Total Number of fatalities accident") + xlab("State Name") + ggtitle("Fatalities accident by State") + scale_y_continuous(breaks = seq(1,max(accidentFatalitiesState$count),by = 500)) +  theme_minimal() + theme(title = element_text(family = "Trebuchet MS", color="#422164", face="bold", size=15)) + theme(text = element_text(size=8,colour="#266164"))
 ```
+  
 It seems that Texas, has the highest number of fatalities accident in U.S. Also these states has higher number of population in U.S. Let's normalize by the population.  
-#####Population data is collected from 
+#####Population data is collected from https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population
+```{r,warning=FALSE}
+population = read.csv('population.csv')
+accidentFatalitiesState = merge(accidentFatalitiesState,select(fatalities,OBJECT_ID,STATE_NAME),by='STATE_NAME')
+accidentFatalitiesState = accidentFatalitiesState[!duplicated(accidentFatalitiesState$STATE_NAME),]
+accidentFatalitiesState  = merge(accidentFatalitiesState,population,by = 'OBJECT_ID')
+accidentFatalitiesState = mutate(accidentFatalitiesState,ratio = log2(count/as.numeric(gsub(",","",Population))))
+ggplot(accidentFatalitiesState) + aes(y = ratio, x = reorder(STATE_NAME,ratio)) + coord_flip() + geom_bar(stat='identity') + labs(title = 'Ratio of accident fatalities to population',y = 'Log Ratio',x = 'State Name') + theme_minimal() + theme(title = element_text(family = "Trebuchet MS", color="#422164", face="bold", size=15)) + theme(text = element_text(size=8,colour="#266164"))
+```
+
+After transforming the ratio of "Accident with Fatalities to Population in the state " on log_2 scale, it seems that Wisconsin and texas has the highest proportion of accidents. Now let's check for drowsy drivers.
+
+```{r,warning=FALSE,error=FALSE,message=FALSE}
+library(reshape)
+drowsyAccidents  = fatalities %>% group_by(A_DROWSY,STATE_NAME) %>% summarise(count = n())
+drowsyAccidents =cast(drowsyAccidents,STATE_NAME ~ A_DROWSY)
+colnames(drowsyAccidents) = c("STATE_NAME","DROWSY","NOT_DROWSY")
+drowsyAccidents[is.na(drowsyAccidents)] = 0
+ggplot(drowsyAccidents) + aes(x = reorder(STATE_NAME,DROWSY/(NOT_DROWSY+DROWSY)), y = DROWSY/(NOT_DROWSY+DROWSY)) + geom_bar(stat = 'identity') + coord_flip()+ labs(title = 'Percentage of Drowsy drivers involved in accidents State-wise',y = 'Drowsy Drivers/Accident Fatalities',x = 'State Name') + theme_minimal() + theme(title = element_text(family = "Trebuchet MS", color="#422164", face="bold", size=12)) + theme(text = element_text(size=8,colour="#266164"))
+```
+
+It seems that Vermont has 10%, the highest accident fatalities involving drowsy driver. It would be interesting to know if there are particular counties in vermont that have highest proportion of fatalities involving drowsy driver.
+
+```{r,warning=FALSE,error=FALSE,message=FALSE}
+library(maps)
+all_states = map_data("county")
+vermont = subset(all_states,region == 'vermont')
+base = ggplot() + geom_polygon(data=vermont,aes(x=long,y=lat,group=group),colour = "white",fill='#E4CCCC')
+base + geom_point(data = filter(fatalities,STATE_NAME=='Vermont'),aes(x = LONGITUD,y = LATITUDE,colour = as.factor(A_DROWSY)))+ labs(title = 'Location Map for fatalities involving drowsy driver in Vermont',x="",y="",color="") + theme_minimal() + theme(title = element_text(family = "Trebuchet MS", color="#422164", face="bold", size=12),legend.title = element_text(color="red")) + theme(text = element_text(colour="#266164"),axis.text.x = element_blank(),axis.text.y = element_blank()) + scale_color_manual(labels = c("Drowsy Driver", "Non Drowsy Driver"), values = c("red", "blue"))
+```
+
+As the data is very low, we can't infer if there counties affect drowsy fatalities. Let's remove some outliers. Hence removing, wherever we have unknown and unreported data, because this can provide uninterpretation of our model.
+
+```{r, warning=FALSE, error = FALSE}
+boxplot(fatalities$PERSONS)
+quantile(log2(fatalities$PERSONS),prob = (1:100)/100)
+quantile(log2(fatalities$PERMVIT),prob = (1:100)/100)
+fatalities = subset(fatalities,A_INTER != 3)
+fatalities = subset(fatalities, A_TOD != 3)
+fatalities = subset(fatalities, drunkDr %in% c(0,1))
+fatalities = subset(fatalities, WEATHER %in% c(1,2,3,4,5,6,7,8,10,11,12))
+fatalities = subset(fatalities, HOUR != 99)
+fatalities = subset(fatalities, A_DOW != 3)
+fatalities = subset(fatalities, TYP_INT %in% c(1,2,3,4,5,6,7,8,9,10))
+fatalities = subset(fatalities, REL_ROAD %in% c(1,2,3,4,5,6,7,8,10,11))
+fatalities = subset(fatalities, REL_ROAD %in% c(1,2,3,4,5,6))
+fatalities = filter(fatalities,!LGT_COND %in% c(7,8,9))
+ggplot(fatalities,aes(x = factor(STATE_NAME),y=FATALS)) + geom_boxplot(aes(colour = factor(STATE_NAME)),outlier.colour = "red", outlier.size = 1,) + coord_flip() +geom_jitter(size=0.01,alpha=0.05) + labs(title="Fatalities by State (BoxPlot)", x = "State Name", y="Total Fatalities")
+fatalities = subset(fatalities, FATALS %in% c(1,2,3,4))
+fatalities = subset(fatalities, A_RU != 3)
+fatalities = subset(fatalities, A_SPCRA != 3)
+fatalities = subset(fatalities, (PERSONS < 9) & (PERSONS > 0) & (PERSONS == PERMVIT) & (FATALS <= PERSONS))
+fatalities$PERSONS = NULL
+fatalities = subset(fatalities, ROUTE != 9)
+fatalities = subset(fatalities, SP_JUR != 9)
+fatalities = filter(fatalities, !RELJCT1 %in% c(8,9), !RELJCT2 %in% c(98,99))
+fatalities = filter(fatalities, WRK_ZONE != 3)
+fatalities = filter(fatalities, !HARM_EV %in% c(6,72,99,73,45,51,2,50,49,20,44,40,48,54,16,3,7,46,41,26,19,57,17,39,58,10,21,23,99))
+
+fatalities$RELJCT1 = NULL
+```
+
+It seems that fatalities are not affected by state.
+Now let's do some hypothesis testing. We assume the following hypothesis:  
+1. Drunken Driver is independent of Age group 15 - 20  
+2. Drunken Driver is independent of Age group 21-24  
+3. Drunken Driver is independent of Age group greater than 65+  
+4. Does the above age group affects Drunken Driver  
+
+```{r}
+ageDrunkFat = rbind(table(fatalities$A_D21_24,fatalities$drunkDr)[1,],table(fatalities$A_D15_20,fatalities$drunkDr)[1,], table(fatalities$A_D65PLS,fatalities$drunkDr)[1,])
+chisq.test(ageDrunkFat)
+```
+
+As, P-value is less than significance value, hence we can say that drunker driver fatalities are not independent of Age of the Person. This means, that age does affect drunken driving. Lets check how weather affects accidents 
+
+```{r,warning=FALSE,message = FALSE,error = FALSE}
+library(heatmaply)
+wea = sort(table(fatalities$WEATHER))
+print(wea/sum(wea))
+wea = data.frame(table(fatalities$WEATHER,"STATE_NAME" = fatalities$STATE_NAME))
+wea = cast(wea, STATE_NAME ~Var1)
+colnames(wea) = c("STATE_NAME","CLEAR", "RAIN","HAIL","SNOW","FOG","HEAVY WIND","SAND", "OTHER","COUDY","BLOWING SNOW","FREEZING RAIN")
+row.names(wea) = wea$STATE_NAME
+heatmaply((sapply(select(wea,-c(STATE_NAME,CLEAR)),as.numeric)),labRow = row.names(wea),scale = "row")
+```
+Heatmaps have cells aranged as per the fatalities in weather with scaled data. It's obvious that Clear weather would be having Larger amount of accidents, however it is interesting to see that after Clear weather, Cloudy has the highest accidents and then Rainy. We can also see that california and texas are clustered toghether and its well reasoned that both states share approximately similar weather conditions, fatalities and population.  
+##Explore with Hierarchiacl clustering and K-Modes clustering:  
+
+```{r}
+fatalities = select(fatalities, -c(X, ST_CASE, OBJECT_ID, FID, LATITUDE,LONGITUD,STATE_NAME,DAY_WEEK,HOUR))
+melt_cor = (round(cor(fatalities),7))
+#melt_cor[lower.tri(melt_cor)] <- NA
+melt_cor = melt(melt_cor,na.rm=TRUE)
+ggplot(data = melt_cor, aes(X1, X2, fill = value))+geom_tile(color = "white")+labs(title="Correlation matrix for variables")+scale_fill_gradient2(low = "blue", high = "red", mi= "white",  midpoint = 0, limit = c(-1,1), space = "Lab", name="Pearson\nCorrelation") +theme_minimal()+ theme(axis.text.x =element_text(angle= 45, vjust = 1, size = 7, hjust = 1),axis.title = element_blank())+coord_fixed()
+```
+
+It seems that Types of crashes such as one car crash, two car crash are correlated to Number of people fatalities, and types of event. Also Positive check of BAC and drunken driver are correlated, hence we can think to reomve some correalted variables, as correlation won't reduce the power of prediction, as correlated variables does not mean they are dependent.  
+We have categorical data, hence it would make sense to first convert variables with more than one categories to dummy variables(One-hot encoding).
+
 ```{r}
 
 ```
