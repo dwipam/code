@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: googlemaps
+Version: 2.4.4
+Summary: Python client library for Google Maps API Web Services
+Home-page: https://github.com/googlemaps/google-maps-services-python
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: Apache 2.0
+Description: UNKNOWN
+Platform: Posix; MacOS X; Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Internet
