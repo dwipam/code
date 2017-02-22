@@ -1,0 +1,72 @@
+---
+title: "Project - 2"
+author: "Dwipam, Krunal, Rakshesh"
+date: "2/19/2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(zoo)
+library(broom)
+library(tidyr)
+```
+# Question 1:  
+```{r, warning=FALSE, echo=FALSE}
+unemployment.series = read.csv('UNRATENSA.csv',header = TRUE)
+unemployment.series = zoo(unemployment.series$UNRATENSA,order.by = as.Date(unemployment.series$DATE))
+unemployment.series.df = data.frame(period = time(unemployment.series),unempRate = unemployment.series)
+#ggplot(unemployment.series.df,aes(x = period, y = unempRate)) + geom_line(size = 0.2) + labs(title ="Unemployment rate by month from 1948 to 2017")
+```
+  
+  
+```{r, warning=FALSE, echo=FALSE,fig.width=10, fig.height=2.5}
+ggplot(unemployment.series.df,aes(x = period,y = unempRate)) + geom_smooth(method = "loess",se=FALSE,method.args = list(degree=1),size = 0.3) + geom_line(size = 0.2) + geom_smooth(method = "lm",col="red",se=FALSE,size = 0.5) + labs(y = "Unemployment Rate")
+```
+
+Clearly there seems to be some trend and some seasonality.Red line is the Linear fit, and blue line is the loess fit with degree = 1. It seems that there is an increasing trend over period of time for Linear fit. For Loess fit there was a small spike of unemployment during year 1975 - 1995. That's why there is a hump in the curve for Loess fit, but still comparing right and left tail, there is an increase in unemployment rate over all. This hump seems to to irregularity over the period of time, we will stick with Linear model as it generalizes better. There seems to be a season of 12 month, where unemploment rate starts with low gradually increases and falls down for the next month and patterns changing every 3-4 months. However we don't know if there is seasonality.  Let's fit trend and assess the residual to decompose the Time series into other components.
+
+```{r, warning = FALSE, echo = FALSE,fig.width=10,fig.height=6.5}
+unemployment.series.lo = lm(unempRate~period,data = unemployment.series.df)
+unemployment.series.lo.df = augment(unemployment.series.lo)
+ts.series = ts(unemployment.series.lo$residuals,frequency=12,start = 1948)
+unEmp.stl = stl(ts.series,s.window = 12,s.degree=1)
+year.cut = cut_number(time(ts.series),n = 3)
+unEmp.stl.df = data.frame(Period = time(ts.series),unEmp.stl$time.series,year.cut)
+ggplot(unEmp.stl.df,aes(x = Period,y = seasonal,col = year.cut)) + geom_line() + facet_wrap(~year.cut,ncol = 1,scales='free') + labs(title="Seasonal plot per 23 months") + scale_colour_discrete(labels = c("1948 - 1971","1972 - 1994","1997 - 2017"),name = "Period") + scale_x_continuous(breaks = seq(min(unEmp.stl.df$Period),max(unEmp.stl.df$Period),1))
+cmo.df = data.frame(unEmp.stl.df,month = c(rep(seq(1,12),69),1))
+```
+  
+```{r, warning = FALSE, echo = FALSE,fig.width=10, fig.height=3.1}
+ggplot(cmo.df,aes(x = Period,y = seasonal)) + geom_smooth(method="lm",se=FALSE) + facet_wrap(~factor(month)) + labs(title="Monthly variation in seasonality")
+```
+  
+It seems that as the year increases unemployement rate during the seond half of the  around June increases. From 1995 to year 2000 there is repetitive pattern. For year 2014 - 2017 Both half of the year has equal highest unemployment rate. Looking at the monthly seasonal plot, it seems that there is decrease in unemployment rate over the period of 12 months. The slope of the line is decreasing from Month Jan - April while for months July, August, September, October increases and for november and december being somewhat normal.This also alligns with our pervious statement that unemployment rate is higher in first half of the year i.e. Jan - May. Now Let's assess the cycles and residuals from the model after fitting Trend and remainder.    
+
+```{r, warning = FALSE, echo = FALSE,fig.width=8, fig.height=2.0}
+#Re-fit to remainder+cycles as the TS is already decomposed and we want to assess other components.
+x = data.frame(Trend = unemployment.series.lo.df$.fitted, remainder = unEmp.stl.df$remainder+unEmp.stl.df$trend,seasonal = unEmp.stl.df$seasonal, Period = unemployment.series.df$period)
+x.mode = augment(loess(as.numeric(Trend+remainder)~as.numeric(Period),data = x))
+ggplot(x.mode,aes(x = unemployment.series.df$period,y = .resid)) + geom_line(size = 0.2) + labs(title= "Assess for Cycles",x = "Period",y = "Residuals")+geom_smooth(method = "loess",span = 0.1,se=FALSE,size = 0.3,alpha = 0.5,col="red")
+```
+  
+After removing, trend and seasonal component there seems to be 8-9 cycles, STL has already decomposed our time series for Cycles, hence lets just assess residuals after removing trend, seasonal and cycles.  
+
+```{r, warning = FALSE, echo = FALSE,fig.width=3.5, fig.height=2.2,comment = NA}
+ggplot(unEmp.stl.df,aes(x = unemployment.series.df$period,y = remainder)) + geom_line(size = 0.2) + geom_smooth(size = 0.7,se=FALSE,method = "loess") + labs(title = "Residual Plot",x = "Period",y = "Residuals")
+ggplot(unEmp.stl.df,aes(sample=remainder)) + stat_qq(size = 0.3) + labs(title = "QQ-Plot")
+cat("Variance for each Time series components.")
+print(data.frame(Trend = var(unemployment.series.lo.df$.fitted), Cycles = var(unEmp.stl.df$trend, ), Seasonal = var(unEmp.stl.df$seasonal), Residuals = var(unEmp.stl.df$remainder)))
+```
+  
+Though, there is no visual pattern found in the residuals, the qqplot has small bends and hence it does not seems to be normal. Also the loess curve passes through 0.0 implying 0 mean. Cycles capture highest variance in the data. Lets plot Trend, Season, Cycle and residuals together.
+
+```{r,warning = FALSE,echo=FALSE,fig.width=7, fig.height=8}
+final.df = data.frame(Trend = unemployment.series.lo.df$.fitted-mean(unemployment.series.lo.df$.fitted), Residual = unEmp.stl.df$remainder, Cycle = unEmp.stl.df$trend-mean(unEmp.stl.df$trend),Seasonal = unEmp.stl.df$seasonal, Period = unemployment.series.df$period)
+final.df = final.df %>% gather(Type, Incidence, Trend:Seasonal)
+ggplot(final.df,aes(x = Period, y = Incidence,col=Type)) + geom_line(size = 0.35) + facet_wrap(~factor(Type,levels = c("Trend", "Cycle", "Seasonal","Residual")),ncol=1) + labs(title = "Decomposed Components of Time Series")
+```
+  
+Visually also it seems that, Cycles captures highest variance followed by Trend and then Seasonal. Hence our model is  
+y = Trend+Seasonal+Cycle+Residual(0,variance)

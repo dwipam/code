@@ -1,0 +1,82 @@
+---
+title: "Assignment - 2"
+author: "Dwipam"
+date: "1/25/2017"
+output: pdf_document
+---
+
+# Question 1:  
+```{r,ehco=FALSE,warning=FALSE,error = FALSE}
+library(tidyr)
+votes = read.table("pennsylvania.txt",sep="",header = TRUE)
+votes.long = votes %>% gather(President,votes,Obama:Clinton)
+```
+  
+# Question 2:  
+```{r,echo=FALSE, warning=FALSE, error=FALSE}
+library(ggplot2)
+ggplot(votes.long,aes(sample = log10(votes))) + stat_qq() + facet_wrap(~President) + geom_abline()
+```  
+
+Looking visually at the log 10 qq plot of votes by we can say that, after the transformation, data is approximately normal, as it
+does have fairly straight line. By looking at the spread it sems that Obama, has slightly higher votes than clinton.
+
+# Question 3:
+
+```{r,echo=FALSE, warning=FALSE, error=FALSE}
+vote.obama = sort(votes$Obama)
+vote.clinton = sort(votes$Clinton)
+ob.cl = data.frame(qqplot(votes$Obama, votes$Clinton,plot.it = FALSE))
+ggplot(ob.cl,aes(x,y)) + geom_point() + geom_abline() + labs(x = "Obama",y="Clinton",title="Two-Sample QQ Plot")
+```
+  
+It seems that y=x does fit the plot. Line with this slope seems to fit the data well. However to assess this futher we can check the log transformation.  
+```{r, echo=FALSE, warning=FALSE, error=FALSE}
+ob.cl = data.frame(qqplot(log2(votes$Obama), log2(votes$Clinton),plot.it = FALSE))
+ggplot(ob.cl,aes(x,y)) + geom_point() + geom_abline() + labs(x = "Obama",y="Clinton",title="Two-Sample QQ (Log) Plot")
+```
+  
+After doing log transformation, it seems that slope is changing slightly, as the points lie above and below the line. Let's assess with Tuke-difference plot.   
+```{r, echo=FALSE, warning=FALSE, error=FALSE}
+ggplot(ob.cl,aes((x+y)/2,y-x)) + geom_point() + geom_abline(intercept = 0,slope=0)
+```
+  
+It seems that, As major points are below 0, comparing to the average Clinton did have few votes than Obama in general. We can also say that, as the average increases Clinton starts receiving more votes. We can say that model is complicated. Let's assess with spread-residual plot. Here, let's consider median as it is robust to outlier.    
+
+```{r, echo=FALSE, warning=FALSE, error=FALSE}
+vote.obama = sort(votes$Obama)
+vote.clinton = sort(votes$Clinton)
+vote.res = rep(NA,nrow(votes.long))
+vote.res[votes.long$President=='Obama'] = median(vote.obama)
+vote.res[votes.long$President=='Clinton'] = median(vote.clinton)
+jittered = vote.res + runif(length(vote.res),-200.0,200.0)
+root.abs.res = sqrt(abs(votes.long$votes-vote.res))
+vote.residual = data.frame("JR" = jittered,"ASR" = root.abs.res,"President" = c(rep("Obama",length(vote.obama)),rep("Clinton",length(vote.clinton))))
+ggplot(vote.residual,aes(x = JR,y =ASR)) + geom_point(aes(col = President)) + labs(x = "Jittered Median",y = "Absolute Square root residual", title = "Spread-Location fit plot")
+```
+  
+This seems to have a pretty good spread of residual. Lets check with Log2 transform. Also difference between the median is quite significant. 
+```{r, echo=FALSE, warning=FALSE, error=FALSE}
+vote.obama = log2(sort(votes$Obama))
+vote.clinton = log2(sort(votes$Clinton))
+vote.res = rep(NA,nrow(votes.long))
+vote.res[votes.long$President=='Obama'] = median(vote.obama)
+vote.res[votes.long$President=='Clinton'] = median(vote.clinton)
+jittered = vote.res + runif(length(vote.res),-0.05,0.05)
+root.abs.res = sqrt(abs(log2(votes.long$votes)-vote.res))
+vote.residual = data.frame("JR" = jittered,"ASR" = root.abs.res,"President" = c(rep("Obama",length(vote.obama)),rep("Clinton",length(vote.clinton))))
+ggplot(vote.residual,aes(x = JR,y =ASR)) + geom_point(aes(col = President)) + labs(x = "Jittered Median",y = "Absolute Square root residual", title = "Spread-Location fit plot")
+```
+  
+This looks better than previous plot in terms of spread. Let's fit a line and assess the residual-fit plot to Log2 transformation.  
+```{r, echo=FALSE, warning=FALSE, error=FALSE}
+model.data = data.frame("Obama" = log2(votes$Obama),"Clinton" = log2(votes$Clinton))
+model.vote = lm(Clinton~Obama,data = model.data)
+SFR = sort(fitted.values(model.vote)) - mean(fitted.values(model.vote))
+f.value = (0.5:(nrow(votes.long)-0.5))/nrow(votes.long)
+res.fit = data.frame('residual' = sort(residuals(model.vote)),'SFR' = SFR,f.value)
+res.fit =  res.fit%>% gather(Type,value,SFR:residual)
+ggplot(res.fit,aes(x = f.value,y=value)) + facet_wrap(~Type) + geom_point()
+```
+  
+We can see that, good amount of variance is being captured, still there is some variance left in residuals.

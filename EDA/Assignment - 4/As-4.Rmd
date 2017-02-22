@@ -1,0 +1,91 @@
+---
+title: "As-4"
+author: "Dwipam"
+date: "2/16/2017"
+output: pdf_document
+---
+```{r setup, include=FALSE,message=FALSE,warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r,warning=FALSE,message=FALSE,echo=FALSE}
+
+library(lattice)
+library(ggplot2)
+library(dplyr)
+library(GGally)
+```
+
+```{r,echo=FALSE}
+birthplace <- read.csv('data/birthplace.csv',stringsAsFactors = FALSE)
+language <- read.csv('data/language.csv',stringsAsFactors = FALSE)
+religion <- read.csv('data/religion.csv',stringsAsFactors = FALSE)
+customs <- read.csv('data/customs.csv',stringsAsFactors = FALSE)
+```
+
+```{r,echo=FALSE}
+score <- function(x) {
+x <-
+x %>% mutate(
+Total =  Very.important + Somewhat.important + Not.very.important + Not.at.all.important,
+tot.score =  (
+Very.important * 4 + Somewhat.important * 3 + Not.very.important * 2 + Not.at.all.important *
+1) / (Total),tot.score = (tot.score - mean(tot.score)) / sd(tot.score)) %>%  arrange(Country)
+return(x)
+}
+
+birthplace <- score(birthplace)
+language <- score(language)
+religion <- score(religion)
+customs <- score(customs)
+religion <- rbind(religion,c("Japan", 0, 0, 0, 0, 0, 0, 0))
+religion <- arrange(religion, Country)
+religion$tot.score = as.numeric(religion$tot.score)
+```
+
+# Univariate analysis  
+```{r,echo=FALSE}
+total <-
+        data.frame(
+        Country = birthplace$Country,
+        Score = birthplace$tot.score + language$tot.score + customs$tot.score + religion$tot.score
+        )
+print(total)
+```
+
+# Bivariate analysis
+```{r,echo=FALSE}
+combined <-
+        data.frame(
+        country = birthplace$Country,
+        birhtplace = birthplace$tot.score,
+        language = language$tot.score ,
+        customs = customs$tot.score,
+        religion = religion$tot.score
+        )
+ggpairs(
+        combined,
+        columns = c('birhtplace', 'language', 'religion', 'customs'),
+        title = 'Standardize score of categories'
+        )
+```
+  
+It seems y that scores of Birthplace & Religion, Birthplace & Customs, and Customs & Religion are strongly correlated while score of Lanaguage are weakly correlated with Birthplace, Customs and Religion.  
+Birthplace-Religion pair is most strongly correlated and Lanaguge-Customs pairs is most weakly related.
+
+# Trivariate analysis
+
+As, with the two pair plot, Birthplace, Religion and Customs are quite strongly related and language is most weakly related.
+And Birthplace-religion pair plot is most strongly correlated. 
+
+```{r,echo=FALSE}
+combined <-
+        combined %>% mutate(level_c = ifelse(customs > mean(combined$customs), 'High', 'Low'))
+ggpairs(
+        combined,
+        columns = c('birhtplace','religion'),
+        aes(colour = level_c),title = 'Scatter & density plot of religion and birhtplace with custom levels.'
+)
+```
+  
+Looking at the scatter plot at left bottom corner, it seems that there is some linear relationship between birthplace and religion for 'High' values of customs while for 'Low' values it's not that obvious. Also it seems that for highest values of customs as religion scale value changes, birthplace values become almost constant. This is not evident in bivariate relationship.

@@ -1,0 +1,173 @@
+---
+title: "Mini-Project 1"
+author: "Rakshesh Shah, Krunal Patel, Dwipam Katariya"
+date: "January 29, 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo=FALSE}
+#Load standard libraries
+library(lattice)
+library(ggplot2)
+library(tidyr)
+#install.packages("gridExtra")  #need to install this packge
+library("gridExtra")
+```
+
+```{r echo=FALSE}
+#Read Data file
+hurricanes_data <- read.csv('Hurricanes_data.csv')
+```
+
+# Specific Question
+
+### Normality check of damage caused by feminine and masculine hurricanes
+```{r echo=FALSE,fig.height=2.5}
+qq_plot = ggplot(data = hurricanes_data, aes(sample = NDAM)) + stat_qq() +
+        facet_wrap( ~ Gender_MF, ncol = 2) + ggtitle("Normal QQ plot") + theme(plot.title = element_text(size=8))
+log_qq_plot = ggplot(data = hurricanes_data, aes(sample = log10(NDAM))) + stat_qq() +
+        facet_wrap( ~ Gender_MF, ncol = 2) + ggtitle("Normal QQ plot (log10 transformation)") + theme(plot.title = element_text(size=8))
+grid.arrange(qq_plot, log_qq_plot, ncol = 2)
+
+```
+
+*Comment*: Without taking any transformation, we can see bunch of outliers and right skewness in both female and male damage distributions. Moreover, both the distributions don't look like normal. Let's try to remove few outliers with observations beyond upper whisker.  
+
+```{r, echo = FALSE, fig.height = 2.5}
+M_hurricane = subset(hurricanes_data,hurricanes_data$NDAM<18890 & hurricanes_data$Gender_MF==0)
+F_hurricane = subset(hurricanes_data,hurricanes_data$NDAM<19583.75 & hurricanes_data$Gender_MF==1)
+hurricanes_data = rbind(M_hurricane,F_hurricane)
+qq_plot = ggplot(data = hurricanes_data, aes(sample = NDAM)) + stat_qq() +
+        facet_wrap( ~ Gender_MF, ncol = 2) + ggtitle("Normal QQ plot after outlier removal") + theme(plot.title = element_text(size=8))
+log_qq_plot = ggplot(data = hurricanes_data, aes(sample = log10(NDAM))) + stat_qq() +
+        facet_wrap( ~ Gender_MF, ncol = 2) + ggtitle("Normal QQ plot (log10 transformation) after Outlier removal") + theme(plot.title = element_text(size=8))
+grid.arrange(qq_plot, log_qq_plot, ncol = 2)
+```
+Yet, For Male there are few data points seems to be an outlier. After taking log transformation, both the distributions look better than previous time.We can't even see much outliers now. But, both distributions don't look like normal. So, we will stick to this transformation for further analysis.
+
+
+### Box plot of two distributions for Log10 Transformation
+
+```{r echo=FALSE,fig.height=2.5}
+gender_box = ggplot(hurricanes_data,aes(y=log10(NDAM),x=factor(Gender_MF),fill= 
+                                                factor(Gender_MF))) + geom_boxplot()
+ggplot(hurricanes_data,aes(x = log10(NDAM),fill=factor(Gender_MF))) + geom_density(alpha=0.2) + labs(x="Log Base 10 of NDAM",y="Density(Area Under the region is 1",title="Gender wise density distribution",fill = "Hurricane Gender") + scale_fill_discrete(labels = c("Male","Female"))
+gender_box = gender_box + xlab("Gender of Hurricane") + ylab("Damage Caused by Hurricane") +
+        theme_light() + scale_fill_discrete(name = "Gender",labels = c("M","F")) +ggtitle("Boxplot for damange caused according to gender name") + theme(plot.title = element_text(size=8),axis.title = element_text(size=8),legend.title = element_text(size=8))
+gender_box
+```
+*Comment*: As we can see in the boxplots of destruction caused by feminine and masculine hurricanes, Female NDAM has higher median than Male NDAM. NDAM with 
+Male has higher Spread than Female. 
+
+Let's see if there is a difference in spread though the there is not much difference in scale. Let's try on Log transformation. As median is robust to outliers,
+let's plot the spread location plot.  
+```{r echo=FALSE,warning=FALSE}
+library(ggplot2)
+M.NDAM = log10(hurricanes_data$NDAM[hurricanes_data$Gender_MF == 0])
+F.NDAM = log10(hurricanes_data$NDAM[hurricanes_data$Gender_MF == 1])
+grp.median = c(rep(median(M.NDAM),length(M.NDAM)),rep(median(F.NDAM),length(F.NDAM))) + runif(nrow(hurricanes_data),-0.2,0.2)
+M.NDAM = sqrt(abs(M.NDAM - median(M.NDAM)))
+F.NDAM = sqrt(abs(F.NDAM - median(F.NDAM)))
+
+df = data.frame(resid=c(M.NDAM,F.NDAM),gender = c(rep(0,length(M.NDAM)),rep(1,length(F.NDAM))),grp.median)
+ggplot(df,aes(x=grp.median,y=resid,col=factor(gender))) + geom_point() + labs(x="Group Median",y = "Residuals for MAD",title = "Spread-Location plot",color="Hurricane Gender") + scale_color_discrete(labels = c("Male","Female"))
+```
+  
+As the data is not enough to draw inference, spread-location plot does not give any inference.
+  
+### Relationship between two distibutions
+```{r echo=FALSE}
+female_ndma_data = sort(hurricanes_data$NDAM[hurricanes_data$Gender_MF == 1])
+male_ndma_data = sort(hurricanes_data$NDAM[hurricanes_data$Gender_MF == 0])
+qq.df = as.data.frame(qqplot(x=log10(male_ndma_data),y=log10(female_ndma_data),plot.it = FALSE))
+par(mfrow=c(1,2))
+two_qqplots = ggplot(qq.df,aes(x=x,y=y)) + geom_point() +  geom_abline() + ggtitle("Two Sample QQ plots") + theme(plot.title = element_text(size=8))
+turky_mean = ggplot(qq.df, aes(x= (x+y)/2, y =y-x)) + geom_point() +  geom_abline(slope = 0) + ggtitle("Turkey mean-difference plot") + theme(plot.title = element_text(size=8),axis.title = element_text(size=8))
+grid.arrange(two_qqplots,turky_mean,ncol=2)
+```
+
+*Comment*: After doing careful examination of QQ plot and mean-difference plot, we can't see any additive and multiplicative shift between these two distributions. Relationship between these two distribution is somewhat complicated.
+
+
+## Conclusion
+
+We can say that there is some meaningful difference between the distribution of damage caused by hurricanes with female names and the distribution of damage caused by hurricanes with male names, with complicated relationship. This also correlate with article that Hurricane with Female name are expected to have less damage caused and hence less protective actions taken. However in reality it did not happen and typically median went for Female NDAM might have gone higher than Male hurricane.  
+
+# Open Question
+
+We will check 'alldeaths' feature to find whether hurricanes with female names and hurricanes with male names have different effect or not.  
+
+### Normality check of 'alldeaths' feature by feminine and masculine hurricanes
+```{r echo=FALSE,fig.height=4.5}
+qq_plot = ggplot(data = hurricanes_data, aes(sample = alldeaths)) + stat_qq() +
+        facet_wrap( ~ Gender_MF, ncol = 2) + ggtitle("Normal QQ plot") + theme(plot.title = element_text(size=8))
+log_qq_plot = ggplot(data = hurricanes_data, aes(sample = log10(alldeaths+1))) + stat_qq() +
+        facet_wrap( ~ Gender_MF, ncol = 2) + ggtitle("Normal QQ plot \n(log10 transformation)") + theme(plot.title = element_text(size=8))
+
+#get NDMA data from Male and female data
+female_death = sort(hurricanes_data[hurricanes_data$Gender_MF==1,]$alldeaths)
+male_death = sort(hurricanes_data[hurricanes_data$Gender_MF==0,]$alldeaths)
+
+#log10 transformation
+female_death_log = log10(female_death+1)
+male_death_log = log10(male_death+1)
+
+
+#remove outliers for log10 (2 sd away)
+female_ndma_log_scale = scale(female_death_log)
+male_ndma_log_scale = scale(male_death_log)
+female_ndma_log1 = female_ndma_log_scale[(female_ndma_log_scale < 1.8 ) & (female_ndma_log_scale > -1.8)]
+male_ndma_log1 = male_ndma_log_scale[(male_ndma_log_scale < 1.8 ) & (male_ndma_log_scale > -1.8 )]
+##get original value from normalized data
+female_death_log <- female_ndma_log1 * attr(female_ndma_log_scale, 'scaled:scale') + attr(female_ndma_log_scale, 'scaled:center')
+male_death_log <- male_ndma_log1 * attr(male_ndma_log_scale, 'scaled:scale') + attr(male_ndma_log_scale, 'scaled:center')
+
+
+#merge into one dataframe
+hurricanes_data.trans <- rbind(data.frame(Type=rep('Male',length(male_death_log)),alldeaths= male_death_log), data.frame(Type=rep('Female',length(female_death_log)),alldeaths= female_death_log))
+
+log_qq_plot.trans = ggplot(data = hurricanes_data.trans, aes(sample = alldeaths)) + stat_qq() +
+        facet_wrap( ~ Type, ncol = 2) + ggtitle("Normal QQ plot \n(log10 transformation and \nOutlier removed)") + theme(plot.title = element_text(size=8))
+
+grid.arrange(qq_plot, log_qq_plot, log_qq_plot.trans,ncol = 3)
+```
+*Comment*: Without taking any transformation, we can see bunch of outliers and right skewness in both female and male damage distributions. Moreover, both the distributions don't look like normal.
+
+Both the distributions look better than previous time after taking log10 transformation. But, both distributions don't look like normal. 
+
+After taking log10 transformation, outliers are removed. Those points that are +- 1.5 Interquantile range away are considered as outliers
+
+We will stick to this transformation for further analysis.
+
+### Box plot of two distributions
+
+```{r echo=FALSE,fig.height=2.5}
+gender_box = ggplot(hurricanes_data,aes(y=log10(alldeaths+1),x=factor(Gender_MF),fill= 
+                                                factor(Gender_MF))) + geom_boxplot()
+gender_box = gender_box + xlab("Gender of Hurricane") + ylab("No.deaths Caused by Hurricane") +
+        theme_light() + scale_fill_discrete(name = "Gender",labels = c("M","F")) +ggtitle("Boxplot for No. deaths caused according to gender name") + theme(plot.title = element_text(size=8),axis.title = element_text(size=8),legend.title = element_text(size=8))
+gender_box
+```
+*Comment*: As we can see in the boxplots of no. of deaths caused by feminine and masculine hurricanes, both have reasonably same median and spread. So we are not sure about the destruction caused by feminine is reasonably different then masculine.
+
+### Relationship between two distibutions
+```{r echo=FALSE,fig.height=3}
+female_death_data = hurricanes_data$alldeaths[hurricanes_data$Gender_MF == 1]
+male_death_data = hurricanes_data$alldeaths[hurricanes_data$Gender_MF == 0]
+qq.df = as.data.frame(qqplot(x = male_death_data, y = female_death_data, plot.it = FALSE))
+par(mfrow = c(1, 2))
+two_qqplots = ggplot(qq.df, aes(x = x, y = y)) + geom_point() +  geom_abline() + ggtitle("Two Sample QQ plots") + theme(plot.title = element_text(size = 8))
+turky_mean = ggplot(qq.df, aes(x = (x + y) / 2, y = y - x)) + geom_point() +  geom_abline(slope = 0) + ggtitle("Tukey mean-difference plot") + theme(plot.title = element_text(size =8),axis.title = element_text(size = 8))
+grid.arrange(two_qqplots, turky_mean, ncol = 2)
+```
+
+*Comment*: After doing careful examination of QQ plot and mean-difference plot, we can't see any 
+
+
+## Conclusion
+
+We can say that there is somewhat meaningful difference between the distribution of No. deaths caused by hurricanes with female names and male names. We see hurricanes with female names have more deaths than hurricanes with male names.
