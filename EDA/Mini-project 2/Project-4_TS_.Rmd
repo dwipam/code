@@ -25,24 +25,24 @@ unemployment.series.df = data.frame(period = time(unemployment.series),unempRate
 ggplot(unemployment.series.df,aes(x = period,y = unempRate)) + geom_smooth(method = "loess",se=FALSE,method.args = list(degree=1),size = 0.3) + geom_line(size = 0.2) + geom_smooth(method = "lm",col="red",se=FALSE,size = 0.5) + labs(y = "Unemployment Rate")
 ```
 
-Clearly there seems to be some trend and some seasonality.Red line is the Linear fit, and blue line is the loess fit with degree = 1. It seems that there is an increasing trend over period of time for Linear fit. For Loess fit there was a small spike of unemployment during year 1975 - 1995. That's why there is a hump in the curve for Loess fit, but still comparing right and left tail, there is an increase in unemployment rate over all. This hump seems to to irregularity over the period of time, we will stick with Linear model as it generalizes better. There seems to be a season of 12 month, where unemploment rate starts with low gradually increases and falls down for the next month and patterns changing every 3-4 months. However we don't know if there is seasonality.  Let's fit trend and assess the residual to decompose the Time series into other components.
+There seems to be some trend and may be some seasonality. Red line is the Linear fit, and blue line is the loess fit with degree = 1. It seems that there is an increasing trend over period of time for Linear fit. For Loess fit there was a small spike of unemployment during year 1975 - 1995. That's why there is a hump in the curve for Loess fit, but still comparing right and left tail, there is an increase in unemployment rate over all. This hump seems to to irregularity over the period of time, we will stick with Linear model as it generalizes better. There seems to be a season of 12-13 month, where unemploment rate starts with low gradually increases and falls down for the next month and patterns changing every 3-4 months. However we are still unsure know if there is seasonality.  Let's fit trend and assess the residual to decompose the Time series into other components.
 
-```{r, warning = FALSE, echo = FALSE,fig.width=10,fig.height=6.5}
+```{r, warning = FALSE, echo = FALSE,fig.width=10,fig.height=6.2}
 unemployment.series.lo = lm(unempRate~period,data = unemployment.series.df)
 unemployment.series.lo.df = augment(unemployment.series.lo)
 ts.series = ts(unemployment.series.lo$residuals,frequency=12,start = 1948)
-unEmp.stl = stl(ts.series,s.window = 12,s.degree=1)
+unEmp.stl = stl(ts.series,s.window = 61,s.degree=1)
 year.cut = cut_number(time(ts.series),n = 3)
 unEmp.stl.df = data.frame(Period = time(ts.series),unEmp.stl$time.series,year.cut)
-ggplot(unEmp.stl.df,aes(x = Period,y = seasonal,col = year.cut)) + geom_line() + facet_wrap(~year.cut,ncol = 1,scales='free') + labs(title="Seasonal plot per 23 months") + scale_colour_discrete(labels = c("1948 - 1971","1972 - 1994","1997 - 2017"),name = "Period") + scale_x_continuous(breaks = seq(min(unEmp.stl.df$Period),max(unEmp.stl.df$Period),1))
+ggplot(unEmp.stl.df,aes(x = Period,y = seasonal,col = year.cut)) + geom_line() + facet_wrap(~year.cut,ncol = 1,scales='free') + labs(title="Seasonal plot per 23 years") + scale_colour_discrete(labels = c("1948 - 1971","1972 - 1994","1997 - 2017"),name = "Period") + scale_x_continuous(breaks = seq(min(unEmp.stl.df$Period),max(unEmp.stl.df$Period),1))
 cmo.df = data.frame(unEmp.stl.df,month = c(rep(seq(1,12),69),1))
 ```
   
 ```{r, warning = FALSE, echo = FALSE,fig.width=10, fig.height=3.1}
 ggplot(cmo.df,aes(x = Period,y = seasonal)) + geom_smooth(method="lm",se=FALSE) + facet_wrap(~factor(month)) + labs(title="Monthly variation in seasonality")
 ```
-  
-It seems that as the year increases unemployement rate during the seond half of the  around June increases. From 1995 to year 2000 there is repetitive pattern. For year 2014 - 2017 Both half of the year has equal highest unemployment rate. Looking at the monthly seasonal plot, it seems that there is decrease in unemployment rate over the period of 12 months. The slope of the line is decreasing from Month Jan - April while for months July, August, September, October increases and for november and december being somewhat normal.This also alligns with our pervious statement that unemployment rate is higher in first half of the year i.e. Jan - May. Now Let's assess the cycles and residuals from the model after fitting Trend and remainder.    
+After playing with s.window we found window with 61 months having more stable seasonal observation.  
+It seems that as the year increases unemployement rate during the seond half of the  around June increases. While unemployment rate for first half decreases. There is small decreases in second half from ~ 1975 - 1994 and then again increases.While for frist half there is a linear decrease as the year increases.     
 
 ```{r, warning = FALSE, echo = FALSE,fig.width=8, fig.height=2.0}
 #Re-fit to remainder+cycles as the TS is already decomposed and we want to assess other components.
@@ -70,3 +70,5 @@ ggplot(final.df,aes(x = Period, y = Incidence,col=Type)) + geom_line(size = 0.35
   
 Visually also it seems that, Cycles captures highest variance followed by Trend and then Seasonal. Hence our model is  
 y = Trend+Seasonal+Cycle+Residual(0,variance)
+  
+#Question 2:
