@@ -1,0 +1,12 @@
+x = "I am good what about you"
+
+def n_grams(x,n):
+	dic = {}
+	x = x.split()
+	for i in range(0,len(x)-n):
+		if ''.join(x[i:i+n]) in dic:
+			dic[''.join(x[i:i+n])] += 1		
+		else:
+			dic[''.join(x[i:i+n])] = 1
+	return dic
+print(n_grams(x,2))
