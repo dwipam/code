@@ -1,0 +1,53 @@
+---
+title: "Conversant"
+author: "Dwipam"
+date: "4/6/2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+```
+
+```{r}
+attrib = read.csv('Extracted_data.csv',header=TRUE,na = FALSE)
+per = table(attrib$Converted)
+per = per/sum(per) * 100
+repeated = (attrib[attrib$Userid %in% subset(data.frame(table(attrib$Userid)),Freq!=1)$Var1,])
+repeat_noVal = subset(repeated,First_channel==''& Converted==1)
+firstconv = repeat_noVal %>% 
+  select(Userid,event_timestamp,Last_date,First_date)%>%
+  inner_join(select(subset(repeated,Converted==0),Userid,event_timestamp,Last_date,First_date),by="Userid")
+attrib = subset(attrib,!(attrib$Userid %in% repeated$Userid))
+repeated = subset(repeated,(First_channel!='' & Converted==1))
+attrib = rbind(attrib,repeated)
+attrib = subset(attrib,device_types>0)
+attrib$Converted = as.factor(attrib$Converted)
+ attrib$event_timestamp = as.POSIXct(attrib$event_timestamp)
+attrib$First_date = as.POSIXct(attrib$First_date)
+attrib$Last_date = as.POSIXct(attrib$Last_date)
+write.csv(attrib,"Filtered_data.csv",row.names = FALSE)
+```
+
+```{r}
+library(dplyr)
+library(ChannelAttribution)
+library(ggplot2)
+library(reshape2)
+library(tidyr)
+markov = read.csv('markov.csv')
+markov  = subset(data.frame(table(markov$Converted,markov$Path)),Var2!='')
+markov = spread(markov,Var1,Freq)
+M = markov_model(markov,var_path = 'Var2',var_conv = '1',var_null = '0')
+colnames(M) = c('channel_name','Markov')
+M$Markov = (M$Markov/sum(M$Markov))*100
+H = heuristic_models(markov,var_path = 'Var2',var_conv = '1')
+H$first_touch = (H$first_touch/sum(H$first_touch))*100
+H$last_touch = (H$last_touch/sum(H$last_touch))*100
+H$linear_touch = (H$linear_touch/sum(H$linear_touch))*100
+
+H = melt(merge(M,H),id='channel_name')
+ggplot(H,aes(x = channel_name,y = value,fill=variable)) + geom_bar(stat='identity',position='dodge') + labs(x = "Channel Name",y = "Conversion effect in %", title = "Channel Attribution by different methods  ") +  guides(fill=guide_legend(title="Methods"))
+```
