@@ -76,6 +76,7 @@ Distribution by Technologies:-<br />
 Challenges:- <br />
   Noctober - Check model.ipnyb within Noctober Folder. Placed 3 winner on AnalyticsVidhya competition.<br />
   Telstra -  Check Telstra.ipnyb within Telstra challenge. <br />
+  Attribution - http://htmlpreview.github.io/?https://github.com/dwipam/code/blob/master/AttributionChallenge/Model.html
   
   If this readme is not understandable, write to: <br />
   ddkatari@iu.edu <br />
