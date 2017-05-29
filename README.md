@@ -48,16 +48,34 @@ Data Mining: <br />
   3. Data_mining/BUS_decoders/BUS_decoders/Code - has all the codes related to the project, for cleaning, merging the data. <br />
     Please check Readme_Data.txt, Readme_code.txt and Report.pdf
 
-Linear Regression - <br />
-    File to run - ml_assign_1.py <br />
-    Data - kc_house_data.gl <br />
-  
+Machine Learning(Self Implementations):
+1. Linear Regression - <br />
+    ml_assign_1.py <br />
+2. Ridge regression - <br />
+    self_implement/rig_regression.py <br />
+3. Lasso regression - <br/>
+    lass.py
+4. Time series - <br />
+    predict_18april_2may.R
+5. Bagging and Boosting(Adaboost) - <br />
+    mytree.py<br />
+6. Decision Tree - <br />
+    mytree.py <br />
+
+Practice folder is for the coding that I do in my spare time. <br />
+
+Exploratory Data Analysis :- In depth analysis before building predictive model <br />
+
+Bayesian A/B test :- Farm and multi-armed bandit problem simulation <br />
+
 Distribution by Technologies:-<br />
-  Python - Check for Artificial Intelligence Folder, dijkstra.py, and dfs.py <br />
+  Python - Check for Artificial Intelligence Folder, dijkstra.py, dfs.py and practice folder <br />
   R - Check for Data Mining Folder <br />
-  JAVA - Check for Algorithm folder and Data Mining- BetterCode.java <br />
-  
-  
+  JAVA - Check for Algorithm folder and Data Mining- BetterCode.java and practice folder <br />
+
+Challenges:- <br />
+  Noctober - Check model.ipnyb within Noctober Folder. Placed 3 winner on AnalyticsVidhya competition.<br />
+  Telstra -  Check Telstra.ipnyb within Telstra challenge. <br />
   
   If this readme is not understandable, write to: <br />
   ddkatari@iu.edu <br />
