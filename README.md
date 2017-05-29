@@ -64,7 +64,7 @@ Machine Learning(Self Implementations):
 
 Practice folder is for the coding that I do in my spare time. <br />
 
-Exploratory Data Analysis :- In depth analysis before building predictive model <br />
+Exploratory Data Analysis :- In depth analysis before building predictive model. After clicking on .html file, insert http://htmlpreview.github.com/? before the URL, for example http://htmlpreview.github.com/?https://github.com/dwipam/code/blob/master/EDA/s670-04.html  <br />
 
 Bayesian A/B test :- Farm and multi-armed bandit problem simulation <br />
 
