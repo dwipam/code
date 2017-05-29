@@ -63,10 +63,12 @@ Machine Learning(Self Implementations):
     mytree.py <br />
 
 Practice folder is for the coding that I do in my spare time. <br />
+
+
 Distribution by Technologies:-<br />
-  Python - Check for Artificial Intelligence Folder, dijkstra.py, and dfs.py <br />
+  Python - Check for Artificial Intelligence Folder, dijkstra.py, dfs.py and practice folder <br />
   R - Check for Data Mining Folder <br />
-  JAVA - Check for Algorithm folder and Data Mining- BetterCode.java <br />
+  JAVA - Check for Algorithm folder and Data Mining- BetterCode.java and practice folder <br />
 
 Challenges:- <br />
   Noctober - Check model.ipnyb within Noctober Folder. Placed 3 winner on AnalyticsVidhya competition.<br />
