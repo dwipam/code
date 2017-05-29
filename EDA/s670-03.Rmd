@@ -1,0 +1,220 @@
+---
+title: 'Lecture 03: Transformations'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 42--67.**
+
+Load `ggplot2`:
+
+```{r}
+library(ggplot2)
+```
+
+We'll also use an R workspace prepared by Cleveland to use in conjunction with the book. Among other things, this contains the data sets used in the book.
+
+```{r}
+load("lattice.RData")
+```
+
+### Log transformation
+
+In an intro course like S320/520, you learned to use the most common transformation, the log. The main reason we gave was that it often made positive data more normal. But there's another and perhaps more fundamental reason: It often leads to differences between samples that we can interpret as a *multiplicative shift*. Some statisticians will go as far as to recommend log transforming positive data by default, though by the end of Cleveland's chapter 2, we'll see an example where that backfires.
+
+We'll use the stereogram fusion time data in `fusion.time`, which contains the group variable `nv.vv` (where "NV" means no visual information and "VV" means visual information) and the quantitative variable `time` (a positive number.)
+
+We first draw a two-sample QQ plot of the data.
+
+```{r}
+time = fusion.time$time
+nv.vv = fusion.time$nv.vv
+NV.times = sort(time[nv.vv=="NV"])
+VV.times = sort(time[nv.vv=="VV"])
+NV.VV.qq = as.data.frame(qqplot(NV.times, VV.times, plot.it=FALSE))
+ggplot(NV.VV.qq, aes(x, y)) + geom_point() +
+  geom_abline()
+```
+
+The line $y=x$ doesn't fit the plot. It seems like a line through the origin with a smaller slope -- which would be equivalent to a multiplicative effect -- would be a good fit, but it's hard to visually work out where the line should go.
+
+Let's try a log transformation. In contrast to confirmatory data analysis, where natural logs are standard, in EDA it's usually much easier to understand what's going on if we use base 2 or base 10 logs.
+
+```{r}
+NV.times.log = sort(log2(time[nv.vv=="NV"]))
+VV.times.log = sort(log2(time[nv.vv=="VV"]))
+NV.VV.qq.log = as.data.frame(qqplot(NV.times.log, VV.times.log, plot.it=FALSE))
+ggplot(NV.VV.qq.log, aes(x, y)) + geom_point() +
+  geom_abline()
+```
+
+We can see the data is well-described by a straight line below $y=x$, indicating a multiplicative shift -- roughly speaking, the distribution of the VV times is the NV distributions multiplied by some constant (less than 1.)
+
+### Tukey mean-difference plot
+
+While the shift is pretty clear here, in messier cases it may be difficult to compare to the diagonal line. A *Tukey mean-difference* plot has the advantage that we can compare to the $x$-axis instead. It simply plots the difference $y-x$ against the mean $(x+y)/2$:
+
+```{r}
+ggplot(NV.VV.qq.log, aes((x+y)/2, y-x)) + geom_point()
+```
+
+The points are scattered somewher around $-0.75$ to $-0.5$ on the $y$-axis. That means the multiplicative constant is around $2^{-0.75}$ to $2^{-0.5}$, or 0.6 to 0.7. Our best guess is that the visual information decreases fusion time by 30--40%.
+
+### Power transformation
+
+The log transformation doesn't always work -- for a start, you can't log zero or a negative number. **Power transformations** allow a wider range of options. Define a power transformation with parameter $\tau$ to be $x^\tau$, and let the special case where $\tau = 0$ be the log transformation. Where practical, we'll hugely prefer $\tau = 1$ (no transformation), $\tau = 0$, or possibly $\tau = -1$ (inverse transformation) because they're much easier to interpret.
+
+We can try out a variety of values of $\tau$ on the fusion time data, and see what gives us a distribution close to normal.
+
+```{r}
+n.VV = length(VV.times)
+power = rep(seq(-1,1,0.25), each=n.VV)
+VV.time = c(VV.times^-1, VV.times^-.75, VV.times^-.5, VV.times^-.25, log(VV.times), VV.times^.25, VV.times^.5, VV.times^.75, VV.times)
+ggplot(data.frame(power, VV.time), aes(sample=VV.time)) + stat_qq() + facet_wrap(~power, scales="free")
+```
+
+Here $\tau$-values of 0 (the log transformation) and $-0.25$ give the straightest normal QQ plots. Since it's much, much easier to interpret $\log(\tau)$ than $\tau^{-0.25}$, we strongly prefer the log transformation.
+
+### Example: Food webs
+
+The data set `food.web` contains the quantitative variable `mean.length` (the average number of links in the food chains in an ecosystem) and the categorical variable `dimension` (whether the ecosystem is two-dimensional like a plain, three-dimensional like a forest, or mixed.) We want to compare the average food chain length across these three type of ecosystem. Start with uniform QQ plots:
+
+```{r}
+ggplot(food.web, aes(sample=mean.length)) +
+  stat_qq(distribution = qunif) +
+  facet_grid(~dimension)
+```
+
+There's a clear difference in scale: Some of the three-dimensional webs approach a mean length of 6, while none of the two-dimensional webs even makes it to 4.
+
+Is this a shift, or is there a difference in spread as well? This will be easier to see from the residuals. We'll display these in a **spread-location plot**:
+
+- The $x$-axis is the model estimate. Here I'll use the median since it's more resistant to outliers than the mean. Also, since the model is categorical, I'll add some random uniform noise (the size of the noise term can be determined by trial and error.)
+- The $y$-axis has some form of the residuals. Cleveland uses the square root of the absolute residuals: the absolute value transforms the equal spread problem into an equal location problem, while the square root transformation intends to reduce skewness.
+
+```{r}
+web.length = food.web$mean.length
+dimension = food.web$dimension
+n = nrow(food.web)
+median.3 = median(web.length[dimension=="Three"])
+median.2 = median(web.length[dimension=="Two"])
+median.mixed = median(web.length[dimension=="Mixed"])
+group.median = rep(NA, n)
+group.median[dimension == "Three"] = median.3
+group.median[dimension == "Two"] = median.2
+group.median[dimension == "Mixed"] = median.mixed
+jittered.medians = group.median + runif(n, -0.1, 0.1)
+root.abs.res = sqrt(abs(web.length - group.median))
+food.web.sl = data.frame(jittered.medians, root.abs.res, dimension)
+ggplot(food.web.sl, aes(jittered.medians, root.abs.res, col=dimension)) +
+  geom_point()
+```
+
+Pretty clearly the three sets of residuals are not all at the same average height. We also check for normality:
+
+```{r}
+ggplot(food.web, aes(sample = mean.length)) +
+  stat_qq() + facet_wrap(~dimension)
+```
+
+All the normal QQ plots look like they curve at least somewhat upward, indicating right skew. It looks like a transformation will help.
+
+The food web mean lengths are positive, so we'll first try a log transformation. We repeat the spread-location plot on the transformed data:
+
+```{r}
+log.web.length = log2(food.web$mean.length)
+median.3.log = median(log.web.length[dimension=="Three"])
+median.2.log = median(log.web.length[dimension=="Two"])
+median.mixed.log = median(log.web.length[dimension=="Mixed"])
+group.median.log = rep(NA, n)
+group.median.log[dimension == "Three"] = median.3.log
+group.median.log[dimension == "Two"] = median.2.log
+group.median.log[dimension == "Mixed"] = median.mixed.log
+jittered.medians.log = group.median.log + runif(n, -0.05, 0.05)
+root.abs.res.log = sqrt(abs(log.web.length - group.median.log))
+food.web.log.sl = data.frame(jittered.medians.log, root.abs.res.log, dimension)
+ggplot(food.web.log.sl, aes(jittered.medians.log, root.abs.res.log, col=dimension)) +
+  geom_point()
+```
+
+It's better but it still seems like there are differences between the three groups of residuals. We also check normality:
+
+```{r}
+ggplot(food.web, aes(sample = log(mean.length))) +
+  stat_qq() + facet_wrap(~dimension)
+```
+
+The lines still don't look as straight as they could be -- the log doesn't do enough to "normalize" the data.
+
+We could try out a number of transformations, but if $\tau=0$ didn't quite do enough, then $\tau=-1$, the inverse transformation, seems like the next candidate. Try the spread-location plot again:
+
+```{r}
+inv.web.length = 1/food.web$mean.length
+median.3.inv = median(inv.web.length[dimension=="Three"])
+median.2.inv = median(inv.web.length[dimension=="Two"])
+median.mixed.inv = median(inv.web.length[dimension=="Mixed"])
+group.median.inv = rep(NA, n)
+group.median.inv[dimension == "Three"] = median.3.inv
+group.median.inv[dimension == "Two"] = median.2.inv
+group.median.inv[dimension == "Mixed"] = median.mixed.inv
+jittered.medians.inv = group.median.inv + runif(n, -0.01, 0.01)
+root.abs.res.inv = sqrt(abs(inv.web.length - group.median.inv))
+food.web.inv.sl = data.frame(jittered.medians.inv, root.abs.res.inv, dimension)
+ggplot(food.web.inv.sl, aes(jittered.medians.inv, root.abs.res.inv, col=dimension)) +
+  geom_point()
+```
+
+This looks the bet of those we've seen. We can calculate the three group means:
+
+```{r}
+aggregate(root.abs.res.inv ~ dimension, FUN=mean)
+```
+
+They're close enough that the differences can be explained as noise. What about normality?
+
+```{r}
+ggplot(food.web, aes(sample = 1/mean.length)) +
+  stat_qq() + facet_wrap(~dimension)
+```
+
+These look straight. We're pretty happy with the inverse transformation. Furthermore, it's interpretable -- we only have to think in terms of chains per link rather than links per change (though note we're no longer strictly dealing with a "mean.")
+
+The spread is similar for all three QQ plots, suggesting that we might be able to pool the residuals. To check, this we create a vector of pooled residuals (`food.web.res` in the code below,) then draw a two-sample QQ plot for each of the three sets of residuals against the pooled set.
+
+```{r}
+food.web.lm = lm(inv.web.length ~ dimension)
+food.web.res = residuals(food.web.lm)
+res.qq.3 = qqplot(food.web.res, food.web.res[dimension == "Three"], plot.it=FALSE)
+res.qq.2 = qqplot(food.web.res, food.web.res[dimension == "Two"], plot.it=FALSE)
+res.qq.mixed = qqplot(food.web.res, food.web.res[dimension == "Mixed"], plot.it=FALSE)
+food.web.res.qq = data.frame(pooled = c(res.qq.3$x, res.qq.2$x, res.qq.mixed$x),
+  residual = c(res.qq.3$y, res.qq.2$y, res.qq.mixed$y),
+  dimension=c(rep("Three",length(res.qq.3$x)),
+  rep("Two",length(res.qq.2$x)),
+  rep("Mixed",length(res.qq.mixed$x))))
+ggplot(food.web.res.qq, aes(pooled, residual)) + geom_point() +
+  geom_abline() + facet_wrap(~dimension)
+```
+
+It's not perfect, but the three graphs look reasonably similar, so pooling is justifiable.
+
+We'll draw a residual-fit plot to see how much variation our model capture. Again, we'll use `gather()` to get our data in the right shape.
+
+```{r}
+food.web.fitted = sort(fitted.values(food.web.lm)) - mean(fitted.values(food.web.lm))
+n = length(inv.web.length)
+f.value = (0.5:(n - 0.5)) / n
+food.web.fit = data.frame(f.value, Fitted=food.web.fitted, Residuals=sort(food.web.res))
+library(tidyr)
+food.web.fit.long = food.web.fit %>% gather(type, value, Fitted:Residuals)
+ggplot(food.web.fit.long, aes(x=f.value, y=value)) +
+  geom_point() + facet_wrap(~type)
+```
+
+The fitted values are close together compared to the residuals. While the model may be useful, we should remember it only accounts for a fraction of the variation in the data.
+

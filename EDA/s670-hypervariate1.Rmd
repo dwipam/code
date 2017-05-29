@@ -1,0 +1,216 @@
+---
+title: 'Four variables'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 272--292.**
+
+### Environmental
+
+Load the usual:
+
+```{r}
+load("lattice.RData")
+library(ggplot2)
+library(GGally)
+library(broom)
+library(tidyr)
+```
+
+The `environmental` data set contains four variables measured in New York on 111 days from May to September 1973:
+
+- `ozone` in parts per billion;
+- `radiation` in Langleys;
+- `temperature` in degree Fahrenheit;
+- `wind` in miles per hour.
+
+We previously looked at the bivariate distribution between temperature and wind speed. Now we'll look at radiation, temperature, and wind as predictors of ozone.
+
+```{r}
+ggpairs(environmental)
+```
+
+The paired plots showed that ozone is related to all three of the other variables. Since it doesn't look like any of the other variables are strongly collinear, we keep all three predictors. The density plot of ozone shows strong right skew, so some transformation will probably be beneficial. After some experimentation (not shown here), a cube root transformation seems reasonable (if somewhat hard to interpret.)
+
+### Faceting the data
+
+To consider all four variables at once, we now have to facet two ways. That is, pick one predictor variable (here, radiation), then cut the other two predictors into categories and create a grid of faceted plots. In the grid below, left to right gives low to high temperature, while top to bottom gives low to high wind.
+
+```{r message=FALSE}
+ggplot(environmental, aes(x=radiation, y=ozone^(1/3))) + geom_point() + geom_smooth(span=1, method.args=list(degree=1, family="symmetric"), se=FALSE) + facet_wrap(~cut_number(wind, n=3) + cut_number(temperature, n=3))
+```
+
+This is getting complicated, so it would be nice to give names to the categories to keep track of what's going on. We do that in the code below. Note that it could be more efficient to write a function to do the naming.
+
+```{r message=FALSE}
+CubeRootOzone = environmental$ozone^(1/3)
+radiation = environmental$radiation
+temperature = environmental$temperature
+wind = environmental$wind
+radiation.cat = rep(NA, nrow(environmental))
+radiation.cat[radiation <= quantile(radiation, 1/3)] = "Low radiation"
+radiation.cat[radiation > quantile(radiation, 1/3) & radiation <= quantile(radiation, 2/3)] = "Medium radiation"
+radiation.cat[radiation > quantile(radiation, 2/3)] = "High radiation"
+radiation.cat = factor(radiation.cat, levels=c("Low radiation", "Medium radiation", "High radiation"))
+temperature.cat = rep(NA, nrow(environmental))
+temperature.cat[temperature <= quantile(temperature, 1/3)] = "Low temperature"
+temperature.cat[temperature > quantile(temperature, 1/3) & temperature <= quantile(temperature, 2/3)] = "Medium temperature"
+temperature.cat[temperature > quantile(temperature, 2/3)] = "High temperature"
+temperature.cat = factor(temperature.cat, levels=c("Low temperature", "Medium temperature", "High temperature"))
+wind.cat = rep(NA, nrow(environmental))
+wind.cat[wind <= quantile(wind, 1/3)] = "Low wind"
+wind.cat[wind > quantile(wind, 1/3) & wind <= quantile(wind, 2/3)] = "Medium wind"
+wind.cat[wind > quantile(wind, 2/3)] = "High wind"
+wind.cat = factor(wind.cat, levels=c("Low wind", "Medium wind", "High wind"))
+environmental.cat = data.frame(environmental, CubeRootOzone, radiation.cat, temperature.cat, wind.cat)
+ggplot(environmental.cat, aes(x=radiation, y=CubeRootOzone)) + geom_point() + geom_smooth(span=1, method.args=list(degree=1, family="symmetric"), se=FALSE) + facet_wrap(~wind.cat + temperature.cat)
+```
+
+Ozone tends to increase with radiation. The levels of the fits, however, also change from top to bottom and from left to right, so the other variables will help predict as well.
+
+Now make wind the main $x$-variable and facet on temperature and radiation.
+
+```{r message=FALSE}
+ggplot(environmental.cat, aes(x=wind, y=CubeRootOzone)) + geom_point() + geom_smooth(span=1, method.args=list(degree=1, family="symmetric"), se=FALSE) + facet_wrap(~temperature.cat + radiation.cat)
+```
+
+For once the error message is important. The high temperature, low radiation plot only has three observations. We make a mental note to *not* use the model for high temperature and low radiation situations later on because of the sparsity of data. Other than that, we see the relationship between ozone and wind is generally negative, though the slopes vary a lot.
+
+Finally, make temperature the main $x$-variable and facet on wind and radiation.
+
+```{r message=FALSE}
+ggplot(environmental.cat, aes(x=temperature, y=CubeRootOzone)) + geom_point() + geom_smooth(span=1, method.args=list(degree=1, family="symmetric"), se=FALSE) + facet_wrap(~wind.cat + radiation.cat)
+```
+
+The slopes are pretty positive and consistent this time. Higher temperatures are associated with higher ozone.
+
+### Where is there no data?
+
+Whenever the number of explanatory variables starts to get high, the **curse of dimensionality** becomes a concern: there may be large regions of predictor space where there's little or no data.
+
+We're used to this idea with one predictor:
+
+```{r message=FALSE}
+ggplot(environmental, aes(x=wind, y=CubeRootOzone)) + geom_point() + geom_smooth(span=2/3, method.args=list(degree=1))
+```
+
+As we go toward the extreme right, the confidence band gets wider, and then ggplot refuses to make any predictions to the right of the highest wind value -- that would be extrapolation. We wouldn't want to use our model to predict the ozone concentration if the wind were, say, 35 miles per hour.
+
+The same idea holds when there's more than one predictor, except the problem can be more subtle. Let's do a scatterplot of radiation against temperature.
+
+```{r}
+ggplot(environmental.cat, aes(x=temperature, y=radiation)) + geom_point()
+```
+
+Notice there are no observations in the bottom right corner. (We hinted at this when we faceted on both temperature and radiation above.) On the other hand, this is a fairly small corner of predictor space, so we might be able to ignore this.
+
+Now plot temperature against wind.
+
+```{r}
+ggplot(environmental.cat, aes(x=wind, y=temperature)) + geom_point()
+```
+
+This is potentially a greater concern, because the vast majority of the data falls within a fairly narrow diagonal band of predictor space. Eyeballing the graph, it looks like for each value of wind, there's a range of about 25 degrees of temperature for which observations are dense. We add lines to the plot:
+
+```{r}
+ggplot(environmental.cat, aes(x=wind, y=temperature)) + geom_point() + geom_abline(intercept = 112, slope = -2, color = "blue") + geom_abline(intercept = 87, slope = -2, color = "blue")
+```
+
+We shouldn't put too much creedence in our model outside the parallel lines. In addition, data is generally sparse outside temperatures of 60 to about 92 degrees and wind speeds outside 4 to 16 mph. We can *crop* predictor space and see if there are still "holes" in our data.
+
+```{r}
+crop = (wind > 4) & (wind < 16) & (temperature < (-2 * wind + 112)) & (temperature > (-2 * wind + 87)) & (temperature > 60) & (temperature < 92)
+environmental.crop = environmental.cat[crop,]
+ggpairs(environmental.crop, columns = 2:4)
+```
+
+Again, the main concern is the low radiation-high temperature corner, but it doesn't look that bad in context. We'll ignore it.
+
+### Visualizing the fit
+
+The advantage of reducing the predictor space is that it's safer to fit a model with interactions. We first try a nonparametric loess model with a high `span` to reduce the risk of overfitting. ~~We include all two-way interactions, but not the three-way, since that's very hard to fit with limited data, let alone understand.~~ Nope, it's too hard to omit the three-way, so just throw it in there. There didn't seem to be any horrible outliers, so we fit using least squares.
+
+```{r}
+environmental.lo = loess(CubeRootOzone ~ radiation * temperature * wind, span = 1)
+```
+
+Construct a grid and graph the relationship of fit to temperature, faceting on the other variables.
+
+```{r}
+loess.grid = expand.grid(radiation = min(radiation):max(radiation), temperature = c(60, 70, 80, 90), wind = c(4, 8, 12, 16))
+environmental.predict = predict(environmental.lo, newdata=loess.grid)
+environmental.df = data.frame(loess.grid, fit = as.vector(environmental.predict))
+crop.grid = (loess.grid$temperature < (-2 * loess.grid$wind + 112)) & (loess.grid$temperature > (-2 * loess.grid$wind + 87))
+environmental.df = environmental.df[crop.grid,]
+ggplot(environmental.df, aes(x = radiation, y = fit)) + geom_line() + facet_wrap(~wind + temperature, drop = FALSE) + labs(title = "Left to right: Increasing temperature; Top to bottom: Increasing wind")
+```
+
+The curves do seem to change slope going downward, justifying the radiation:wind interaction.
+
+Now graph the relationship of fit with wind:
+
+```{r}
+wind.grid = expand.grid(radiation = seq(50, 300, 50), temperature = c(60, 70, 80, 90), wind = seq(4, 16, 0.1))
+environmental.predict = predict(environmental.lo, newdata=wind.grid)
+environmental.df = data.frame(wind.grid, fit = as.vector(environmental.predict))
+wind.crop = (wind.grid$temperature < (-2 * wind.grid$wind + 112)) & (wind.grid$temperature > (-2 * wind.grid$wind + 87))
+environmental.df = environmental.df[wind.crop,]
+ggplot(environmental.df, aes(x = wind, y = fit)) + geom_line() + facet_wrap(~temperature + radiation, drop = FALSE, ncol=6) + labs(title = "Left to right: Increasing radiation; Top to bottom: Increasing temperature")
+```
+
+And the relationship of fit with temperature:
+
+```{r}
+temperature.grid = expand.grid(radiation = seq(50, 300, 50), temperature = 61:92, wind = c(4, 8, 12, 16))
+environmental.predict = predict(environmental.lo, newdata=temperature.grid)
+environmental.df = data.frame(temperature.grid, fit = as.vector(environmental.predict))
+temperature.crop = (temperature.grid$temperature < (-2 * temperature.grid$wind + 112)) & (temperature.grid$temperature > (-2 * temperature.grid$wind + 87))
+environmental.df = environmental.df[temperature.crop,]
+ggplot(environmental.df, aes(x = temperature, y = fit)) + geom_line() + facet_wrap(~wind + radiation, drop = FALSE, ncol=6) + labs(title = "Left to right: Increasing radiation; Top to bottom: Increasing wind")
+```
+
+Note that just about everything in these plots was curved, justifying the loess fit instead of `lm()`. In the last set, the slope seemed to change going downward, justifying the temperature:wind radiation.
+
+To look more closely at the radiation:temperature interaction, we'll take the last set of plots and collapse all the columns of top of each other.
+
+```{r}
+ggplot(environmental.df, aes(x = temperature, y = fit, group=radiation, color=radiation)) + geom_line() + facet_wrap(~wind, drop = FALSE, ncol=1) + labs(title = "Top to bottom: Increasing wind")
+```
+
+This is a nice one-plot summary of the model. (An alternative would be to draw contour plots faceted by the remaining explanatory variable; let's, uh, leave this as an exercise.) There's probably a little interaction between temperature and radiation, but not much. We could include or leave it out of the model depending on whether you prefer maximalism or minimalism.
+
+### Was the transformation a good idea?
+
+Homoscedasticity is a good goal: even if we don't strictly need it, it's usually a signal that we're on the right track. We can do our usual spread-location plot of root absolute residuals:
+
+```{r message=FALSE}
+environmental.lo.broom = augment(environmental.lo)
+ggplot(environmental.lo.broom, aes(x = .fitted, y = sqrt(abs(.resid)))) + geom_point() + geom_smooth(span = 1, method.args = list(degree = 1))
+```
+
+Looks like it was. (Trying out other transformations generally makes this plot worse.)
+
+Check for normality:
+
+```{r}
+environmental.lo.broom = augment(environmental.lo)
+ggplot(environmental.lo.broom, aes(sample = .resid)) + stat_qq()
+```
+
+It's surprisingly good, with no heavy tail or outlier issues. Least squares was an appropriate choice for our fitting method.
+
+Finally, compare the fitted values and the residuals.
+
+```{r}
+environmental.lo.broom$.fitted = environmental.lo.broom$.fitted - mean(environmental.lo.broom$.fitted)
+environmental.lo.long = environmental.lo.broom %>% gather(component, value, c(.fitted, .resid))
+ggplot(environmental.lo.long, aes(sample = value)) + stat_qq(distribution = "qunif") + facet_grid(~component)
+```
+
+We've explained a decent amount of the variation, though there's still a substantial amount left unexplained. That's okay: sometimes nature is inexplicable.

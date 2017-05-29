@@ -1,0 +1,191 @@
+---
+title: 'Bivariate data, part 2: Robust fits and loess details'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 110--134.**
+
+### Example: Carbon dating
+
+The data set `dating` contains paired observations giving the estimated ages of 19 coral samples in thousands of years using both `carbon` dating (the traditional method) and `thorium` dating (a modern and purportedly more accurate method.) What's the difference between these two methods?
+
+```{r}
+load("lattice.RData")
+library(ggplot2)
+ggplot(dating, aes(x=carbon, y=thorium-carbon)) + geom_point()
+```
+
+The first thing to note about this graph is that the $y$-values are always above zero, meaning thorium age is always above zero. The second thing to note is this difference increases with carbon age. Try adding a straight line to the plot:
+
+```{r}
+ggplot(dating, aes(x=carbon, y=thorium-carbon)) + geom_point() + geom_smooth(method="lm")
+```
+
+The line doesn't seem like it's doing a good job of describing the bivariate relationship for most of the data -- in particular, a lot of points are well above the line. To see why, plot the residuals.
+
+```{r}
+dating.lm = lm(thorium - carbon ~ carbon, data=dating)
+library(broom)
+dating.lm.df = augment(dating.lm)
+ggplot(dating.lm.df, aes(x=carbon, y=.resid)) + geom_point() + geom_abline(slope=0)
+```
+
+The issue is that the extreme value on the right-hand side is dragging the whole line down. Recall that outliers can have a large effect on a regression line. We could try using loess instead of a linear model, but this still isn't very satisfactory: 
+
+```{r}
+ggplot(dating, aes(x=carbon, y=thorium-carbon)) + geom_point() + geom_smooth()
+```
+
+The loess curve is still missing the group of four observations where the difference is about 3.5 to 4 thousand years, possibly because the observation at $(17, 1.9)$ is also something of an outlier.
+
+A better solution is to use a *robust* method to determine the best-fitting line, instead of least squares. The `rlm()` function in the `MASS` library (which should be installed by default) can fit such models, and can be called from within `geom_smooth()`. Let's see if it works just using the defaults:
+
+```{r}
+library(MASS)
+ggplot(dating, aes(x=carbon, y=thorium-carbon)) + geom_point() + geom_smooth(method="lm", se=FALSE) + geom_smooth(method="rlm", se=FALSE, col="orange")
+```
+
+Not only do we get an error message, it still seems like the robust (orange) line is pulled down a bit too much by the two low-lying points. We can either increase the number of iterations (`maxit`) or try a different kind of fit. Tukey's **bisquare** method can be helpful when there are convergence problems, as it downweights extreme outliers to have zero weight.
+
+```{r}
+ggplot(dating, aes(x=carbon, y=thorium-carbon)) + geom_point() + geom_smooth(method="lm", se=FALSE) + geom_smooth(method="rlm", se=FALSE, col="orange", method.args=list(psi=psi.bisquare))
+```
+
+Now the orange line completely misses the two extreme outliers, but it fits all the rest of the data much better. Looking at the residuals makes this obvious:
+
+```{r}
+age.diff = dating$thorium - dating$carbon
+carbon = dating$carbon
+dating.rlm = rlm(age.diff ~ carbon, psi = psi.bisquare)
+tidy(dating.rlm)
+dating.rlm.df = augment(dating.rlm)
+ggplot(dating.rlm.df, aes(x=carbon, y=.resid)) + geom_point() + geom_abline(slope=0)
+```
+
+Most of the residuals are scattered around zero, with the two exceptions being very large negative values. By using this robust method, we've managed to get a model that provides a very good fit for 17 out of 19 observations, though we must always keep in mind there will be some observations that don't fit the pattern. In addition, formal inference will be somewhat difficult. Look at the normal QQ plot of the residuals:
+
+```{r}
+ggplot(dating.rlm.df, aes(sample=.resid)) + stat_qq()
+```
+
+The outliers prevent the residuals from being well-modelled by a normal distribution, or even a symmetric one. So we should be very hesitant to make probabilistic statements about the data or model.
+
+### Particulates and the Babinet point
+
+Light is *polarized* when the waves oscillate in a plane and *unpolarized* when they vibrate in all directions. Sunlight becomes unpolarized when its angle is greater than the *Babinet point*. The Babinet point depends on the concentration of particulates in the air.
+
+The `polarization` data set in the `lattice.RData` workspace contains 355 observations from an experiment to find the Babinet point (in degrees) while varying the particulate concentration (in micrograms per cubic meter.)
+
+```{r}
+ggplot(polarization, aes(x=concentration, y=babinet)) + geom_point()
+```
+
+There's clearly a decreasing relationship. Note that because of rounding, some points are plotted on top of each other, so later we'll jitter the points a bit. First, we'll think about transformations. I'm usually against fractional powers, but because concentration has to do with volume it's reasonable to consider cube root transformations. We can compare powers of $1/3, -1/3$, and $-1$ to the untransformed data in terms of normality.
+
+```{r}
+n = nrow(polarization)
+power = rep(c(1,1/3,0,-1/3), each=n)
+concentration = polarization$concentration
+conc.trans = c(concentration, concentration^(1/3), log(concentration), concentration^(-1/3))
+ggplot(data.frame(power, conc.trans), aes(sample=conc.trans)) + stat_qq() + facet_wrap(~power, scales="free")
+```
+
+The cube root transformation comes closest to normality. (The tails might be a bit short, but this seems unimportant.) How does this look on a scatterplot?
+
+```{r}
+ggplot(polarization, aes(x=concentration^(1/3), y=babinet)) + geom_point()
+```
+
+We still have the problem of repeated $x$- and $y$-values, so we jitter. We could "unround" the data by adding random noise manually:
+
+```{r}
+ggplot(polarization, aes(x=(concentration+runif(n, -0.5, 0.5))^(1/3), y=babinet+runif(n, -0.05, 0.05))) + geom_point()
+```
+
+Or we could use the automatic `geom_jitter()` function:
+
+```{r}
+ggplot(polarization, aes(x=concentration^(1/3), y=babinet)) + geom_point() + geom_jitter()
+```
+
+The manual jittering arguably looks a little better, but really it doesn't make much difference.
+
+Let's now fit a **loess** curve to the data. Loess is a form of *local polynomial regression*, meaning that at every $x$-value, it fits a weighted polynomial model "locally": data at nearby $x$-values will be weighted heavily, while data at far away $x$-value will be downweighted or not considered at all if they fall outside a "neighborhood."" See a reliable nonparametric statistics text, or failing that, Luen's *Some of Nonparametric Statistics* for details.
+
+There are three main arguments to play around with:
+
+- `span`: The proportion of the data included in the neighborhood. Default is 0.75.
+- `degree`: The degree of polynomial fitted. Default is 2 (locally quadratic) but for data that isn't too wiggly, degree 1 (locally linear) may be less likely to do weird stuff at the extremes.
+- `family`: The default, `gaussian`, uses (weighted) least squares to fit the local polynomial. `symmetric` uses bisquare to be more resistant to outliers.
+
+If you're optimizing for prediction, then the tuning parameters should be found using cross-validation or some similar method. If you're doing EDA, playing around with the parameters until you get something that looks good is fine. Generally the default `span` works surprisingly adequately for non-weird data sets, while it's often worth trying both degrees 1 and 2 and visually determining which appears to give the better fit. It's also hard to say if `symmetric` definitely does better than least squares unless there are obvious outlier problems.
+
+Going back to the polarization data, let's compare the degree 1 and 2 fits.
+
+```{r}
+ggplot(polarization, aes(x=concentration^(1/3), y=babinet)) + geom_point() + geom_smooth(method.args=list(degree=1)) + geom_smooth(method.args=list(degree=2), col="orange") +
+geom_jitter()
+```
+
+The locally linear fit is in blue, while the locally quadratic fit is in orange. We see the orange fit is bent strong on the left hand side, but there isn't much data to justify this. Subjectively, I'd argue for the degree 1 fit.
+
+Other stuff to try:
+```{r}
+ggplot(polarization, aes(x=concentration^(1/3), y=babinet)) + geom_point() + geom_smooth(method.args=list(degree=1)) + geom_smooth(method.args=list(degree=1, family="symmetric"), col="orange") + geom_jitter()
+ggplot(polarization, aes(x=concentration^(1/3), y=babinet)) + geom_point() + geom_smooth(method.args=list(degree=1)) + geom_smooth(span=0.5, method.args=list(degree=1), col="orange") + geom_jitter()
+```
+
+There's no single right answer here. Let's try a degree 1 fit and leave everything else at its default. Now refit the model and plot the residuals with another loess fit. For residual plots, a degree 1 loess fit is often more appropriate than a quadratic:
+
+```{r}
+cuberootconc = (polarization$concentration)^(1/3)
+babinet = polarization$babinet
+polar.lo = loess(babinet ~ cuberootconc, degree=1)
+polar.lo.df = augment(polar.lo)
+ggplot(polar.lo.df, aes(x=cuberootconc, y=.resid)) + geom_point() + geom_smooth(method.args=list(degree=1)) + geom_abline(slope=0) + geom_jitter(height=0)
+```
+
+It doesn't look like there's any trend. The fact that there are quite a few large positive residuals for cube root concentration between 3.7 and 4.5 is a little bit worrying; we'll take a closer look at this later. Before that, we'll check normality:
+
+```{r}
+ggplot(polar.lo.df, aes(sample=.resid)) + stat_qq()
+```
+
+The normal distribution breaks down a bit at the edges. This is unfortunate but not a dealbreaker. To get an idea of how much variation we've explained, look at a residual-fit plot:
+
+```{r}
+polar.lo.df$.fitted = polar.lo.df$.fitted - mean(polar.lo.df$.fitted)
+library(tidyr)
+polar.lo.df.long = polar.lo.df %>% gather(type, value, c(.fitted, .resid))
+ggplot(polar.lo.df.long, aes(sample=value)) + stat_qq(distribution=qunif) + facet_grid(~type)
+```
+
+Note that we drew this a bit differently this time: we overwrote the fitted values with their mean-removed versions, then changed to long form and faceted by "type" (fitted value or residual.) The variation of the two graphs is comparable. We can also assess this quantitatively:
+
+```{r}
+var(polar.lo.df$.fitted)
+var(polar.lo.df$.resid)
+```
+
+To return to the earlier issue, we want to see if the distribution of the residuals changes with (cube root of) concentration. An easy way to do this is with side-by-side boxplots. We can "cut" the range of $x$-values into a given number of intervals, each with (approximately) equal numbers of observations:
+
+```{r}
+ggplot(polar.lo.df, aes(x=cuberootconc, y=.resid)) +
+  geom_boxplot(aes(group = cut_number(cuberootconc, n=15)))
+```
+
+Or we can specify the $x$-axis bins explicitly:
+
+```{r}
+ggplot(polar.lo.df, aes(x=cuberootconc, y=.resid)) +
+  geom_boxplot(aes(group = cut(cuberootconc, breaks=seq(2, 5, 0.25))))
+```
+
+Either way, it seems like the boxes certainly change as we go from left to right, and the change seems quite complicated (it's not merely heteroskedasticity.) So we've succeeded in modeling the trend, but it's much harder to draw probabilistic inferences. If we wanted to do this, the only good solution with such complex relationships is to get more data.
+

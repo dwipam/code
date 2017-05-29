@@ -1,0 +1,301 @@
+---
+title: 'Lecture 02: Fits and residuals'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 34--41.**
+
+Load our standard libraries:
+
+```{r}
+library(lattice)
+library(ggplot2)
+```
+
+### Aggregation and dot plots
+
+Last time we decided that the singer heights for each vocal part were well-approximated by normal distributions. Now we ask: What are the parameters of those distributions? Firstly, what are the mean heights for Soprano 1s, Soprano 2s, etc.? As you learned a long time ago, the "best" estimate of the population mean is the sample mean. We can use the `aggregate()` function to easily find the sample mean for each voice part.
+
+```{r}
+singer.means = aggregate(height~voice.part, FUN=mean, data=singer)
+```
+
+We now have one number for each of a set of categories. While this kind of data is traditionally displayed using a bar graph, a **dot plot** is arguably preferable, because they use position and not area to represent numbers. This is good because (i) humans are better at judging position than area, and (ii) for positions you don't have to start your axis at zero, while for areas you do. The `ggplot` function is `geom_point()`:
+
+```{r}
+ggplot(singer.means, aes(x=voice.part, y=height)) +
+  geom_point() 
+```
+
+Note that you can also draw box plots the other way around (the choice of axes is personal preference):
+
+```{r}
+ggplot(singer.means, aes(x=height, y=voice.part)) +
+  geom_point() 
+```
+
+### Models and residuals
+
+We now have a simple model for singer heights.
+
+Singer height = Average height for their voice part + some error
+
+If you've taken S431/631 or a similar regression course, you might recognize this as a special case of a linear model. If you haven't, well, it doesn't really matter much except we can use the `lm()` function to fit the model. The advantage of this is that `lm()` easily splits the data into **fitted values** and **residuals**:
+
+Observed value = Fitted value + residual
+
+Here the fitted values are just the sample averages for each voice part.
+
+```{r}
+singer.lm = lm(height ~ voice.part, data=singer)
+```
+
+We can extract the fitted values using `fitted.values(singer.lm)` and the residuals with `residuals(singer.lm)` or `singer.lm$residuals`.
+For convenience, we create a data frame with two columns: the voice parts and the residuals.
+
+```{r}
+singer.res = data.frame(voice.part=singer$voice.part, residual=residuals(singer.lm))
+```
+
+There are a few ways we can look at the residuals. Side-by-side boxplots give a broad overview:
+
+```{r}
+ggplot(singer.res, aes(x=voice.part, y=residual)) + geom_boxplot()
+```
+
+We also want to examine normality of the residuals, broken up by voice part. We do this by faceting:
+
+```{r}
+ggplot(singer.res, aes(sample = residual)) +
+  stat_qq() + facet_wrap(~voice.part, ncol=2) 
+```
+
+Not only do the lines look reasonably straight, the scales look similar for all eight voice parts. This suggests a model where all of the errors are normal with the *same* standard deviation. We propose this model:
+
+Singer height = Average height for their voice part + Normal($0, \sigma^2$) error.
+
+To see if this is a good fit, we **pool** the residuals and plot them. First let's try an ECDF plot:
+
+```{r}
+ggplot(singer.res, aes(x = residual)) +
+  stat_ecdf()
+```
+
+A normal distribution would give this S-shape, but so would many other distributions. To check normality directly, as usual we draw a normal QQ plot.
+
+```{r}
+ggplot(singer.res, aes(sample = residual)) +
+  stat_qq()
+```
+
+We'll also add a line with the mean of the residuals (which should be zero) as the intercept, and the SD of the residuals as the slope.
+
+```{r}
+round(mean(singer.res$residual), 3)
+round(sd(singer.res$residual), 3)
+```
+
+Pedantic note: We should use an $n-8$ denominator instead of $n-1$ in the SD calculation for degrees of freedom reasons. We can get this directly from the linear model:
+
+```{r}
+round(summary(singer.lm)$sigma, 3)
+```
+
+However, the difference between this and the SD above is negligible.
+
+Add the line:
+
+```{r}
+ggplot(singer.res, aes(sample = residual)) +
+  stat_qq() + geom_abline(intercept=0, slope=summary(singer.lm)$sigma)
+```
+
+The straight line isn't absolutely perfect, but it's doing a pretty good job. Our model is thus
+
+Singer height = Average height for their voice part + Normal($0, 2.5^2$) error.
+
+### Residual-fit spread
+
+A useful thing to do (moreso when the predictor is continuous, but still useful here) is to visually compare the spread of the fitted values with the spread of the residuals. This gives an intuitive idea of how much variation is captured by the model fit and how much remains in the residuals. To do this, we want to draw two panels next to each other on the same scale: a uniform QQ plot of the fitted values (after subtracting the overall mean) and a uniform QQ plot of the residuals. We'll do this fairly manually. The first goal is to get the fitted values and the residuals, and separately sort them:
+
+```{r}
+singer.fitted = sort(fitted.values(singer.lm)) - mean(fitted.values(singer.lm))
+singer.residuals = sort(residuals(singer.lm))
+```
+
+Now we calculate the $f$-values (there's only one set, since there's the same number of fitted values and residuals) and stick everything into a data frame.
+
+```{r}
+n = length(singer.residuals)
+f.value = (0.5:(n - 0.5)) / n
+singer.fit = data.frame(f.value, Fitted=singer.fitted, Residuals=singer.residuals)
+```
+
+We now have a problem: We have a data frame with 235 observations in three columns:
+
+f.value, Fitted, Residuals
+
+But to use faceting in `ggplot`, we'd like a data frame with (2 $\times$ 235) observations in these three columns:
+
+f.value, type, value
+
+where "type" is a categorical variable (either "Fitted" or "Residual") and "value" is the numerical value (either the fitted value or the residual.)
+
+We could easily manually hammer the data into the right form, but instead we'll learn a new tool to do this.
+
+### gather(): A lifesaver
+
+We'll use `gather()` in Hadley Wickham's `tidyr` library, which has saved the lives of countless frustrated R users in recent years. (You may need to install `tidyr` if you don't already have it.) `gather()`, as the names perhaps suggests, will take several variables and gathers them together, so you have more observations but fewer columns.
+
+```{r}
+library(tidyr)
+singer.fit.long = singer.fit %>% gather(type, value, Fitted:Residuals)
+```
+
+What did we just do? Let's illustrate with a simple example. Suppose you're studying the votes won by Clinton and Trump in 2016 in a few Indiana counties. You enter the data:
+
+```{r}
+Counties = c("Hamilton","Marion","Monroe","Tippecanoe","Vermillion")
+Clinton = c(2819, 212676, 34183, 27207, 2081)
+Trump = c(8530, 130228, 20527, 30711, 4511)
+Indiana = data.frame(Counties, Clinton, Trump)
+```
+
+Let's see what this looks like:
+
+```{r}
+print(Indiana)
+```
+
+Then you decide you want to do faceting, so you want to change the data to "long" form. That is,  instead of three columns of length 5, you want 3 columns of length 10. Use `gather()`:
+
+```{r}
+Indiana.long = Indiana %>% gather(Candidate, Votes, Clinton:Trump)
+```
+
+Let's see what we got:
+
+```{r}
+print(Indiana.long)
+```
+
+Now you can do faceting and all kinds of crazy stuff.
+
+Let's go back to the singer height residuals and draw our residual-fit plot.
+
+```{r}
+ggplot(singer.fit.long, aes(x=f.value, y=value)) +
+  geom_point() + facet_wrap(~type)
+```
+
+The spread of the fitted values is broadly similar to the spread of the residuals. The model fit accounts for a decent chunk of the variation, but a decent chunk remains in the residuals. You can of course quantify this using $r^2$ if your tastes run that way.
+
+### Interlude: Tibbles
+
+For large or complex data sets, *tibbles* are a minor improvement on data frames:
+
+- They print more elegantly;
+- They subset more predictably. e.g. When you use square brackets to subset a tibble, you always get another tibble. (With data frames you might get a vector or a data frame.)
+
+Generally though you can use them in all the same ways as you use data frames.
+
+Let's read in a .csv file on lengths of Billboard Hot 100 song s in 2000:
+
+```{r}
+billboard.raw = read.csv("https://github.com/hadley/tidy-data/raw/master/data/billboard.csv", stringsAsFactors = FALSE)
+```
+
+To turn this into a tibble, we use the `tbl_df()` function in the `dplyr` library.
+
+```{r}
+library(dplyr)
+billboard = tbl_df(billboard.raw)
+```
+
+The object `billboard` displays reasonably elegantly:
+
+```{r}
+billboard
+```
+
+### How long are songs?
+
+How long were the songs on the 2000 Hot 100? We see from the tibble display that the `time` column of our tibble is a character variable instead of numeric. It'll take some work to fix this.
+
+The immediate problem is the colon. All we want are the numbers before (the minutes) and after (the seconds) the colon for each entry. The function `strsplit` splits the strings:
+
+```{r}
+billboard.time = strsplit(billboard$time, ":")
+```
+
+`billboard.time` is now a list. Now we need to:
+
+- "unlist" `billboard.time` by making it into a matrix;
+- extract the two columns of the matrix (minutes and seconds) and make them numeric;
+- calculate the length of each song in seconds;
+- change this to minutes (because minutes are more intuitive than seconds);
+- replace the `time` column of `billboard.time` with this new numeric vector.
+
+```{r}
+billboard.time = matrix(unlist(billboard.time),
+  byrow=T, ncol=2)
+billboard.mins = as.numeric(billboard.time[,1])
+billboard.secs = as.numeric(billboard.time[,2])
+billboard.time = billboard.mins * 60 + billboard.secs
+billboard$time = billboard.time / 60
+```
+
+Depending on what we want to do, it may be useful to have the data in long form as well as in wide form. We use `gather()`:
+
+```{r}
+billboard.long <- billboard %>% gather(week, rank, x1st.week:x76th.week, na.rm = TRUE)
+billboard.long
+```
+
+Here `x1st.week:x76th.week` gathers all the columns from `x1st.week` to `x76th.week` and turns them into separate observations. Thus "Independent Women Part I" accounts for one observation in `billboard` but 28 observations in `billboard.long`, because it was on the charts for 28 weeks.
+
+Let's first go back to the wide form data. Using songs as the unit, here's a histogram of song lengths:
+
+```{r}
+ggplot(billboard, aes(x=time)) + geom_histogram(breaks=seq(2.5, 8, 0.25))
+```
+
+The majority of Hot 100 songs (maybe two-thirds) are between 3:15 and 4:30.
+
+Compare this to a histogram using song-weeks as the unit:
+
+```{r}
+ggplot(billboard.long, aes(x=time)) + geom_histogram(breaks=seq(2.5, 8, 0.25))
+```
+
+The $y$-axis scale has changed (since there are more observations.) However, the shape of the histogram is pretty much the same, suggesting that weighting by number of weeks on the chart doesn't make much difference.
+
+Let's facet by chart position. To avoid drawing 100 graphs, we use `subset()` to only consider the top 10 chart positions:
+
+```{r}
+ggplot(subset(billboard.long, rank <= 10), aes(x=time)) + geom_density() + facet_wrap(~rank, ncol=2)
+```
+
+I drew density plots instead of histograms because of the small samples. It's a bit hard to tell here whether the differences are systematic or noise.
+
+Finally, let's find mean song length by chart position.
+
+```{r}
+time.means = aggregate(time~rank, FUN=mean, data=billboard.long)
+```
+
+Rank is numeric, so it makes sense to draw a **line graph** using `geom_line()`:
+
+```{r}
+ggplot(time.means, aes(x=rank, y=time)) +
+  geom_line() 
+```
+
+There's still a lot of noise. (Later on we'll learn a bit about *smoothing*, which would help a lot here.) The one thing that seems apparent is the high ranks are noisier than low ranks. But that's just because the low ranks often have the same song appearing repeatedly (songs often stay in the top ten for ages, whilst they rarely stay in the nineties for more than a week.)
+

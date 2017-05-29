@@ -1,0 +1,169 @@
+---
+title: 'Truly 3D plots: Wireframes'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 249--267.**
+
+It's the lecturer's opinion that 3D plots are kind of overrated, but some people like them so here they are. `ggplot()` doesn't really do 3D plots, so we go to the `lattice` library for this section.
+
+### Galaxy data
+
+Let's return to the loess fit to the galaxy data from last time. Recall that north and west are positive; putting north on top, the slow parts of the galaxy were in the top left (northeast) and the fast parts of the galaxy were in the bottom right (southwest.) Firstly, we can use the `cloud()` function to plot the raw data in three dimensions.
+
+```{r, message=FALSE}
+load("lattice.RData")
+library(lattice)
+cloud(velocity ~ east.west * north.south, data=galaxy)
+```
+
+The arrows point toward more positive values of the variables: north, west, and high velocity respectively. (If you wanted numeric scales on the axes instead of just arrows, you could use `scatterplot3d()` in the library of the same name, but I find it near-impossible to accurately read numbers off 3D plots so I don't bother including them.) Now that we know what to look for, we see the data is consistent with low velocities in the northeast and high velocities in the southwest. This would be possible but somewhat hard to see if we didn't know what we were looking for.
+
+Now re-fit the loess model we chose last time, and make predictions on a grid.
+
+```{r}
+galaxy.lo = loess(velocity ~ east.west * north.south, data = galaxy, span = 0.25, family="symmetric", normalize=FALSE)
+galaxy.wf.grid = expand.grid(east.west=seq(-25,25,2), north.south=seq(-45,45,2))
+galaxy.wf.predict = predict(galaxy.lo, newdata=galaxy.wf.grid)
+galaxy.wf.df = data.frame(galaxy.wf.grid, fit=as.vector(galaxy.wf.predict))
+```
+
+To draw a truly 3D plot, we use `wireframe()`.
+
+```{r}
+wireframe(fit ~ east.west * north.south, data=galaxy.wf.df)
+```
+
+This is quite a bit clearer than the `cloud()` plot. In particular, the curvature of the fitted surface is apparent. The estimated velocity goes down a bit in the extreme southwest corner.
+
+With a wireframe plot, it's rare that one angle lets you see all relevant details of the fit. If you're just exploring the data on your own, the `rotate.wireframe()` function in the `TeachingDemos` library can be fun to play with (if a bit buggy.)
+
+```{r, eval=FALSE}
+# install.packages("TeachingDemos")
+library(TeachingDemos)
+rotate.wireframe(fit ~ east.west * north.south, data=galaxy.wf.df)
+```
+
+Of course, this doesn't fly if you're trying to prepare a document. You could build a Shiny app but that probably isn't going to be worth the effort. Instead, pick a few different angles, and show the wireframe from those angles.
+
+```{r}
+wireframe(fit ~ east.west * north.south, data=galaxy.wf.df, screen = list(z=30, x=-60, y=0))
+wireframe(fit ~ east.west * north.south, data=galaxy.wf.df, screen = list(z=120, x=-60, y=0))
+wireframe(fit ~ east.west * north.south, data=galaxy.wf.df, screen = list(z=210, x=-60, y=0))
+wireframe(fit ~ east.west * north.south, data=galaxy.wf.df, screen = list(z=300, x=-60, y=0))
+```
+
+Here we kept the $x$ and $y$ angles fixed, while rotating $z$ by 90 degrees each time. The effect is to "spin" the surface around while keeping the "camera" fixed.
+
+Finally, we can "fill in" in the wireframe using the `drape` argument.
+
+```{r}
+wireframe(fit ~ east.west * north.south, data = galaxy.wf.df, screen = list(z=120, x=-60, y=0), drape=TRUE)
+```
+
+You can play around with the color scheme using the `col.regions` argument. All this is getting dangerously close to chartjunk territory, though.
+
+### Ethanol data
+
+We now return to the ethanol engine data. Recall that the curves relating NOX to equivalence ratio (E) were close in shape but not identical for all five values of compression ratio (C). If we cloud plot the data and look at it "front-on," i.e. with C going into the screen, we get something that's almost a 2D scatterplot of NOx against E.
+
+```{r}
+cloud(NOx ~ C * E, data=ethanol, screen = list(z=90, x=-90, y=0))
+```
+
+We can try coloring the plot by levels of C:
+
+```{r}
+cloud(NOx ~ C * E, data=ethanol, screen = list(z=90, x=-90, y=0), groups=C)
+```
+
+Now we can see the blue points (for example) are lower than the others on the right hand side, while they're similar to the other colors on the left. (Again, this is easier to see in retrospect after having studied the data.) We could try to make this plot look nicer by fiddling with the color scheme or adding a legend, but we'll be better off instead looking at the loess surface we fitted to the data. Re-fit the model and look at it head-on:
+
+```{r}
+ethanol.lo = loess(NOx ~ C * E, data=ethanol, span=1/3, parametric="C", drop.square="C", family="symmetric")
+ethanol.grid = expand.grid(C=c(7.5,9,12,15,18), E=seq(0.6, 1.2, 0.1))
+ethanol.predict = predict(ethanol.lo, newdata=ethanol.grid)
+ethanol.df = data.frame(ethanol.grid, fit=as.vector(ethanol.predict))
+wireframe(fit ~ C * E, data=ethanol.df, screen=list(z=90, x=-90, y=0))
+```
+
+We see that the height of the surface (the fitted value) gets taller as C increases. Note, however, that changing the angles by just a few degrees make this seem to disappear.
+
+```{r}
+wireframe(fit ~ C * E, data=ethanol.df, screen=list(z=92, x=-97, y=0))
+```
+
+The issue is *foreshortening* -- things that are further away look smaller. To better understand foreshortening, look at a bunch of Italian Renaissance paintings. For our purposes, it's enough to remember that the choice of angle is important, so make sure to try out a few.
+
+For this fit, looking somewhat from the side makes the change in height clearer:
+
+```{r}
+wireframe(fit ~ C * E, data=ethanol.df, screen=list(z=30, x=-60, y=0))
+```
+
+Now it's obvious that higher C generally means somewhat higher NOx. Again, you need more than one angle to see all of what's going on.
+
+### Soil
+
+The Cleveland data set `soil` contains measurements on resistivity (in ohm cm) in a field in Western Australia. The locations are given by "easting" and "northing" coordinates, which just measure distance from an origin in kilometers.
+
+```{r}
+library(ggplot2)
+ggplot(soil, aes(x=easting, y=northing)) + geom_point() + coord_fixed()
+```
+
+We see the locations occur along a number of "tracks", which are recorded in the `track` variable. Some tracks are north-south while others are east-west; this is recorded in the variable `is.ns`. To see how the resistivity varies by coordinate, we'll first subset by track direction, then facet by track.
+
+```{r}
+ggplot(subset(soil, is.ns == TRUE), aes(x=northing, y=resistivity)) + geom_point() + facet_wrap(~track, ncol=4)
+```
+
+Looking at the north-south tracks, the patterns aren't very consistent. There are a bunch of spikes occurring at seemingly random locations.
+
+Now try the east-west tracks:
+
+```{r}
+ggplot(subset(soil, is.ns == FALSE), aes(x=easting, y=resistivity)) + geom_point(size=0.5) + facet_wrap(~track, ncol=8)
+```
+
+We see that there's usually a downward trend in resistivity as the easting coordinate increases. However, this doesn't show up in all the plots.
+
+We fit a loess model to the data, predicting resistivity from the easting and northing coordinates (with an interaction.)
+
+```{r}
+soil.lo = loess(resistivity ~ easting * northing, span = 0.25, data=soil)
+```
+
+Now predict on a grid and plot the fit using color and contours.
+
+```{r}
+soil.grid = expand.grid(easting = seq(0, 1.5, 0.01), northing = seq(0, 3.5, 0.01))
+soil.predict = predict(soil.lo, newdata=soil.grid)
+soil.df = data.frame(soil.grid, fit=as.vector(soil.predict))
+ggplot(soil.df, aes(x=easting, y=northing, z=fit, fill=fit)) + geom_raster() + geom_contour(binwidth=10, color="black") + scale_fill_distiller(palette="RdBu") + coord_fixed()
+```
+
+There's a clear peak around $(0.75, 2.1)$, along with a smaller peak near $(0.6, 0.9)$.
+
+The complexity of the surface means that a wireframe plot isn't well-suited to displaying the fit. You can use `surf3D()` in the `plot3D` library:
+
+```{r}
+# install.packages("plot3D")
+library(plot3D)
+east.grid = seq(0, 1.5, 0.01)
+north.grid = seq(0, 3.5, 0.01)
+mesh.grid = mesh(east.grid, north.grid)
+fit.grid = matrix(soil.predict, nrow=length(east.grid))
+surf3D(mesh.grid$x, mesh.grid$y, fit.grid, theta=0, col = ramp.col(col = c("blue", "red"), n = 10))
+```
+
+It's unclear whether this is of any real data analytic value. It looks cool, I guess.
+
+
+

@@ -1,0 +1,127 @@
+---
+title: 'Bivariate data, part 3: Robust fits and loess details'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 136--151.**
+
+### Fly eyes: Fixed $x$-values
+
+The data set `fly` contains two variables from an experiment about breeding flies (see Hersh, The effect of temperature upon the heterozygotes in the series of Drosophilia):
+
+- `temperature` of the aquarium in which flies were hatched (in degrees Celsius);
+- `facet`: a measure of the number of facets in a fly's eye (on an "essentially logarithmic" scale.)
+
+```{r}
+load("lattice.RData")
+library(ggplot2)
+ggplot(fly, aes(x=temperature, y=facet)) + geom_point()
+```
+
+With only nine $x$-values, many observations are on top of each other. Jitter the data:
+
+```{r}
+ggplot(fly, aes(x=temperature, y=facet)) + geom_point() + geom_jitter()
+```
+
+The facet variable looks like it decreases approixmately linearly with temperature. However, the data at $x=23$ seems to be a bit lower than we'd expect given the rest of the data. R.A. Fisher did an analysis of variance that found the deviations from the line were statistically significant, but that doesn't tell you much other than the probability model isn't literally true.
+
+Another way to visualize this is through side-by-side box plots:
+
+```{r}
+ggplot(fly, aes(x=factor(temperature), y=facet)) + geom_boxplot()
+```
+
+The decreasing trend is again apparent. Can the data be well-modeled by a linear model with normal errors? Boxplots aren't a good guide to the shape of distributions, so let's draw normal QQ plots.
+
+```{r}
+ggplot(fly, aes(sample=facet)) + stat_qq() + facet_wrap(~temperature, ncol=3)
+```
+
+The plots generally look like straight lines: the last one (for 31 degrees) might be a bit off, but that's a small concern. Furthermore, the slopes look similar for each plot, which is consistent with homoscedasticity.
+
+We now try fitting the linear model. Instead of drawing the line over all the data (which is messy due to the repeated $x$-values,) we plot the mean for each $x$-value.
+
+```{r}
+facet.means = aggregate(facet~temperature, mean, data=fly)
+facet.lm = lm(facet~temperature, data=fly)
+ggplot(facet.means, aes(x=temperature, y=facet)) + geom_point() + geom_abline(intercept=facet.lm$coe[1], slope=facet.lm$coe[2])
+```
+
+The line fits the means well, and the mean for 23 degrees doesn't seem like it's too far from the line. To look at this more clearly, plot the mean residual for each $x$:
+
+```{r}
+library(broom)
+facet.lm.df = augment(facet.lm)
+facet.resid.means = aggregate(.resid~temperature, mean, data=facet.lm.df)
+ggplot(facet.resid.means, aes(x=temperature, y=.resid)) + geom_point() + geom_abline(slope=0)
+```
+
+The largest residuals are a bit over 1 degree in magnitude. According to the original paper, when the experiment was performed, the temperature in the 23 aquarium varied by up to 3 degrees. Looking at the last two residual plots, this would be a sufficient explanation for the large residual for that $x$-value.
+
+### Truly bivariate data: Wind and temperature
+
+The data set `environmental` contains `temperature` and `wind` measurements on 111 days from May to September 1973. This data is "truly" bivariate, in that it's not appropriate to declare one variable as explanatory and one as the response: both variables depend on each other in some sense. We still start by drawing a (jittered) scatterplot, arbitrarily taking `temperature` as our $x$-variable:
+
+```{r}
+ggplot(environmental, aes(x=temperature, y=wind)) + geom_point() + geom_jitter()
+```
+
+This doesn't too far from the ellipse shape that we see with bivariate normal data. To examine normality more carefully, draw QQ plots. First, temperature:
+
+```{r}
+ggplot(environmental, aes(sample=temperature)) + stat_qq()
+```
+
+Next, wind:
+
+```{r}
+ggplot(environmental, aes(sample=wind)) + stat_qq()
+```
+
+There's a little bit of non-normality in the tails of both distributions, especially temperature. Too bad.
+
+We can model the trend both ways: wind as a function of temperature, and temperature as a wind a function of wind. We could plot both fits on one graph but really that's too much effort, so we'll just do the two separately.
+
+```{r}
+ggplot(environmental, aes(x=temperature, y=wind)) + geom_point() + geom_jitter() + geom_smooth(method.args=list(degree=1))
+ggplot(environmental, aes(x=wind, y=temperature)) + geom_point() + geom_jitter() + geom_smooth(method.args=list(degree=1))
+```
+
+The average wind decreases just about linearly in temperature, while the average temperature has a curved decreasing relationship with wind. This isn't a paradox: when we leave the comfortable world of bivariate normal data, relationships may not be nice and symmetric when you interchange the variables.
+
+### Equal scales: Ozone
+
+The `ozone` data set contains paired measurements of ozone concentration (in parts per billion) at Yonkers, NY and Stamford, CT. Since we've measuring the same variable at the two locations, it makes sense to use the same scales for both axes. The `coord_fixed()` function takes care of this.
+
+```{r}
+ggplot(ozone, aes(x=yonkers, y=stamford)) + geom_point() + geom_abline() + coord_fixed()
+```
+
+The points are almost all above the line $y=x$, so ozone is typically higher at Stamford. The data looks like it could be well-modeled by a straight line. To investigate further, we draw a Tukey mean-difference plot.
+
+```{r}
+ggplot(ozone, aes(x=(yonkers+stamford)/2, y=stamford-yonkers)) + geom_point() + geom_abline(slope=0) + geom_smooth(method.args=list(degree=1)) + coord_fixed()
+```
+
+The loess fit is roughly consistent with an upward-sloping straight line. Since the line isn't horizontal, an additive shift isn't appropriate; perhaps a multiplicative shift would be better. Redraw the scatterplot with both variables logged:
+
+```{r}
+log.ozone = data.frame(log.yonkers = log2(ozone$yonkers), log.stamford = log2(ozone$stamford))
+ggplot(log.ozone, aes(x=log.yonkers, y=log.stamford)) + geom_point() + geom_abline() + coord_fixed()
+```
+
+It looks like a line parallel to $y=x$ might be a good fit. To get a better idea, draw the mean-difference plot.
+
+```{r}
+ggplot(log.ozone, aes(x=(log.yonkers+log.stamford)/2, y=log.stamford-log.yonkers)) + geom_point() + geom_abline(slope=0) + geom_smooth(method.args=list(degree=1)) + coord_fixed()
+```
+
+We see that a multiplicative shift is nearly right, but we can do a bit better. There's a little bit of an upward slope in the fitted curve, going from about 0.5 on the left to 0.9 on the right. Back-transformed, that means on low-ozone days in Yonkers, the Stamford ozone concentration is typically about 40% higher; while on high-ozone days in Yonkers, the Stamford ozone concentration is typically about 90% higher.
+

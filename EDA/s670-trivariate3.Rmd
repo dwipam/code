@@ -1,0 +1,188 @@
+---
+title: 'Contour plots'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 228--248.**
+
+### Velocities of the NGC 7531 galaxy
+
+The data frame `galaxy` contains 323 measurements of velocity for locations in galaxy NGC 7531.
+
+```{r}
+load("lattice.RData")
+summary(galaxy)
+```
+
+`velocity` (in km/second) is the response variables, and the locations along `east.west` and `north.south` coordinates are the main explanatory variables. (North and west are positive -- if you lie on your back with your head pointing north, then west is to your right.) First, we simply look where the measurements were taken:
+
+```{r}
+library(ggplot2)
+ggplot(galaxy, aes(x=east.west, y=north.south)) + geom_point() + coord_fixed()
+```
+
+We see the measurements were taken along seven different lines ("slits".) The variables `radial.position` and `angle` give the locations in polar coordinates.
+
+How does velocity vary with location? We first facet by the `velocity` variable.
+
+```{r}
+ggplot(galaxy, aes(x=east.west, y=north.south)) + geom_point() + geom_jitter(width=0.5, height=0.5) + facet_wrap(~cut_number(velocity, n=12), ncol=6) + coord_fixed() + labs(title="Galaxy locations split by velocity")
+```
+
+The slowest locations are in the top left panel -- these are all in the northeast. The fastest locations in the bottom right panel -- these are in the southwest.
+
+We can also look at the velocities as a function of `radial.position`, faceted by `angle`.
+
+```{r, message=FALSE}
+ggplot(galaxy, aes(x=radial.position, y=velocity)) + geom_point() + geom_smooth() + facet_wrap(~angle, ncol=4) + labs(title="Galaxy position and velocity split by slit angle")
+```
+
+For each angle, we see a nonmonotonic relationship. The magnitude of the variation in velocities varies a lot -- it's big at 92.5 to 111 degrees (NNE to SSW), and small for 12.5 and 43 degrees (WNW to ESE.)
+
+### Modeling galaxy velocities
+
+We fit a full loess model with interaction. We add the argument `normalize=FALSE`, which is appropriate when the two explanatory variables are on the same scale and we don't want to standardize them. By trial and error, a smoothing parameter `span = 0.25` seems about right.
+
+```{r, message=FALSE}
+galaxy.lo = loess(velocity ~ east.west * north.south, data = galaxy, span = 0.25, family="symmetric", normalize=FALSE)
+```
+
+We create a data frame with the original variables as well as the fitted values and residuals:
+
+
+```{r}
+galaxy.lo.df = data.frame(galaxy,
+  .fitted = fitted.values(galaxy.lo),
+  .resid = residuals(galaxy.lo))
+```
+
+Now redraw the above plot faceted by angle with the fit added.
+
+```{r}
+ggplot(galaxy.lo.df, aes(x=radial.position, y=velocity)) + geom_point() + geom_line(aes(x=radial.position, y=.fitted), color="blue") + facet_wrap(~angle, ncol=4) + labs(title="Galaxy position and velocity split by slit angle with fitted model")
+```
+
+The model provides the right general shape to the data in polar coordinates. We take a closer look at the residuals:
+
+```{r, message=FALSE}
+ggplot(galaxy.lo.df, aes(x=radial.position, y=.resid)) + geom_point() + geom_smooth(span=1) + facet_wrap(~angle, ncol=4) + labs(title="Galaxy position and residuals split by slit angle with fitted model")
+```
+
+The 92.5 degrees plot is somewhat bad -- it slopes down and it appears heteroskedastic. There's a bit more slope and/or curvature in the others than we would expect under random error as well. Nevertheless, we'll keep our model for simplicity.
+
+We now do our usual residual diagnostics. The spread-location plot of transformed residuals:
+
+```{r, message=FALSE}
+ggplot(galaxy.lo.df, aes(x=.fitted, y=sqrt(abs(.resid)))) + geom_point() + geom_smooth(method.args=list(degree=1))
+```
+
+The magnitude of the residuals may increase slightly with fitted value, but it's not so bad that it would demand a transformation.
+
+Normal QQ plot of the residuals:
+
+```{r}
+ggplot(galaxy.lo.df, aes(sample=.resid)) + stat_qq()
+```
+
+The errors aren't normal. The extreme values are too extreme.
+
+Finally, the residual-fit comparsion:
+
+```{r}
+galaxy.fit = galaxy.lo.df$.fitted - mean(galaxy.lo.df$.fitted)
+galaxy.resid = galaxy.lo.df$.resid
+library(tidyr)
+galaxy.lo.long = data.frame(galaxy.fit, galaxy.resid) %>% gather(component, velocity)
+ggplot(galaxy.lo.long, aes(sample=velocity)) + stat_qq(distribution="qunif") + facet_grid(~component)
+```
+
+The fitted values are very spread out compared to the residuals. The model explains most of the variation.
+
+### Visualizing the fit: geom_raster and geom_contour
+
+To prepare for plotting, let's make predictions on a rectangular grid, and put the results in a data frame, `galaxy.plot.df`.
+
+```{r}
+galaxy.grid = expand.grid(east.west=seq(-25,25,0.5), north.south=seq(-45,45,0.5))
+galaxy.predict = predict(galaxy.lo, newdata=galaxy.grid)
+galaxy.plot.df = data.frame(galaxy.grid, fit=as.vector(galaxy.predict))
+```
+
+Because of the interaction in the loess, the techinques we've used previously that condition on explanatories aren't going to be sufficient. One option is to use `geom_raster()` to indicate the third variable using color. (`geom_tile()` can be used instead for non-rectangular data.)
+
+```{r}
+ggplot(galaxy.plot.df, aes(x=east.west, y=north.south, fill=fit)) + geom_raster() + coord_fixed() + scale_fill_distiller(palette="RdYlBu")
+```
+
+It's often quite hard to find a color palette that clearly displays all the features you want to make apparently.
+One solution is to facet on the fitted value. We cut the above plot into a large number of pieces by fitted value, then draw a grid of plots.
+
+```{r}
+ggplot(galaxy.plot.df, aes(x=east.west, y=north.south, fill=fit)) + geom_raster() + coord_fixed() + scale_fill_distiller(palette="RdYlBu") + facet_wrap(~cut_number(fit, n=16), ncol=4)
+```
+
+The basic pattern is clear: the fitted velocities are small in the northeast and generally increase as you move toward the southwest, though the details are complicated.
+
+Alternatively, we can make the shapes clear on the original graph by adding **contours**. A contour is a curve that joins together points that have the same value of the $z$-variable. `geom_contour()` gives the basic contour plot:
+
+```{r}
+ggplot(galaxy.plot.df, aes(x=east.west, y=north.south, z=fit)) + geom_raster(aes(fill = fit)) + coord_fixed() + scale_fill_distiller(palette="RdYlBu") + geom_contour()
+```
+
+We can see, for example, a circle of points in the southwest all have the same fitted value. The coloring makes it clear this is a high value (velocity over 1700 km/second.) The northeast has the lowest fitted values.
+
+A final choice is to skip the raster part and go straight to the contours.
+
+```{r}
+ggplot(data.frame(galaxy.grid, fit=as.vector(galaxy.predict)), aes(x=east.west, y=north.south, z=fit)) + geom_contour(binwidth=10, aes(color=..level..)) + coord_fixed()
+```
+
+If relying on contours alone, they need to be fairly dense to get the details of the distribution across. Note that labeling the contours by putting numbers directly on the graph is very hard to do within `ggplot` (if you must, use `contourplot` in the `lattice` library instead.)
+
+### Contour plots for bivariate densities
+
+The other major use for contour plots is to display density estimates for bivariate data. The ggplot function `stat_density_2d` does bivariate density estimation. We apply it to the data set `geyser`, which contains bivariate data on the waiting time until eruption and the duration of the subsequent eruption (both in minutes) for 299 successive eruptions of Old Faithful in 1985:
+
+```{r}
+library(MASS)
+ggplot(geyser, aes(x=waiting, y=duration)) + geom_point() + stat_density_2d()
+```
+
+The data appears trimodal: we get short wait/long eruption, long wait/long eruption, and long wait/short eruption. We don't get short wait/short eruption.
+
+We could also look at this by coloring in between the contours to get a solid surface:
+
+```{r}
+ggplot(geyser, aes(x=waiting, y=duration)) + stat_density_2d(aes(fill=..level..), geom="polygon")
+```
+
+The general message is the same, but now we have quantitative information on the density. The highest peak is for long wait/long eruption, at around 0.015 (per minute per minute.) You can explore the 2D density further by studying things like the conditional distribution of eruption length given waiting time, etc.
+
+If you're sitting around at Yellowstone, you might be more interested in the joint density of the eruption duration and the waiting time to the *next* eruption.
+
+```{r}
+n = nrow(geyser)
+next.geyser = data.frame(duration = geyser$duration[-n], waiting = geyser$waiting[-1])
+ggplot(next.geyser, aes(x=duration, y=waiting)) + stat_density_2d(aes(fill=..level..), geom="polygon")
+```
+
+This time the data looks bimodal: short eruption followed by short wait, or long eruption followed by long wait. The long/long peak is substantially higher.
+
+Finally, we want to study the **conditional** distributions: given an eruption duration, how long will we have to wait for the next eruption? For simplicity, we only split `duration` into two categories.
+
+```{r}
+duration.cat = rep(NA, nrow(next.geyser))
+duration.cat[next.geyser$duration<=3] = "Short eruption"
+duration.cat[next.geyser$duration>3] = "Long eruption"
+duration.cat = factor(duration.cat, levels=c("Short eruption", "Long eruption"))
+ggplot(data.frame(next.geyser, duration.cat), aes(x=waiting, fill=duration.cat, color=duration.cat)) + stat_density() + facet_wrap(~duration.cat, ncol=1)
+```
+
+The modal waiting time after a short eruption is a bit over 50 minutes, while the modal waiting time after a long eruption is a bit under 80 minutes. Note that this graph does not attempt to show that long eruptions are more common than short eruptions.
+

@@ -1,0 +1,98 @@
+---
+title: 'Four or more variables'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 293--301.**
+
+### Hamster organs
+
+Load stuff:
+
+```{r}
+load("lattice.RData")
+library(ggplot2)
+library(GGally)
+library(tidyr)
+```
+
+For some reason Cleveland has data on the weights (in grams) of six organs from each of 73 hamsters that died of a congenital heart problem. Here, there's no response variable: we're just interested in how the variables relate to each other. Before we jump to the multivariate stuff, we see what the univariate data looks like.
+
+```{r}
+summary(hamster)
+```
+
+Let's put the data into long form and plot it.
+
+```{r}
+hamster.long = hamster %>% gather(organ, weight)
+ggplot(hamster.long, aes(x = organ, y = weight)) + stat_boxplot()
+```
+
+The different orders of magnitude make it hard to see what's going on. We can use a log scale instead.
+
+```{r}
+ggplot(hamster.long, aes(x = organ, y = log2(weight))) + stat_boxplot()
+```
+
+Now it's clear that livers are the heaviest organ and spleens are the smallest. The others are of similar order of magnitude.
+
+Note that the reason we transformed here was magnitude, not skewness. In scatterplots, we can use different scales on different axes, so we don't necessarily have to pursue this transformation.
+
+Let's just draw paired scatterplots on the original scale:
+
+```{r, message=FALSE}
+ggpairs(hamster)
+```
+
+Some variables are highly associated, like heart-lung-liver and liver-kidney-spleen. Only testes weight doesn't seem to be related to anything else, so we'll forget it. In some ways liver seems to be the key variable, since it's highly correlated with everything besides testes. We can make chopped liver and add color:
+
+```{r, message=FALSE}
+liver.cat = cut_number(hamster$liver, n=3)
+ggpairs(data.frame(hamster[,1:5], liver.cat), aes(color=liver.cat))
+```
+
+We see that hamsters with small livers have small other organs. Hamsters with big livers generally have the biggers kidneys and spleens, but their lung and heart sizes substantially overlap with those of medium-livered hamsters.
+
+If you want to try out the *brushing* method described in Cleveland, you can try out the `rggobi` package. We're not going to bother though.
+
+### Is it the iris data? Yes, it's the iris data
+
+The iris data set, which is studied in every statistics class, consists of measures of sepal and petal length and width (in cm) of 50 setosa irises, 50 versicolor irises, and 50 virginica irises. We want to be able to tell the three species apart based on these measurements. In our case, we want a practical rule rather than a "machine learning" rule -- one that we can understand without spending half our lives studying irises.
+
+```{r, message=FALSE}
+ggpairs(iris, aes(color=Species))
+```
+
+The 1D plots are clear enough -- blue is generally bigger than green, and green is generally bigger than red (except in terms of sepal width.) Since after years of looking at this data set I still don't know what a sepal is, let's stick to petals. How do we combine length and width into one number? Well, if the petal was rectangular, length times width would give area. The petals obviously aren't rectangular, but we can still do the multiplication and get something roughly proportional to area.
+
+```{r}
+ggplot(iris, aes(y = Species, x = Petal.Length * Petal.Width, color = Species)) + geom_point()
+```
+
+It looks like apart from the very biggest versicolor and the very smallest virginica, petal area classifies correctly.
+
+What can we plot area against? Well, the information you lose when you multiply is the ratio of the two numbers. If we have both the area and the ratio of length to width, then we lose no information (we can recover both length and width.) Let's scatterplot these:
+
+```{r}
+area = iris$Petal.Length * iris$Petal.Width
+ratio = iris$Petal.Length / iris$Petal.Width
+iris.size = data.frame(iris, area, ratio)
+ggplot(iris.size, aes(x = area, y = ratio, color=Species)) + geom_point()
+```
+
+So we get a simple rule: If petal length times width is less than 1 cm$^2$, it's setosa. If it's 3 to 7, it's versicolor, and if it's more than 9, it's virginica. If it's between 7 and 9 then you need to look more carefully.
+
+The boundary between versicolor and virginica is clearer on a log scale.
+
+```{r}
+ggplot(iris.size, aes(x = log2(area), y = log2(ratio), color=Species)) + geom_point()
+```
+
+If we simply draw vertical lines at 1 and 3 (which would be 2 and 8 cm$^2$ on the original scale), we'll only be wrong 7 out of 150 times. (By drawing the line more carefully we can reduce the training set errors to 3, but this is unlikely to significantly reduce error on a new test set of data.)

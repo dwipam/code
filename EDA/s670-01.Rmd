@@ -1,0 +1,207 @@
+---
+title: 'Lecture 01: Learning ggplot2'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 16--31.**
+
+### What's EDA?
+
+In S320/520 we spent most of our time estimating and testing hypotheses and models. In S470/670 we'll spend most of our time coming up with hypotheses and models for data. In practice this means we'll draw a lot of graphs and we won't have to calculate any $P$-values.
+
+### Univariate plots: Choral singers again
+
+In S320/520 we learned the basic plots of one quantitative variable:
+
+- ECDF plots
+- Histograms/density
+- Boxplots
+- Normal QQ plots
+
+We'll learn how to redraw all these plots using the `ggplot2` package because it's a more complete "grammar" of graphics, but mostly because it produces much more attractive graphs than base R.
+
+If you've taken my S320/520 class you'll remember we use a data set containing the heights (in inches) of members of the New York Choral Society. That data is in the `lattice` package in R, so load that:
+
+```{r}
+library(lattice)
+```
+
+We'll need the `ggplot2` library, of course. If you have't yet installed it, then do so: `install.packages("ggplot2")`. Then load it:
+
+```{r}
+library(ggplot2)
+```
+
+### ggplot syntax
+
+The first thing to get used to with `ggplot` syntax is the `aes` (short for aesthetic) function. Use this when you have a data frame and want to tell R what kind of variables everything is (e.g.~$x$, $y$.) For example, suppose we want to draw a graph using `height` from the `singer` data frame as our $x$-variable. We use the following syntax:
+
+```{r}
+ggplot(singer, aes(x=height))
+```
+
+Now this doesn't actually draw a graph because we haven't specified what kind of graph we want to draw. Let's draw an *ECDF plot*. Recall that the ECDF at $x$ is the proportion of the data less than or equal to $x$. All we need to do is add `+ stat_ecdf()` to our previous command:
+
+```{r}
+ggplot(singer, aes(x=height)) + stat_ecdf()
+```
+
+Now let's try a *histogram*:
+
+```{r}
+ggplot(singer, aes(x=height)) + geom_histogram()
+```
+
+This is ugly. Since we know the heights are measured to the nearest inch, let's specify bins of width 1 inch:
+
+```{r}
+ggplot(singer, aes(x=height)) + geom_histogram(binwidth=1)
+```
+
+If you prefer using a *density plot* to estimate the PDF:
+
+```{r}
+ggplot(singer, aes(x=height)) + geom_density()
+```
+
+If you don't like your density plot, use `adjust` as an argument within `geom_density()` to change the bandwidth. An adjust value of less than 1 makes the plot less smooth, while a value of 1 makes it smoother:
+
+```{r}
+ggplot(singer, aes(x=height)) + geom_density(adjust = 0.5)
+```
+
+Recall that a *boxplot* gives the five-number summary for a set of data: minimum excluding outliers, first quartile, median, third quartile, and maximum excluding outliers. Drawing a single boxplot is a bit trickier because it requires both an $x$- and a $y$-variable. Here's a workaround:
+
+```{r}
+ggplot(singer, aes(x="Height", y=height)) + geom_boxplot()
+```
+
+Note that drawing one boxplot by itself is usually not very useful. It's much better to draw a number of boxplots to compare them. We can draw a boxplot of heights for each voice part:
+
+```{r}
+ggplot(singer, aes(x=voice.part, y=height)) + geom_boxplot()
+```
+
+### Normal and uniform QQ plots
+
+A normal QQ plot is a graph of the quantiles of a data set against the quantiles of a standard normal distribution. Here it's not as simple as setting `height` to be $x$ or $y$: we need to use the heights as a *sample* from which we estimate quantiles.
+
+```{r}
+ggplot(singer, aes(sample=height)) + stat_qq()
+```
+
+But there's no reason why the reference distribution has to be normal. In fact, it may be preferable to use a uniform as the reference.
+
+```{r}
+ggplot(singer, aes(sample=height)) + stat_qq(distribution=qunif)
+```
+
+Note that this uniform QQ plot is *almost* the same as the ECDF graph with its axes flipped.
+
+### Faceting
+
+**Faceting** essentially means breaking up your data into subsets, then plotting those subsets separately. Suppose we want to draw a uniform QQ plot of singer heights for each voice part. We can use `facet_grid`:
+
+```{r}
+ggplot(singer, aes(sample = height)) +
+  stat_qq(distribution = qunif) +
+  facet_grid(~voice.part)
+```
+
+Because we have eight different voice parts, the graph is cramped. It'll look better if we draw a grid (say 4-by-2) of graphs. `facet_wrap` lets us draw this:
+
+```{r}
+ggplot(singer, aes(sample = height)) +
+  stat_qq(distribution = qunif) +
+  facet_wrap(~voice.part, ncol=2)
+```
+
+### Constructing a uniform QQ plot manually
+
+Here we reproduce Cleveland figure 2.2. This requires first sorting the Tenor 1 heights, then finding their corresponding quantiles ("f-values".)
+
+```{r}
+Tenor1 = sort(singer$height[singer$voice.part=="Tenor 1"])
+nTenor1 = length(Tenor1)
+f.value = (0.5:(nTenor1 - 0.5)) / nTenor1
+Tenor1.df = data.frame(f.value, height=Tenor1)
+ggplot(Tenor1.df, aes(x=f.value, y=height)) +
+  geom_line() + geom_point()
+```
+
+### Two-sample QQ plots
+
+Our QQ plots so far have plotted quantiles of one sample (at a time) against quantiles of a reference distribution. The `qqplot()` function in base R plots quantiles of one variable against quantiles of another. (Note that it does not require the data sets to be sorted.)
+
+```{r}
+Tenor1 = singer$height[singer$voice.part=="Tenor 1"]
+Bass2 = singer$height[singer$voice.part=="Bass 2"]
+qqplot(Tenor1, Bass2)
+abline(0, 1)
+```
+
+We can feed the quantiles calculated by `qqplot()` into a data frame, which we can then feed into ggplot. We'll represent the quantiles as points (`geom_point()`) then add a diagonal line (`geom_abline()`):
+
+```{r}
+Tenor1 = singer$height[singer$voice.part=="Tenor 1"]
+Bass2 = singer$height[singer$voice.part=="Bass 2"]
+qq.df = as.data.frame(qqplot(Tenor1, Bass2, plot.it=FALSE))
+ggplot(qq.df, aes(x=x, y=y)) + geom_point() +
+  geom_abline()
+```
+
+### Extra: Tukey mean-difference plots
+
+Humans can more accurately compare to a horizontal line than a diagonal one. The *Tukey mean-difference plot* is designed to take advantage of this. On the $x$-axis goes the *mean* of the two quantiles (averaging Tenor 1 and Bass 2), while on the $y$-axis goes the difference between them (Bass 2 minus Tenor 1.)
+
+```{r}
+ggplot(qq.df, aes(x=(x+y)/2, y=y-x)) + geom_point() +
+  geom_abline(slope=0)
+```
+
+### Extra: Pairwise QQ plots
+
+If you want to do these, a good choice is to use the `ggpairs()` function in the `GGally` library. The plots on the diagonal are density plots. The graphs are a bit too busy to be very useful in my opinion.
+
+```{r}
+singer.q.rows = aggregate(height ~ voice.part, quantile, probs=seq(.05, .95, .01), data=singer)
+singer.q = t(singer.q.rows[-1])
+names(singer.q) = singer.q.rows[,1]
+singer.panel = function(x, y){
+  lines(x, y, xlim=range(singer$height), ylim=range(singer$height))
+  abline(0, 1)
+}
+library(GGally)
+ggpairs(singer.q, upper=c())
+```
+
+### Normality revisited
+
+The normal QQ plot for the data as a whole doesn't look quite normal. What if we just looked at Alto 1s? First use the uniform as a reference:
+
+```{r}
+ggplot(singer[singer$voice.part=="Alto 1",], aes(sample=height)) + stat_qq(distribution=qunif)
+```
+
+It looks like the line curves up at the end. Now let's compare to the normal:
+
+```{r}
+ggplot(singer[singer$voice.part=="Alto 1",], aes(sample=height)) + stat_qq()
+```
+
+The data doesn't seem to have any strong curvature (maybe there's a little at the beginning.) In any case, we don't have to prove the data literally comes from a normal distribution (it doesn't), just that the normal is a reasonable model.
+
+As before, we can facet the graphs to draw one for each voice part:
+
+```{r}
+ggplot(singer, aes(sample = height)) +
+  stat_qq() + facet_wrap(~voice.part, ncol=2) 
+```
+
+The graphs generally look straightish. It seems fair to say that as far as we can tell, each voice part's heights are reasonably well approximated by a normal distribution. The next questions to answer: What kinds of normal distributions? What are the means? Do they all have the same standard deviation, or do the spreads differ?

@@ -1,0 +1,161 @@
+---
+title: 'Lecture 04: Robust fits'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 68--79.**
+
+Load the usual stuff:
+
+```{r}
+library(ggplot2)
+load("lattice.RData")
+```
+
+### Bin packing
+
+Suppose that we have a number of files, with sizes IID uniform on $[0, 0.8]$. We want to put these files on to disks of capacity 1 using the fewest number of disks possible, i.e.~wasting the smallest amount of empty space. We want to explore the performance of a "bin packing" algorithm that provides an approximate solution.
+
+Cleveland's data frame `bin.packing` contains two variables:
+
+- `empty.space`: The amount of empty space wasted.
+- `number.runs`: The number of randomly generated files.
+
+For now we'll treat `number.runs` as categorical. We suspect there could be multiplicative effects, so for now we'll study the base 2 log of `empty.space`. Let's draw boxplots, split by `number.runs`:
+
+```{r}
+ggplot(bin.packing, aes(factor(number.runs), log2(empty.space))) + geom_boxplot()
+```
+
+A couple of things are clear:
+
+- Log empty space generally goes up with the number of runs.
+- The data isn't homoscedastic: The spread decreases as number of runs increases.
+
+Next we check the normal QQ plots, faceted by the number of runs.
+
+```{r}
+ggplot(bin.packing, aes(sample=log2(empty.space))) +
+  stat_qq() + facet_wrap(~number.runs)
+```
+
+For large numbers of runs, the QQ plots are well-fitted by straight lines. However for smallest numbers of runs there are difficulties -- especially for less than 1000 runs, where there are major outliers.
+
+Because of the heteroskedasticity and outliers, we might prefer to both build our model and explore our residuals in a more robust way. The median is more outlier-resistant than the mean, so we'll use those as our fitted values.
+
+In Cleveland's notation: Let $b_{in}$ be the $i$th log empty space measurement for the bin packing run with $n$ weights. Let $l_n$ be the medians. The fitted values are
+
+$$
+\hat{b}_{in} = l_n
+$$
+
+and the residuals are
+
+$$
+\hat{\epsilon}_{in} = b_{in} - \hat{b}_{in}
+$$
+
+Now we adjust the residuals for heteroscedasticity. Let $s_n$ be the **median absolute deviations** or **mads**: that is, for each $n$, the median of the absolute value of the residuals. The `mad()` function in R gives the median absolute deviations (multiplied by a constant `1/qnorm(3/4)` to put the estimate on the same scale as the standard deviation.)
+
+The **spread-standardized residuals** are
+
+$$
+\frac{\hat{\epsilon}}{s_n}
+$$
+
+```{r}
+number.runs = bin.packing$number.runs
+log2.space = log2(bin.packing$empty.space)
+log2.packing = data.frame(log2.space, number.runs)
+log2.space.medians = aggregate(log2.space~number.runs, median, data=log2.packing)
+log2.space.mad = aggregate(log2.space~number.runs, mad, data=log2.packing)
+n = nrow(log2.packing)
+log2.space.fitted = rep(NA, n)
+log2.space.madlist = rep(NA, n)
+for(J in 1:n){
+  which.runs = which(log2.space.medians$number.runs == number.runs[J])
+  log2.space.fitted[J] = log2.space.medians$log2.space[which.runs]
+  log2.space.madlist[J] = log2.space.mad$log2.space[which.runs]
+}
+log2.space.residuals = log2.space - log2.space.fitted
+log2.space.standardized = log2.space.residuals / log2.space.madlist
+log2.model = data.frame(number.runs, 
+  residuals=log2.space.residuals,
+  std.residuals=log2.space.standardized)
+ggplot(log2.model, aes(sample=std.residuals)) +
+  stat_qq() + facet_wrap(~number.runs, ncol=3)
+```
+
+It's still a bit hard to see what's going on because of the outliers, particularly when the number of runs is 1000 or more. Let's pool the residuals for those cases and draw a normal QQ plot.
+
+```{r}
+log2.model.big.n = log2.model[number.runs > 1000,]
+ggplot(log2.model.big.n, aes(sample=std.residuals)) +
+  stat_qq() + geom_abline()
+```
+
+There's an S-shape to the plot. This can happen for many different reasons, but one possibility is over-transformation: maybe our log transformation is hurting rather than helping.
+
+Theory suggests that on a log-log scale, then as the number of runs gets large, empty space approaches a linear function of number of runs with slope $1/3$. We plot the median log empty space for each number of runs:
+
+```{r}
+k = nrow(log2.space.medians)
+plot248 = ggplot(log2.space.medians,
+       aes(x=log2(number.runs), y=log2.space)) +
+  geom_point()
+plot248
+```
+
+Then we add a straight line with slope $1/3$ through the last point:
+
+```{r}
+plot248 + geom_abline(slope=1/3,
+  intercept=log2.space.medians[k,2]-1/3*log2(log2.space.medians[k,1]))
+```
+
+The line does eventually provide a good fit. What about the spreads? Plot the log mads against the log number of runs:
+
+```{r}
+ggplot(log2.space.mad, aes(x=log2(number.runs), y=log2(log2.space))) +
+  geom_point()
+```
+
+The mads decrease as the number of runs increases. This again is consistent with overtransformation.
+
+To check more thoroughly for heteroscedasticty, we draw spread-location plots.
+
+- For location, we'll use the median log empty space.
+- For spread, we'll divide the mads by the smallest mad, then take logs.
+
+If the data is homoscedastic after transformation, this plot should look like random noise.
+
+```{r}
+median.log2.space = log2.space.medians$log2.space
+log2.relative.spread = log2(log2.space.mad$log2.space / min(log2.space.mad$log2.space))
+log2.sl = data.frame(median.log2.space, log2.relative.spread)
+ggplot(log2.sl, aes(x=median.log2.space, y=log2.relative.spread)) +
+  geom_point()
+```
+
+It's not random noise -- it's a downward sloping line.
+
+We can now be confident that our log transformation has led to heteroscdesticity. In that case, let's start over again *without* transformation. The spread-location plot is:
+
+```{r}
+empty.space.medians = aggregate(empty.space~number.runs, median, data=bin.packing)
+empty.space.mad = aggregate(empty.space~number.runs, mad, data=bin.packing)
+empty.space.sl = data.frame(median.empty.space=empty.space.medians$empty.space,
+  log2.relative.spread=log2(empty.space.mad$empty.space/min(empty.space.mad$empty.space)))
+ggplot(empty.space.sl, aes(x=median.empty.space, y=log2.relative.spread)) +
+  geom_point()
+```
+
+This time it looks pretty random. We're much closer to heteroscedasticity without the transformation.
+
+The major moral: In EDA, we're allowed to do dumb things because we're explorers. We do need to check our models so that we'll find out if we're doing dumb things. If we are, there's no shame in starting all over again.

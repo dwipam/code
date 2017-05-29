@@ -1,0 +1,280 @@
+---
+title: 'Multiway data'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE)
+set.seed(470670)
+```
+
+**READ: Cleveland pp. 320--340.**
+
+### Run time
+
+Load data and libraries:
+
+```{r}
+load("lattice.RData")
+library(ggplot2)
+library(tidyr)
+library(broom)
+library(MASS)
+```
+
+The `run.time` data frame contains experimental results on the running time required for three sorting algorithms. The variables are:
+
+- `time` in seconds. This is strongly skewed, so we'll mostly use $\log_2$ of time;
+- `algorithm`: 7th, ucb, or new;
+- `machine`: vax or mips;
+- `input`: integer, float, double, record, pointer, or string.
+
+This time we have *three-way* data: there are three explanatory factor variables, and one numerical response (time.) To display the data, we can:
+
+- Facet on two factors, and draw dotplots showing the relationship of the response with the third factor; or
+- Facet on one factor, distinguish a second factor by color, and draw dotplots showing the relationship of the response with the third factor.
+
+First, we try faceting two ways. The algorithm is the main explanatory variable of interest, so condition on the other two.
+
+```{r}
+ggplot(run.time, aes(x = log2(time), y = algorithm)) + geom_point() + facet_wrap(~machine + input, ncol=6)
+```
+
+This shows that the order (from shortest to longest run time) is always new < ucb < 7th. However, the differences aren't constant.
+
+Now keep algorithm as the main explanatory, but use color to distinguish one of the others. Since there are only two machines, color by that variable to avoid too many different colors (which requires your eyes going to the legend and back repeatedly and is thus annoying.) 
+
+```{r}
+ggplot(run.time, aes(x = log2(time), y = algorithm, color = machine)) + geom_point() + facet_wrap(~input, ncol=3)
+```
+
+The "slopes" of the red dots are systematically steeper than the "slopes" of the blue dots. That suggest an algorithm-machine interaction.
+
+Now make input the main explanatory. Facet on algorithm and keep machine as color:
+
+```{r}
+ggplot(run.time, aes(x = log2(time), y = input, color = machine)) + geom_point() + facet_wrap(~algorithm, ncol=1)
+```
+
+Interestingly, the top plot looks like a simple shift from red to blue, the other two plots look much more complicated. To be on the safe side, we should keep an input-machine interaction in the model.
+
+### Interlude: The `spread()` function
+
+We know that the new algorithm gives the fastest run times. So what we want to quantify is how much faster it is than the other two algorithms (on the log 2 scale.) In other words, we're interested in the *differences* between the two old algorithms and the new one. With a well-organized data set like this one, it's straightforward to find the differences manually. However, with messier data, it might not be so easy. We thus take this opportunity to learn the `spread()` function in `tidyr`.
+
+`spread()` is nearly the opposite of `gather()`: instead of collapsing columns and making our data long, we break up columns and make our data wide. Run the following line:
+
+```{r}
+run.wide = run.time %>% spread(algorithm, time)
+```
+
+What this does is create new columns, one for each level of `algorithm`. The numbers that go into these columns are the ones currently in `time`. This is the result:
+
+```{r}
+run.wide
+```
+
+Now create two new variables with the improvements in logged run time of the new algorithm over the two old ones. More positive means more improvement.
+
+```{r}
+run.wide$imp.ucb = log2(run.wide$ucb) - log2(run.wide$new)
+run.wide$imp.7th = log2(run.wide$"7th") - log2(run.wide$new)
+```
+
+Now that we've created these two variables, we can switch back to long form.
+
+```{r}
+run.long = run.wide %>% gather(algorithm, improvement, imp.ucb:imp.7th)
+```
+
+Let's summarize our new `improvement` variable by finding its mean for each input.
+
+```{r}
+improvement.means = aggregate(improvement ~ input, mean, data = run.long)
+improvement.means
+```
+
+For aesthetic purposes, reorder the `input` variable by mean improvement:
+
+```{r}
+input.order = improvement.means$input[order(improvement.means$improvement)]
+run.long$input = factor(run.long$input, levels = input.order)
+```
+
+Plot the data, this time coloring by algorithm:
+
+```{r}
+ggplot(run.long, aes(x = improvement, y = input, color = algorithm)) + geom_point() + facet_grid(~machine)
+```
+
+Interestingly, the difference between blue and red is close to constant on the left panel and close to (a different) constant on the right panel. In other words, we might not need an algorithm-input interaction.
+
+### Multiway linear model
+
+Let's say we want to fit input:machine and algorithm:machine interactions, but not one for input:algorithm. There are several ways to specify this. Since there are no outliers, we can just fit an ordinary linear model. We can write out the interactions explicitly:
+
+```{r}
+runtime.lm = lm(improvement ~ input + algorithm + machine + input:machine + algorithm:machine, data = run.long)
+```
+
+Or we can think of it the followay way: "Without machine, input and algorithm are addtive. But both interact with machine."
+
+```{r}
+runtime.lm = lm(improvement ~ (input + algorithm) * machine, data = run.long)
+```
+
+You should get the same thing either way. We check the residuals by plotting them faceted two ways:
+
+```{r}
+runtime.lm.df = augment(runtime.lm)
+ggplot(runtime.lm.df, aes(x = .resid, y = input)) + geom_point() + facet_wrap(~ algorithm + machine)
+```
+
+There's not much to note here except that the "pointer" residuals are the largest in magnitude. Do we need an input-algorithm interaction just for pointer? Perhaps, but this could also just be luck.
+
+Now check a residual-fit plot to see how much is left unexplained.
+
+```{r}
+runtime.lm.df$.fit.demeaned = runtime.lm.df$.fitted - mean(runtime.lm.df$.fitted)
+runtime.lm.long = runtime.lm.df %>% gather(component, value, c(.fit.demeaned, .resid))
+ggplot(runtime.lm.long, aes(sample = value)) + stat_qq(distribution = "qunif") + facet_grid(~component)
+```
+
+We've explained almost all of the variation. This may not be as impressive as it seems, since we fitted a 14-parameter model to 24 data points, but we'll take it.
+
+To better understand the input:machine interaction, draw a dot plot of fitted values with those two explanatories.
+
+```{r}
+ggplot(subset(runtime.lm.df, algorithm == "imp.7th"), aes(x = .fitted, y = input)) + geom_point() + facet_wrap(~machine, ncol = 1)
+```
+
+We see the shape of the two sets of dots is quite different. It's not as simple as adding different effects for mips and vax. We can also replot this on the original scale:
+
+```{r}
+ggplot(subset(runtime.lm.df, algorithm == "imp.7th"), aes(x = 2^(.fitted), y = input)) + geom_point() + facet_wrap(~machine, ncol = 1)
+```
+
+The back-transformed fitted values give the number of times longer the old algorithms take compared to the new one. The new algorithm is always faster, but the increase in speed is highly variable. mips looks particularly bad in comparison, usually taking over five times as long.
+
+## The barley controversy
+
+Immer's Minnesota barley data is famous as one of the first real-life applications of analysis of variance. It's also controversial due to a supposed mistake in the data. The variables in the `barley` data frame are:
+
+- `yield`: barley crop yield in bushels per acre (a bushel is four pecks);
+- `variety`: one of ten types of barley;
+- `year`: 1931 or 1932;
+- `site`: one of six locations in Minnesota.
+
+So there are three categorical explanatory variables (we might as well treat year as categorical, since we only have two years) and a quantitative response. The factor variables are presorted by median.
+
+Start with a two-way faceted dot plot, with `variety` as the main explanatory:
+
+```{r}
+ggplot(barley, aes(x = yield, y = variety)) + geom_point() + facet_wrap(~ year + site, ncol = 6)
+```
+
+There' are a few too many dots's too much going on here for the patterns to be clear. Instead, let's plot one row on top of the other, distinguishing year by color.
+
+```{r}
+ggplot(barley, aes(x = yield, y = variety, color = year)) + geom_point() + facet_wrap(~site)
+```
+
+In most cases, the teal dot is to the right of the red dot: that is, the 1931 yield was higher than the 1932 yield. However, the opposite is true at Morris, where every yield increased from 1931 to 1932. Cleveland claims this could have been a mistake in data entry, and we should at least entertain this possibility. Let's swap the 1931 and 1932 numbers for Morris, and see what difference that makes.
+
+```{r}
+morris1932fixed = barley$yield[barley$site == "Morris" & barley$year == 1931]
+morris1931fixed = barley$yield[barley$site == "Morris" & barley$year == 1932]
+barley.fixed = barley
+barley.fixed$yield[barley$site == "Morris" & barley$year == 1932] = morris1932fixed
+barley.fixed$yield[barley$site == "Morris" & barley$year == 1931] = morris1931fixed
+ggplot(barley.fixed, aes(x = yield, y = variety, color = year)) + geom_point() + facet_wrap(~site)
+```
+
+On one hand, it looks nicer -- the pattern is now consistent apart from the odd exception (Grand Rapids--Velvet.) On the other hand, perhaps the pattern is too good to be true: we know that sometimes outliers happen, and maybe Morris was hit by a plague of locusts in 1931 or something. Personally, the data doesn't entirely convince me, so I'll err on the side of sticking with the original data.
+
+We can simplify the structure by looking at the difference between the 1931 and 1932 yields. To do this, we:
+
+- Put the data into "wide" form by using the `spread()` function in `tidyr`. This will create columns called "1931" and "1932" containing the yields for those years, and halve the number of rows.
+- Create a new data frame column called `difference` with the 1931 yield minus the 1932 yield for each variety and site. (We do the subtraction this way around because people like positive numbers.)
+
+```{r}
+barley.wide = barley %>% spread(year, yield)
+barley.wide$difference = barley.wide$"1931" - barley.wide$"1932"
+```
+
+Now we draw a dot plot faceting on site:
+
+```{r}
+ggplot(barley.wide, aes(x = difference, y = variety)) + geom_point() + facet_wrap(~site)
+```
+
+The main modeling question we try to answer here is whether some interaction between variety and the other variables is necessary. If the variety-by-variety variation here is small (i.e. each panel's dot are scattered close to vertical line), then perhaps we can do without such interactions. It's a judgment call, but to me there doesn't seem to be much pattern. On the other hand, we probably need a year:site interaction, for Morris if for no other reason. Because of the outliers, we'll use `rlm()` with bisquare for the fit.
+
+```{r}
+barley.rlm = rlm(yield ~ variety + year * site, psi = psi.bisquare, data = barley)
+```
+
+Before we move on, let's check the residual-fit plot to ensure we've captured an informative amount of variation.
+
+```{r}
+barley.rlm.df = augment(barley.rlm)
+barley.rlm.df$.fitted = barley.rlm.df$.fitted - mean(barley.rlm.df$.fitted)
+barley.rlm.long = barley.rlm.df %>% gather(component, value, c(.fitted, .resid))
+ggplot(barley.rlm.long, aes(sample = value)) + stat_qq(distribution = "qunif") + facet_grid(~component)
+```
+
+It seems like we've explained the majority of the variation, so let's proceed.
+
+### Viewing the model
+
+Because we have a year:site interaction, we should view the effects of these two variables in tandem. Draw a dotplot of the effects, with color indicating year:
+
+```{r}
+barley.effects = dummy.coef(barley.rlm)
+year.site.main = outer(barley.effects$year, barley.effects$site, "+")
+year.site.inter = barley.effects$"year:site"
+year.site.effect = year.site.inter + as.vector(year.site.main)
+years = rep(row.names(year.site.main), 6)
+sites = rep(colnames(year.site.main), each = 2)
+sites = factor(sites, levels = names(barley.effects$site))
+year.site.df = data.frame(year = years,
+  site = sites,
+  effect = year.site.effect)
+ggplot(year.site.df, aes(x = effect, y = site, col = year)) + geom_point()
+```
+
+As we know, Morris doesn't fit the pattern. Even excluding Morris, there's still quite a bit of variation between sites, both within years and in the difference from 1932 to 1931.
+
+Let's now look at the variety effects:
+
+```{r}
+variety.effects = sort(barley.effects$variety)
+varieties = factor(names(barley.effects$variety), levels = names(barley.effects$variety))
+variety.df = data.frame(effect = variety.effects, variety = varieties)
+ggplot(variety.df, aes(x = effect, y = variety)) + geom_point()
+```
+
+You'd need to know more about pre-World War II strains of barley than I do to get the most out of this graph. Generally though we see that the effects are fairly well-behaved. (You might at least think about fitting a multilevel model, though there's not much data and robust multilevel models are a pain in R.)
+
+Let's now check the residuals for anomalies. Facet by variety and year:
+
+```{r}
+ggplot(barley.rlm.df, aes(x = .resid, y = site)) + geom_point() + facet_wrap(~ variety + year, ncol = 4) + theme(axis.text.y = element_text(size=5))
+```
+
+Looking carefully, there probably is a bit of a site:variety interaction: the Peatland plots look fairly similar for both 1931 and 1932, for example. But this effect is pretty small, so we ignore it. Otherwise, there's not much of note here aside from an outlier or two.
+
+Now facet by year and location:
+
+```{r}
+ggplot(barley.rlm.df, aes(x = .resid, y = variety)) + geom_point() + facet_wrap(~ site + year) + theme(axis.text.y = element_text(size=7))
+```
+
+Again, not much pattern, which is good. Note that Morris looks unremarkable now: including the interaction gets rid of the anomaly.
+
+### Was Morris a mistake?
+
+The best way to find out is to look at more data. In fact, (incomplete) data from 1927 to 1936 is available in the file `minnesota.barley.yield.txt`. Sounds like a good topic for a problem set, doesn't it...
+

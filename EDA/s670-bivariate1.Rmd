@@ -1,0 +1,152 @@
+---
+title: 'Bivariate data, part 1: Building and checking a model'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 86--119.**
+
+### Ganglion data
+
+Load the usual:
+
+```{r}
+load("lattice.RData")
+library(ggplot2)
+```
+
+A ganglion is a nerve cell cluster. The data set `ganglion` contains data on ganglia in the retina of 14 cat fetuses. There are two variables:
+
+- `area` is retinal area (in mm$^2$)
+- `cp.ratio` is the ratio of ganglion cell density in the center of the retina to the ganglion cell density in the periphery (edge) of the retina.
+
+We draw a scatterplot:
+
+```{r}
+ganglion.gg = ggplot(ganglion, aes(x=area, y=cp.ratio)) + geom_point()
+```
+
+Let's add a smooth curve to the plot.
+
+```{r}
+ganglion.gg + geom_smooth()
+```
+
+By default, the curve is fitted using the "loess" method; we'll talk more about this method later. The 95% confidence bands are for the fit, not for predictions (so we do not expect 95% of the data to be contained in the shaded area.)
+
+Visually, we see the loess fit is quite curved. How well would a straight line do?
+
+```{r}
+ganglion.gg + geom_smooth(method="lm")
+```
+
+We could look more carefully at the residuals, but it seems clear that the loess curve provides a better fit. (Note also there's no straight line that goes through the entire loess confidence band.)
+
+If a straight line doesn't work and you still want a parametric fit, try a quadratic.
+
+```{r}
+ganglion.gg + geom_smooth(method="lm", formula = y ~ x + I(x^2))
+```
+
+The quadratic fit looks more or less the same as the loess fit. The confidence bands are much narrower -- they probably underestimate the uncertainty unless we have strong reason to believe the parametric model is correct.
+
+### The broom library and augment()
+
+The `augment()` function within the `broom` library (which you should install) puts fitted values and residuals, among other things, into a convenient data frame. Let's fit a linear model and try it out:
+
+```{r}
+ganglion.lm = lm(cp.ratio ~ area, data=ganglion)
+# install.packages(broom)
+library(broom)
+gang.lm.df = augment(ganglion.lm)
+summary(gang.lm.df)
+```
+
+We plot the residuals against the explanatory variable, then add a loess curve. If the confidence band contains the line $y = 0$, then maybe the model is fitting well.
+
+```{r}
+ggplot(gang.lm.df, aes(x=area, y=.resid)) + geom_point() + geom_smooth() +
+  geom_abline(slope=0, intercept=0)
+```
+
+There's a clear curve in the residuals, so the linear model doesn't fit.
+
+Let's try the quadratic:
+
+```{r}
+ganglion.lm2 = lm(cp.ratio ~ area + I(area^2), data=ganglion)
+gang.lm2.df = augment(ganglion.lm2)
+summary(gang.lm2.df)
+ggplot(gang.lm2.df, aes(x=area, y=.resid)) + geom_point() + geom_smooth() +
+  geom_abline(slope=0, intercept=0)
+```
+
+The curve for the residuals just wiggles around 0. It's plausible that the quadratic model is correctly specified.
+
+In addition, we check for homoscedasticity using a spread-location plot.
+
+```{r}
+ggplot(gang.lm2.df, aes(x=.fitted, y=sqrt(abs(.resid)))) + geom_point() + geom_smooth()
+```
+
+It doesn't look like a horizontal line describes the transformed residuals well. The spread of the residuals changes with the fitted values, meaning there's heteroscedasticity. This makes the quadratic model less appealing -- maybe a transformation would be better.
+
+Let's try taking the log of the CP ratio. Add a loess fit:
+
+```{r}
+ggplot(ganglion, aes(x=area, y=log2(cp.ratio))) + geom_point() + geom_smooth()
+```
+
+Looks like a straight line would do just as good a job. Let's use `lm()` to fit the model instead.
+
+```{r}
+ggplot(ganglion, aes(x=area, y=log2(cp.ratio))) + geom_point() + geom_smooth(method = "lm")
+```
+
+The straight line produced by `lm()` looks more or less the same as the loess fit. So far, so good. To get a better look, plot the residuals agaisnt `area`, the $x$-variable.
+
+```{r}
+ganglion.log.lm = lm(log2(cp.ratio) ~ area, data=ganglion)
+gang.log.lm.df = augment(ganglion.log.lm)
+ggplot(gang.log.lm.df, aes(x=area, y=.resid)) + geom_point() + geom_smooth() +
+  geom_abline(slope=0, intercept=0)
+```
+
+The curve just wiggles around zero. The residuals look like noise. Now check for homoscedasticity using a spread-location plot:
+
+```{r}
+ggplot(gang.log.lm.df, aes(x=.fitted, y=sqrt(abs(.resid)))) + geom_point() + geom_smooth()
+```
+
+This time we see a horizontal line goes through the confidence band, so homoscedasticity is a reasonable assumption. (The blue line is curved, but that could just be because of the small amount of data.)
+
+Taking the log of `cp.ratio` has led to an elegant model: linear and homoscedastic. But how much does the model actually explain? Draw a residual-fit plot:
+
+```{r}
+n = nrow(gang.log.lm.df)
+f.value = (0.5:(n - 0.5)) / n
+gang.log.fit = data.frame(f.value, Fitted = sort(gang.log.lm.df$.fitted) - mean(gang.log.lm.df$.fitted), Residuals = sort(gang.log.lm.df$.resid))
+library(tidyr)
+gang.log.fit.long = gang.log.fit %>% gather(type, value, Fitted:Residuals)
+ggplot(gang.log.fit.long, aes(x=f.value, y=value)) +
+  geom_point() + facet_wrap(~type)
+```
+
+The spread of the fitted values far exceeds the spread of the fit. So the model incorporates most of the variation in the data.
+
+Finally, we check if the residuals look normal. If so, this would be good, but it wouldn't necessarily be a dealbreaker if they weren't.
+
+```{r}
+ggplot(gang.log.lm.df, aes(sample=.resid)) + stat_qq()
+```
+
+They're normal! Great! By taking logs, we get data that fulfills all the usual linear model assumptions, and can do formal inference if we wish.
+
+
+
+

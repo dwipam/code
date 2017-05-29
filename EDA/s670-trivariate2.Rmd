@@ -1,0 +1,196 @@
+---
+title: 'Trivariate data: Ethanol'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 188--190, 196--199, 214--217, 254--255.**
+
+### The ethanol data
+
+The data frame `ethanol` in `lattice.RData` contains three measurements from 88 runs of an experiment testing an ethanol-fueled engine:
+
+- `NOx`: the amount of oxides of nitrogen produced by the engine per unit of work, in micrograms per joule (the response.)
+- `C`: the compression ratio the engine was set at.
+- `E`: the equivalence ratio the engine was set at (a measure of how fuel is in the fuel-air mixture.)
+
+We first plot the pairwise relationships.
+
+```{r}
+load("lattice.RData")
+library(ggplot2)
+library(GGally)
+ggpairs(ethanol)
+```
+
+Some features are immediately obvious:
+
+- Compression only takes five different values (it was directly controlled in the experiments.)
+- The relationship of NOx as a function of equivalence ratio is non-linear and non-monotonic. (It actually looks kind of like a bell-shaped curve.)
+
+On the other hand, the relationships of equivalence ratio and NOx with compression are not obvious. With five levels of C, we could try boxplots:
+
+```{r}
+ggplot(ethanol, aes(x=factor(C), y=NOx)) + geom_boxplot()
+ggplot(ethanol, aes(x=factor(C), y=E)) + geom_boxplot()
+```
+
+This isn't much clearer. We should try conditional plots of the data.
+
+### Coplots and colored plots of the data
+
+Let's first condition on C: since there are only five values, this is more straightforward. For each C, what's the relationship between E and NOx?
+
+```{r, message=FALSE}
+ggplot(ethanol, aes(x=E, y=NOx)) + geom_point() + geom_smooth() + facet_wrap(~C, ncol=3) + labs(title="Ethanol data split by compression")
+```
+
+The shape is very similar across all five plots: the trend is increasing up to a peak at an equivalence ratio of about 0.9, then a decline. It's hard to tell the difference in level (for example, which curve peaks the highest) from these graphs. That kind of comparison would be easier if we plotted all five of these curves on one graph. To make the graph clear, we plot each curve in a different color, where the color varies along a gradient with compression ratio.
+
+```{r, message=FALSE}
+ggplot(ethanol, aes(x=E, y=NOx, group=C, color=C)) + geom_point() + geom_smooth(se=FALSE)
+```
+
+The lower compression ratios are darker. (There are lots of color options to play around with; look up, for instance, the help for `scale_color_distiller()`.) We can now see the highest values of C give the highest peak value of NOx. Note that the curves aren't simply shifted: they're relatively far apart on the left-hand side and relatively close on the right.
+
+Now let's see how the relationship between C and NOx varies with E. Color the points according to E. A nonlinear relationship gives us an excuse to use a more dramatic color scheme.
+
+```{r}
+ggplot(ethanol, aes(x=C, y=NOx, group=E, color=E)) + geom_point() + scale_color_distiller(palette="RdYlBu")
+```
+
+As we saw before, for low E (blue), NOx is low; for middling E (yellow), NOx is high; and for high E (red), NOx is low again. However, it's hard to see how the relationship with C changes. Let's cut E into six class and plot six scatterplots of NOx against C. It turns out a linear fit seems adequate:
+
+```{r}
+ggplot(ethanol, aes(x=C, y=NOx)) + geom_point() + geom_smooth(method="lm") + facet_wrap(~cut_number(E, n=6), ncol=3) + labs(title="Ethanol data split by equivalence ratio")
+```
+
+Once again, middling E's give the highest NOx. However, now we can also see that the slope is steepest for a fairly low E, then decreases until the line for the highest E is basically flat.
+
+### Fitting and visualizing a model
+
+Conditioning on E gives the simpler structure: then NOx is just a linear function of C. However, we still need an interaction between C and E. `loess(NOx ~ C * E...)` by default would fit a smooth two-dimensional surface to predict NOx, but wouldn't have the conditional linearity. To achieve this, we use the `parametric` argument to specific a parametric model in C, and the `drop.square` argument to give a linear term in C rather than the default quadratic. After some (actually a lot) of trial and error, we find a span of $1/3$ looks okay.
+
+```{r}
+ethanol.lo = loess(NOx ~ C * E, data=ethanol, span=1/3, parametric="C", drop.square="C", family="symmetric")
+```
+
+For display, create a grid of C and E points, then predict the NOx at each point on this grid.
+
+```{r}
+ethanol.grid = expand.grid(C=c(7.5,9,12,15,18), E=seq(0.6, 1.2, 0.1))
+ethanol.predict = predict(ethanol.lo, newdata=ethanol.grid)
+```
+
+We can plot lines for different values of E on the same graph in different colors, but it gets a bit crowded.
+
+```{r}
+ggplot(data.frame(ethanol.grid, fit=as.vector(ethanol.predict)), aes(x=C, y=fit, group=E, color=E)) + geom_line() + scale_color_distiller(palette="RdYlBu")
+```
+
+A coplot of the fit faceted by values of E "spreads out" the above graph.
+
+```{r}
+ggplot(data.frame(ethanol.grid, fit=as.vector(ethanol.predict)), aes(x=C, y=fit, color=E)) + geom_line() + facet_grid(~E) + scale_color_distiller(palette="RdYlBu") + labs(title="NOx fit conditional on equivalence ratio")
+```
+
+This is much clearer (and makes the graph before this one much easier to understand as well.) In addition to the higher values for E around 0.9, the slope varies with E as well. The steepest slope looks to be at around E = 0.8.
+
+We now draw coplots of the fit conditioning on the compression ratio. Because of the nonlinearity, we need a tightly packed grid in E. It makes sense to use the five values of C from the experiment.
+
+```{r}
+ethanol.grid2 = expand.grid(C=c(7.5,9,12,15,18), E=seq(0.6, 1.2, 0.01))
+ethanol.predict2 = predict(ethanol.lo, newdata=ethanol.grid2)
+ggplot(data.frame(ethanol.grid2, fit=as.vector(ethanol.predict2)), aes(x=E, y=fit, color=C)) + geom_line() + facet_grid(~C) + labs(title="NOx fit conditional on compression ratio")
+ggplot(data.frame(ethanol.grid2, fit=as.vector(ethanol.predict2)), aes(x=E, y=fit, group=C, color=C)) + geom_line()
+```
+
+The general shape is similar for all five curves. As with the raw data, the curves are separated for low E (with high C giving higher NOx), but come together for high E.
+
+### Exploring the residuals
+
+Let's first look at the numerical summary of the model.
+
+```{r, message=FALSE}
+summary(ethanol.lo)
+```
+
+I don't know about you, but that's not very useful to me. Instead, let's construct a data frame with the original variables and the residuals, and getting plotting.
+
+```{r}
+library(broom)
+ethanol.lo.df = augment(ethanol.lo)
+ggplot(ethanol.lo.df, aes(x=E, y=.resid)) + geom_point() + geom_smooth(method.args=list(degree=1))
+```
+
+There's no obvious sign of a relationship between the residuals and the equivalence ratio. Now plot the residuals against compression.
+
+```{r, message=FALSE}
+ggplot(ethanol.lo.df, aes(x=C, y=.resid)) + geom_point() + geom_smooth(method.args=list(degree=1))
+```
+
+The residuals for $C = 9$ are a little concerning: they do seem to be centred a little above zero. While this could be due to nonlinearity, it could also be measurement error or just the one large positive residual. To investigate further, let's condition on C and look at the relationship between the residuals and the equivalence ratio.
+
+```{r, message=FALSE}
+ggplot(ethanol.lo.df, aes(x=E, y=.resid)) + geom_point() + geom_smooth(span=1, method.args=list(degree=1, family="symmetric")) + facet_grid(~C)
+```
+
+There doesn't seem to be any systematic relationship in the trends of the slopes. The outliers present a minor problem, but if you ignore them there doesn't seem to be too much pattern in the residuals. The fit is probably adequate.
+
+### Checking the residuals
+
+We now do the boring stuff. Check for homoskedasticity:
+
+```{r, message=FALSE}
+ggplot(ethanol.lo.df, aes(x=.fitted, y=sqrt(abs(.resid)))) + geom_point() + geom_smooth(method.args=list(degree=1))
+```
+
+The spread-location plot of the transformed residuals is reasonably consistent with a horizontal line. There's negligible evidence of heteroskedasticity.
+
+Next, check normality:
+
+```{r}
+ggplot(ethanol.lo.df, aes(sample=.resid)) + stat_qq()
+```
+
+The outliers means the residuals aren't normal, so we should hesitate to make probabilistic statements. Oh well. 
+
+Finally, did we manage to explain anything?
+
+```{r}
+ethanol.fit = ethanol.lo.df$.fitted - mean(ethanol.lo.df$.fitted)
+ethanol.resid = ethanol.lo.df$.resid
+library(tidyr)
+ethanol.lo.long = data.frame(ethanol.fit, ethanol.resid) %>% gather(component, NOx)
+ggplot(ethanol.lo.long, aes(sample=NOx)) + stat_qq(distribution="qunif") + facet_grid(~component)
+```
+
+The spread of the (demeaned) fitted values is much greater than the spread of the residuals. So the model is explaining most of the variation.
+
+### Should we have transformed?
+
+We can try out a log transformation and see if it does any better. Let's skip to the residuals and check for homoskedasticity:
+
+```{r}
+# Compare log NOx fit
+ethanol.log.lo = loess(log2(NOx) ~ C * E, span=1/3, parametric="C", drop.square="C", family="symmetric", data=ethanol)
+ethanol.log.lo.df = augment(ethanol.log.lo)
+ggplot(ethanol.log.lo.df, aes(x=.fitted, y=sqrt(abs(.resid)))) + geom_point() + geom_smooth(method.args=list(degree=1))
+```
+
+The spread of the residuals decreases as the fitted values increase. The log fit does worse than the fit on the original scale.
+
+We conclude:
+
+- NOx depends on equivalence ratio in a non-monotonic way.
+- Conditional on equivalence ratio, NOx depends on concentration in an approximately linear way.
+- The interaction is important: there's no real way to remove it from the data.
+- The usual inference based on an assumption of normal errors is inappropriate.
+- Transformations don't appear to help and may make things worse.
+
+

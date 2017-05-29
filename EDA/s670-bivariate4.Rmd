@@ -1,0 +1,211 @@
+---
+title: 'Time series data'
+author: "S470/670"
+date: "Spring 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**READ: Cleveland pp. 152--171.**
+
+### Time series objects
+
+Time series can be stored in R either as data frames or as `ts` objects. To create a `ts` object:
+
+```{r}
+fake.ts = ts(data = 1:7, start=2010)
+fake.ts
+```
+
+To turn a `ts` object into a data frame:
+
+```{r}
+fake.df = data.frame(x=as.matrix(fake.ts), year=time(fake.ts))
+fake.df
+```
+
+The `ts` format is good for doing traditional time series analysis, such as fitting ARIMAs. The data frame format is necessary to use `ggplot()`.
+
+### Melanoma: Decomposing time series
+
+The `melanoma` ts object contains the age-adjusted rate of the skin cancer melanoma from 1936 to 1972. With time series, we draw line graphs (putting dots as the observed values is optional.)
+
+```{r}
+load("lattice.RData")
+library(ggplot2)
+ggplot(melanoma, aes(x=year, y=incidence)) + geom_point() + geom_line()
+```
+
+Clearly the melanoma rate went up over this time period. Add a loess fit:
+
+```{r}
+ggplot(melanoma, aes(x=year, y=incidence)) + geom_point() + geom_line() + geom_smooth(method.args=list(degree=1))
+```
+
+It's a matter of taste whether you fit a loess or a linear model here. I'd lean toward the loess because there's no firm basis to believe that the approximate linearity of the trend would continue. Now fit the model and take a look at the residuals. Since the residuals are also a time series, we again join the dots.
+
+```{r}
+melanoma.lo = loess(incidence~year, degree=1, data=melanoma)
+library(broom)
+melanoma.lo.df = augment(melanoma.lo)
+ggplot(melanoma.lo.df, aes(x=year, y=.resid)) + geom_point() + geom_line()
+```
+
+When looking at the residual, we check for an oscillating pattern. While it's always hard to tell the difference between oscillations and random noise, it looks like the residuals do go through several cycles. To have a closer look, fit a loess curve to the graph with degree 2 and a low value of `span`:
+
+```{r}
+ggplot(melanoma.lo.df, aes(x=year, y=.resid)) + geom_point() + geom_smooth(span=0.25)
+```
+
+It looks like there are three or four cycles. The first "cycle" (up to about 1944) is hard to distinguish from noise, but the following cycles look clear. Now, fit this loess model to the residual, then subtract this to get "second-order" residuals.
+
+```{r}
+melanoma.lo2 = loess(.resid~year, span=0.25, data=melanoma.lo.df)
+melanoma.lo2.df = augment(melanoma.lo2)
+names(melanoma.lo2.df)
+# Fix name conflict
+names(melanoma.lo2.df) = c(".resid","year",".fitted",".se.fit",".resid2")
+ggplot(melanoma.lo2.df, aes(x=year, y=.resid2)) + geom_point() + geom_line()
+```
+
+By the time you get to second-order residuals, generally you don't want to do any more fitting unless there's strong reason to believe that there's still structure remaining. That doesn't seem to be the case here. Check the second-order residuals for normality:
+
+```{r}
+ggplot(melanoma.lo2.df, aes(sample=.resid2)) + stat_qq()
+```
+
+There are a few large positive residuals, so we don't have normality, but the fit is adequate. Now we check how much each of the three components -- trend, oscillations, and residuals -- explain. We fiddle around with `gather()` to get everything in a long-form data frame and draw a residual-fit plot.
+
+```{r}
+Year = melanoma$year
+Trend = melanoma.lo.df$.fitted - mean(melanoma.lo.df$.fitted)
+Oscillatory = melanoma.lo2.df$.fitted
+Residuals = melanoma.lo2.df$.resid2
+melanoma.ts = data.frame(Year, Trend, Oscillatory, Residuals)
+library(tidyr)
+melanoma.ts.long = melanoma.ts %>% gather(type, Incidence, Trend:Residuals)
+melanoma.ts.long$type = factor(melanoma.ts.long$type, levels=c("Trend", "Oscillatory", "Residuals"))
+ggplot(melanoma.ts.long, aes(x=Year, y=Incidence)) + geom_point() + geom_line() + facet_grid(~type)
+```
+
+The trend component has by far the most of the variation. We can check this quantitatively:
+
+```{r}
+var(Trend)
+var(Oscillatory)
+var(Residuals)
+```
+
+Arguably there's still a little too much left in the residuals, but it's a judgment call.
+
+One theory says that sunspots might be responsible for the oscillations in melanoma rates. Fortunately we have the ts object `sunspot` lying around:
+
+```{r}
+sunspot.ts = data.frame(Year, Oscillatory, sunspot)
+sunspot.ts.long = sunspot.ts %>% gather(type, number, Oscillatory:sunspot)
+ggplot(sunspot.ts.long, aes(x=Year, y=number)) + geom_line() + facet_wrap(~type, ncol=1, scales="free_y")
+```
+
+The peaks in sunspot numbers slightly precede the peaks in the oscillatory component. This would make sense if the relationship were causal.
+
+### Carbon dioxide: Seasonal time series
+
+The ts object `co2` contains the monthly average carbon dioxide concentration (in ppm) at Mauna Loa, Hawaii from 1959 to 1997. Draw a line graph:
+
+```{r}
+co2.df = data.frame(year=time(co2), co2)
+ggplot(co2.df, aes(x=year, y=co2)) + geom_line()
+```
+
+Clearly there's a seasonal component in addition to the trend. We wish to decompose the time series into trend, seasonal, and residual components. The `stl()` function performs such a seasonal decomposition on a ts object via loess. Two key arguments are:
+
+- `s.window`: either "periodic" or an (odd) number giving the size of the loess window for the seasonal component. "Periodic" means the values repeat exactly in a cycle, while a number means the size of the seasonal components will vary somewhat.
+- `s.degree`: the degree of local polynomial for the seasonal component. 0 (constant) by default, 1 for linear.
+
+```{r}
+co2.stl = stl(co2, s.window=25, s.degree=1)
+head(co2.stl$time.series)
+```
+
+The plot of the seasonal component is highly repetitive. To get a better look, we cut the series into several pieces, then make a stack of time series graphs.
+
+```{r}
+year.cut = cut_number(time(co2), n=5)
+co2.df2 = data.frame(year=time(co2), co2.stl$time.series, year.cut)
+ggplot(co2.df2, aes(x=year, y=seasonal)) + geom_line() + facet_wrap(~year.cut, ncol=1, scales="free_x")
+```
+
+Looking carefully at the scales, it looks like the seasonal oscillations get a bit bigger with time, but it's a pretty small change.
+
+To better understand the seasonal component, we want to see how the value for each month varies by year. The `monthplot()` function in base R does this:
+
+```{r}
+monthplot(co2.stl, choice="seasonal")
+```
+
+We can do something similar with `ggplot`:
+
+```{r}
+co2.month = data.frame(co2.df2, month=factor(1:12))
+ggplot(co2.month, aes(x=year, y=seasonal)) + geom_line() + facet_wrap(~month)
+```
+
+Either way, the seasonal pattern is clear: CO2 is highest in May and lowest in September and October. The fact that the May line points up and the September/October lines point down again shows the size of the seasonal variation is increasing.
+
+We now plot what's leftover after removing the seasonal component. That is, add together the "trend" and "remainder" and plot the time series.
+
+```{r}
+ggplot(co2.month, aes(x=year, y=trend+remainder)) + geom_line()
+```
+
+Clearly there's a big trend component and comparatively small residuals. Add a loess fit:
+
+```{r}
+ggplot(co2.month, aes(x=year, y=trend+remainder)) + geom_line() + geom_smooth()
+```
+
+The smooth fit curves slightly upward. As usual, we want to look at the residuals, so re-fit the loess and use `augment` to incorporate the residuals into a data frame.
+
+```{r}
+co2.lo = loess(trend+remainder~year, data=co2.month)
+co2.lo.df = augment(co2.lo)
+ggplot(co2.lo.df, aes(x=year, y=.resid)) + geom_line()
+```
+
+It still looks like the residuals oscillate up and down a bit. We once again fit a loess model with a smaller span. After some trial and error, a span of 0.1 looks about right.
+
+```{r}
+ggplot(co2.lo.df, aes(x=year, y=.resid)) + geom_line() + geom_smooth(span=0.1)
+```
+
+There are around eight or nine oscillatory cycles over 39 years. The size and length of the cycles varies quite a lot -- it isn't a very regular pattern.
+
+Re-fit the loess with span 0.1 and look at the (third-order) residuals:
+
+```{r}
+Year = co2.month$year
+co2.lo2 = loess(residuals(co2.lo)~Year, span=0.1)
+co2.lo2.df = augment(co2.lo2)
+ggplot(co2.lo2.df, aes(x=Year, y=.resid)) + geom_line() + geom_abline(slope=0)
+```
+
+The residuals look like noise. We hope we've captured most of the structure in the data. Check normality:
+
+```{r}
+ggplot(co2.lo2.df, aes(sample=.resid)) + stat_qq()
+```
+
+The residuals form a reasonably straight line. The normal is a good approximation.
+
+The trend is by far the largest component, so we set that aside. Let's now compare the oscillatory, residual, and seasonal components.
+
+```{r}
+co2.ts = data.frame(Year, Seasonal=co2.month$seasonal, Oscillatory=co2.lo2.df$.fitted, Residuals=co2.lo2.df$.resid)
+co2.ts.long = co2.ts %>% gather(type, co2.ppm, Seasonal:Residuals)
+ggplot(co2.ts.long, aes(x=Year, y=co2.ppm)) + geom_line() + facet_wrap(~type, ncol=1)
+```
+
+Out of the three, the seasonal component dominates. Of course, the maximum magnitude of the seasonal component is about plus or minus three ppm, whereas the trend went up by 50 ppm over the time period under study. Conclusion: We're all doomed.
