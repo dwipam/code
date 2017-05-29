@@ -64,6 +64,9 @@ Machine Learning(Self Implementations):
 
 Practice folder is for the coding that I do in my spare time. <br />
 
+Exploratory Data Analysis :- In depth analysis before building predictive model <br />
+
+Bayesian A/B test :- Farm and multi-armed bandit problem simulation <br />
 
 Distribution by Technologies:-<br />
   Python - Check for Artificial Intelligence Folder, dijkstra.py, dfs.py and practice folder <br />
