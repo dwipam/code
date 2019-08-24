@@ -1,7 +1,8 @@
 """
 Find the Rotation Count in Rotated Sorted array
 Consider an array of distinct numbers sorted in increasing order. 
-The array has been rotated (clockwise) k number of times. Given such an array, find the value of k.
+The array has been rotated (clockwise) k number of times. 
+Given such an array, find the value of k.
 """
 a = [3,4,5,1,2]
 search_a = 3
@@ -12,9 +13,10 @@ for idx in range(1,len(a)):
 		pivot = idx
 	prev = a[idx]
 
+print pivot
 
 
-if search_a <= a[pivot]:
+if search_a  <= a[-1] and search_a >= a[pivot]:
 	low = pivot
 	high = len(a) - 1
 else:
