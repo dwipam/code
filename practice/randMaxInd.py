@@ -12,9 +12,8 @@ for i in x:
     if i == max_key:
         cnt+=1
     if cnt == t:
-        print j 
+        print j
         break
     j+=1
 
-        
 

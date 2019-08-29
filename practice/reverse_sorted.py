@@ -23,6 +23,7 @@ else:
 	high  = pivot
 	low = 0
 
+
 def binary_search(arr, low, high):
 	if low>high:
 		return -1
