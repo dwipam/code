@@ -5,7 +5,7 @@ def quicksort(a,li,hi):
         quicksort(a,li,q-1)
 def partition(a,li,hi):
     j=li-1
-    for i in range(len(a))[li:len(a)-1]:
+    for i in range(len(a))[li:hi]:
         if a[i] <= a[hi]:
             j+=1
             t = a[j]
@@ -15,8 +15,7 @@ def partition(a,li,hi):
     a[j+1] = a[hi]
     a[hi] = t
     return j+1
-a = [4,2,1,3]
-quicksort(a,0,3)
+
+a = [10, 80, 30, 90, 40, 70, 50]
+quicksort(a,0,len(a)-1)
 print a
-    
-        
