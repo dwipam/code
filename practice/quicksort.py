@@ -9,8 +9,6 @@ def partition(a,li,hi):
         if a[i] <= a[hi]:
             j+=1
             t = a[j]
-            a[j] = a[i]
-            a[i] = t
     t = a[j+1]
     a[j+1] = a[hi]
     a[hi] = t
