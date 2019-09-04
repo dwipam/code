@@ -32,6 +32,20 @@ class LinkedList:
 			print temp.key
 			temp = temp.next
 
+	def pop_key(self, key):
+		temp = self.head.next
+		prev = self.head
+		if prev.key == key:
+			self.pop()
+		while temp!=None:
+			if temp.key == key:
+				print "\n Deleted: ",key
+				prev.next = temp.next
+				temp = None
+				return
+			prev = temp
+			temp = temp.next
+
 list_ = LinkedList()
 list_.push(2)
 list_.push(5)
@@ -48,5 +62,10 @@ list_.traverse()
 list_.pop()
 print "\n"
 list_.traverse()
+list_.pop_key(6)
+print "\n"
+list_.traverse()
+
+
 
 
